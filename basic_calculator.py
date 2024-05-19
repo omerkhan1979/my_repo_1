@@ -1,3 +1,7 @@
+"""
+This module provides basic calculator functionalities such as addition, subtraction, multiplication, and division.
+"""
+
 def add(x, y):
     """
     Adds two numbers together.

@@ -1,3 +1,9 @@
+"""
+This module contains unit tests for the basic calculator functions defined in basic_calculator.py.
+
+It tests the functions add, subtract, multiply, and divide with a variety of inputs to ensure they behave as expected.
+"""
+
 from basic_calculator import add, subtract, multiply, divide
 
 def test_calculator():

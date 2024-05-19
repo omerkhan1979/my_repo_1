@@ -71,16 +71,16 @@ def calculator(choice, num1, num2):
     if choice == '1':
         return add(num1, num2)
 
-    elif choice == '2':
+    if choice == '2':
         return subtract(num1, num2)
 
-    elif choice == '3':
+    if choice == '3':
         return multiply(num1, num2)
 
-    elif choice == '4':
+    if choice == '4':
         return divide(num1, num2)
 
-    else:
-        return "Invalid input"
+    return "Invalid input"
 
-calculator()
+# Call calculator with example arguments
+calculator('1', 2, 3)

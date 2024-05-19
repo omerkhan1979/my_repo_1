@@ -77,7 +77,7 @@ def calculator(choice, num1, num2):
     if choice == '3':
         return multiply(num1, num2)
 
-    if choice == '4':
+    if choice == '5':
         return divide(num1, num2)
 
     return "Invalid input"

@@ -1,5 +1,6 @@
 """
-This module provides basic calculator functionalities such as addition, subtraction, multiplication, and division.
+This module provides basic calculator functionalities such as addition,
+subtraction, multiplication, and division.
 """
 
 def add(x, y):

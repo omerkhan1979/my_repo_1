@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "null"
+    },
+    "time": {
+      "type": "string"
+    },
+    "statusCode": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "translation": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "url": {
+              "type": "string"
+            },
+            "html_url": {
+              "type": "string"
+            },
+            "source_id": {
+              "type": "integer"
+            },
+            "source_type": {
+              "type": "string"
+            },
+            "locale": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "outdated": {
+              "type": "boolean"
+            },
+            "draft": {
+              "type": "boolean"
+            },
+            "hidden": {
+              "type": "boolean"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            },
+            "updated_by_id": {
+              "type": "integer"
+            },
+            "created_by_id": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "url",
+            "html_url",
+            "source_id",
+            "source_type",
+            "locale",
+            "title",
+            "body",
+            "outdated",
+            "draft",
+            "hidden",
+            "created_at",
+            "updated_at",
+            "updated_by_id",
+            "created_by_id"
+          ]
+        }
+      },
+      "required": [
+        "translation"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "method",
+    "payload",
+    "time",
+    "statusCode",
+    "data"
+  ]
+}

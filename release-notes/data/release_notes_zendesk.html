@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Release Notes</title>
+    </head>
+    <body>
+        
+        <div>
+            <h2>23 Apr, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-7535
+                         <br>Product Area(s): Integration 
+                    </strong> <br> 
+                    <span>This change introduces the following improvements to Webhooks:<br/>
+- Webhook will not redeliver for 4xx class errors. Previously, we required retailers to ack messages that they didn&#39;t know about. With this change, they are now able to send us a 404 so that we do not continue to retry.<br/>
+- Webhook will retry to deliver failed webhooks only.<br/>
+- The redelivery from TOM UI will retry only the selected webhook.<br/>
+- A new webhook added in TOM UI will start receiving events within 5 minutes due to added caching.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>15 Apr, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>INBOUND-1227
+                         <br>Product Area(s): Decanting 
+                    </strong> <br> 
+                    <span>This change removes an unnecessary warning message a user receives when decanting after selecting Decant From Store. Users will no longer be presented with a warning message for products not belonging in the OSR (e.g. “We recommend this item go on the shop floor”) when they select Decant From Store if the product has a sleeping area outside of the OSR. They will continue to see this warning when they select Decant With PO or Decant without PO. This will remove an irrelevant warning and reduce alert fatigue for when warnings are actual useful and should be considered.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>09 Apr, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>INBOUND-3823
+                         <br>Product Area(s): Purchase Orders 
+                    </strong> <br> 
+                    <span>A new RESTful API is now available in Takeoff’s API Gateway that allows retailers to create Purchase Orders and access information about these Purchase Orders at any time. See the product release feature memo for more details.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>05 Apr, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>INBOUND-4309
+                         <br>Product Area(s): Decanting 
+                    </strong> <br> 
+                    <span>This change alters the text below the Decant from Store and Decant without PO tiles on the Decanting UI screen to explicitly recommend use of Decant from Store when transferring items from the shop floor.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>02 Apr, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-7505
+                         <br>Product Area(s): Order Management 
+                    </strong> <br> 
+                    <span>This increment will enhance the &quot;Details&quot; table in the Order Details page in TOM UI with the provided stop number for a given order.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>20 Mar, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-6390
+                         <br>Product Area(s): Order Management 
+                    </strong> <br> 
+                    <span>Enhances the existing &quot;Changes&quot; table in Order Details via TOM UI with the user ID that triggers the status transition, this includes when a user manually splits, serves or cancels an order via TOM UI.</span>
+                </p><p>
+                    <strong>OUTBOUND-4877
+                         <br>Product Area(s): Order Management 
+                    </strong> <br> 
+                    <span>Provides the ability to transition a single or set of orders from status “Picked”, “Packed” or “Staged” to status “Served”  via Order Search in TOM UI.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>12 Mar, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>INBOUND-4035
+                        <br>Version: RT12-24  <br>Product Area(s): Inventory Management, Inventory Management - Manual, Inventory Management - OSR 
+                    </strong> <br> 
+                    <span>A new field, shelf address, is being added to the Inventory Movements API response and the webhook event inventory-movement.created. This field will show the shelf address impacted by each transaction, which is already at the TOM-ID / shelf address level of detail.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>05 Mar, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-7263
+                         <br>Product Area(s): Order Management 
+                    </strong> <br> 
+                    <span>This change will update the &quot;routes&quot; filter in Order Search to dynamically pull the list of unique routes from all orders in our system; the dropdown will no longer include routes that might be configured but not utilized by existing orders. This will also allow to filter for orders with no route by selecting the &quot;--&quot; option in the dropdown.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>28 Feb, 2024</h2>
+            <br>
+            <section>
+                <h4>Fixed Bug(s)</h4>
+                <p>
+                    <strong>OUTBOUND-5557
+                         <br>Product Area(s): Inventory Management, Order Management 
+                    </strong> <br> 
+                    <span>This change will ensure that webhook events aren’t re-delivered on 40X errors from consumer API and that automatic and manual retries target only matching URLs.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>06 Feb, 2024</h2>
+            <br>
+            <section>
+                <h4>Fixed Bug(s)</h4>
+                <p>
+                    <strong>INBOUND-4184
+                        <br>Version: RT06-24  <br>Product Area(s): Purchase Orders 
+                    </strong> <br> 
+                    <span>This change will ensure the user’s email address is used on the Inbound page TOM UI and exposed via the Purchase Order Status change webhook when the purchase order is Created.</span>
+                </p><p>
+                    <strong>INBOUND-4166
+                         <br>Product Area(s): Decanting 
+                    </strong> <br> 
+                    <span>This change will ensure <tt>empty_positions</tt> properly reports a count of all empty totes for a given storage zone and <tt>free_positions</tt> properly reports all available positions in the OSR (inclusive of empty tote count) for use in the OSR Capacity Structured Dashboard in Looker.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>26 Jan, 2024</h2>
+            <br>
+            <section>
+                <h4>Fixed Bug(s)</h4>
+                <p>
+                    <strong>INBOUND-4222
+                         <br>Product Area(s): Inventory Management, Manual Put Away 
+                    </strong> <br> 
+                    <span>This change will ensure that users receive the “Product in OSR” notification during Manual Put Away and Inventory Adjustment when the item has a sleeping area of K irrespective of whether product has inventory in the manual area or not.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>17 Jan, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-6079
+                        <br>Version: RT04-24  <br>Product Area(s): Configuration Management UI (new field for 2023) 
+                    </strong> <br> 
+                    <span>This release adds the Site ID field to the &quot;MFC info&quot; section in TOM UI.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+        <div>
+            <h2>08 Jan, 2024</h2>
+            <br>
+            <section>
+                <h4>Improvement(s)</h4>
+                <p>
+                    <strong>OUTBOUND-6761
+                         <br>Product Area(s): Order Management 
+                    </strong> <br> 
+                    <span>This release adds new items availability split logic &#39;keep-all-lines-reserve-only-full&#39; that allows cartonization of partially or wholely out-of-stock items in the order without reservation.</span>
+                </p>
+            </section>
+            
+        </div>
+        
+    </body>
+</html>

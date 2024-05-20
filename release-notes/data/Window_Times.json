@@ -1,0 +1,199 @@
+[
+  {
+    "incident": {
+      "name": "Maintenance Window - Pinemelon",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-08T06:00:00.000Z",
+      "scheduled_until": "2024-05-08T08:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "qsqw74yh980z": "operational"
+      },
+      "component_ids": [
+        "wjcmb6bg3pb8"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - Wakefern",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-08T18:00:00.000Z",
+      "scheduled_until": "2024-05-08T20:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "l9qgpjf071hw": "operational"
+      },
+      "component_ids": [
+        "q8qsgx8xwpjs",
+        "06m87gvjcj4h",
+        "776ddlqgt29k"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - SMU",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-14T08:00:00.000Z",
+      "scheduled_until": "2024-05-14T10:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "pmg7x7gcds7y": "operational"
+      },
+      "component_ids": [
+        "lhv8ql1sgj7m"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - MAF",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-14T17:00:00.000Z",
+      "scheduled_until": "2024-05-14T19:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "c9d0v3r6h6q5": "operational"
+      },
+      "component_ids": [
+        "2y1zjd16vtfl",
+        "w5r7dn2gfm4v",
+        "cy691jc3jvxf"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - Woolworths",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-15T07:00:00.000Z",
+      "scheduled_until": "2024-05-15T09:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "rkjmq1jg9ls1": "operational"
+      },
+      "component_ids": [
+        "jxyw03hqplmh",
+        "ls5g4t51bgbm",
+        "yh613qkyfkjn",
+        "msfzqlctww47"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - Albertsons",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-16T04:00:00.000Z",
+      "scheduled_until": "2024-05-16T07:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "lpmznhxwjp2g": "operational"
+      },
+      "component_ids": [
+        "swj1y5tzzh2n",
+        "53w5jcjd9tw6",
+        "blxnnfvj88jm",
+        "fzqms7ln4qh1",
+        "fddk29p9bc5x",
+        "tbprn9tqhmfc",
+        "9xcvz83fl482",
+        "60z6l1mml2kx",
+        "8pp28bfl0mbz"
+      ],
+      "scheduled_auto_transition": true
+    }
+  },
+  {
+    "incident": {
+      "name": "Maintenance Window - Tienda-Inglesa",
+      "status": "scheduled",
+      "impact_override": "none",
+      "scheduled_for": "2024-05-09T05:00:00.000Z",
+      "scheduled_until": "2024-05-09T07:00:00.000Z",
+      "scheduled_remind_prior": true,
+      "scheduled_auto_in_progress": true,
+      "scheduled_auto_completed": true,
+      "metadata": {},
+      "deliver_notifications": true,
+      "auto_transition_deliver_notifications_at_end": true,
+      "auto_transition_deliver_notifications_at_start": true,
+      "auto_transition_to_maintenance_state": true,
+      "auto_transition_to_operational_state": true,
+      "body": "A Takeoff maintenance window is being planned for your organization. During this time, Takeoff services will be briefly offline. <br><h3>Release Notes</h3><br>Release notes and other documentation is available at the following location: https://takeoffhelp.zendesk.com/hc/en-us/categories/360003572857<br>If you have any questions, please reach out to your Technical Account Manager.",
+      "components": {
+        "h6ppc6x8181b": "operational"
+      },
+      "component_ids": [
+        "8l3rq1mmxjlc"
+      ],
+      "scheduled_auto_transition": true
+    }
+  }
+]

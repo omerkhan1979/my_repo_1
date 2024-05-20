@@ -1,0 +1,94 @@
+<html>
+<div>
+  <h2>20 May, 2022</h2>
+  <section>
+  <h3>Fixed Bug(s)</h3>
+  <p>
+    <strong>OUTBOUND-3473\n</strong><br><span> This resolves the bug where orders where
+    not re-enqueued when the "Clear Session" functionality was utilized. This
+    tool will now work as expected: after selecting "Clear Session", the order
+    is unassigned from the current picker and then re-enqueued into the manual
+    queue so that another user is able to assign/pick the order. </span>
+  </p>
+  </section>
+  <section>  
+  <h3>Improvement(s)</h3>
+  <p>
+    <strong>OUTBOUND-3341<br>Version: RT52-22<br>Product Area(s): Dispatch</strong><br><span> A new configuration around the split mechanism
+    has been created in TSC to improve the creation of new environments. This
+    method no longer requires creating a Pull Request (PR)/deployment. Additionally
+    as part of this increment, orders created with no recognized/in-stock lines
+    will be moved to `served` status immediately after the order splits. </span>
+  </p>
+  <p>
+    <strong>OUTBOUND-3129</strong><br><span> This new shipping label display was configured
+    for specifically for SMU (LAM001) based on the clients feedback. The main
+    changes are:<br>
+    - Removed concatenation `DE+zone-id+zone-seq-num`<br>
+    - Reduced emphasis on the spoke's ID<br>
+    - Increased emphasis on the route's ID<br>
+    - The route's stop number was added under the route's ID<br>
+    - The date format is DD/MM/YYYY<br>
+    - The order's ID length is maxed to 16 characters </span>
+  </p>
+  <p>
+    <strong>INC-769</strong><br><span> This feature relates to the case, when new user
+    tries to signin to TOM, but had not yet received a role. Instead of a page
+    with error, it sees a nice page explaining that it must be granted a role
+    to use TOM UI. </span>
+  </p>
+  <p>
+    <strong>INBOUND-2281</strong><br><span> Starting in this release, as part of the
+    Known Address Infrastructure (KAI) project, we have added additional logic
+    to ensure manual area adjustments only occur on known addresses within the
+    MFC. Please note, this logic is hidden behind a Feature Flag coupled with
+    the KAI project. </span>
+  </p>
+</div>
+<div>
+  <h2>28 Apr, 2022</h2>
+  <section>
+  <h3>Improvement(s)</h3>
+  <p>
+    <strong>TD-2165</strong><br><span> This is a test description with formatting and
+    here is a
+    <a href="/hc/en-us/articles/360017889577" target="_self">link to an article</a>. </span>
+  </p>
+    </section>
+</div>
+<div>
+  <h2>22 Feb, 2022</h2>
+  <section>
+  <h3>Improvement(s)</h3>
+  <p>
+    <strong>INBOUND-1026</strong><br><span> This release resolves an issue of failure
+    emailing DSD purchase orders which was caused added non-unique attributes
+    for a long email distribution list, and improvement emailing with full item
+    description. </span>
+  </p>
+    </section>
+</div>
+<div>
+  <h2>21 Feb, 2022</h2>
+  <section>
+  <h3>Improvement(s)</h3>
+  <p>
+    <strong>OUTBOUND-1150</strong><br><span> This increment will provide the ability
+    to switch from Service contracts to Order wave management by changing the
+    TSC configuration.<br>
+    Additionally, it will impact order status change from Draft to Queued immediately
+    during manual Split avoiding being at status New until the cutoff time.<br>
+    Orders that were created according to SCS before deployment will have status
+    change from Draft -&gt; New -&gt; Queued immediately at cutoff time. </span>
+  </p>
+    </section>
+  <section>
+  <h3>Fixed Bug(s)</h3>
+  <p>
+    <strong>OUTBOUND-3054</strong><br><span> In this release, orders that get canceled
+    through TOM-UI or via our support team will send status updates through the
+    integration channel” or something along those lines. </span>
+  </p>
+    </section>
+</div>
+</html>

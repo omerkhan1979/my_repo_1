@@ -1,0 +1,233 @@
+{
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "77233",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/77233",
+      "key": "INBOUND-99555",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10100",
+          "id": "10100",
+          "description": "A user story. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10802,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "By this increment, we will release a new version of the Order details page in TOM UI. This new display of the Order Details page ensures order information is cleaned up to only view the information needed for the MFC.\n\nOnce released, users will see a purple banner on the page that will give them an option to direct them to the new Order Details page. The user's selection is then stored in the user's profile so next time the new Order Details page will automatically appear without needed to click the banner.\n\nOnce on the new Order Details page, the user is still able to go back to the current/existing Order Details display by selecting the purple banner.",
+        "fixVersions": [
+          {
+            "name": "RT52-22:[22-01-02]"
+          },
+          {
+            "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "77293",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/77293",
+      "key": "PROD-12345",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10204",
+          "id": "10204",
+          "description": "Bug. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10802,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "PROD-12345 Release Notes Description.",
+        "fixVersions": [
+          {
+            "name": "RT52-22:[22-01-02]"
+          },
+          {
+            "name": "RT51-21:[22-01-02]"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "76151",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/76151",
+      "key": "OUTBOUND-3199",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10330",
+          "id": "10330",
+          "description": "",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10794?size=medium",
+          "name": "Dev Task",
+          "subtask": false,
+          "avatarId": 10794,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "By releasing this increment, we will remove from codebase 4 feature flags used for ISPS 1.0 as clients get migrated to ISPS 2.0:\n  - inv-1983-check-available-items-before-creating-pick-list \n  - inv-1984-isps-consider-oos-reg-items-too \n  - inv-2056-recalculate-delta-batch \n  - inv-2058-reg-items-should-be-grouped-by-aisle-number-if-available \nISPS 2.0 has this logic embedded by default",
+        "fixVersions": [
+          {
+            "name": "RT52-22:[22-01-02]"
+          },
+          {
+            "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "74783",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/74783",
+      "key": "OUTBOUND-3054",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10204",
+          "id": "10204",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10792?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10792,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "In this release, orders that get canceled through TOM-UI or via our support team will send status updates through the integration channel\u201d or something along those lines.",
+        "fixVersions": [
+          {
+            "name": "RT50-22:[22-01-17]"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "74783",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/74784",
+      "key": "OUTBOUND-3999",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10204",
+          "id": "10204",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/74784/10792?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10792,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "OUTBOUND-3999 -  through TOM-UI or via our support team will send status updates through the integration channel\u201d or something along those lines.",
+        "fixVersions": [
+          {
+            "name": "RT40-22:[22-01-17]"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "76155",
+      "self": "https://takeofftech.atlassian.net/rest/api/2/issue/76155",
+      "key": "OUTBOUND-3299",
+      "fields": {
+        "issuetype": {
+          "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10330",
+          "id": "10330",
+          "description": "",
+          "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10794?size=medium",
+          "name": "Dev Task",
+          "subtask": false,
+          "avatarId": 10794,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "By releasing this increment, we will remove from codebase 4 feature flags used for ISPS 1.0 as clients get migrated to ISPS 2.0:\n  - inv-1983-check-available-items-before-creating-pick-list \n  - inv-1984-isps-consider-oos-reg-items-too \n  - inv-2056-recalculate-delta-batch \n  - inv-2058-reg-items-should-be-grouped-by-aisle-number-if-available \nISPS 2.0 has this logic embedded by default",
+        "fixVersions": [
+          {
+            "name": "RT48-21:[21-11-17]"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "74566",
+      "self": "https://***/rest/api/2/issue/74566",
+      "key": "INC-568",
+      "fields": {
+        "customfield_10589": null,
+        "issuetype": {
+          "self": "https://***/rest/api/2/issuetype/10100",
+          "id": "10100",
+          "description": "A user story. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://***/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10802,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "This change impacts TOM UI login flow.\n\nCurrently a user must choose a role and \"location\" to login.\n\nAfter this change, a user will not need to choose role and MFC every time it loggs into TOM UI. \n\n - The UI pages will be rendered based on ALL roles available to the user\n - In case a user has access to multiple MFCs - it will automatically login to the first MFC from its permissions list. And later, it can choose other MFCs to work with by clicking to the MFC in top-right corner\n - There will be no \"spokes\" in the dropdown, a user will see only MFCs in the drop-down (much shorter and more accurate list)",
+        "fixVersions": [
+          {
+            "self": "https://***/rest/api/2/version/10997",
+            "id": "10997",
+            "description": "",
+            "name": "Product",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://***/rest/api/2/version/11136",
+            "id": "11136",
+            "name": "RT06-22:[22-02-09]",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2022-10-11"
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "74566",
+      "self": "https://***/rest/api/2/issue/74566",
+      "key": "PROD-6789",
+      "fields": {
+        "customfield_10589": null,
+        "issuetype": {
+          "self": "https://***/rest/api/2/issuetype/10100",
+          "id": "10100",
+          "description": "A user story. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://***/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10802,
+          "hierarchyLevel": 0
+        },
+        "customfield_10372": "PROD-6789 Notes",
+        "fixVersions": [
+          {
+            "self": "https://***/rest/api/2/version/10997",
+            "id": "10997",
+            "description": "",
+            "name": "Product",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://***/rest/api/2/version/11136",
+            "id": "11136",
+            "name": "RT16-22:[22-04-09]",
+            "archived": false,
+            "released": true
+          }
+        ]
+      }
+    }
+  ],
+  "quantity": 7
+}

@@ -1,0 +1,10 @@
+Client,Takeoff_Weeks,Primary_Window,DAY_OF_WEEK,Time_Zone,Component ID,Sub-component ID
+test,Even,3AM-5AM,WED,EST,xgmgg4dxzl5z,3wjz7zbt1w11r
+test-fake-w-ignore,Even,4:00PM-6:00PM,WED,"Australia/Melbourne GMT+11",xgmgg4dxzl5z,ps66jfhzdl14
+test-fake-s-ignore,EVEN,4aM-6am,TUES,America/Santiago,xgmgg4dxzl5z,xgmgg4dxzl5z
+test-fake-m-ignore,Even,02:00am-4:00am,TUES,GMT+4 Asia/Dubai,xgmgg4dxzl5z,3wjz7zbt1w11r
+test-fake-a-ignore,Even,3:00PM-6:00PM,WED,US/Pacific,xgmgg4dxzl5z,"3wjz7zbt1w11r xgmgg4dxzl5z"
+test-fake-p-ignore,Even,10:00PM-12:00AM,TUES,MST,mzvd0bhglzpq,1r8gxzqq3ljp
+test-fake-1200AM-ignore,Even,12:00AM-2:00AM,WED,EST,mzvd0bhglzpq,1r8gxzqq3ljp
+test-fake-1200PM-ignore,Even,12PM-2PM,WED,EST,mzvd0bhglzpq,1r8gxzqq3ljp
+test-fake-end12PM-ignore,Even,10:00AM-12:00PM,THUR,Asia/Dubai,mzvd0bhglzpq,1r8gxzqq3ljp

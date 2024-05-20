@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Release Notes</title>
+    </head>
+    <body>
+        {% for date in output_item %}
+        <div>
+            <h2>{{date}}</h2>
+            {% for key in output_item[date] %}<br>
+            <section>
+                <h4>{{key}}</h4>
+                {% for issue in output_item[date][key] %}<p>
+                    <strong>{{issue.key}}
+                        {% if issue.fix_version is not none %}<br>Version: {{issue.fix_version}} {% endif %} {% if issue.product_area is not none %}<br>Product Area(s): {{issue.product_area}} {% endif %}
+                    </strong> <br> 
+                    <span>{{issue.release_notes_desc}}</span>
+                </p>{% endfor %}
+            </section>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </body>
+</html>

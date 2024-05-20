@@ -1,0 +1,153 @@
+{
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "77466",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/77466",
+            "key": "OUTBOUND-3300",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10100",
+                    "id": "10100",
+                    "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+                    "name": "Story",
+                    "subtask": false,
+                    "avatarId": 10802,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id",
+                "fixVersions": [
+                    {
+                        "name": "RT52-22:[22-01-02]"
+                    },
+                    {
+                        "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+                    }
+                ]
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "76151",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/76151",
+            "key": "OUTBOUND-3199",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10330",
+                    "id": "10330",
+                    "description": "",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10794?size=medium",
+                    "name": "Dev Task",
+                    "subtask": false,
+                    "avatarId": 10794,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "By releasing this increment, we will remove from codebase 4 feature flags used for ISPS 1.0 as clients get migrated to ISPS 2.0:\n  - inv-1983-check-available-items-before-creating-pick-list \n  - inv-1984-isps-consider-oos-reg-items-too \n  - inv-2056-recalculate-delta-batch \n  - inv-2058-reg-items-should-be-grouped-by-aisle-number-if-available \nISPS 2.0 has this logic embedded by default",
+                "fixVersions": [
+                    {
+                        "name": "RT52-22:[22-01-02]"
+                    },
+                    {
+                        "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+                    }
+                ]
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "74783",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/74783",
+            "key": "OUTBOUND-3054",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10204",
+                    "id": "10204",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10792?size=medium",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10792,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "In this release, orders that get canceled through TOM-UI or via our support team will send status updates through the integration channel\u201d or something along those lines.",
+                "fixVersions": [
+                    {
+                        "name": "RT52-22:[22-01-02]"
+                    },
+                    {
+                        "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+                    }
+                ]
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "59141",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/59141",
+            "key": "OUTBOUND-1150",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10100",
+                    "id": "10100",
+                    "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+                    "name": "Story",
+                    "subtask": false,
+                    "avatarId": 10802,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "This increment will provide the ability to switch from Service contracts to Order wave management by changing the TSC configuration. \nAdditionally, it will impact order status change from Draft to Queued  immediately during manual Split avoiding being at status New until the cutoff time. \nOrders that were created according to SCS before deployment will have status change from Draft -> New -> Queued immediately at cutoff time",
+                "fixVersions": [
+                    {
+                        "name": "RT52-22:[22-01-02]"
+                    },
+                    {
+                        "name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"
+                    }
+                ]
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "73393",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/73393",
+            "key": "INC-485",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10330",
+                    "id": "10330",
+                    "description": "",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10794?size=medium",
+                    "name": "Dev Task",
+                    "subtask": false,
+                    "avatarId": 10794,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "This release resolves an issue that may cause duplicate items to be added to Purchase Orders (POs).",
+                "fixVersions": [{"name": "RT52-22:[22-01-02]"},{"name":"By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"}]
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "69468",
+            "self": "https://takeofftech.atlassian.net/rest/api/2/issue/69468",
+            "key": "INBOUND-1026",
+            "fields": {
+                "issuetype": {
+                    "self": "https://takeofftech.atlassian.net/rest/api/2/issuetype/10100",
+                    "id": "10100",
+                    "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                    "iconUrl": "https://takeofftech.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10802?size=medium",
+                    "name": "Story",
+                    "subtask": false,
+                    "avatarId": 10802,
+                    "hierarchyLevel": 0
+                },
+                "customfield_10372": "This release resolves an issue of failure emailing DSD purchase orders which was caused added non-unique attributes for a long email distribution list, and improvement emailing with full item description",
+                "fixVersions": [{"name":"RT52-22:[22-01-02]"},{"name": "By releasing this increment, we'll add the ability to configure items availability split logic on MFC level rather than having it on a global level (per environment) using ITEMS_AVAILABILITY_MFC config so that 'full', 'partial-full', or 'none' spit strategy can be set up per location-id"}]
+            }
+        }
+    ],
+    "quantity": 6
+}

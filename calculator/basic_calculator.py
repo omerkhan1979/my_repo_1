@@ -31,7 +31,7 @@ def subtract(x, y):
 
 def multiply(x, y):
     """
-    Multiply two numbers.
+    Multiply two numbers..
 
     Args:
         x (int): The first number.

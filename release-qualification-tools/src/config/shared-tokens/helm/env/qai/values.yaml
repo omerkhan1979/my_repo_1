@@ -1,0 +1,3 @@
+common: # common values for qai environments across all retailers
+  LAUNCHDARKLY_SDK_KEY: c2RrLWY0YTRiM2M4LTMzYmItNDk5YS1hYWRmLTI3MGU4NDgyYWU2Nw==
+  LAUNCHDARKLY_CLIENT_SDK_KEY: NWQ5MzU0Njc3ZjkyYTgwODlmNjE2ZWFi

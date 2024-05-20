@@ -1,0 +1,71 @@
+[
+  {
+    "itemId": "960140794",
+    "priceLookUpCodes": [],
+    "itemDescription": {
+      "customerFriendlyDescription": "BOARS HEAD PECORINO ROMANO WHEEL",
+      "internetItemDescription": "Boars Head Cheese Pecorino Romano Wheel 0.50 LB"
+    },
+    "corporateItemCodes": [
+      "82041771"
+    ],
+    "barcodes": [
+      "004242115033",
+      "021382300000"
+    ],
+    "itemDimensions": {
+      "itemWeight": 1,
+      "averageWeight": 0.5,
+      "itemWeightUOM": "LB",
+      "averageWeightUOM": "LB",
+      "sizeUOMCode": "LB"
+    },
+    "itemHierarchy": {
+      "groupCode": "82",
+      "groupDescription": "TRADITIONAL DELI",
+      "categoryCode": "4",
+      "categoryDescription": "DELI CHEESE",
+      "classCode": "15",
+      "classDescription": "DELI CHEESE TABLE",
+      "retailSectionCode": "309",
+      "retailSectionDescription": "DELICATESSEN",
+      "subClassCode1": "31",
+      "subClassDescription1": "DELI CHEESE TABLE ITALIAN",
+      "subClassCode2": "0",
+      "subClassDescription2": "DELI CHEESE TABLE ITALIAN"
+    },
+    "itemStorage": {
+      "requiresExpirationDate": true,
+      "isHeavy": false,
+      "isCrushable": false,
+      "isBulk": false,
+      "isStackable": false,
+      "isCaseStorage": false,
+      "isGlassPackaged": false,
+      "isVertical": false,
+      "isSpecificChilled": false,
+      "isRequiresPlasticBag": false,
+      "isChemical": false,
+      "isRaw": false,
+      "isHazardous": false
+    },
+    "image": "https://images.albertsons-media.com/is/image/ABS/960140794",
+    "storeItemInfo": [
+      {
+        "storeNumber": "0068",
+        "primaryUpcId": "021382300000",
+        "ringTypeCode": 1,
+        "temperatureZone": "CHILLED",
+        "mfcTemperatureZone": [],
+        "barcodes": [
+          "004242115033",
+          "021382300000"
+        ],
+        "rogCode": "SNCA",
+        "itemType": "FLO",
+        "sourcingAttributes": {},
+        "procureForMFC": false
+      }
+    ]
+  }
+]

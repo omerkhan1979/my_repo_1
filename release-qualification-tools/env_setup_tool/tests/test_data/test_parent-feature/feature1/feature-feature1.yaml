@@ -1,0 +1,7 @@
+key: feature1
+title: feature1
+description: feature1_desc
+configs:
+  tsc:
+    flow_racks:
+      path: tsc-flow-racks-base.yaml

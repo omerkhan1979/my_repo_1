@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# pre-commit
+# This hook verifies that the branch follows the naming convention".
+
+source "$(git rev-parse --show-toplevel)/.git/hooks/helpers.sh"
+
+regex="^((${branch_prefix_re})\/)?$jira_key_re([_-][a-zA-Z0-9]+)*$"
+local_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+red='\033[0;31m'
+default='\033[0m'
+error_msg="${red}Aborting commit. Please follow the branch naming convention:
+    (feature/)JIRA-###
+To fix this issue, please use:
+    git branch -m <new-name>
+${default}"
+
+if [[ ! $local_branch =~ $regex ]]; then
+  echo "$error_msg" >&2
+  exit 1
+fi
+exit 0

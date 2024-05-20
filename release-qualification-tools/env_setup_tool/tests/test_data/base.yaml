@@ -1,0 +1,32 @@
+key: base_key
+title: base_title
+description: base_description
+configs:
+  sleeping_area_rules:
+    path: sleeping-area-rules-base.yaml
+  tsc:
+    flow_racks:
+      path: tsc-locations-base.yaml
+    spokes:
+      path: tsc-config-items-base.yaml
+    locations:
+      path: tsc-locations-base.yaml
+    tote_types:
+      path: tsc-locations-base.yaml
+    staging_config:
+      path: tsc-config-items-base.yaml
+    staging_locations:
+      path: tsc-locations-base.yaml
+    routes:
+      path: tsc-locations-base.yaml
+    config_items:
+      path: tsc-config-items-base.yaml
+  ims:
+    addresses:
+      path: addresses-base.yaml
+    reason_codes:
+      path: ims-reason-codes.yaml
+  product_catalog:
+    path: product-catalog-base.json
+  waves:
+    path: waves-base.yaml

@@ -1,0 +1,69 @@
+[
+  {
+    "tom-id": "4071505",
+    "barcodes": [
+      "4071505"
+    ],
+    "ecom-ids": [
+      "mafuae::1299381"
+    ],
+    "name": "Kuwait Flour Mills & Bakeries Co. Spaghetti 400gx3",
+    "temperature-zone": [
+      "ambient"
+    ],
+    "retail-item": {
+      "weight": {
+        "unit-of-measure": "kg",
+        "weight": 0.5
+      },
+      "dimensions": {
+        "unit-of-measure": "cm",
+        "height": 10.0,
+        "width": 12.0,
+        "length": 0.0
+      }
+    },
+    "case-item": {},
+    "is-weight-variable-on-webcart": false,
+    "is-weight-variable-on-receipt": false,
+    "image": "https://qf7s26sxazr7uwqlogrl311.blob.core.windows.net/sys-master-root/hca/h6b/9225120481310/1299381_main.jpg_480Wx480H",
+    "requires-expiration-date": true,
+    "categories-hierarchy": [
+      {
+        "name": "Spaghetti",
+        "id": "F1701222"
+      },
+      {
+        "name": "Pasta",
+        "id": "F1701220"
+      },
+      {
+        "name": "Rice, Pasta & Pulses",
+        "id": "F1701200"
+      },
+      {
+        "name": "Food Cupboard",
+        "id": "F1700000"
+      }
+    ],
+    "location-info": [
+      {
+        "store-id": "D02",
+        "department": {
+          "id": 1,
+          "name": "225"
+        },
+        "mfc-stop-buy": false,
+        "mfc-stop-fulfill": false,
+        "supplier-info": [
+          {
+            "supplier-id": "111100",
+            "supplier-type": "DC",
+            "supplier-keep-buy": false
+          }
+        ],
+        "item-type": "REG"
+      }
+    ]
+  }
+]

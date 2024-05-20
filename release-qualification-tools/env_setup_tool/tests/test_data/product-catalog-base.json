@@ -1,0 +1,90 @@
+[
+  {
+    "tom-id": "00010000000011",
+    "barcodes": [
+      "00010000000016"
+    ],
+    "ecom-ids": [
+      "0001000000001"
+    ],
+    "image": "https://storage.googleapis.com/ie-common-items/1.jpg",
+    "name": "TAKEOFF heavy RAW chilled parent-1",
+    "description": "TAKEOFF frozen",
+    "temperature-zone": [
+      "chilled"
+    ],
+    "case-item": {
+      "weight": {
+        "unit-of-measure": "lb",
+        "weight": 300
+      },
+      "dimensions": {
+        "unit-of-measure": "in",
+        "height": 9.6,
+        "width": 16,
+        "length": 23
+      },
+      "case-count": 1
+    },
+    "retail-item": {
+      "weight": {
+        "unit-of-measure": "lb",
+        "weight": 100
+      },
+      "dimensions": {
+        "unit-of-measure": "in",
+        "height": 1,
+        "width": 1,
+        "length": 1
+      }
+    },
+    "categories-hierarchy": [
+      {
+        "name": "TAKEOFF",
+        "id": "10"
+      },
+      {
+        "name": "TAKEOFF PRODUCTS",
+        "id": "1010"
+      },
+      {
+        "name": "TAKEOFF FAMILY",
+        "id": "101010"
+      },
+      {
+        "name": "TAKEOFF SERVICE",
+        "id": "10101010"
+      },
+      {
+        "name": "TAKEOFF QUALITY",
+        "id": "1010101010"
+      }
+    ],
+    "feature-attributes": {
+      "is-raw": true,
+      "is-heavy": true,
+      "is-chemical": false
+    },
+    "location-info": [
+      {
+        "store-id": "0068",
+        "department": {
+          "id": 226,
+          "name": "TAKEOFF frozen"
+        },
+        "mfc-stop-buy": false,
+        "mfc-stop-fulfill": false,
+        "supplier-info": [
+          {
+            "supplier-id": "999",
+            "supplier-name": "TAKEOFF SUPPLIER",
+            "supplier-type": "DC",
+            "supplier-product-id": "00001",
+            "supplier-keep-buy": true
+          }
+        ],
+        "item-type": "REG"
+      }
+    ]
+  }
+]

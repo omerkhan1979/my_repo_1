@@ -1,0 +1,20 @@
+- can-add: true
+  can-remove: true
+  code: CC
+  description: Count. Adjustment of stock as a result of any type of count.
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Count
+  parent-code: ''
+  sort-order: 10
+- can-add: false
+  can-remove: true
+  code: CD
+  description: Charitable donation
+  external-code: '4_8'
+  internal-only: false
+  movement-type: adjustment
+  name: Charity
+  parent-code: ''
+  sort-order: 20

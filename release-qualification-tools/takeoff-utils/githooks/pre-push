@@ -1,0 +1,45 @@
+#!/bin/bash
+
+red=$'\e[1;31m'
+end=$'\e[0m'
+
+jira_key_re="[A-Z]{2,8}-[0-9]{1,8}"
+host="calyx-api-staging.tom.takeoff.com"
+url="https://$host/api/v1/jira/verify-commits/"
+
+if [[ "$1" == "azure" ]]
+then
+	latest_commit=$(git log origin/master | head -1 | awk '{print $2}')
+	echo $latest_commit
+	commits=$(git cherry -v $latest_commit)
+else
+	commits=$(git cherry -v origin/HEAD)
+fi
+
+IFS=$'\n'$'\r'
+
+brackets='\\"'
+
+commits=$(echo "$commits" | sed "s/\"/$brackets/g")
+echo $commits
+
+validation=$(curl -s -w "\n%{http_code}" -X POST "$url" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"commits\": \"$commits\"}" | {
+    read body
+    read code
+    echo "status_code=$code"
+    echo $body
+})
+
+success=$(echo $validation | grep -Eo 'status_code=... ')
+success="${success:12:3}"
+
+if [ "$success" == "200" ]; then
+	echo "OK"
+	exit 0
+else
+    message=$(echo "$validation" | grep -Eo '"message":".*?"')
+    message="${red}${message:11}${end}"
+	printf "${message}\n"
+	exit 1
+fi
+

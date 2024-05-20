@@ -1,0 +1,86 @@
+[
+  {
+    "tom-id": "20003330_EA",
+    "barcodes": [
+      "00078895700022"
+    ],
+    "name": "LKK HOI SIN SAUCE",
+    "temperature-zone": [
+      "chilled"
+    ],
+    "image": "https://assets.shop.loblaws.ca/products/20003330/b1/en/front/20003330_front_a02.png",
+    "retail-item": {
+      "weight": {
+        "unit-of-measure": "KG",
+        "weight": 0.65
+      },
+      "dimensions": {
+        "unit-of-measure": "CM",
+        "height": 29.616711441241808,
+        "width": 6.989,
+        "length": 6.989
+      }
+    },
+    "case-item": {
+      "weight": {
+        "unit-of-measure": "KG",
+        "weight": 7.9
+      },
+      "dimensions": {
+        "unit-of-measure": "CM",
+        "height": 12.199,
+        "width": 21.719,
+        "length": 29.979
+      },
+      "case-count": "12"
+    },
+    "shelf-life": 15,
+    "is-weight-variable-on-receipt": false,
+    "is-weight-variable-on-po": false,
+    "requires-expiration-date": false,
+    "categories-hierarchy": [
+      {
+        "name": "Centre of Store",
+        "id": "M10"
+      },
+      {
+        "name": "Grocery",
+        "id": "M1021"
+      },
+      {
+        "name": "Condiments",
+        "id": "M102109"
+      },
+      {
+        "name": "Condiments",
+        "id": "M10210901"
+      }
+    ],
+    "feature-attributes": {
+      "is-bulk": false,
+      "is-hazardous": false,
+      "is-raw": false,
+      "is-chemical": false,
+      "is-requires-plastic-bag": false
+    },
+    "location-info": [
+      {
+        "supplier-info": [
+          {
+            "supplier-id": "1",
+            "supplier-type": "Orderable DSD",
+            "supplier-keep-buy": true
+          }
+        ],
+        "store-id": "3435",
+        "department": {
+          "id": "M10",
+          "name": "Centre of Store"
+        },
+        "mfc-stop-buy": true,
+        "mfc-stop-fulfill": false,
+        "item-type": "REG"
+      }
+    ]
+  }
+]

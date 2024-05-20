@@ -1,0 +1,7 @@
+key: feature1-1
+title: feature1-1
+description: feature1-1_desc
+configs:
+  tsc:
+    locations:
+      path: tsc-locations-base.yaml

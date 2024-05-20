@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# Prepares the git commit message by trying to add the branch Jira key to the
+# beginning of the message.
+# Partially cribbed from bartoszmajsak/prepare-commit-msg.sh
+#   https://gist.github.com/bartoszmajsak/1396344
+
+commit_msg_file=$1
+commit_source=$2
+sha1=$3
+
+# For simplicity, any arguments to commit skip this helper.
+if [[ -n $commit_source && $commit_source != "merge" ]] ||
+  [[ -z $(command -v grep) ]] ||
+  [[ -z $(command -v cp) ]] ||
+  [[ -z $(command -v mv) ]] ||
+  [[ -z $(command -v cat) ]]; then
+  exit 0
+fi
+
+source "$(git rev-parse --show-toplevel)/.git/hooks/helpers.sh"
+
+# This way you can customize which branches should be skipped when
+# prepending commit message.
+if [ -z "$branches_to_skip" ]; then
+  branches_to_skip=(master develop)
+fi
+
+# There is no branch name in a detached HEAD state, such as during interactive
+# rebase.
+branch_name="$(get_current_branch)"
+
+if [[ -n $branch_name ]]; then
+  branch_type="${branch_name##*/}"
+  branch_excluded=$(printf "%s\n" "${branches_to_skip[@]}" | grep -c "^$branch_type$")
+
+  jira_key=$(get_jira_key_from_branch "$branch_name")
+  key_in_commit=$(grep -c "$(make_commit_message_jira_re $jira_key)" "$commit_msg_file")
+
+  if [[ -n $jira_key ]] &&
+    ! [[ $branch_excluded -eq 1 ]] &&
+    ! [[ $key_in_commit -ge 1 ]]; then
+    cp "$commit_msg_file" "$commit_msg_file.bak" &&
+      echo -n "$jira_key: " | cat - "$commit_msg_file" >"$commit_msg_file.tmp" &&
+      mv "$commit_msg_file.tmp" "$commit_msg_file"
+  fi
+fi

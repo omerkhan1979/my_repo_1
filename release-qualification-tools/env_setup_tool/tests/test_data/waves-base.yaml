@@ -1,0 +1,9 @@
+'9999':
+  - cutoff_time: '00:30'
+    from_time: '01:00'
+    to_time: '11:59'
+    schedules: [ ]
+  - cutoff_time: '04:36'
+    from_time: '12:00'
+    to_time: '00:59'
+    schedules: [ ]

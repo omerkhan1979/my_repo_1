@@ -1,0 +1,36 @@
+!ConfigurationSet
+config_items:
+  env:
+  - name: mfc
+    value: 999
+  999:
+    - value: value
+      name: name2
+flow_racks:
+  flow-racks:
+    '1': Hello
+  location-code-tom: 9999
+locations:
+  location-id: 1
+  location-code-tom: 9999
+  location-service-info:
+    desctext: some text Test
+  mfc-ref-code: mfc
+spokes:
+src_routes:
+  routes:
+  - mfc-tom-code: 9999
+    route-code: codeRoute
+staging_config:
+  staging-configurations:
+  - mapped-routes:
+    - code: codeRoute
+      last-modified-at: '2023-05-15T22:14:10Z'
+      type: ROUTE
+    staging-location-code: 0069H010011A
+staging_locations:
+  staging-locations:
+  - default: false
+    mfc-tom-code: 9999
+    staging-location-code: 0405H010011A
+tote_types:

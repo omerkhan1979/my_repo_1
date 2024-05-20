@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# commit-msg
+# This hook checks that the commit starts with prefix "JIRA-*: ".
+
+commit_msg_file="$1"
+
+source "$(git rev-parse --show-toplevel)/.git/hooks/helpers.sh"
+
+current_branch="$(get_current_branch)"
+jira_key=$(get_jira_key_from_branch "$current_branch")
+
+regex="$(make_commit_message_jira_re $jira_key)"
+
+red='\033[0;31m'
+default='\033[0m'
+error_msg="${red}Aborting commit. Please follow the commit message pattern:
+    JIRA-*: Your message
+${default}"
+
+if ! grep -qE "$regex" "$commit_msg_file"; then
+  echo "$error_msg" >&2
+  exit 1
+fi
+
+if grep -qE "^(JIRA|[X]+)" "$commit_msg_file"; then
+  echo "${red}Aborting commit. Please use a real JIRA ticket!${default}" >&2
+  exit 1
+fi

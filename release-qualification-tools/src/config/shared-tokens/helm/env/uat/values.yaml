@@ -1,0 +1,3 @@
+common: # common values for uat environments across all retailers
+  LAUNCHDARKLY_SDK_KEY: c2RrLTlhZGMwOWQ0LTE2ZWYtNDlkNS1hZTM4LTFkNzAwMTYyMDk5OA==
+  LAUNCHDARKLY_CLIENT_SDK_KEY: NWQ5MzU0NTU3ZjkyYTgwODlmNjE2ZTk0

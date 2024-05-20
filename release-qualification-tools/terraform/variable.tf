@@ -1,0 +1,6 @@
+variable "region" {
+  default = "Region to deploy the Docker Container"
+}
+variable "imagename" {
+  default = "Docker image name"
+}

@@ -1,0 +1,3 @@
+common: # common values for dev environments across all retailers
+  LAUNCHDARKLY_SDK_KEY: c2RrLTQ1Y2M5NWJjLWJiMGUtNDA1MS04M2JkLTE5NzljMTA3OGNjMw==
+  LAUNCHDARKLY_CLIENT_SDK_KEY: NWQ5MzU0OGNhZTc5OWUwOGE0Mzk2Zjdl

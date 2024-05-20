@@ -1,0 +1,11 @@
+# These are some dummy default values, encoded to base64, they should be overridden for every env/retailer
+global:
+  env: internal
+
+common:
+  LAUNCHDARKLY_SDK_KEY: Zm9vYmFyX3Rva2Vu # foobar_token in base64
+  LAUNCHDARKLY_CLIENT_SDK_KEY: ZGVmYXVsdF9MQVVOQ0hEQVJLTFlfQ0xJRU5UX1NES19LRVk= # default_LAUNCHDARKLY_CLIENT_SDK_KEY in base 64
+  PACT_BROKER_TOKEN: c3E1UnF4WU9ueC0zdzNoaUpyZVd0Zw== # pact token in base64
+retailer_specific:
+  SERVICE_WORKER_TOKEN: ZHVtbXlfdG9rZW4=       # dummy_token in base64
+  PRINTNODE_USER: ZHVtbXlfcHJpbnRub2RlX3VzZXI= # dummy_printnode_user in base64

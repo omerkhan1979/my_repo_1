@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "Release Qualification Tests (RQT)"
+version = "1.0.0"
+description = "Scenario tests for the inbound and outbound flows"
+authors = ["team-chamaeleon <team-chamaeleon@takeoff.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+exrex = "^0.11.0"
+pytest = "8.0.0"
+pytest-xdist = "^3.5.0"
+pytest-html = "^4.1.1"
+python-dateutil = "^2.8.2"
+emoji = "^2.10.1"
+PyYAML = "6.0.1"
+gtin = "^1.3.1649173518"
+pysftp = "^0.2.9"
+google-cloud-storage = "2.14.0"
+pyjokes = "^0.6.0"
+pycryptodome = "^3.20.0"
+allure-pytest = "^2.13.2"
+google-cloud-pubsub = "^2.19.1"
+argparse = "^1.4.0"
+requests-mock = "^1.11.0"
+mock = "^5.1.0"
+dacite = "^1.8.1"
+google-cloud-logging = "^3.9.0"
+fastapi = "^0.109.2"
+uvicorn = "^0.27.0.post1"
+pytest-asyncio = "^0.23.5a0"
+aiohttp = "3.9.3"
+dataclasses-json = "^0.6.4"
+simplejson = "^3.19.2"
+python-git = "^2018.2.1"
+gitpython = "^3.1.41"
+pytz = "^2024.1"
+trcli = "^1.9.5"
+typer = "^0.9.0"
+typing-extensions = "^4.9.0"
+pytest-bdd = "^7.0.1"
+poetry-types = "^0.5.0"
+types-dataclasses = "^0.6.6"
+pytest-stub = "^1.1.0"
+types-requests = "^2.31.0.20240311"
+types-pyyaml = "^6.0.12.20240311"
+google-cloud-secret-manager = "^2.19.0"
+firebase-admin = "^6.5.0"
+google-auth-stubs = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry~=1.4.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.mypy]
+follow_imports="silent"
+disallow_untyped_defs = true

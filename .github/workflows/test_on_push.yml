@@ -31,4 +31,4 @@ jobs:
 
     - name: Run tests
       run: |
-        **/pytest test_calculator.py
+        pytest src/tests/test_calculator.py

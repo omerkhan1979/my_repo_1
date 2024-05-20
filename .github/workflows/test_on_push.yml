@@ -9,7 +9,7 @@ on:
     branches:
       - master
     paths:
-      - 'calculator/basic_calculator.py'
+      - '**/basic_calculator.py'
 
 jobs:
   test:
@@ -31,4 +31,4 @@ jobs:
 
     - name: Run tests
       run: |
-        calculator/pytest test_calculator.py
+        **/pytest test_calculator.py

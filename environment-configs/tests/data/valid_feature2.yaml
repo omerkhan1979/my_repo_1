@@ -1,0 +1,12 @@
+key: isps
+title: ISPS
+description: ISPS feature description
+configs:
+  tsc:
+    flow_racks:
+      path: tests/data/tsc-flow-racks-test.yaml
+  ims:
+    addresses:
+      path: tests/data/ims-addresses-test.yaml
+  sleeping_area_rules:
+    path: tests/data/sleeping-area-rules-test.yaml

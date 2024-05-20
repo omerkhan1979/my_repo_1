@@ -1,0 +1,8 @@
+key: in_store_picking
+title: in_store_picking Feature
+description: In-store picking service
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/in_store_picking/tsc-config-items.yaml
+

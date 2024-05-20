@@ -1,0 +1,2514 @@
+[
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00010000000011",
+      "barcodes":[
+         "00010000000016"
+      ],
+      "ecom-ids":[
+         "0001000000001"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/1.jpg",
+      "name":"TAKEOFF heavy RAW chilled",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":100
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":true,
+         "is-heavy":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00020000000021",
+      "barcodes":[
+         "00020000000022"
+      ],
+      "ecom-ids":[
+         "0002000000002"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/2.jpg",
+      "name":"TAKEOFF frozen FOOD",
+      "temperature-zone":[
+         "frozen"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00020000000022",
+      "barcodes":[
+         "00020000000000"
+      ],
+      "ecom-ids":[
+         "0002000000000"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/2.jpg",
+      "name":"TAKEOFF frozen FOOD Weighted",
+      "temperature-zone":[
+         "frozen"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food",
+         "is-weight-variable-on-receipt":true
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00030000000031",
+      "barcodes":[
+         "00030000000038"
+      ],
+      "ecom-ids":[
+         "0003000000003"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/3.jpg",
+      "name":"TAKEOFF raw CHILLED",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":50
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00040000000041",
+      "barcodes":[
+         "00040000000044"
+      ],
+      "ecom-ids":[
+         "0004000000004"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/4.jpg",
+      "name":"TAKEOFF chilled FOOD",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":true,
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00050000000051",
+      "barcodes":[
+         "00050000000050"
+      ],
+      "ecom-ids":[
+         "0005000000005"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/5.jpg",
+      "name":"TAKEOFF raw EXPIRATION DATE",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":25
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.5
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":5,
+            "length":3
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00060000000061",
+      "barcodes":[
+         "00060000000066"
+      ],
+      "ecom-ids":[
+         "0006000000006"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/6.jpg",
+      "name":"TAKEOFF AMBIENT FOOD",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00070000000071",
+      "barcodes":[
+         "00070000000072"
+      ],
+      "ecom-ids":[
+         "0007000000007"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/7.jpg",
+      "name":"TAKEOFF chemical AMBIENT heavy",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":100
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":true,
+         "is-heavy":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00080000000081",
+      "barcodes":[
+         "00080000000088"
+      ],
+      "ecom-ids":[
+         "0008000000008"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/8.jpg",
+      "name":"TAKEOFF chemical AMBIENT",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":7,
+      "tom-id":"00090000000091",
+      "barcodes":[
+         "00090000000094"
+      ],
+      "ecom-ids":[
+         "0009000000009"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/9.jpg",
+      "name":"TAKEOFF raw SHELF LIFE",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.5
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00100000000101",
+      "barcodes":[
+         "00100000000106"
+      ],
+      "ecom-ids":[
+         "0010000000010"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/10.jpg",
+      "name":"TAKEOFF chilled heavy FOOD",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":10
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "is-heavy":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00110000000111",
+      "barcodes":[
+         "00110000000112"
+      ],
+      "ecom-ids":[
+         "0011000000011"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/11.jpg",
+      "name":"TAKEOFF chilled RAW FOOD",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.5
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00120000000121",
+      "barcodes":[
+         "00120000000128"
+      ],
+      "ecom-ids":[
+         "0012000000012"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/12.jpg",
+      "name":"TAKEOFF frozen HEAVY food",
+      "temperature-zone":[
+         "frozen"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":100
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-heavy":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00130000000131",
+      "barcodes":[
+         "00130000000134"
+      ],
+      "ecom-ids":[
+         "0013000000013"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/13.jpg",
+      "name":"TAKEOFF ambient heavy FOOD",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":10
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-heavy":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00140000000141",
+      "barcodes":[
+         "00140000000140"
+      ],
+      "ecom-ids":[
+         "0014000000014"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/14.jpg",
+      "name":"TAKEOFF frozen EXPIRATION DATE",
+      "temperature-zone":[
+         "frozen"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-raw":false,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00150000000151",
+      "barcodes":[
+         "00150000000156"
+      ],
+      "ecom-ids":[
+         "0015000000015"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/15.jpg",
+      "name":"TAKEOFF HAZARDOUS heavy",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":300
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":9.6,
+            "width":16,
+            "length":23
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":100
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-hazardous":true,
+         "is-heavy":true,
+         "is-chemical":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00160000000161",
+      "barcodes":[
+         "00160000000162"
+      ],
+      "ecom-ids":[
+         "0016000000016"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/16.jpg",
+      "name":"TAKEOFF HAZARDOUS",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":4.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-hazardous":true,
+         "is-chemical":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00170000000171",
+      "barcodes":[
+         "00170000000178"
+      ],
+      "ecom-ids":[
+         "0017000000017"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/17.jpg",
+      "name":"TAKEOFF OTHER AMBIENT FOOD",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":10,
+            "width":10,
+            "length":10
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00180000000181",
+      "barcodes":[
+         "00180000000184"
+      ],
+      "ecom-ids":[
+         "0018000000018"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/18.jpg",
+      "name":"TAKEOFF AMBIENT OR CHILLED FOOD",
+      "temperature-zone":[
+         "ambient",
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00190000000191",
+      "barcodes":[
+         "00190000000190"
+      ],
+      "ecom-ids":[
+         "0019000000019"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/19.jpg",
+      "name":"AMBIENT OR CHILLED OTHER FOOD",
+      "temperature-zone":[
+         "ambient",
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":103.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":100
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-heavy":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":true,
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00200000000201",
+      "barcodes":[
+         "00200000000202"
+      ],
+      "ecom-ids":[
+         "0020000000020"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/20.jpg",
+      "name":"TAKEOFF AMBIENT OR CHILLED EXPIRATION DATE",
+      "temperature-zone":[
+         "ambient",
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":true,
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00210000000211",
+      "barcodes":[
+         "0210000000000"
+      ],
+      "ecom-ids":[
+         "021000000000"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/21.jpg",
+      "name":"TAKEOFF weight-variable AMBIENT",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "feature-attributes":{
+         "is-heavy":false,
+         "is-chemical":false,
+         "food-safety":"food"
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.5
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ]
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":false,
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00220000000221",
+      "barcodes":[
+         "00220000000224"
+      ],
+      "ecom-ids":[
+         "0022000000022"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/22.jpg",
+      "name":"TAKEOFF large NOT heavy",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":50,
+            "width":50,
+            "length":50
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ]
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00230000000231",
+      "barcodes":[
+         "00230000000230"
+      ],
+      "ecom-ids":[
+         "0023000000023"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/23.jpg",
+      "name":"TAKEOFF crushable AMBIENT",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":1
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":10,
+            "width":10,
+            "length":10
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-crushable":true,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":false,
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00240000000241",
+      "barcodes":[
+         "00240000000000"
+      ],
+      "ecom-ids":[
+         "0024000000000"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/24.jpg",
+      "name":"TAKEOFF price-variable AMBIENT",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "feature-attributes":{
+         "is-heavy":false,
+         "is-chemical":false,
+         "food-safety":"food"
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.5
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ]
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"true",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00300000000301",
+      "barcodes":[
+         "00300000000308"
+      ],
+      "ecom-ids":[
+         "0030000000030"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/30.jpg",
+      "name":"TAKEOFF FLO AMBIENT",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.2
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-crushable":false,
+         "is-raw":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"true",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00310000000311",
+      "barcodes":[
+         "00310000000314"
+      ],
+      "ecom-ids":[
+         "0031000000031"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/31.jpg",
+      "name":"TAKEOFF chilled raw FLO",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.2
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-crushable":false,
+         "is-raw":true,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00320000000321",
+      "barcodes":[
+         "00320000000320"
+      ],
+      "ecom-ids":[
+         "0032000000032"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/32.jpg",
+      "name":"TAKEOFF chilled heavy EXPIRATION DATE",
+      "temperature-zone":[
+         "chilled"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":20
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":2
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-heavy":true,
+         "is-raw":false,
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00330000000331",
+      "barcodes":[
+         "00330000000336"
+      ],
+      "ecom-ids":[
+         "0033000000033"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/33.jpg",
+      "name":"TAKEOFF multiple-id ITEM",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   },
+   {
+      "seasonal":" ",
+      "discontinued":"false",
+      "mfc-stop-fulfill":"false",
+      "mfc-id":"9999",
+      "slotting-eligible":" ",
+      "mfc-stop-buy":"false",
+      "requires-expiration-date":"false",
+      "min-remaining-shelf-life":0,
+      "supplier-info":[
+         {
+            "supplier-id":3,
+            "supplier-keep-buy":"false",
+            "supplier-name":"TAKEOFF FAKE SUPPLIER",
+            "supplier-perform-cycle":" ",
+            "supplier-type":"DC"
+         }
+      ],
+      "shelf-life":520,
+      "tom-id":"00340000000341",
+      "barcodes":[
+         "00340000000342"
+      ],
+      "ecom-ids":[
+         "0034000000034"
+      ],
+      "image":"https://storage.googleapis.com/ie-common-items/34.jpg",
+      "name":"TAKEOFF another multiple-id ITEM",
+      "temperature-zone":[
+         "ambient"
+      ],
+      "case-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":3.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1.6,
+            "width":1,
+            "length":2
+         },
+         "case-count":1
+      },
+      "retail-item":{
+         "weight":{
+            "unit-of-measure":"lb",
+            "weight":0.3
+         },
+         "dimensions":{
+            "unit-of-measure":"in",
+            "height":1,
+            "width":1,
+            "length":1
+         }
+      },
+      "categories-hierarchy":[
+         {
+            "name":"TAKEOFF",
+            "id":"10"
+         },
+         {
+            "name":"TAKEOFF PRODUCTS",
+            "id":"1010"
+         },
+         {
+            "name":"TAKEOFF FAMILY",
+            "id":"101010"
+         },
+         {
+            "name":"TAKEOFF SERVICE",
+            "id":"10101010"
+         },
+         {
+            "name":"TAKEOFF QUALITY",
+            "id":"1010101010"
+         }
+      ],
+      "feature-attributes":{
+         "is-chemical":false,
+         "food-safety":"food"
+      }
+   }
+]

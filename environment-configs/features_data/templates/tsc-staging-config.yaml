@@ -1,0 +1,10 @@
+mfc-tom-code: "9999"
+staging-configurations:
+  - mapped-routes:
+    - code: DDS
+      type: ROUTE
+    - code: AXL
+      type: ROUTE
+    - code: NUR
+      type: ROUTE
+    staging-location-code: 0409H010011A

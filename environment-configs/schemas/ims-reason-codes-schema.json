@@ -1,0 +1,60 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "can-add": {
+        "type": "boolean"
+      },
+      "can-remove": {
+        "type": "boolean"
+      },
+      "code": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 4
+      },
+      "description": {
+        "type": "string"
+      },
+      "external-code": {
+        "type": ["string","null"]
+      },
+      "internal-only": {
+        "type": "boolean"
+      },
+      "movement-type": {
+        "type": "string",
+        "enum": [
+          "adjustment",
+          "reception",
+          "shipment"
+        ]
+      },
+      "name": {
+        "type": "string"
+      },
+      "parent-code": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 4
+      },
+      "sort-order": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "can-add",
+      "can-remove",
+      "code",
+      "description",
+      "external-code",
+      "internal-only",
+      "movement-type",
+      "name",
+      "parent-code",
+      "sort-order"
+    ],
+    "additionalProperties": false
+  }
+}

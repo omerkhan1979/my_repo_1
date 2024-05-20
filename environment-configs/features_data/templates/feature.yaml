@@ -1,0 +1,35 @@
+key: template
+title: Feature title
+description: feature description
+configs:
+  tsc:
+    config_items:
+      path: features_data/templates/tsc-config-items.yaml
+    flow_racks:
+      path: features_data/templates/tsc-flow-racks.yaml
+    locations:
+      path: features_data/templates/tsc-locations.yaml
+    spokes:
+      path: features_data/templates/tsc-spokes.yaml
+    staging_config:
+      path: features_data/templates/tsc-staging-config.yaml
+    staging_locations:
+      path: features_data/templates/tsc-staging-locations.yaml
+    tote_types:
+      path: features_data/templates/tsc-tote-types.yaml
+    routes:
+      path: features_data/templates/tsc-routes.yaml
+  ims:
+    addresses:
+      path: features_data/templates/ims-addresses.yaml
+    reason_codes:
+      path: features_data/templates/ims-reason-codes.yaml
+  sleeping_area_rules:
+    path: features_data/templates/sleeping-area-rules.yaml
+  product_catalog:
+    path: features_data/templates/product-catalog.json
+  site_info:
+    retailer:
+      path: features_data/templates/site-info-retailer.yaml
+    sites:
+      path: features_data/templates/site-info-sites.yaml

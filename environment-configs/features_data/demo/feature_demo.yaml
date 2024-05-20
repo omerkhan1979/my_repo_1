@@ -1,0 +1,28 @@
+key: demo
+title: demo retailer
+description: abs like configuration for demo purposes
+configs:
+  ims:
+    addresses:
+      path: features_data/demo/ims-addresses-demo.yaml
+    reason_codes:
+      path: features_data/demo/ims-reason-codes-demo.yaml
+  tsc:
+    config_items:
+      path: features_data/demo/tsc-config-items-demo.yaml
+    flow_racks:
+      path: features_data/demo/tsc-flow-racks-demo.yaml
+    locations:
+      path: features_data/demo/tsc-locations-demo.yaml
+    routes:
+      path: features_data/demo/tsc-routes-demo.yaml
+    staging_config:
+      path: features_data/demo/tsc-staging-config-demo.yaml
+    staging_locations:
+      path: features_data/demo/tsc-staging-locations-demo.yaml
+    tote_types:
+      path: features_data/demo/tsc-tote-types-demo.yaml
+  sleeping_area_rules:
+    path: features_data/demo/sleeping-area-rules-demo.yaml
+  product_catalog:
+    path: features_data/demo/MFC_itemmaster_demo.json

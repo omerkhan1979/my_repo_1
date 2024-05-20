@@ -1,0 +1,12 @@
+- categories:
+    - outbound
+  name: enable_multitemp_osr_picking
+  value: true
+  location-code-tom: '9999'
+  value-type: boolean
+- categories:
+    - outbound
+  location-code-tom: '9999'
+  name: default_multitemp_tote_type
+  value: 'ambient'
+  value-type: string

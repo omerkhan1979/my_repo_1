@@ -1,0 +1,33 @@
+key: base
+title: Base configuration
+description: Base Configs to apply during fresh env setup
+configs:
+  ims:
+    addresses:
+      path: features_data/base/ims-addresses-base.yaml
+    reason_codes:
+      path: features_data/base/ims-reason-codes-base.yaml
+  tsc:
+    config_items:
+      path: features_data/base/tsc-config-items-base.yaml
+    flow_racks:
+      path: features_data/base/tsc-flow-racks-base.yaml
+    locations:
+      path: features_data/base/tsc-locations-base.yaml
+    spokes:
+      path: features_data/base/tsc-spokes-base.yaml
+    routes:
+      path: features_data/base/tsc-src-routes-base.yaml
+    staging_config:
+      path: features_data/base/tsc-staging-config-base.yaml
+    staging_locations:
+      path: features_data/base/tsc-staging-locations-base.yaml
+    tote_types:
+      path: features_data/base/tsc-tote-types-base.yaml
+  sleeping_area_rules:
+    path: features_data/base/sleeping-area-rules-base.json
+  site_info:
+    retailer:
+      path: features_data/base/site-info-retailer-base.yaml
+    sites:
+      path: features_data/base/site-info-sites-base.yaml

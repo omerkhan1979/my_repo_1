@@ -1,0 +1,8 @@
+rules:
+- rule:
+    store-id: 0068
+    sleeping-area: B
+    priority: 10
+    rule: '#and [#eq[#arg[:temperature-zone],["frozen"]], #or [#eq [#arg [:location-info
+      :item-type], "REG"], #eq[#arg[:storage-zone], "manual"]]]'
+    update-note: B for frozen REG or manual zone products

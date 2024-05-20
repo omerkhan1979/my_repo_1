@@ -1,0 +1,175 @@
+rules:
+- rule:
+    store-id: 0068
+    sleeping-area: B
+    priority: 10
+    rule: '#and [#eq[#arg[:temperature-zone],["frozen"]], #eq[#arg[:storage-zone],
+      "manual"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: C
+    priority: 20
+    rule: '#and[#insec[#arg[:temperature-zone] ["chilled"]] #or[ #eq[#arg[:storage-zone]
+      "manual"], #and[ #eq[#arg[:storage-zone] "osr"] #eq[#arg[:feature-attributes
+      :is-hazardous], true ]]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: A
+    priority: 30
+    rule: '#and[ #or[#eq [#arg[:temperature-zone] ["ambient"]], #insec[#arg[:temperature-zone],["ambient,
+      chilled"]]] #or[#eq[#arg[:storage-zone] "manual"], #and[ #eq[#arg[:storage-zone]
+      "osr"] #eq[#arg[:feature-attributes :is-hazardous], true]]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: K
+    priority: 40
+    rule: '#and[ #or[#insec[#arg[:temperature-zone],["ambient"]], #insec[#arg[:temperature-zone],["ambient,
+      chilled"]], #insec[#arg[:temperature-zone],["chilled"]]], #eq[#arg[:storage-zone],
+      "osr"] #or[#eq[#arg[:feature-attributes :is-hazardous], false], #eq[#arg[:feature-attributes
+      :is-hazardous], nil]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: E
+    priority: 50
+    rule: '#and[ #and[ #in[#arg [:categories-hierarchy 1 :id], ["88"]], #in[#arg [:categories-hierarchy
+      2 :id], ["1","2","4","5","8","9","10","15","20","25","29","30","33","40","41","46","50","55","59","63","65","66","89","90"]]],
+      #eq[#arg[:storage-zone], "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: Z
+    priority: 60
+    rule: '#and[ #and[ #in[#arg [:categories-hierarchy 1 :id], ["86"]], #in[#arg [:categories-hierarchy
+      2 :id], ["1","5","8","10","15","25","30","40","45","50","55","85","90","93","96"]]],
+      #eq[#arg[:storage-zone], "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: M
+    priority: 70
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["94","95","96","97"]], #eq[#arg[:storage-zone],
+      "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: P
+    priority: 80
+    rule: '#and[ #or [ #in[#arg [:categories-hierarchy 1 :id], ["81"]], #and[ #in[#arg
+      [:categories-hierarchy 1 :id], ["82"]], #in[#arg [:categories-hierarchy 2 :id],
+      ["1","2","3","4","5","6","11","15","20","25","31","70","85"]]], #and[ #in[#arg
+      [:categories-hierarchy 1 :id], ["37"]], #in[#arg [:categories-hierarchy 2 :id],
+      ["15"]]]], #eq[#arg[:storage-zone], "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: U
+    priority: 90
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["84"]], #eq[#arg[:storage-zone],
+      "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: G
+    priority: 100
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["89"]], #eq[#arg[:storage-zone],
+      "in-store"]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: N
+    priority: 110
+    rule: '#eq[#arg[:storage-zone], "in-store"]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: B
+    priority: 120
+    rule: '#and [#eq[#arg[:temperature-zone],["frozen"]], #or[#eq[#arg[:location-info
+      :mfc-stop-buy], false], #eq[#arg[:mfc-stop-buy], false]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: C
+    priority: 130
+    rule: '#and[#insec[#arg[:temperature-zone] ["chilled"]] #or[#eq[#arg[:location-info
+      :mfc-stop-buy], false], #eq[#arg[:mfc-stop-buy], false]], #eq[#arg[:feature-attributes
+      :is-hazardous], true]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: A
+    priority: 140
+    rule: '#and[ #or[#eq [#arg[:temperature-zone] ["ambient"]], #insec[#arg[:temperature-zone],["ambient,
+      chilled"]]], #or[#eq[#arg[:location-info :mfc-stop-buy], false], #eq[#arg[:mfc-stop-buy],
+      false]], #eq[#arg[:feature-attributes :is-hazardous], true]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: K
+    priority: 150
+    rule: '#and[ #or[#insec[#arg[:temperature-zone],["ambient"]], #insec[#arg[:temperature-zone],["ambient,
+      chilled"]], #insec[#arg[:temperature-zone],["chilled"]]], #or[#eq[#arg[:location-info
+      :mfc-stop-buy], false], #eq[#arg[:mfc-stop-buy], false]], #or[#eq[#arg[:feature-attributes
+      :is-hazardous], false], #eq[#arg[:feature-attributes :is-hazardous], nil]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: E
+    priority: 160
+    rule: '#and[ #and[ #in[#arg [:categories-hierarchy 1 :id], ["88"]], #in[#arg [:categories-hierarchy
+      2 :id], ["1","2","4","5","8","9","10","15","20","25","29","30","33","40","41","46","50","55","59","63","65","66","89","90"]]],
+      #or[#eq[#arg[:location-info :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy],
+      true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: Z
+    priority: 170
+    rule: '#and[ #and[ #in[#arg [:categories-hierarchy 1 :id], ["86"]], #in[#arg [:categories-hierarchy
+      2 :id], ["1","5","8","10","15","25","30","40","45","50","55","85","90","93","96"]]],
+      #or[#eq[#arg[:location-info :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy],
+      true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: M
+    priority: 180
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["94","95","96","97"]], #or[#eq[#arg[:location-info
+      :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy], true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: P
+    priority: 190
+    rule: '#and[ #or [ #in[#arg [:categories-hierarchy 1 :id], ["81"]], #and[ #in[#arg
+      [:categories-hierarchy 1 :id], ["82"]], #in[#arg [:categories-hierarchy 2 :id],
+      ["1","2","3","4","5","6","11","15","20","25","31","70","85"]]], #and[ #in[#arg
+      [:categories-hierarchy 1 :id], ["37"]], #in[#arg [:categories-hierarchy 2 :id],
+      ["15"]]]], #or[#eq[#arg[:location-info :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy],
+      true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: U
+    priority: 200
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["84"]], #or[#eq[#arg[:location-info
+      :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy], true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: G
+    priority: 210
+    rule: '#and [#in[#arg [:categories-hierarchy 1 :id], ["89"]], #or[#eq[#arg[:location-info
+      :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy], true]]]'
+    update-note: Change rules for AMP
+- rule:
+    store-id: 0068
+    sleeping-area: N
+    priority: 220
+    rule: '#or[#eq[#arg[:location-info :mfc-stop-buy], true], #eq[#arg[:mfc-stop-buy],
+      true]]'
+    update-note: Change rules for AMP

@@ -1,0 +1,3993 @@
+!ConfigurationSet
+config_items:
+  '0001':
+  - categories:
+    - decanting-ui
+    location-code-tom: '0001'
+    name: DECANTING_UI_OSR_WEIGHT_VARIABLE_ITEM_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - features
+    location-code-tom: '0001'
+    name: count_bags
+    value: true
+    value-type: boolean
+  - categories:
+    - fulfillment-orchestrator
+    location-code-tom: '0001'
+    name: minimum_target_tote_threshold
+    value: 40
+    value-type: integer
+  - categories:
+    - inbound
+    location-code-tom: '0001'
+    name: PURCHASE_ORDERS_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - inbound
+    location-code-tom: '0001'
+    name: RETURN_NEW_TOM_IDS_ONLY
+    value: false
+    value-type: boolean
+  - categories:
+    - isps
+    location-code-tom: '0001'
+    name: ISPS_CONFIGURATION
+    value: '[]'
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: OSR_WEIGHT_VARIABLE_ITEM_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: capacity_data_mode
+    value: NONE
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_error_ramp
+    value: DISPATCH99
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_express_lanes
+    value: []
+    value-type: array
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_ramp_count
+    value: 17
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_ramp_depth
+    value: 3
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_ramp_id_gen
+    value: DISPATCH%02d
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: dispatch_start_ramp
+    value: 1
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '0001'
+    name: send_mrsl_to_kisoft
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: ITEMS_AVAILABILITY_MFC
+    value: partial
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: PRINT_SHIPPING_LABELS_TWICE
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: default_multitemp_tote_type
+    value: ambient
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: enable_multitemp_osr_picking
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: has_osr
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '0001'
+    name: ready_for_picking_at_reservation
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: AUTOCOMPLETE_NO_ADDRESS_LINES
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: AUTO_LOGOUT_CONFIG_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: AUTO_LOGOUT_CONFIG_TIME
+    value: 10
+    value-type: integer
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: CHECK_DIGIT_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: CLEAR_ADDRESS_ON_SHORT_PICK
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: ORDER_STATUS_AFTER_PICKING
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: SHOULD_REMOVE_ORIENTATION_DIGITS_FROM_TOTE
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: SKIP_PRINTING_STEP
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: TRUCK_LOAD_SESSION_STATUS
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: TRUCK_UNLOAD_SESSION_STATUS
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: WEIGHT_TOLERANCE_MINUS
+    value: 15.0
+    value-type: numeric
+  - categories:
+    - pickerman
+    location-code-tom: '0001'
+    name: WEIGHT_TOLERANCE_PLUS
+    value: 15.0
+    value-type: numeric
+  - categories:
+    - picking
+    location-code-tom: '0001'
+    name: OMS_HIDE_OVERPICKS
+    value: true
+    value-type: boolean
+  - categories:
+    - planogram
+    location-code-tom: '0001'
+    name: MFC_PLANOGRAM
+    value:
+    - '01001'
+    - '01002'
+    - '01003'
+    - '01004'
+    - '01005'
+    - '01006'
+    - '01007'
+    - 01008
+    - 01009
+    - '01010'
+    - '01011'
+    - '01012'
+    - '01013'
+    - '01014'
+    - '01015'
+    - '01016'
+    - '01017'
+    - 01018
+    - 01019
+    - '01020'
+    - '01021'
+    - '01022'
+    - '01023'
+    - '01024'
+    - '01025'
+    - '01026'
+    - '01027'
+    - 01028
+    - 01029
+    - '01030'
+    - '01031'
+    - '01032'
+    - '01033'
+    - '01034'
+    - '01035'
+    - '01036'
+    - '01037'
+    - 01038
+    - 01039
+    - '01040'
+    - '01041'
+    - '01042'
+    - '01043'
+    - '01044'
+    - '01045'
+    - '01046'
+    - '01047'
+    - 01048
+    - '02001'
+    - '02002'
+    - '02003'
+    - '02004'
+    - '02005'
+    - '02006'
+    - '02007'
+    - 02008
+    - 02009
+    - '02010'
+    - '02011'
+    - '02012'
+    - '02013'
+    - '02014'
+    - '02015'
+    - '02016'
+    - '02017'
+    - 02018
+    - 02019
+    - '02020'
+    - '02021'
+    - '02022'
+    - '02023'
+    - '02024'
+    - '02025'
+    - '02026'
+    - '02027'
+    - 02028
+    - 02029
+    - '02030'
+    - '02031'
+    - '02032'
+    - '02033'
+    - '02034'
+    - '02035'
+    - '02036'
+    - '02037'
+    - 02038
+    - 02039
+    - '02040'
+    - '02041'
+    - '02042'
+    - '02043'
+    - '02044'
+    - '02045'
+    - '02046'
+    - 02048
+    - '02047'
+    - '03001'
+    - '03002'
+    - '03003'
+    - '03004'
+    - '03005'
+    - '03006'
+    - '03007'
+    - 03008
+    - 03009
+    - '03010'
+    - '03011'
+    - '03012'
+    - '03013'
+    - '03014'
+    - '03015'
+    - '03016'
+    - '03017'
+    - 03018
+    - 03019
+    - '03020'
+    - '03021'
+    - '03022'
+    - '03023'
+    - '03024'
+    - '03025'
+    - '03026'
+    - '03027'
+    - 03028
+    - 03029
+    - '03030'
+    - '03031'
+    - '03032'
+    - '03033'
+    - '03034'
+    - '03035'
+    - '03036'
+    - '03037'
+    - 03038
+    - 03039
+    - '03040'
+    - '03041'
+    - '03042'
+    - '03043'
+    - '03044'
+    - '03045'
+    - '03047'
+    - '03046'
+    - '04001'
+    - '04002'
+    - '04003'
+    - '04004'
+    - '04005'
+    - '04006'
+    - '04007'
+    - 04008
+    - 04009
+    - '04010'
+    - '04011'
+    - '04012'
+    - '04013'
+    - '04014'
+    - '04015'
+    - '04016'
+    - '04017'
+    - 04018
+    - 04019
+    - '04020'
+    - '04021'
+    - '04022'
+    - '04023'
+    - '04024'
+    - '04025'
+    - '04026'
+    - '04027'
+    - 04028
+    - 04029
+    - '04030'
+    - '04031'
+    - '04032'
+    - '04033'
+    - '04034'
+    - '04035'
+    - '04036'
+    - '04037'
+    - 04038
+    - 04039
+    - '05001'
+    - '05002'
+    - '05003'
+    - '05004'
+    - '05005'
+    - '05006'
+    - '05007'
+    - 05008
+    - 05009
+    - '05010'
+    - '05011'
+    - '05012'
+    - '05013'
+    - '05014'
+    - '05015'
+    - '05016'
+    - '05017'
+    - 05018
+    - 05019
+    - '05020'
+    - '05021'
+    - '05022'
+    - '05023'
+    - '05024'
+    - '05025'
+    - '06001'
+    - '06002'
+    - '06003'
+    - '06004'
+    - '06005'
+    - '06006'
+    - '06007'
+    - 06008
+    - 06009
+    - '06010'
+    - '06011'
+    - '06012'
+    - '06013'
+    - '06014'
+    - '06015'
+    - '06016'
+    - '06017'
+    - 06018
+    - 06019
+    - '06020'
+    - '06021'
+    - '06022'
+    - '06023'
+    - '06024'
+    - '06025'
+    - '06026'
+    - '07001'
+    - '07002'
+    - '07003'
+    - '07004'
+    - '07005'
+    - '07006'
+    - '07007'
+    - 07008
+    - 07009
+    - '07010'
+    - '07011'
+    - '07012'
+    - '07013'
+    - '07014'
+    - '07015'
+    - '07016'
+    - '07017'
+    - 07018
+    - 07019
+    - '07020'
+    - '07021'
+    - '07022'
+    - '07023'
+    - '07024'
+    - '07025'
+    - '07026'
+    - 08001
+    - 08002
+    - 08003
+    - 08004
+    - 08005
+    - 08006
+    - 08007
+    - 08008
+    - 08009
+    - 08010
+    - 08011
+    - 08012
+    - 08013
+    - 08014
+    - 08015
+    - 08016
+    - 08017
+    - 08018
+    - 08019
+    - 08020
+    - 08021
+    - 08022
+    - 08023
+    - 08024
+    - 08025
+    - 09001
+    - 09002
+    - 09003
+    - 09004
+    - 09005
+    - 09006
+    - 09007
+    - 09008
+    - 09009
+    - 09010
+    - 09011
+    - 09012
+    - 09013
+    - 09014
+    - 09015
+    - 09016
+    - 09017
+    - 09018
+    - 09019
+    - 09020
+    - 09021
+    - 09022
+    - 09023
+    value-type: array
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '0001'
+    name: TAKEOFF_MOBILE_LINK_SSO_PROVIDER
+    value: false
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '0001'
+    name: TAKEOFF_MOBILE_SSO_LOGIN
+    value: false
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '0001'
+    name: TRUCK_LOAD_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '0001'
+    name: stage_by_warning_period_minutes
+    value: 10
+    value-type: integer
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '0001'
+    name: use_plu_for_aggregated_weight
+    value: true
+    value-type: boolean
+  - categories:
+    - isps
+    - pickerman
+    location-code-tom: '0001'
+    name: ISPS_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    - outbound
+    location-code-tom: '0001'
+    name: WEIGHT_PREFIX
+    value:
+    - '20'
+    - '02'
+    value-type: set
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '0001'
+    name: NORMALIZATION_IS_WEIGHT
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '0001'
+    name: NORMALIZATION_NUMBER_COUNT
+    value: 5
+    value-type: integer
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '0001'
+    name: NORMALIZATION_POWER
+    value: 3
+    value-type: integer
+  env:
+  - categories:
+    - features
+    location-code-tom: null
+    name: PICK_BY_REQUEST_WEIGHT_ENABLED_MFC
+    value: []
+    value-type: set
+  - categories:
+    - inbound
+    location-code-tom: null
+    name: ims_to_gold_sync
+    value: false
+    value-type: boolean
+  - categories:
+    - inventory
+    location-code-tom: null
+    name: CLEAR_DYNAMIC_REASON_CODE
+    value: DS
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: AUTO_SPLIT_FOR_LATE_ORDERS_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: CUTOFF_UPDATE_TIME_THRESHOLD_MINUTES
+    value: 1
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: GENERATE_PALLET_IDS
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_INTERVAL_AFTER_SECONDS
+    value: 3600
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_INTERVAL_BEFORE_SECONDS
+    value: 0
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_TYPE
+    value: regular
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: STAGING_CONFIGURATION_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__CUSTOMER_ORDER_ECOM_TO_TAKEOFF_ITEM_ID_MAPPING__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__INVENTORY_SNAPSHOT_BY_CUSTOMER_ORDER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__INVENTORY_SNAPSHOT_BY_PURCHASE_ORDER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: INVENTORY__ADJUSTMENT__REASON_CODES_REGEX
+    value: .*
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: OMS_API__FIELD_FOR_SERVICE_WINDOW_START
+    value: service-window-start
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__GET_CUSTOMER_ORDER_OVERPICKED_PREVENTION__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__SPLIT-AGGREGATED-WEIGHT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__WEIGHT-VARIABLE-ITEMS-PRODUCE-UPC-SUBSTITUTION__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__INVENTORY_SNAPSHOT__PARALLEL_EXECUTION__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__VALIDATION__ECOM_STATUS_VALIDATION__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__VALIDATION__STAGE_BY_DATETIME_VALIDATION__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__HEALTH__TIMEOUT
+    value: 3000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__SERVICE_NAME
+    value: rint-api
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__FIELDS
+    value:
+    - dim_item.item_business_id
+    - fact_order_item_snapshot.requested_qty
+    value-type: array
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__MODEL
+    value: <retailer-model>
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__QUERY_TIMEZONE
+    value: America/Los_Angeles
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__VIEW
+    value: fact_order_item_snapshot
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__TIMEOUT
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__CUSTOMER_ECOM_ITEM_ID_DUPLICATION_POLICY
+    value: delete-duplicated
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__CUSTOMER_ECOM_ITEM_ID_RECOGNITION_POLICY
+    value: delete-unrecognized
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__TAKEOFF_ITEM_ID_DUPLICATION_POLICY
+    value: keep-duplicated
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__VALID_STATUSES
+    value:
+    - SPLIT
+    - HOLD
+    - CANCELLED
+    - RELEASED
+    - CREATED
+    value-type: set
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__CUSTOMER_ORDER_STATUSES_HISTORY__VALIDATION_RANGE_IN_DAYS
+    value: 7
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__INVENTORY_MOVEMENTS__VALIDATION_RANGE_IN_DAYS
+    value: 7
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__CANCEL_STATUSES
+    value:
+    - CANCELLED
+    value-type: set
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__SPLIT_STATUSES
+    value:
+    - SPLIT
+    value-type: set
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: FEATURE__THROTTLE__PURCHASE_ORDERS_OUTBOUND__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__NAME
+    value: etl-events-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__TOPIC__NAME
+    value: etl-events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__NAME
+    value: etl-file-processed-events-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__TOPIC__NAME
+    value: etl-file-processed-events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__EVENTS
+    value: events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__ITEMS
+    value: items
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__SCHEMAS
+    value: schemas
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__VALIDATE_SCHEMA?
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__BACK_OFF_MULTIPLIER
+    value: 2.2
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__MAXIMUM_REDELIVERIES
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__REDELIVERY_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__FTP_DISPATCHER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__GCP_STORAGE_DISPATCHER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__ITEMS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__MFC_SALES__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__OUTBOUND_GCP_STORAGE_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__OUTBOUND_SFTP_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FLOW__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__WAREHOUSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__DATABASE__BIGQUERY__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__ETL__SAVE_AFTER_PREPROCESS__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__VALIDATION__FILE_SIZE_RESTRICTION__IN_MB
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__CONNECT_TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__GREEDY
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__INITIAL_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__PATH
+    value: inbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__RECONNECT_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__SO_TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__UNKNOWN_FOLDER
+    value: unknown
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__PATH
+    value: inbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__UNKNOWN_FOLDER
+    value: unknown
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__SERVICE_NAME
+    value: rint-etl
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__MDC_FIELDS__EXCHANGE__HEADERS
+    value:
+      event-type: event-type
+      purchase-order-id: purchase-order-id
+    value-type: map
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__COMMON
+    value:
+    - schemas/common/common_json_schema_v1.edn
+    - schemas/common/common_item_master_v1.edn
+    - schemas/common/common_inbound_purchase_order_v1.edn
+    - schemas/common/common_tlogs_v1.edn
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__ECOMMERCE
+    value:
+    - schemas/ecommerce/ecommerce_categories_v1.edn
+    - schemas/ecommerce/ecommerce_products_v1.edn
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__FILES
+    value: []
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SLACK__PURCHASE_ORDERS_CHANNEL
+    value: test-purchase-orders
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__CRON
+    value: 0 0 0 * * ?
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_ARCHIVE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_POLL
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_SCAN
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_SIZE_LIMIT_PER_ARCHIVE_IN_BYTES
+    value: 102400000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_SIZE_LIMIT_PER_POLL_IN_BYTES
+    value: 5120000000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__RETENTION_IN_DAYS
+    value: 14
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND__REQUESTS_PER_PERIOD
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND__TIME_PERIOD_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_COUNTRY
+    value: US
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_LANGUAGE
+    value: en
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_TIMEZONE
+    value: America/New_York
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__SERVICE_NAME
+    value: rint-gold
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__DOMAIN
+    value: DEFAULT
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__GOLD_CONTEXT_CLASS
+    value: 0
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__LANGUAGE
+    value: GB
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__MERCH_STRUCT_ID
+    value: '1'
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WSDL_PATH
+    value: schemas/wsdl/GWSSupplierOrderServices.wsdl
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WS_BINDING
+    value: GWSSupplierOrderBinding
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WS_PATH
+    value: GWSSupplierOrders
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__SUPPLIER_ORDER_GET_LIST_DETAILS__OPERATION_NAME
+    value: GWSSupplierOrderGetListDetails
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__SUPPLIER_ORDER_GET_LIST_HEADERS__OPERATION_NAME
+    value: GWSSupplierOrderGetListHeaders
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__PRODUCT_IDENTIFICATION_BY_UPC14__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__SEND_TO_DECANTING__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__SEND_TO_TGIM__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: MFC_DIVISION_MAPPING
+    value: {}
+    value-type: map
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: OMS_API__GET_CUSTOMER_ORDER_STATUSES_HISTORY__DEFAULT_START_DATE
+    value: '1970-01-01T00:00:00.00Z'
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: OUTBOUND_FLOW__INVENTORY_ADJUSTMENT__PERMITTED_REASON_CODES
+    value: .*
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__CRON
+    value: 0 0 0/1 * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__RETENTION_IN_DAYS
+    value: 14
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__INVENTORY_ADJUSTMENT__CRON
+    value: 0 0/2 * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__INVENTORY_ADJUSTMENT__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__MFC_SALES__CRON
+    value: 0 30 13 * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__MFC_SALES__TIMEZONE
+    value: America/New_York
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__ORDER_STATUSES_OUTBOUND_FLOW__CRON
+    value: 0/20 * * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__ORDER_STATUSES_OUTBOUND_FLOW__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__CRON
+    value: 0 0/2 * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__DAYS_RANGE
+    value: 11
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB_EXPOSE__CUSTOMER_ORDER_STATUSES_HISTORY__VERSIONS
+    value:
+    - v4
+    value-type: array
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB_EXPOSE__INVENTORY_MOVEMENTS__VERSIONS
+    value:
+    - v4
+    value-type: array
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__NAME
+    value: inventory-movements-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__TOPIC__NAME
+    value: inventory-movements
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__NAME
+    value: customer-orders-status-history-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__TOPIC__NAME
+    value: customer-orders-status-history
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__NAME
+    value: purchase-orders-internal-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__TOPIC__NAME
+    value: purchase-orders-internal
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__BACK_OFF_MULTIPLIER
+    value: 2.2
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__MAXIMUM_REDELIVERIES
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__REDELIVERY_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__HOUSEKEEPING__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__INVENTORY_ADJUSTMENT__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__MFC_SALES__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__ORDER_STATUSES_OUTBOUND_FLOW__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__OUTBOUND_GCP_STORAGE_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__OUTBOUND_SFTP_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PUBSUB_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PUBSUB_ORDER_STATUSES_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_INBOUND_FLOW__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FLOW__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__RINT_API_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__RINT_API_ORDER_STATUSES_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__TGIM_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__MFC_SALES__ENABLE_WEIGHTED_ITEMS__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RETRY_POLICY__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__SERVICE_NAME
+    value: rint-sinfonietta
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__MDC_FIELDS__EXCHANGE__HEADERS
+    value:
+      event-type: event-type
+      purchase-order-id: purchase-order-id
+    value-type: map
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__POLLER__MFC_SALES__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETAILER_ID
+    value: '04'
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__WAIT_DURATION_IN_MS
+    value: 300000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__SLACK__PURCHASE_ORDERS_CHANNEL
+    value: test-purchase-orders
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__TGIM_API__GET_INVENTORY_ADJUSTMENT_WITH_PREVIOUS_QUANTITY__DEFAULT_TIME_FRAME_MINUTES
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__REQUESTS_PER_PERIOD
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TIME_PERIOD_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - user-management
+    location-code-tom: null
+    name: USER_ALLOW_SPOKES_ASSIGMENT
+    value: false
+    value-type: boolean
+  - categories:
+    - user-management
+    location-code-tom: null
+    name: USER_PASSWORD_MIN_LENGTH
+    value: 6
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__PATH
+    value: purchase_orders_outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__NAME
+    value: mfc-sales-internal-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__NAME
+    value: purchase-orders-outbound-internal-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__TOPIC__NAME
+    value: mfc-sales-internal
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__TOPIC__NAME
+    value: purchase-orders-outbound-internal
+    value-type: string
+  - categories:
+    - rint-api
+    - rint-etl
+    - rint-gold
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RETAILER
+    value: pinemelon
+    value-type: string
+flow_racks:
+  flow-racks: {}
+  location-code-tom: '0001'
+locations:
+  location-address:
+    city: Denver
+    iso-state: US-CO
+    state: CO
+    street: 5915 Broadway
+    zip-code: '80216'
+  location-code-gold: '0001'
+  location-code-retailer: '0001'
+  location-code-tom: '0001'
+  location-contact-phone: 0000-000-000
+  location-id: 2
+  location-name: 5915 Broadway, Denver
+  location-pickup:
+    lat: 39.803932
+    lon: -104.99061
+  location-service-info:
+    desctext: Text Placeholder
+    email: testqa@takeoff.com
+    phone: 0000-000-000
+  location-type: mfc
+  mfc-ref-code: '0001'
+  timezone: America/Denver
+spokes: []
+src_routes:
+  routes:
+  - mfc-tom-code: '0001'
+    route-code: '01'
+  - mfc-tom-code: '0001'
+    route-code: '02'
+  - mfc-tom-code: '0001'
+    route-code: 107000900A
+  - mfc-tom-code: '0001'
+    route-code: 107000900B
+  - mfc-tom-code: '0001'
+    route-code: 107000900C
+  - mfc-tom-code: '0001'
+    route-code: 107000900D
+  - mfc-tom-code: '0001'
+    route-code: 107000900E
+  - mfc-tom-code: '0001'
+    route-code: 108001000A
+  - mfc-tom-code: '0001'
+    route-code: 108001000B
+  - mfc-tom-code: '0001'
+    route-code: 108001000C
+  - mfc-tom-code: '0001'
+    route-code: 108001000D
+  - mfc-tom-code: '0001'
+    route-code: 108001000E
+  - mfc-tom-code: '0001'
+    route-code: 109001100A
+  - mfc-tom-code: '0001'
+    route-code: 109001100B
+  - mfc-tom-code: '0001'
+    route-code: 109001100C
+  - mfc-tom-code: '0001'
+    route-code: 109001100D
+  - mfc-tom-code: '0001'
+    route-code: 109001100E
+  - mfc-tom-code: '0001'
+    route-code: 111001300E
+  - mfc-tom-code: '0001'
+    route-code: 112001400B
+  - mfc-tom-code: '0001'
+    route-code: 112001400D
+  - mfc-tom-code: '0001'
+    route-code: 113001400A
+  - mfc-tom-code: '0001'
+    route-code: 114001600B
+  - mfc-tom-code: '0001'
+    route-code: 110001200A
+  - mfc-tom-code: '0001'
+    route-code: 110001200C
+  - mfc-tom-code: '0001'
+    route-code: 111001300D
+  - mfc-tom-code: '0001'
+    route-code: 112001400C
+  - mfc-tom-code: '0001'
+    route-code: 112001400E
+  - mfc-tom-code: '0001'
+    route-code: 113001400B
+  - mfc-tom-code: '0001'
+    route-code: 114001600E
+  - mfc-tom-code: '0001'
+    route-code: 115001700D
+  - mfc-tom-code: '0001'
+    route-code: 116001800A
+  - mfc-tom-code: '0001'
+    route-code: 116001800C
+  - mfc-tom-code: '0001'
+    route-code: 117001900B
+  - mfc-tom-code: '0001'
+    route-code: 118002000A
+  - mfc-tom-code: '0001'
+    route-code: 110001200B
+  - mfc-tom-code: '0001'
+    route-code: 110001200D
+  - mfc-tom-code: '0001'
+    route-code: 111001300A
+  - mfc-tom-code: '0001'
+    route-code: 111001300C
+  - mfc-tom-code: '0001'
+    route-code: 113001400C
+  - mfc-tom-code: '0001'
+    route-code: 113001400E
+  - mfc-tom-code: '0001'
+    route-code: 114001600D
+  - mfc-tom-code: '0001'
+    route-code: 115001700A
+  - mfc-tom-code: '0001'
+    route-code: 115001700C
+  - mfc-tom-code: '0001'
+    route-code: 115001700E
+  - mfc-tom-code: '0001'
+    route-code: 116001800B
+  - mfc-tom-code: '0001'
+    route-code: 116001800D
+  - mfc-tom-code: '0001'
+    route-code: 117001900A
+  - mfc-tom-code: '0001'
+    route-code: 117001900C
+  - mfc-tom-code: '0001'
+    route-code: 110001200E
+  - mfc-tom-code: '0001'
+    route-code: 111001300B
+  - mfc-tom-code: '0001'
+    route-code: 112001400A
+  - mfc-tom-code: '0001'
+    route-code: 113001400D
+  - mfc-tom-code: '0001'
+    route-code: 114001600A
+  - mfc-tom-code: '0001'
+    route-code: 114001600C
+  - mfc-tom-code: '0001'
+    route-code: 115001700B
+  - mfc-tom-code: '0001'
+    route-code: 116001800E
+  - mfc-tom-code: '0001'
+    route-code: 117001900D
+  - mfc-tom-code: '0001'
+    route-code: 117001900E
+  - mfc-tom-code: '0001'
+    route-code: 118002000B
+  - mfc-tom-code: '0001'
+    route-code: 118002000C
+  - mfc-tom-code: '0001'
+    route-code: 118002000D
+  - mfc-tom-code: '0001'
+    route-code: 118002000E
+  - mfc-tom-code: '0001'
+    route-code: 100002359A
+  - mfc-tom-code: '0001'
+    route-code: 100002359B
+  - mfc-tom-code: '0001'
+    route-code: 100002359C
+  - mfc-tom-code: '0001'
+    route-code: 100002359D
+  - mfc-tom-code: '0001'
+    route-code: 100002359E
+  - mfc-tom-code: '0001'
+    route-code: 107000900F
+  - mfc-tom-code: '0001'
+    route-code: 108001000F
+  - mfc-tom-code: '0001'
+    route-code: 109001100F
+  - mfc-tom-code: '0001'
+    route-code: 110001200F
+  - mfc-tom-code: '0001'
+    route-code: 111001300F
+  - mfc-tom-code: '0001'
+    route-code: 112001400F
+  - mfc-tom-code: '0001'
+    route-code: 113001400F
+  - mfc-tom-code: '0001'
+    route-code: 114001600F
+  - mfc-tom-code: '0001'
+    route-code: 115001700F
+  - mfc-tom-code: '0001'
+    route-code: 116001800F
+  - mfc-tom-code: '0001'
+    route-code: 117001900F
+  - mfc-tom-code: '0001'
+    route-code: 118002000F
+  - mfc-tom-code: '0001'
+    route-code: 100002359F
+  - mfc-tom-code: '0001'
+    route-code: 107000900G
+  - mfc-tom-code: '0001'
+    route-code: 108001000G
+  - mfc-tom-code: '0001'
+    route-code: 109001100G
+  - mfc-tom-code: '0001'
+    route-code: 110001200G
+  - mfc-tom-code: '0001'
+    route-code: 111001300G
+  - mfc-tom-code: '0001'
+    route-code: 112001400G
+  - mfc-tom-code: '0001'
+    route-code: 113001400G
+  - mfc-tom-code: '0001'
+    route-code: 114001600G
+  - mfc-tom-code: '0001'
+    route-code: 115001700G
+  - mfc-tom-code: '0001'
+    route-code: 116001800G
+  - mfc-tom-code: '0001'
+    route-code: 117001900G
+  - mfc-tom-code: '0001'
+    route-code: 118002000G
+  - mfc-tom-code: '0001'
+    route-code: 100002359G
+  - mfc-tom-code: '0001'
+    route-code: 107000900H
+  - mfc-tom-code: '0001'
+    route-code: 108001000H
+  - mfc-tom-code: '0001'
+    route-code: 109001100H
+  - mfc-tom-code: '0001'
+    route-code: 110001200H
+  - mfc-tom-code: '0001'
+    route-code: 111001300H
+  - mfc-tom-code: '0001'
+    route-code: 112001400H
+  - mfc-tom-code: '0001'
+    route-code: 113001400H
+  - mfc-tom-code: '0001'
+    route-code: 114001600H
+  - mfc-tom-code: '0001'
+    route-code: 115001700H
+  - mfc-tom-code: '0001'
+    route-code: 116001800H
+  - mfc-tom-code: '0001'
+    route-code: 117001900H
+  - mfc-tom-code: '0001'
+    route-code: 118002000H
+  - mfc-tom-code: '0001'
+    route-code: 100002359H
+  - mfc-tom-code: '0001'
+    route-code: 107000900I
+  - mfc-tom-code: '0001'
+    route-code: 108001000I
+  - mfc-tom-code: '0001'
+    route-code: 109001100I
+  - mfc-tom-code: '0001'
+    route-code: 110001200I
+  - mfc-tom-code: '0001'
+    route-code: 111001300I
+  - mfc-tom-code: '0001'
+    route-code: 112001400I
+  - mfc-tom-code: '0001'
+    route-code: 113001400I
+  - mfc-tom-code: '0001'
+    route-code: 114001600I
+  - mfc-tom-code: '0001'
+    route-code: 115001700I
+  - mfc-tom-code: '0001'
+    route-code: 116001800I
+  - mfc-tom-code: '0001'
+    route-code: 117001900I
+  - mfc-tom-code: '0001'
+    route-code: 118002000I
+  - mfc-tom-code: '0001'
+    route-code: 100002359I
+  - mfc-tom-code: '0001'
+    route-code: 107000900J
+  - mfc-tom-code: '0001'
+    route-code: 108001000J
+  - mfc-tom-code: '0001'
+    route-code: 109001100J
+  - mfc-tom-code: '0001'
+    route-code: 110001200J
+  - mfc-tom-code: '0001'
+    route-code: 111001300J
+  - mfc-tom-code: '0001'
+    route-code: 112001400J
+  - mfc-tom-code: '0001'
+    route-code: 113001400J
+  - mfc-tom-code: '0001'
+    route-code: 114001600J
+  - mfc-tom-code: '0001'
+    route-code: 116001800J
+  - mfc-tom-code: '0001'
+    route-code: 117001900J
+  - mfc-tom-code: '0001'
+    route-code: 118002000J
+  - mfc-tom-code: '0001'
+    route-code: 115001700J
+  - mfc-tom-code: '0001'
+    route-code: 100002359J
+  - mfc-tom-code: '0001'
+    route-code: 100002359M
+  - mfc-tom-code: '0001'
+    route-code: 107000900M
+  - mfc-tom-code: '0001'
+    route-code: 108001000M
+  - mfc-tom-code: '0001'
+    route-code: 109001100M
+  - mfc-tom-code: '0001'
+    route-code: 110001200M
+  - mfc-tom-code: '0001'
+    route-code: 111001300M
+  - mfc-tom-code: '0001'
+    route-code: 112001400M
+  - mfc-tom-code: '0001'
+    route-code: 113001400M
+  - mfc-tom-code: '0001'
+    route-code: 114001600M
+  - mfc-tom-code: '0001'
+    route-code: 115001700M
+  - mfc-tom-code: '0001'
+    route-code: 116001800M
+  - mfc-tom-code: '0001'
+    route-code: 117001900M
+  - mfc-tom-code: '0001'
+    route-code: 118002000M
+  - mfc-tom-code: '0001'
+    route-code: 100002359N
+  - mfc-tom-code: '0001'
+    route-code: 107000900N
+  - mfc-tom-code: '0001'
+    route-code: 108001000N
+  - mfc-tom-code: '0001'
+    route-code: 109001100N
+  - mfc-tom-code: '0001'
+    route-code: 110001200N
+  - mfc-tom-code: '0001'
+    route-code: 111001300N
+  - mfc-tom-code: '0001'
+    route-code: 112001400N
+  - mfc-tom-code: '0001'
+    route-code: 113001400N
+  - mfc-tom-code: '0001'
+    route-code: 114001600N
+  - mfc-tom-code: '0001'
+    route-code: 115001700N
+  - mfc-tom-code: '0001'
+    route-code: 116001800N
+  - mfc-tom-code: '0001'
+    route-code: 117001900N
+  - mfc-tom-code: '0001'
+    route-code: 118002000N
+  - mfc-tom-code: '0001'
+    route-code: 100002359O
+  - mfc-tom-code: '0001'
+    route-code: 107000900O
+  - mfc-tom-code: '0001'
+    route-code: 108001000O
+  - mfc-tom-code: '0001'
+    route-code: 109001100O
+  - mfc-tom-code: '0001'
+    route-code: 110001200O
+  - mfc-tom-code: '0001'
+    route-code: 111001300O
+  - mfc-tom-code: '0001'
+    route-code: 112001400O
+  - mfc-tom-code: '0001'
+    route-code: 113001400O
+  - mfc-tom-code: '0001'
+    route-code: 114001600O
+  - mfc-tom-code: '0001'
+    route-code: 115001700O
+  - mfc-tom-code: '0001'
+    route-code: 116001800O
+  - mfc-tom-code: '0001'
+    route-code: 117001900O
+  - mfc-tom-code: '0001'
+    route-code: 118002000O
+  - mfc-tom-code: '0001'
+    route-code: 100002359P
+  - mfc-tom-code: '0001'
+    route-code: 107000900P
+  - mfc-tom-code: '0001'
+    route-code: 108001000P
+  - mfc-tom-code: '0001'
+    route-code: 109001100P
+  - mfc-tom-code: '0001'
+    route-code: 110001200P
+  - mfc-tom-code: '0001'
+    route-code: 111001300P
+  - mfc-tom-code: '0001'
+    route-code: 112001400P
+  - mfc-tom-code: '0001'
+    route-code: 113001400P
+  - mfc-tom-code: '0001'
+    route-code: 114001600P
+  - mfc-tom-code: '0001'
+    route-code: 115001700P
+  - mfc-tom-code: '0001'
+    route-code: 116001800P
+  - mfc-tom-code: '0001'
+    route-code: 117001900P
+  - mfc-tom-code: '0001'
+    route-code: 118002000P
+  - mfc-tom-code: '0001'
+    route-code: 100002359Q
+  - mfc-tom-code: '0001'
+    route-code: 107000900Q
+  - mfc-tom-code: '0001'
+    route-code: 108001000Q
+  - mfc-tom-code: '0001'
+    route-code: 109001100Q
+  - mfc-tom-code: '0001'
+    route-code: 110001200Q
+  - mfc-tom-code: '0001'
+    route-code: 111001300Q
+  - mfc-tom-code: '0001'
+    route-code: 112001400Q
+  - mfc-tom-code: '0001'
+    route-code: 113001400Q
+  - mfc-tom-code: '0001'
+    route-code: 114001600Q
+  - mfc-tom-code: '0001'
+    route-code: 115001700Q
+  - mfc-tom-code: '0001'
+    route-code: 116001800Q
+  - mfc-tom-code: '0001'
+    route-code: 117001900Q
+  - mfc-tom-code: '0001'
+    route-code: 118002000Q
+  - mfc-tom-code: '0001'
+    route-code: 100002359R
+  - mfc-tom-code: '0001'
+    route-code: 107000900R
+  - mfc-tom-code: '0001'
+    route-code: 108001000R
+  - mfc-tom-code: '0001'
+    route-code: 109001100R
+  - mfc-tom-code: '0001'
+    route-code: 110001200R
+  - mfc-tom-code: '0001'
+    route-code: 111001300R
+  - mfc-tom-code: '0001'
+    route-code: 112001400R
+  - mfc-tom-code: '0001'
+    route-code: 113001400R
+  - mfc-tom-code: '0001'
+    route-code: 114001600R
+  - mfc-tom-code: '0001'
+    route-code: 115001700R
+  - mfc-tom-code: '0001'
+    route-code: 116001800R
+  - mfc-tom-code: '0001'
+    route-code: 117001900R
+  - mfc-tom-code: '0001'
+    route-code: 118002000R
+staging_config:
+  staging-configurations:
+  - mapped-routes:
+    - code: 100002359H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000H
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011H
+  - mapped-routes:
+    - code: 100002359O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000O
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011O
+  - mapped-routes:
+    - code: 100002359Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000Q
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011Q
+  - mapped-routes:
+    - code: 100002359G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000G
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011G
+  - mapped-routes:
+    - code: 100002359N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000N
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011N
+  - mapped-routes:
+    - code: 100002359M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000M
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011M
+  - mapped-routes:
+    - code: 100002359P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000P
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011P
+  - mapped-routes:
+    - code: 100002359E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000E
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011E
+  - mapped-routes:
+    - code: '01'
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: '02'
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 100002359F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000F
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011F
+  - mapped-routes:
+    - code: 100002359B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000B
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011B
+  - mapped-routes:
+    - code: 100002359D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000D
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011D
+  - mapped-routes:
+    - code: 100002359C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000C
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011C
+  - mapped-routes:
+    - code: 100002359A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000A
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011A
+  - mapped-routes:
+    - code: 100002359I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000I
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011I
+  - mapped-routes:
+    - code: 100002359J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000J
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011J
+  - mapped-routes:
+    - code: 100002359R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 107000900R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 108001000R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 109001100R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 110001200R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 111001300R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 112001400R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 113001400R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 114001600R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 115001700R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 116001800R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 117001900R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    - code: 118002000R
+      last-modified-at: '2024-03-04T15:16:37Z'
+      type: ROUTE
+    staging-location-code: 0001H010011R
+staging_locations:
+  staging-locations:
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011Q
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011R
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: TESTH010011B
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 1401H010011B
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: TESTH010011A
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 1401H010011A
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011B
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011C
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011D
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011E
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011F
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011G
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011H
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H01001I
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H01001J
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011J
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011I
+  - default: true
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011A
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011M
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011N
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011O
+  - default: false
+    mfc-tom-code: '0001'
+    staging-location-code: 0001H010011P
+tote_types:
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: true
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '0001'
+  temp-zone-name: ambient
+  tote-dimensions:
+    tote-inner-dimensions-height: 11.64
+    tote-inner-dimensions-length: 19.14
+    tote-inner-dimensions-width: 11.03
+    tote-outer-dimensions-height: 14.0
+    tote-outer-dimensions-length: 24.0
+    tote-outer-dimensions-width: 14.0
+  tote-kind-name: storage
+  tote-threshold-size: 80
+  tote-type-id: 4
+  tote-weight: 3.5
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: false
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '0001'
+  temp-zone-name: ambient
+  tote-description: target_ambient
+  tote-dimensions:
+    tote-inner-dimensions-height: 15.8
+    tote-inner-dimensions-length: 19.8
+    tote-inner-dimensions-width: 13.8
+    tote-outer-dimensions-height: 17.1
+    tote-outer-dimensions-length: 21.8
+    tote-outer-dimensions-width: 15.2
+  tote-kind-name: target
+  tote-max-weight: 999
+  tote-threshold-size: 80
+  tote-type-id: 5
+  tote-weight: 7.0
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: false
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '0001'
+  temp-zone-name: chilled
+  tote-description: target_chilled
+  tote-dimensions:
+    tote-inner-dimensions-height: 15.8
+    tote-inner-dimensions-length: 19.8
+    tote-inner-dimensions-width: 13.8
+    tote-outer-dimensions-height: 17.1
+    tote-outer-dimensions-length: 21.8
+    tote-outer-dimensions-width: 15.2
+  tote-kind-name: target
+  tote-max-weight: 999
+  tote-threshold-size: 80
+  tote-type-id: 6
+  tote-weight: 7.0

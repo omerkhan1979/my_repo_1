@@ -1,0 +1,25 @@
+- categories:
+  - isps
+  location-code-tom: '9999'
+  name: ISPS_CONFIGURATION
+  value: '[{"preliminary":"10:00","cutoffs":["11:50"]},{"preliminary":"12:00","cutoffs":["13:50"]},{"delta":"11:00","cutoffs":["11:50"]},{"delta":"13:00","cutoffs":["13:50"]}]'
+  value-type: string
+- categories:
+    - pickerman
+    - isps
+  location-code-tom: '9999'
+  name: ISPS_ENABLED
+  value: true
+  value-type: boolean
+- categories:
+  - pickerman
+  name: PUT_AWAY_FROM_STORE_REASON_CODE
+  value: 'ST'
+  location-code-tom: '9999'
+  value-type: string
+- categories:
+  - pickerman
+  name: PUT_AWAY_FROM_STORE_REASON_CODE_TITLE
+  value: 'put_away_from_store'
+  location-code-tom: '9999'
+  value-type: string

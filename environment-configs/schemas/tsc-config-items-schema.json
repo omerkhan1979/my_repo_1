@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "categories": { "type": "array", "items": {"type": "string" } },
+      "location-code-tom": { "type": [ "string", "null" ] },
+      "name": { "type": "string" },
+      "value": { "type": [ "number", "integer", "boolean", "string", "array", "object" ] },
+      "value-type": { "enum": [ "numeric", "integer", "boolean", "string", "array", "set", "map" ] }
+    }
+  }
+}

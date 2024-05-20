@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "location-address": {
+        "type": "object",
+        "properties": {
+          "city": {"type": "string"},
+          "iso-state": {"type": "string"},
+          "state": {"type": "string"},
+          "street": {"type": "string"},
+          "zip-code": {"type": "string"}
+        }
+      },
+      "location-code-retailer": {"type": "string"},
+      "location-code-tom": {"type": "string"},
+      "location-code-gold": {"type": "string"},
+      "location-contact-phone": {"type": "string"},
+      "location-id": {"type": "integer"},
+      "location-name": {"type": "string"},
+      "location-pickup": {
+        "type": "object",
+        "properties": {
+          "lat": {"type": "number"},
+          "lon": {"type": "number"}
+        }
+      },
+      "location-service-info": {
+        "type": "object",
+        "properties": {
+          "desctext": {"type": "string"},
+          "email": {"type": "string"},
+          "phone": {"type": "string"}
+        }
+      },
+      "location-type": {"type": "string"},
+      "mfc-ref-code": {"type": "string"},
+      "timezone": {"type": "string"}
+    }
+  }
+}

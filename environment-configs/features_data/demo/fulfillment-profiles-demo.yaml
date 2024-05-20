@@ -1,0 +1,18 @@
+fulfillment_profiles:
+  - profile_name: profile 1
+    active: true
+    fulfillment_rules:
+      - id: fr12345
+        description: rule for chilled to chilled,frozen
+        priority: 3
+        rule: "'chilled' in product.temperature_zone"
+        rule_type: tote_temp_zone
+        rule_output:
+          - chilled
+          - frozen
+      - id: fr12346
+        description: rule for express to be non inductable
+        priority: 3
+        rule: "order.is_express == true"
+        rule_type: inductable
+        rule_output: false

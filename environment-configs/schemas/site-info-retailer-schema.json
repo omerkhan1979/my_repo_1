@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "deployed_region": {
+      "type": "string"
+    }
+  },
+  "required": [
+      "name",
+      "code",
+      "deployed_region"
+    ],
+    "additionalProperties": false
+}

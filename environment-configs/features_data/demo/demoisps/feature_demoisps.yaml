@@ -1,0 +1,7 @@
+key: demoisps
+title: demo-isps Feature
+description: Sub feature to enable ISPS on demo
+configs:
+  tsc:
+    config_items:
+      path: features_data/demo/demoisps/tsc-config-items-demoisps.yaml

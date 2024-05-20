@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "flow-racks": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[0-9]+$"
+      },
+      "patternProperties": {
+        "^": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "location-code-tom": { "type": "string" }
+  },
+  "additionalProperties": false
+}

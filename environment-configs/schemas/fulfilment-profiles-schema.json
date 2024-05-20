@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "properties": {
+      "fulfillment_profiles": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string"},
+            "profile_name": {"type": "string"},
+            "create_by": {"type": "string", "format": "email"},
+            "create_time": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{3}Z$"},
+            "update_by": {"type": "string", "format": "email"},
+            "update_time": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{3}Z$"},
+            "etag": {"type": "string"},
+            "active_time": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{3}Z$"},
+            "active": {"type": "boolean"},
+            "fulfillment_rules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "description": {"type": "string"},
+                  "priority": {"type": "integer"},
+                  "rule": {"type": "string"},
+                  "rule_type": {"type": "string"},
+                  "rule_output": {
+                    "type": ["array", "boolean"],
+                    "items": {"type": ["string", "boolean"]}
+                  }
+                },
+                "required": ["description", "priority", "rule", "rule_type"]
+              }
+            }
+          },
+          "required": ["profile_name", "fulfillment_rules"]
+        }
+      }
+    },
+    "required": ["fulfillment_profiles"]
+  }

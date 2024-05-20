@@ -1,0 +1,233 @@
+- categories:
+    - rint-api
+  name: RINT_API__HEALTH__EXCLUSIONS
+  value:
+    - gold-ws
+    - rint-gold
+  location-code-tom: null
+  value-type: set
+- categories:
+    - rint-api
+  name: RINT_API__RPC__CONTEXTS__ALLOWLIST
+  value:
+    - ecommerce
+    - common
+  location-code-tom: null
+  value-type: set
+- categories:
+    - rint-api
+  name: RINT_API__RPC__CONTEXTS__BLOCKLIST
+  value: []
+  location-code-tom: null
+  value-type: set
+- categories:
+  - rint-etl
+  name: RINT_ETL__BREAKER_POLICY__DEFAULT__TURN_ON
+  value: false
+  location-code-tom:
+  value-type: boolean
+- categories:
+  - rint-etl
+  name: RINT_ETL__FTP__CONNECTION__HOST
+  value: 'sftp'
+  location-code-tom:
+  value-type: string
+- categories:
+  - rint-etl
+  name: RINT_ETL__FTP__CONNECTION__PORT
+  value: 22
+  location-code-tom:
+  value-type: integer
+- categories:
+  - rint-etl
+  name: RINT_ETL__FTP__CONNECTION__PROTOCOL
+  value: 'sftp'
+  location-code-tom:
+  value-type: string
+- categories:
+  - rint-etl
+  name: RINT_ETL__FTP__CONNECTION__USERNAME
+  value: 'k1705kch'
+  location-code-tom:
+  value-type: string
+- categories:
+  - rint-etl
+  name: RINT_ETL__HEALTH__EXCLUSIONS
+  value:
+  - gold-ws
+  - sftp
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-etl
+  name: RINT_ETL__MFC_DIVISION_MAPPING
+  value:
+    '9999': '00032'
+  location-code-tom:
+  value-type: map
+- categories:
+  - rint-etl
+  name: RINT_ETL__RPC__CONTEXTS__ALLOWLIST
+  value:
+  - ecommerce
+  - items
+  - events
+  - outbound
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-etl
+  name: RINT_ETL__RPC__CONTEXTS__BLOCKLIST
+  value: []
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-etl
+  name: RINT_ETL__SCHEMA_REGISTRY__COMMON
+  value:
+  - schemas/common/common_json_schema_v1.edn
+  - schemas/common/common_item_master_v1.edn
+  - schemas/common/common_inbound_purchase_order_v1.edn
+  - schemas/common/common_tlogs_v1.edn
+  location-code-tom:
+  value-type: array
+- categories:
+  - rint-etl
+  name: RINT_ETL__SCHEMA_REGISTRY__ECOMMERCE
+  value:
+  - schemas/ecommerce/ecommerce_categories_v1.edn
+  - schemas/ecommerce/ecommerce_products_v1.edn
+  location-code-tom:
+  value-type: array
+- categories:
+  - rint-etl
+  name: RINT_ETL__SLACK__WEBHOOK
+  value: 'https://hooks.slack.com/services/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'
+  location-code-tom:
+  value-type: string
+- categories:
+  - rint-etl
+  name: RINT_ETL__WAREHOUSE__FILES_SIZE_LIMIT_PER_ARCHIVE_IN_BYTES
+  value: 102400000
+  location-code-tom:
+  value-type: integer
+- categories:
+  - rint-sinfonietta
+  name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__MFC_SPECIFIC
+  value:
+    '1574': 0 1/2 * * * ?
+    '3116': 0 0/2 * * * ?
+  location-code-tom:
+  value-type: map
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__INVENTORY_ADJUSTMENT__TURN_ON
+  value: true
+  location-code-tom:
+  value-type: boolean
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__HEALTH__EXCLUSIONS
+  value:
+  - gold-ws
+  - rint-gold
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__RPC__CONTEXTS__ALLOWLIST
+  value:
+  - ecommerce
+  - report
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__RPC__CONTEXTS__BLOCKLIST
+  value: []
+  location-code-tom:
+  value-type: set
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__SLACK__PURCHASE_ORDERS_CHANNEL
+  value: 'test-purchase-orders'
+  location-code-tom:
+  value-type: string
+- categories:
+  - rint-sinfonietta
+  name: RINT_SINFONIETTA__SLACK__WEBHOOK
+  value: 'https://hooks.slack.com/services/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'
+  location-code-tom:
+  value-type: string
+
+- categories:
+   - rint-etl
+   - rint-sinfonietta
+  name: EXTERNAL_FTP__CONNECTION__PASSIVE_MODE
+  value: true
+  location-code-tom: null
+  value-type: boolean
+- categories:
+  - rint-etl
+  - rint-sinfonietta
+  name: EXTERNAL_FTP__CONNECTION__USERNAME
+  value: 'ftp_test'
+  location-code-tom: null
+  value-type: string
+- categories:
+  - rint-sinfonietta
+  - rint-etl
+  name: EXTERNAL_FTP__CONNECTION__HOST
+  value: 'outbound-sftp'
+  location-code-tom: null
+  value-type: string
+- categories:
+  - rint-sinfonietta
+  - rint-etl
+  name: EXTERNAL_FTP__CONNECTION__PORT
+  value: 2223
+  location-code-tom: null
+  value-type: integer
+- categories:
+  - rint-sinfonietta
+  - rint-etl
+  name: EXTERNAL_FTP__CONNECTION__PROTOCOL
+  value: 'sftp'
+  location-code-tom: null
+  value-type: string
+- categories:
+  - features
+  name: PICK_BY_REQUEST_WEIGHT_ENABLED_MFC
+  value: []
+  location-code-tom:
+  value-type: set
+- categories:
+  - features
+  name: is_gold_enabled
+  value: false
+  location-code-tom:
+  value-type: boolean
+- categories:
+  - pickerman
+  name: AUTO_LOGOUT_CONFIG_ENABLED
+  value: true
+  location-code-tom: '9999'
+  value-type: boolean
+- categories:
+  - pickerman
+  name: AUTO_LOGOUT_CONFIG_TIME
+  value: 10
+  location-code-tom: '9999'
+  value-type: integer
+- categories:
+  - takeoff-mobile
+  name: TAKEOFF_MOBILE_LINK_SSO_PROVIDER
+  value: false
+  location-code-tom: '9999'
+  value-type: boolean
+- categories:
+  - takeoff-mobile
+  name: TAKEOFF_MOBILE_SSO_LOGIN
+  value: false
+  location-code-tom: '9999'
+  value-type: boolean

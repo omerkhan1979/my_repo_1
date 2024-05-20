@@ -1,0 +1,8 @@
+key: express_orders
+title: express order Feature
+description: Express Order
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/express_order/tsc-config-items.yaml
+

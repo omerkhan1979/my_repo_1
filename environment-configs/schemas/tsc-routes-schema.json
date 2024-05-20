@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "mfc-tom-code": {"type": "string"},
+      "route-code": { "type": "string" }
+    }
+  }
+}

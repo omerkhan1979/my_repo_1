@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rule": {
+            "type": "object",
+            "properties": {
+              "store-id": {"type": "string"},
+              "sleeping-area": {"type": "string"},
+              "priority": {"type": "number"},
+              "rule": {"type": "string"},
+              "update-note": {"type": "string"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

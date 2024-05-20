@@ -1,0 +1,31 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "barcode-format-name": {"type": "string"},
+      "is-applicable-for-osr": { "type": "boolean" },
+      "is-product-category-limit": { "type": "boolean" },
+      "is-standard": { "type": "boolean" },
+      "location-code-tom": {"type": "string"},
+      "temp-zone-name": { "enum": [ "ambient", "chilled", "frozen" ] },
+      "tote-description": {"type": "string"},
+      "tote-dimensions": {
+        "type": "object",
+        "properties": {
+          "tote-inner-dimensions-height": {"type": "number"},
+          "tote-inner-dimensions-length": {"type": "number"},
+          "tote-inner-dimensions-width": {"type": "number"},
+          "tote-outer-dimensions-height": {"type": "number"},
+          "tote-outer-dimensions-length": {"type": "number"},
+          "tote-outer-dimensions-width": {"type": "number"}
+        }
+      },
+      "tote-kind-name": { "enum": [ "storage", "target" ] },
+      "tote-max-weight": { "type": "number" },
+      "tote-threshold-size": { "type": "number" },
+      "tote-type-id": { "type": "integer" },
+      "tote-weight": { "type": "number" }
+    }
+  }
+}

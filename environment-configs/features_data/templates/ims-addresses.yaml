@@ -1,0 +1,48 @@
+- address: 01A000521W
+  shelf: '1'
+  aisle: '0'
+  dynamic: false
+  temp-zone: ambient
+  active: true
+  location-id: '9999'
+  stack: W
+  bay: '05'
+  area: A
+  pickable: true
+  overstock: false
+- address: 0190D166020I
+  shelf: '0'
+  aisle: '16'
+  dynamic: true
+  temp-zone: frozen
+  active: true
+  location-id: '9999'
+  stack: I
+  bay: '602'
+  area: D
+  pickable: true
+  overstock: false
+- address: 01B958066I
+  shelf: '6'
+  aisle: '95'
+  dynamic: false
+  temp-zone: chilled
+  active: true
+  location-id: '9999'
+  stack: I
+  bay: '806'
+  area: B
+  pickable: true
+  overstock: false
+- address: 01K
+  shelf: 
+  aisle: 
+  dynamic: false
+  temp-zone: 
+  active: true
+  location-id: '9999'
+  stack: 
+  bay: 
+  area: 
+  pickable: true
+  overstock: false

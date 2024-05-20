@@ -1,0 +1,8 @@
+key: update_ecom_status
+title: update-ecom-status Feature
+description: update-ecom-status
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/update_ecom_status/tsc-config-items.yaml
+

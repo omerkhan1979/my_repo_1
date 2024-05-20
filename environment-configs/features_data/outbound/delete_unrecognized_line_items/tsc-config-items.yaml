@@ -1,0 +1,6 @@
+- categories:
+    - rint-api
+  name: RINT_ENDPOINTS__COMMON__CUSTOMER_ECOM_ITEM_ID_RECOGNITION_POLICY
+  value: 'delete-unrecognized'
+  location-code-tom: null
+  value-type: string

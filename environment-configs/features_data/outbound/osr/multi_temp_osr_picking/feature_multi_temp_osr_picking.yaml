@@ -1,0 +1,8 @@
+key: multi_temp_osr_picking
+title: multi-temp-osr-picking Feature
+description: OSR picking with multiple temperature zone
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/osr/multi_temp_osr_picking/tsc-config-items.yaml
+

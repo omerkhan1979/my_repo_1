@@ -1,0 +1,34 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "retailer_code": {
+        "type": "string"
+      },
+      "retailer_site_id": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "lat": {
+            "type": "number"
+          },
+          "retailer_site_id": {
+            "long": "number"
+          }
+        }
+      }
+    },
+    "required": [
+      "name",
+      "retailer_site_id",
+      "retailer_code",
+      "location"
+    ]
+  }
+}

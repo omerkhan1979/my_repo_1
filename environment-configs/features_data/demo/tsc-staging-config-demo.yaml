@@ -1,0 +1,74 @@
+mfc-tom-code: "0068"
+staging-configurations:
+- mapped-routes:
+  - code: 03B
+    type: ROUTE
+  staging-location-code: 0068H010003B
+- mapped-routes:
+  - code: 04A
+    type: ROUTE
+  staging-location-code: 0068H010004A
+- mapped-routes:
+  - code: 02C
+    type: ROUTE
+  staging-location-code: 0068H010002C
+- mapped-routes:
+  - code: 05A
+    type: ROUTE
+  staging-location-code: 0068H010005A
+- mapped-routes:
+  - code: 01D
+    type: ROUTE
+  staging-location-code: 0068H010001D
+- mapped-routes:
+  - code: 03D
+    type: ROUTE
+  staging-location-code: 0068H010003D
+- mapped-routes:
+  - code: 01A
+    type: ROUTE
+  staging-location-code: 0068H010001A
+- mapped-routes:
+  - code: 03C
+    type: ROUTE
+  staging-location-code: 0068H010003C
+- mapped-routes:
+  - code: 04D
+    type: ROUTE
+  staging-location-code: 0068H010004D
+- mapped-routes:
+  - code: 02A
+    type: ROUTE
+  staging-location-code: 0068H010002A
+- mapped-routes:
+  - code: 04C
+    type: ROUTE
+  staging-location-code: 0068H010004C
+- mapped-routes:
+  - code: 03A
+    type: ROUTE
+  staging-location-code: 0068H010003A
+- mapped-routes:
+  - code: DUG
+    type: ROUTE
+  staging-location-code: 0068H010011X
+- mapped-routes:
+  - code: 02D
+    type: ROUTE
+  staging-location-code: 0068H010002D
+- mapped-routes:
+  - code: 04B
+    type: ROUTE
+  staging-location-code: 0068H010004B
+- mapped-routes:
+  - code: 02B
+    type: ROUTE
+  staging-location-code: 0068H010002B
+- mapped-routes:
+  - code: 01B
+    type: ROUTE
+  staging-location-code: 0068H010001B
+- mapped-routes:
+  - code: 01C
+    type: ROUTE
+  staging-location-code: 0068H010001C

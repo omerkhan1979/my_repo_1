@@ -1,0 +1,4529 @@
+!ConfigurationSet
+config_items:
+  '1917':
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: approx_long_divider_weight
+    value: 0.837757
+    value-type: numeric
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: approx_short_divider_weight
+    value: 0.529109
+    value-type: numeric
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: approx_source_tote_weight
+    value: 6.684416
+    value-type: numeric
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: decanting_safety_net_percentage
+    value: 3
+    value-type: integer
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: disable_proceed_on_overweight_tote
+    value: false
+    value-type: boolean
+  - categories:
+    - decanting
+    location-code-tom: '1917'
+    name: payload_weight_capacity
+    value: 59
+    value-type: integer
+  - categories:
+    - decanting-ui
+    location-code-tom: '1917'
+    name: DECANTING_UI_OSR_WEIGHT_VARIABLE_ITEM_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - features
+    location-code-tom: '1917'
+    name: count_bags
+    value: false
+    value-type: boolean
+  - categories:
+    - fulfillment-orchestrator
+    location-code-tom: '1917'
+    name: minimum_target_tote_threshold
+    value: 40
+    value-type: integer
+  - categories:
+    - inbound
+    location-code-tom: '1917'
+    name: PURCHASE_ORDERS_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - inbound
+    location-code-tom: '1917'
+    name: RETURN_NEW_TOM_IDS_ONLY
+    value: false
+    value-type: boolean
+  - categories:
+    - isps
+    location-code-tom: '1917'
+    name: ISPS_CONFIGURATION
+    value: '[ { "preliminary": "20:45", "cutoffs": [ "07:00", "09:00" ] }, { "preliminary":
+      "07:00", "cutoffs": [ "11:00" ] }, { "preliminary": "10:30", "cutoffs": [ "13:00"
+      ] }, { "preliminary": "12:45", "cutoffs": [ "15:00" ] }, { "preliminary": "14:30",
+      "cutoffs": [ "17:00" ] }, { "preliminary": "17:00", "cutoffs": [ "19:00" ] },
+      { "delta": "06:00", "cutoffs": [ "07:00" ] }, { "delta": "08:00", "cutoffs":
+      [ "09:00" ] }, { "delta": "09:45", "cutoffs": [ "11:00" ] }, { "delta": "11:45",
+      "cutoffs": [ "13:00" ] }, { "delta": "14:00", "cutoffs": [ "15:00" ] }, { "delta":
+      "15:45", "cutoffs": [ "17:00" ] }, { "delta": "18:00", "cutoffs": [ "19:00"
+      ] } ]'
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: OSR_WEIGHT_VARIABLE_ITEM_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: capacity_data_mode
+    value: PUBSUB
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_error_ramp
+    value: DISPATCH99
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_express_lanes
+    value: []
+    value-type: array
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_ramp_count
+    value: 24
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_ramp_depth
+    value: 3
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_ramp_id_gen
+    value: DISPATCH%02d
+    value-type: string
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: dispatch_start_ramp
+    value: 1
+    value-type: integer
+  - categories:
+    - osr
+    location-code-tom: '1917'
+    name: send_mrsl_to_kisoft
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: IS_FLOW_RACKS_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: ITEMS_AVAILABILITY_MFC
+    value: none
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: PRINT_SHIPPING_LABELS_TWICE
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: default_multitemp_tote_type
+    value: ambient
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: enable_multitemp_osr_picking
+    value: false
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: has_osr
+    value: true
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: '1917'
+    name: ready_for_picking_at_reservation
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: AUTOCOMPLETE_NO_ADDRESS_LINES
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: AUTO_LOGOUT_CONFIG_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: AUTO_LOGOUT_CONFIG_TIME
+    value: 10
+    value-type: integer
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: BAGS_BARCODE
+    value: '305000002020136'
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: CHECK_DIGIT_ENABLED
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: CLEAR_ADDRESS_ON_SHORT_PICK
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: MFC_PICKS_SCAN_CONFIG_ADDRESS
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: MFC_PICKS_SCAN_CONFIG_PRODUCT
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: MFC_PICKS_SKIP_BUTTON_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: ORDER_STATUS_AFTER_PICKING
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: PRINTING_PRINT_TOTE_LABELS
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: PUT_AWAY_FROM_STORE_REASON_CODE
+    value: ST
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: PUT_AWAY_FROM_STORE_REASON_CODE_TITLE
+    value: put_away_from_store
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: SHOULD_CHECK_TOTE_ORIENTATION_DIGIT
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: SHOULD_REMOVE_ORIENTATION_DIGITS_FROM_TOTE
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: SKIP_PRINTING_STEP
+    value: false
+    value-type: boolean
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: TRUCK_LOAD_SESSION_STATUS
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: TRUCK_UNLOAD_SESSION_STATUS
+    value: served
+    value-type: string
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: WEIGHT_TOLERANCE_MINUS
+    value: 10.0
+    value-type: numeric
+  - categories:
+    - pickerman
+    location-code-tom: '1917'
+    name: WEIGHT_TOLERANCE_PLUS
+    value: 1000.0
+    value-type: numeric
+  - categories:
+    - picking
+    location-code-tom: '1917'
+    name: OMS_HIDE_OVERPICKS
+    value: true
+    value-type: boolean
+  - categories:
+    - planogram
+    location-code-tom: '1917'
+    name: MFC_PLANOGRAM
+    value:
+    - '01001'
+    - '01003'
+    - '01005'
+    - '01007'
+    - 01009
+    - '01011'
+    - '01013'
+    - '01015'
+    - '01017'
+    - 01019
+    - '01021'
+    - '01023'
+    - '01025'
+    - '01027'
+    - 01029
+    - '01031'
+    - '01033'
+    - '01035'
+    - '01037'
+    - 01039
+    - '01041'
+    - '01043'
+    - '01045'
+    - '01047'
+    - 01049
+    - '01051'
+    - '01053'
+    - '01055'
+    - '01057'
+    - 01058
+    - 01059
+    - '01060'
+    - '01061'
+    - '01062'
+    - '01063'
+    - '01065'
+    - '01066'
+    - '01067'
+    - 01068
+    - 01069
+    - '01071'
+    - '01072'
+    - '01073'
+    - '01074'
+    - '01075'
+    - '01077'
+    - 01079
+    - 01080
+    - 01081
+    - 01082
+    - '02001'
+    - '02002'
+    - '02003'
+    - '02004'
+    - '02005'
+    - '02006'
+    - '02007'
+    - 02008
+    - 02009
+    - '02010'
+    - '02011'
+    - '02012'
+    - '02013'
+    - '02014'
+    - '02015'
+    - '02016'
+    - '02017'
+    - 02018
+    - 02019
+    - '02020'
+    - '02021'
+    - '02022'
+    - '02023'
+    - '02024'
+    - '02025'
+    - '02026'
+    - '02027'
+    - 02028
+    - 02029
+    - '02030'
+    - '02031'
+    - '02032'
+    - '02033'
+    - '02034'
+    - '02035'
+    - '02036'
+    - '02037'
+    - 02038
+    - 02039
+    - '02040'
+    - '02041'
+    - '02042'
+    - '02043'
+    - '02044'
+    - '02045'
+    - '02046'
+    - '02047'
+    - 02048
+    - 02049
+    - '02050'
+    - '02051'
+    - '03001'
+    - '03002'
+    - '03003'
+    - '03004'
+    - '03005'
+    - '03006'
+    - '03007'
+    - 03008
+    - 03009
+    - '03010'
+    - '03011'
+    - '03012'
+    - '03013'
+    - '03014'
+    - '03015'
+    - '03016'
+    - '03017'
+    - 03018
+    - 03019
+    - '03020'
+    - '03021'
+    - '03022'
+    - '03023'
+    - '03024'
+    - '03025'
+    - '03026'
+    - '03027'
+    - 03028
+    - 03029
+    - '03030'
+    - '03031'
+    - '03032'
+    - '03033'
+    - '03034'
+    - '03035'
+    - '03036'
+    - '04001'
+    - '04002'
+    - '04003'
+    - '04004'
+    - '04005'
+    - '04006'
+    - '04007'
+    - 04008
+    - 04009
+    - '04010'
+    - '05001'
+    value-type: array
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '1917'
+    name: TAKEOFF_MOBILE_LINK_SSO_PROVIDER
+    value: false
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '1917'
+    name: TAKEOFF_MOBILE_SSO_LOGIN
+    value: false
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '1917'
+    name: TRUCK_LOAD_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '1917'
+    name: stage_by_warning_period_minutes
+    value: 10
+    value-type: integer
+  - categories:
+    - takeoff-mobile
+    location-code-tom: '1917'
+    name: use_plu_for_aggregated_weight
+    value: true
+    value-type: boolean
+  - categories:
+    - isps
+    - pickerman
+    location-code-tom: '1917'
+    name: ISPS_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    - outbound
+    location-code-tom: '1917'
+    name: WEIGHT_PREFIX
+    value:
+    - '25'
+    - '025'
+    value-type: set
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '1917'
+    name: NORMALIZATION_IS_WEIGHT
+    value: true
+    value-type: boolean
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '1917'
+    name: NORMALIZATION_NUMBER_COUNT
+    value: 5
+    value-type: integer
+  - categories:
+    - pickerman
+    - ecom
+    - outbound
+    location-code-tom: '1917'
+    name: NORMALIZATION_POWER
+    value: 3
+    value-type: integer
+  env:
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_APPROX_LONG_DIVIDER_WEIGHT
+    value: 0.45
+    value-type: numeric
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_APPROX_SHORT_DIVIDER_WEIGHT
+    value: 0.29
+    value-type: numeric
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_APPROX_SOURCE_TOTE_WEIGHT
+    value: 3.15
+    value-type: numeric
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_ENABLE_IN_STORE_TRANSFER
+    value: true
+    value-type: boolean
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_OSR_CAPACITY_DANGER_AMOUNT
+    value: 0
+    value-type: integer
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_OSR_CAPACITY_WARNING_AMOUNT
+    value: 12
+    value-type: integer
+  - categories:
+    - decanting-ui
+    location-code-tom: null
+    name: DECANTING_UI_PREVENT_DECANTING_WHEN_OSR_IS_FULL
+    value: true
+    value-type: boolean
+  - categories:
+    - features
+    location-code-tom: null
+    name: PICK_BY_REQUEST_WEIGHT_ENABLED_MFC
+    value:
+    - '9999'
+    - '1917'
+    value-type: set
+  - categories:
+    - inbound
+    location-code-tom: null
+    name: MFC_INIT_FOR_ADDRESS_VALIDATION
+    value:
+      mfc-init/validators: '{"gold-address/aisle":[1,99],"gold-address/area":{"set":["9","K","Y","R","C","B","V","O","A","T"]},"gold-address/bay":[1,999],"gold-address/position":["A","J"],"gold-address/shelf":[1,9],"gold-address/store":[1,2],"storage-tote/id":[10020832,10027733],"storage-tote/orientation":{"set":[0,1]},"target-tote/id":[99800600100010,99800600900010],"tom-address/aisle":[1,99],"tom-address/area":{"set":["L","M","S","H","E","P","D","U"]},"tom-address/bay":[1,999],"tom-address/position":["A","J"],"tom-address/retailer":33,"tom-address/shelf":[1,9],"tom-address/store":[1,2],"zone-target-tote/id":[1,25000],"zone-target-tote/prefix":{"set":["TAM","TCF","TEX","TFL","TST","TAT"]}}'
+    value-type: map
+  - categories:
+    - inbound
+    location-code-tom: null
+    name: ims_to_gold_sync
+    value: false
+    value-type: boolean
+  - categories:
+    - inventory
+    location-code-tom: null
+    name: CLEAR_DYNAMIC_REASON_CODE
+    value: DC
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: AUTO_SPLIT_FOR_LATE_ORDERS_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: CUTOFF_UPDATE_TIME_THRESHOLD_MINUTES
+    value: 300
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_INTERVAL_AFTER_SECONDS
+    value: 28800
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_INTERVAL_BEFORE_SECONDS
+    value: 0
+    value-type: integer
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: SPLIT_TYPE
+    value: regular
+    value-type: string
+  - categories:
+    - outbound
+    location-code-tom: null
+    name: STAGING_CONFIGURATION_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__CUSTOMER_ORDER_ECOM_TO_TAKEOFF_ITEM_ID_MAPPING__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__INVENTORY_SNAPSHOT_BY_CUSTOMER_ORDER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: FEATURE__ENRICHMENT__INVENTORY_SNAPSHOT_BY_PURCHASE_ORDER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: INVENTORY__ADJUSTMENT__REASON_CODES_REGEX
+    value: .*
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: OMS_API__FIELD_FOR_SERVICE_WINDOW_START
+    value: service-window-start
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__GET_CUSTOMER_ORDER_OVERPICKED_PREVENTION__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__SPLIT-AGGREGATED-WEIGHT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__CUSTOMER_ORDER__WEIGHT-VARIABLE-ITEMS-PRODUCE-UPC-SUBSTITUTION__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__INVENTORY_SNAPSHOT__PARALLEL_EXECUTION__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__VALIDATION__ECOM_STATUS_VALIDATION__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__FEATURE__VALIDATION__STAGE_BY_DATETIME_VALIDATION__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__HEALTH__TIMEOUT
+    value: 3001
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__INFO__SERVICE_NAME
+    value: rint-api
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__FIELDS
+    value:
+    - dim_item.item_business_id
+    - fact_order_item_snapshot.requested_qty
+    value-type: array
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__MODEL
+    value: <retailer-model>
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__QUERY_TIMEZONE
+    value: America/Los_Angeles
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__SALES_HISTORY_CONFIG__VIEW
+    value: fact_order_item_snapshot
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__LOOKER_API__RUN_QUERIES_API_3_1__TIMEOUT
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_API__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__CUSTOMER_ECOM_ITEM_ID_DUPLICATION_POLICY
+    value: delete-duplicated
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__CUSTOMER_ECOM_ITEM_ID_RECOGNITION_POLICY
+    value: delete-unrecognized
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__TAKEOFF_ITEM_ID_DUPLICATION_POLICY
+    value: keep-duplicated
+    value-type: string
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__COMMON__VALID_STATUSES
+    value:
+    - SPLIT
+    - HOLD
+    - CANCELLED
+    - RELEASED
+    - CREATED
+    value-type: set
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__CUSTOMER_ORDER_STATUSES_HISTORY__VALIDATION_RANGE_IN_DAYS
+    value: 7
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__INVENTORY_MOVEMENTS__VALIDATION_RANGE_IN_DAYS
+    value: 7
+    value-type: integer
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__CANCEL_STATUSES
+    value:
+    - CANCELLED
+    value-type: set
+  - categories:
+    - rint-api
+    location-code-tom: null
+    name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__SPLIT_STATUSES
+    value:
+    - SPLIT
+    value-type: set
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: FEATURE__THROTTLE__PURCHASE_ORDERS_OUTBOUND__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__NAME
+    value: etl-events-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__EVENTS__TOPIC__NAME
+    value: etl-events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__NAME
+    value: etl-file-processed-events-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__FILE_PROCESSED_EVENTS__TOPIC__NAME
+    value: etl-file-processed-events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__GCP_STORAGE__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__EVENTS
+    value: events
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__ITEMS
+    value: items
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__SCHEMAS
+    value: schemas
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BIG_QUERY__VALIDATE_SCHEMA?
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__BACK_OFF_MULTIPLIER
+    value: 2.2
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__MAXIMUM_REDELIVERIES
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__CAMEL__REDELIVERY_POLICY__REDELIVERY_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__FTP_DISPATCHER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__GCP_STORAGE_DISPATCHER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__ITEMS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__MFC_SALES__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__OUTBOUND_GCP_STORAGE_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__OUTBOUND_SFTP_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FLOW__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__CAMEL_ROUTE__WAREHOUSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__DATABASE__BIGQUERY__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__ETL__SAVE_AFTER_PREPROCESS__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FEATURE__VALIDATION__FILE_SIZE_RESTRICTION__IN_MB
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__CONNECT_TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__GREEDY
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__INITIAL_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__PATH
+    value: inbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__RECONNECT_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__SO_TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__TIMEOUT_IN_MS
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__INBOUND__UNKNOWN_FOLDER
+    value: unknown
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__FTP__OUTBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__PATH
+    value: inbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__INBOUND__UNKNOWN_FOLDER
+    value: unknown
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__GCP_STORAGE__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__INFO__SERVICE_NAME
+    value: rint-etl
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__MDC_FIELDS__EXCHANGE__HEADERS
+    value:
+      event-type: event-type
+      purchase-order-id: purchase-order-id
+    value-type: map
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__COMMON
+    value:
+    - schemas/common/common_json_schema_v1.edn
+    - schemas/common/common_item_master_v1.edn
+    - schemas/common/common_inbound_purchase_order_v1.edn
+    - schemas/common/common_tlogs_v1.edn
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__ECOMMERCE
+    value:
+    - schemas/ecommerce/ecommerce_categories_v1.edn
+    - schemas/ecommerce/ecommerce_products_v1.edn
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SCHEMA_REGISTRY__FILES
+    value: []
+    value-type: array
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__SLACK__PURCHASE_ORDERS_CHANNEL
+    value: test-purchase-orders
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__CRON
+    value: 0 0 0 * * ?
+    value-type: string
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_ARCHIVE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_POLL
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_LIMIT_PER_SCAN
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_SIZE_LIMIT_PER_ARCHIVE_IN_BYTES
+    value: 102400000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__FILES_SIZE_LIMIT_PER_POLL_IN_BYTES
+    value: 5120000000
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: RINT_ETL__WAREHOUSE__RETENTION_IN_DAYS
+    value: 14
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND__REQUESTS_PER_PERIOD
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-etl
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND__TIME_PERIOD_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_COUNTRY
+    value: US
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_LANGUAGE
+    value: en
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: GOLD_SERVER_TIMEZONE
+    value: America/New_York
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RETRY_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__OWNER
+    value: Team Indigo
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__INFO__SERVICE_NAME
+    value: rint-gold
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: RINT_GOLD__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__DOMAIN
+    value: DEFAULT
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__GOLD_CONTEXT_CLASS
+    value: 0
+    value-type: integer
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__LANGUAGE
+    value: GB
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__MERCH_STRUCT_ID
+    value: '1'
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WSDL_PATH
+    value: schemas/wsdl/GWSSupplierOrderServices.wsdl
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WS_BINDING
+    value: GWSSupplierOrderBinding
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__METADATA__WS_PATH
+    value: GWSSupplierOrders
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__SUPPLIER_ORDER_GET_LIST_DETAILS__OPERATION_NAME
+    value: GWSSupplierOrderGetListDetails
+    value-type: string
+  - categories:
+    - rint-gold
+    location-code-tom: null
+    name: SOAP_WS__GWS_SUPPLIER_ORDERS__SUPPLIER_ORDER_GET_LIST_HEADERS__OPERATION_NAME
+    value: GWSSupplierOrderGetListHeaders
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__PRODUCT_IDENTIFICATION_BY_UPC14__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__SEND_TO_DECANTING__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__PURCHASE_ORDER_OUTBOUND__SEND_TO_TGIM__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: FEATURE__THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: MFC_DIVISION_MAPPING
+    value: {}
+    value-type: map
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: OMS_API__GET_CUSTOMER_ORDER_STATUSES_HISTORY__DEFAULT_START_DATE
+    value: '1970-01-01T00:00:00.00Z'
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: OUTBOUND_FLOW__INVENTORY_ADJUSTMENT__PERMITTED_REASON_CODES
+    value: .*
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__CRON
+    value: 0 0 0/1 * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__CLEANUP_CAMEL_MESSAGE_PROCESSED_DATA__RETENTION_IN_DAYS
+    value: 14
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__INVENTORY_ADJUSTMENT__CRON
+    value: 0 0/2 * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__INVENTORY_ADJUSTMENT__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__MFC_SALES__CRON
+    value: 0 30 13 * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__MFC_SALES__TIMEZONE
+    value: America/New_York
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__ORDER_STATUSES_OUTBOUND_FLOW__CRON
+    value: 0/20 * * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__ORDER_STATUSES_OUTBOUND_FLOW__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__CRON
+    value: 0 0/2 * * * ?
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__DAYS_RANGE
+    value: 11
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: POLLER__PURCHASE_ORDERS_OUTBOUND_FLOW__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB_EXPOSE__CUSTOMER_ORDER_STATUSES_HISTORY__VERSIONS
+    value:
+    - v4
+    value-type: array
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB_EXPOSE__INVENTORY_MOVEMENTS__VERSIONS
+    value:
+    - v4
+    value-type: array
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__NAME
+    value: inventory-movements-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__INVENTORY_ADJUSTMENT__TOPIC__NAME
+    value: inventory-movements
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__NAME
+    value: customer-orders-status-history-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__ORDER_STATUSES_OUTBOUND__TOPIC__NAME
+    value: customer-orders-status-history
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__NAME
+    value: purchase-orders-internal-subscription
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDERS_INTERNAL__TOPIC__NAME
+    value: purchase-orders-internal
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__FAILURE_RATE_THRESHOLD
+    value: 90
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__MINIMUM_NUMBER_OF_CALLS
+    value: 50
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__PERMITTED_NUMBER_OF_CALLS_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_CLOSED_STATE
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__RING_BUFFER_SIZE_IN_HALF_OPEN_STATE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_SIZE
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLIDING_WINDOW_TYPE
+    value: TIME_BASED
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLOW_CALL_RATE_THRESHOLD
+    value: 100
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__SLOW_CALL_THRESHOLD_IN_MILLIS
+    value: 60000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__WAIT_MILLIS_IN_OPEN_STATE
+    value: 10000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__BREAKER_POLICY__DEFAULT__WRITABLE_STACK_TRACE_ENABLED
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__BACK_OFF_MULTIPLIER
+    value: 2.2
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__MAXIMUM_REDELIVERIES
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__CAMEL__REDELIVERY_POLICY__REDELIVERY_DELAY_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__DEV_MODE
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__EXECUTOR__BUSINESS__THREAD_POOL_SIZE
+    value: 20
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__EXECUTOR__SYSTEM__THREAD_POOL_SIZE
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__BREAKER_POLICY__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__HOUSEKEEPING__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__INVENTORY_ADJUSTMENT__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__MFC_SALES__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__ORDER_STATUSES_OUTBOUND_FLOW__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__OUTBOUND_GCP_STORAGE_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__OUTBOUND_SFTP_FILE_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PUBSUB_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PUBSUB_ORDER_STATUSES_WRITER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_INBOUND_FLOW__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__PURCHASE_ORDERS_OUTBOUND_FLOW__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__RINT_API_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__RINT_API_ORDER_STATUSES_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__CAMEL_ROUTE__TGIM_INVENTORY_ADJUSTMENT_WRITER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__DEBUG__NREPL_SERVER__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__LOGGING__REQUEST_RESPONSE__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__MFC_SALES__ENABLE_WEIGHTED_ITEMS__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__MONITORING__PROMETHEUS__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RETRY_POLICY__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RPC__AUTH__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FEATURE__RPC__SERVER__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__FTP__OUTBOUND__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__PATH
+    value: outbound
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__GCP_STORAGE__OUTBOUND__SKIPPED_FOLDER
+    value: skipped
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__HEALTH__TIMEOUT
+    value: 5000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__DOMAIN
+    value: Retailer Integrations
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__OWNER
+    value: INC domain teams
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__INFO__SERVICE_NAME
+    value: rint-sinfonietta
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__MDC_FIELDS__EXCHANGE__HEADERS
+    value:
+      event-type: event-type
+      purchase-order-id: purchase-order-id
+    value-type: map
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__MEMOIZE__GET_USER_PERMISSIONS__TTL_IN_MILLISECONDS
+    value: 120000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__POLLER__MFC_SALES__DELAY_IN_SECONDS
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETAILER_ID
+    value: '04'
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__TURN_ON
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__DEFAULT__WAIT_DURATION_IN_MS
+    value: 1000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__BACK_OFF_MULTIPLIER
+    value: 1
+    value-type: numeric
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__MAX_ATTEMPTS
+    value: 3
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__TURN_ON
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__TYPE
+    value: linear
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__RETRY_POLICY__MFC_SALES__WAIT_DURATION_IN_MS
+    value: 300000
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__SLACK__PURCHASE_ORDERS_CHANNEL
+    value: test-purchase-orders
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RINT_SINFONIETTA__TGIM_API__GET_INVENTORY_ADJUSTMENT_WITH_PREVIOUS_QUANTITY__DEFAULT_TIME_FRAME_MINUTES
+    value: 60
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__REQUESTS_PER_PERIOD
+    value: 1
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    location-code-tom: null
+    name: THROTTLE__PURCHASE_ORDERS_OUTBOUND_FILE_EXPORT__TIME_PERIOD_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - user-management
+    location-code-tom: null
+    name: USER_ALLOW_SPOKES_ASSIGMENT
+    value: false
+    value-type: boolean
+  - categories:
+    - user-management
+    location-code-tom: null
+    name: USER_PASSWORD_MIN_LENGTH
+    value: 6
+    value-type: integer
+  - categories:
+    - pickerman
+    - decanting-ui
+    location-code-tom: null
+    name: RETAILER_CODENAME
+    value: smu
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__DATA_FOLDER
+    value: data
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__PATH
+    value: purchase_orders_outbound
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__PROCESSED_FOLDER
+    value: processed
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__READY_FOLDER
+    value: ready
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: EXTERNAL_FTP__PURCHASE_ORDERS_OUTBOUND_FLOW__TEMP_FOLDER
+    value: transfer
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__NAME
+    value: mfc-sales-internal-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__MESSAGE_RETENTION_DURATION_IN_SECONDS
+    value: 604800
+    value-type: integer
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__NAME
+    value: purchase-orders-outbound-internal-subscription
+    value-type: string
+  - categories:
+    - rint-etl
+    - rint-sinfonietta
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__RETAIN_ACKED_MESSAGES
+    value: true
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__MFC_SALES__TOPIC__NAME
+    value: mfc-sales-internal
+    value-type: string
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__ACK_DEADLINE_IN_SECONDS
+    value: 10
+    value-type: integer
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__SUBSCRIPTION__ENABLE_ORDERING
+    value: false
+    value-type: boolean
+  - categories:
+    - rint-sinfonietta
+    - rint-etl
+    location-code-tom: null
+    name: PUBSUB__PURCHASE_ORDER_OUTBOUND_INTERNAL__TOPIC__NAME
+    value: purchase-orders-outbound-internal
+    value-type: string
+  - categories:
+    - rint-api
+    - rint-etl
+    - rint-gold
+    - rint-sinfonietta
+    location-code-tom: null
+    name: RETAILER
+    value: smu
+    value-type: string
+flow_racks:
+  flow-racks:
+    '1': R8L2P01
+    '10': R4L1P01
+    '11': R7L1P01
+    '12': R3L1P01
+    '13': R6L1P01
+    '14': R2L1P01
+    '15': R5L1P01
+    '16': R1L1P01
+    '17': R8L3P01
+    '18': R4L3P01
+    '19': R7L3P01
+    '2': R4L2P01
+    '20': R3L3P01
+    '21': R6L3P01
+    '22': R2L3P01
+    '23': R5L3P01
+    '24': R1L3P01
+    '3': R7L2P01
+    '4': R3L2P01
+    '5': R6L2P01
+    '6': R2L2P01
+    '7': R5L2P01
+    '8': R1L2P01
+    '9': R8L1P01
+  location-code-tom: '1917'
+locations:
+  location-address:
+    city: Santiago
+    iso-state: US-NY
+    state: NY
+    street: Av. Jose Alcalde Delano 10492
+    zip-code: '10492'
+  location-code-gold: '1917'
+  location-code-retailer: '1917'
+  location-code-tom: '1917'
+  location-contact-phone: '+566006000025'
+  location-id: 3
+  location-name: Av. Jose Alcalde Delano 10492
+  location-pickup:
+    lat: -33.35637
+    lon: -70.53922
+  location-service-info:
+    desctext: text
+    email: mfc@takeoff.com
+    phone: '+566006000025'
+  location-type: mfc
+  mfc-ref-code: '1917'
+  timezone: America/Santiago
+spokes: []
+src_routes:
+  routes:
+  - mfc-tom-code: '1917'
+    route-code: '1001'
+  - mfc-tom-code: '1917'
+    route-code: '1101'
+  - mfc-tom-code: '1917'
+    route-code: '1201'
+  - mfc-tom-code: '1917'
+    route-code: '1301'
+  - mfc-tom-code: '1917'
+    route-code: '1401'
+  - mfc-tom-code: '1917'
+    route-code: '1501'
+  - mfc-tom-code: '1917'
+    route-code: '1601'
+  - mfc-tom-code: '1917'
+    route-code: '1701'
+  - mfc-tom-code: '1917'
+    route-code: '1801'
+  - mfc-tom-code: '1917'
+    route-code: '1901'
+  - mfc-tom-code: '1917'
+    route-code: '2001'
+  - mfc-tom-code: '1917'
+    route-code: '2101'
+  - mfc-tom-code: '1917'
+    route-code: '2201'
+  - mfc-tom-code: '1917'
+    route-code: '2301'
+  - mfc-tom-code: '1917'
+    route-code: '2401'
+  - mfc-tom-code: '1917'
+    route-code: '1002'
+  - mfc-tom-code: '1917'
+    route-code: '1102'
+  - mfc-tom-code: '1917'
+    route-code: '1202'
+  - mfc-tom-code: '1917'
+    route-code: '1302'
+  - mfc-tom-code: '1917'
+    route-code: '1402'
+  - mfc-tom-code: '1917'
+    route-code: '1502'
+  - mfc-tom-code: '1917'
+    route-code: '1602'
+  - mfc-tom-code: '1917'
+    route-code: '1702'
+  - mfc-tom-code: '1917'
+    route-code: '1802'
+  - mfc-tom-code: '1917'
+    route-code: '1902'
+  - mfc-tom-code: '1917'
+    route-code: '2002'
+  - mfc-tom-code: '1917'
+    route-code: '2102'
+  - mfc-tom-code: '1917'
+    route-code: '2202'
+  - mfc-tom-code: '1917'
+    route-code: '2302'
+  - mfc-tom-code: '1917'
+    route-code: '2402'
+  - mfc-tom-code: '1917'
+    route-code: '1003'
+  - mfc-tom-code: '1917'
+    route-code: '1103'
+  - mfc-tom-code: '1917'
+    route-code: '1203'
+  - mfc-tom-code: '1917'
+    route-code: '1303'
+  - mfc-tom-code: '1917'
+    route-code: '1403'
+  - mfc-tom-code: '1917'
+    route-code: '1503'
+  - mfc-tom-code: '1917'
+    route-code: '1603'
+  - mfc-tom-code: '1917'
+    route-code: '1703'
+  - mfc-tom-code: '1917'
+    route-code: '1803'
+  - mfc-tom-code: '1917'
+    route-code: '1903'
+  - mfc-tom-code: '1917'
+    route-code: '2003'
+  - mfc-tom-code: '1917'
+    route-code: '2103'
+  - mfc-tom-code: '1917'
+    route-code: '2203'
+  - mfc-tom-code: '1917'
+    route-code: '2303'
+  - mfc-tom-code: '1917'
+    route-code: '2403'
+  - mfc-tom-code: '1917'
+    route-code: '1004'
+  - mfc-tom-code: '1917'
+    route-code: '1104'
+  - mfc-tom-code: '1917'
+    route-code: '1204'
+  - mfc-tom-code: '1917'
+    route-code: '1304'
+  - mfc-tom-code: '1917'
+    route-code: '1404'
+  - mfc-tom-code: '1917'
+    route-code: '1504'
+  - mfc-tom-code: '1917'
+    route-code: '1604'
+  - mfc-tom-code: '1917'
+    route-code: '1704'
+  - mfc-tom-code: '1917'
+    route-code: '1804'
+  - mfc-tom-code: '1917'
+    route-code: '1904'
+  - mfc-tom-code: '1917'
+    route-code: '2004'
+  - mfc-tom-code: '1917'
+    route-code: '2104'
+  - mfc-tom-code: '1917'
+    route-code: '2204'
+  - mfc-tom-code: '1917'
+    route-code: '2304'
+  - mfc-tom-code: '1917'
+    route-code: '2404'
+  - mfc-tom-code: '1917'
+    route-code: '1005'
+  - mfc-tom-code: '1917'
+    route-code: '1105'
+  - mfc-tom-code: '1917'
+    route-code: '1205'
+  - mfc-tom-code: '1917'
+    route-code: '1305'
+  - mfc-tom-code: '1917'
+    route-code: '1405'
+  - mfc-tom-code: '1917'
+    route-code: '1505'
+  - mfc-tom-code: '1917'
+    route-code: '1605'
+  - mfc-tom-code: '1917'
+    route-code: '1705'
+  - mfc-tom-code: '1917'
+    route-code: '1805'
+  - mfc-tom-code: '1917'
+    route-code: '1905'
+  - mfc-tom-code: '1917'
+    route-code: '2005'
+  - mfc-tom-code: '1917'
+    route-code: '2105'
+  - mfc-tom-code: '1917'
+    route-code: '2205'
+  - mfc-tom-code: '1917'
+    route-code: '2305'
+  - mfc-tom-code: '1917'
+    route-code: '2405'
+  - mfc-tom-code: '1917'
+    route-code: '1006'
+  - mfc-tom-code: '1917'
+    route-code: '1806'
+  - mfc-tom-code: '1917'
+    route-code: '2006'
+  - mfc-tom-code: '1917'
+    route-code: '2406'
+  - mfc-tom-code: '1917'
+    route-code: '1007'
+  - mfc-tom-code: '1917'
+    route-code: '1207'
+  - mfc-tom-code: '1917'
+    route-code: '1607'
+  - mfc-tom-code: '1917'
+    route-code: '1807'
+  - mfc-tom-code: '1917'
+    route-code: '2007'
+  - mfc-tom-code: '1917'
+    route-code: '2207'
+  - mfc-tom-code: '1917'
+    route-code: '2407'
+  - mfc-tom-code: '1917'
+    route-code: '1106'
+  - mfc-tom-code: '1917'
+    route-code: '1706'
+  - mfc-tom-code: '1917'
+    route-code: '1907'
+  - mfc-tom-code: '1917'
+    route-code: '1606'
+  - mfc-tom-code: '1917'
+    route-code: '2107'
+  - mfc-tom-code: '1917'
+    route-code: '1206'
+  - mfc-tom-code: '1917'
+    route-code: '1406'
+  - mfc-tom-code: '1917'
+    route-code: '2206'
+  - mfc-tom-code: '1917'
+    route-code: '1407'
+  - mfc-tom-code: '1917'
+    route-code: '1008'
+  - mfc-tom-code: '1917'
+    route-code: '1306'
+  - mfc-tom-code: '1917'
+    route-code: '1906'
+  - mfc-tom-code: '1917'
+    route-code: '1307'
+  - mfc-tom-code: '1917'
+    route-code: '1506'
+  - mfc-tom-code: '1917'
+    route-code: '2106'
+  - mfc-tom-code: '1917'
+    route-code: '2306'
+  - mfc-tom-code: '1917'
+    route-code: '1107'
+  - mfc-tom-code: '1917'
+    route-code: '1507'
+  - mfc-tom-code: '1917'
+    route-code: '1707'
+  - mfc-tom-code: '1917'
+    route-code: '2307'
+  - mfc-tom-code: '1917'
+    route-code: '1108'
+  - mfc-tom-code: '1917'
+    route-code: '1208'
+  - mfc-tom-code: '1917'
+    route-code: '1308'
+  - mfc-tom-code: '1917'
+    route-code: '1408'
+  - mfc-tom-code: '1917'
+    route-code: '1508'
+  - mfc-tom-code: '1917'
+    route-code: '1608'
+  - mfc-tom-code: '1917'
+    route-code: '1708'
+  - mfc-tom-code: '1917'
+    route-code: '1808'
+  - mfc-tom-code: '1917'
+    route-code: '1908'
+  - mfc-tom-code: '1917'
+    route-code: '2008'
+  - mfc-tom-code: '1917'
+    route-code: '2108'
+  - mfc-tom-code: '1917'
+    route-code: '2208'
+  - mfc-tom-code: '1917'
+    route-code: '2308'
+  - mfc-tom-code: '1917'
+    route-code: '2408'
+  - mfc-tom-code: '1917'
+    route-code: '1009'
+  - mfc-tom-code: '1917'
+    route-code: '1109'
+  - mfc-tom-code: '1917'
+    route-code: '1209'
+  - mfc-tom-code: '1917'
+    route-code: '1309'
+  - mfc-tom-code: '1917'
+    route-code: '1409'
+  - mfc-tom-code: '1917'
+    route-code: '1509'
+  - mfc-tom-code: '1917'
+    route-code: '1609'
+  - mfc-tom-code: '1917'
+    route-code: '1709'
+  - mfc-tom-code: '1917'
+    route-code: '1809'
+  - mfc-tom-code: '1917'
+    route-code: '1909'
+  - mfc-tom-code: '1917'
+    route-code: '2009'
+  - mfc-tom-code: '1917'
+    route-code: '2109'
+  - mfc-tom-code: '1917'
+    route-code: '2209'
+  - mfc-tom-code: '1917'
+    route-code: '2309'
+  - mfc-tom-code: '1917'
+    route-code: '2409'
+  - mfc-tom-code: '1917'
+    route-code: '1010'
+  - mfc-tom-code: '1917'
+    route-code: '1110'
+  - mfc-tom-code: '1917'
+    route-code: '1210'
+  - mfc-tom-code: '1917'
+    route-code: '1310'
+  - mfc-tom-code: '1917'
+    route-code: '1410'
+  - mfc-tom-code: '1917'
+    route-code: '1510'
+  - mfc-tom-code: '1917'
+    route-code: '1610'
+  - mfc-tom-code: '1917'
+    route-code: '1710'
+  - mfc-tom-code: '1917'
+    route-code: '1810'
+  - mfc-tom-code: '1917'
+    route-code: '1910'
+  - mfc-tom-code: '1917'
+    route-code: '2010'
+  - mfc-tom-code: '1917'
+    route-code: '2110'
+  - mfc-tom-code: '1917'
+    route-code: '2210'
+  - mfc-tom-code: '1917'
+    route-code: '2310'
+  - mfc-tom-code: '1917'
+    route-code: '2410'
+  - mfc-tom-code: '1917'
+    route-code: '1011'
+  - mfc-tom-code: '1917'
+    route-code: '1111'
+  - mfc-tom-code: '1917'
+    route-code: '1211'
+  - mfc-tom-code: '1917'
+    route-code: '1311'
+  - mfc-tom-code: '1917'
+    route-code: '1411'
+  - mfc-tom-code: '1917'
+    route-code: '1511'
+  - mfc-tom-code: '1917'
+    route-code: '1611'
+  - mfc-tom-code: '1917'
+    route-code: '1711'
+  - mfc-tom-code: '1917'
+    route-code: '1811'
+  - mfc-tom-code: '1917'
+    route-code: '1911'
+  - mfc-tom-code: '1917'
+    route-code: '2011'
+  - mfc-tom-code: '1917'
+    route-code: '2111'
+  - mfc-tom-code: '1917'
+    route-code: '2211'
+  - mfc-tom-code: '1917'
+    route-code: '2311'
+  - mfc-tom-code: '1917'
+    route-code: '2411'
+  - mfc-tom-code: '1917'
+    route-code: '1012'
+  - mfc-tom-code: '1917'
+    route-code: '1112'
+  - mfc-tom-code: '1917'
+    route-code: '1212'
+  - mfc-tom-code: '1917'
+    route-code: '1312'
+  - mfc-tom-code: '1917'
+    route-code: '1412'
+  - mfc-tom-code: '1917'
+    route-code: '1512'
+  - mfc-tom-code: '1917'
+    route-code: '1612'
+  - mfc-tom-code: '1917'
+    route-code: '1712'
+  - mfc-tom-code: '1917'
+    route-code: '1812'
+  - mfc-tom-code: '1917'
+    route-code: '1912'
+  - mfc-tom-code: '1917'
+    route-code: '2012'
+  - mfc-tom-code: '1917'
+    route-code: '2112'
+  - mfc-tom-code: '1917'
+    route-code: '2212'
+  - mfc-tom-code: '1917'
+    route-code: '2312'
+  - mfc-tom-code: '1917'
+    route-code: '2412'
+  - mfc-tom-code: '1917'
+    route-code: '1113'
+  - mfc-tom-code: '1917'
+    route-code: '1713'
+  - mfc-tom-code: '1917'
+    route-code: '2113'
+  - mfc-tom-code: '1917'
+    route-code: '2313'
+  - mfc-tom-code: '1917'
+    route-code: '1214'
+  - mfc-tom-code: '1917'
+    route-code: '1314'
+  - mfc-tom-code: '1917'
+    route-code: '2014'
+  - mfc-tom-code: '1917'
+    route-code: '1015'
+  - mfc-tom-code: '1917'
+    route-code: '1215'
+  - mfc-tom-code: '1917'
+    route-code: '1415'
+  - mfc-tom-code: '1917'
+    route-code: '2215'
+  - mfc-tom-code: '1917'
+    route-code: '2415'
+  - mfc-tom-code: '1917'
+    route-code: '1013'
+  - mfc-tom-code: '1917'
+    route-code: '2214'
+  - mfc-tom-code: '1917'
+    route-code: '1016'
+  - mfc-tom-code: '1917'
+    route-code: '1616'
+  - mfc-tom-code: '1917'
+    route-code: '1816'
+  - mfc-tom-code: '1917'
+    route-code: '2016'
+  - mfc-tom-code: '1917'
+    route-code: '2416'
+  - mfc-tom-code: '1917'
+    route-code: '1017'
+  - mfc-tom-code: '1917'
+    route-code: '1417'
+  - mfc-tom-code: '1917'
+    route-code: '1617'
+  - mfc-tom-code: '1917'
+    route-code: '2017'
+  - mfc-tom-code: '1917'
+    route-code: '2417'
+  - mfc-tom-code: '1917'
+    route-code: '1018'
+  - mfc-tom-code: '1917'
+    route-code: '1218'
+  - mfc-tom-code: '1917'
+    route-code: '1618'
+  - mfc-tom-code: '1917'
+    route-code: '2018'
+  - mfc-tom-code: '1917'
+    route-code: '2218'
+  - mfc-tom-code: '1917'
+    route-code: '2418'
+  - mfc-tom-code: '1917'
+    route-code: '1213'
+  - mfc-tom-code: '1917'
+    route-code: '1413'
+  - mfc-tom-code: '1917'
+    route-code: '1613'
+  - mfc-tom-code: '1917'
+    route-code: '2013'
+  - mfc-tom-code: '1917'
+    route-code: '2213'
+  - mfc-tom-code: '1917'
+    route-code: '2413'
+  - mfc-tom-code: '1917'
+    route-code: '1014'
+  - mfc-tom-code: '1917'
+    route-code: '1514'
+  - mfc-tom-code: '1917'
+    route-code: '1914'
+  - mfc-tom-code: '1917'
+    route-code: '2114'
+  - mfc-tom-code: '1917'
+    route-code: '2314'
+  - mfc-tom-code: '1917'
+    route-code: '1115'
+  - mfc-tom-code: '1917'
+    route-code: '1515'
+  - mfc-tom-code: '1917'
+    route-code: '1715'
+  - mfc-tom-code: '1917'
+    route-code: '2115'
+  - mfc-tom-code: '1917'
+    route-code: '2315'
+  - mfc-tom-code: '1917'
+    route-code: '1116'
+  - mfc-tom-code: '1917'
+    route-code: '1316'
+  - mfc-tom-code: '1917'
+    route-code: '1716'
+  - mfc-tom-code: '1917'
+    route-code: '1916'
+  - mfc-tom-code: '1917'
+    route-code: '2116'
+  - mfc-tom-code: '1917'
+    route-code: '2316'
+  - mfc-tom-code: '1917'
+    route-code: '1117'
+  - mfc-tom-code: '1917'
+    route-code: '1517'
+  - mfc-tom-code: '1917'
+    route-code: '1717'
+  - mfc-tom-code: '1917'
+    route-code: '1917'
+  - mfc-tom-code: '1917'
+    route-code: '2117'
+  - mfc-tom-code: '1917'
+    route-code: '2317'
+  - mfc-tom-code: '1917'
+    route-code: '1318'
+  - mfc-tom-code: '1917'
+    route-code: '1518'
+  - mfc-tom-code: '1917'
+    route-code: '1918'
+  - mfc-tom-code: '1917'
+    route-code: '2118'
+  - mfc-tom-code: '1917'
+    route-code: '2318'
+  - mfc-tom-code: '1917'
+    route-code: '1313'
+  - mfc-tom-code: '1917'
+    route-code: '1913'
+  - mfc-tom-code: '1917'
+    route-code: '1114'
+  - mfc-tom-code: '1917'
+    route-code: '1414'
+  - mfc-tom-code: '1917'
+    route-code: '1614'
+  - mfc-tom-code: '1917'
+    route-code: '1815'
+  - mfc-tom-code: '1917'
+    route-code: '2015'
+  - mfc-tom-code: '1917'
+    route-code: '1216'
+  - mfc-tom-code: '1917'
+    route-code: '1817'
+  - mfc-tom-code: '1917'
+    route-code: '1818'
+  - mfc-tom-code: '1917'
+    route-code: '1513'
+  - mfc-tom-code: '1917'
+    route-code: '1814'
+  - mfc-tom-code: '1917'
+    route-code: '2414'
+  - mfc-tom-code: '1917'
+    route-code: '1615'
+  - mfc-tom-code: '1917'
+    route-code: '1416'
+  - mfc-tom-code: '1917'
+    route-code: '2216'
+  - mfc-tom-code: '1917'
+    route-code: '1217'
+  - mfc-tom-code: '1917'
+    route-code: '2217'
+  - mfc-tom-code: '1917'
+    route-code: '1418'
+  - mfc-tom-code: '1917'
+    route-code: '1813'
+  - mfc-tom-code: '1917'
+    route-code: '1714'
+  - mfc-tom-code: '1917'
+    route-code: '1315'
+  - mfc-tom-code: '1917'
+    route-code: '1915'
+  - mfc-tom-code: '1917'
+    route-code: '1516'
+  - mfc-tom-code: '1917'
+    route-code: '1317'
+  - mfc-tom-code: '1917'
+    route-code: '1118'
+  - mfc-tom-code: '1917'
+    route-code: '1718'
+  - mfc-tom-code: '1917'
+    route-code: '1019'
+  - mfc-tom-code: '1917'
+    route-code: '1119'
+  - mfc-tom-code: '1917'
+    route-code: '1219'
+  - mfc-tom-code: '1917'
+    route-code: '1319'
+  - mfc-tom-code: '1917'
+    route-code: '1419'
+  - mfc-tom-code: '1917'
+    route-code: '1519'
+  - mfc-tom-code: '1917'
+    route-code: '1619'
+  - mfc-tom-code: '1917'
+    route-code: '1719'
+  - mfc-tom-code: '1917'
+    route-code: '1819'
+  - mfc-tom-code: '1917'
+    route-code: '1919'
+  - mfc-tom-code: '1917'
+    route-code: '2019'
+  - mfc-tom-code: '1917'
+    route-code: '2119'
+  - mfc-tom-code: '1917'
+    route-code: '2219'
+  - mfc-tom-code: '1917'
+    route-code: '2319'
+  - mfc-tom-code: '1917'
+    route-code: '2419'
+  - mfc-tom-code: '1917'
+    route-code: '901'
+  - mfc-tom-code: '1917'
+    route-code: '902'
+  - mfc-tom-code: '1917'
+    route-code: '903'
+  - mfc-tom-code: '1917'
+    route-code: '904'
+  - mfc-tom-code: '1917'
+    route-code: '905'
+  - mfc-tom-code: '1917'
+    route-code: '906'
+  - mfc-tom-code: '1917'
+    route-code: '907'
+  - mfc-tom-code: '1917'
+    route-code: '908'
+  - mfc-tom-code: '1917'
+    route-code: '909'
+  - mfc-tom-code: '1917'
+    route-code: '910'
+  - mfc-tom-code: '1917'
+    route-code: '911'
+  - mfc-tom-code: '1917'
+    route-code: '912'
+  - mfc-tom-code: '1917'
+    route-code: '913'
+  - mfc-tom-code: '1917'
+    route-code: '914'
+  - mfc-tom-code: '1917'
+    route-code: '915'
+  - mfc-tom-code: '1917'
+    route-code: '916'
+  - mfc-tom-code: '1917'
+    route-code: '917'
+  - mfc-tom-code: '1917'
+    route-code: '918'
+  - mfc-tom-code: '1917'
+    route-code: '919'
+  - mfc-tom-code: '1917'
+    route-code: 0907
+  - mfc-tom-code: '1917'
+    route-code: 0901
+  - mfc-tom-code: '1917'
+    route-code: 0902
+  - mfc-tom-code: '1917'
+    route-code: 0903
+  - mfc-tom-code: '1917'
+    route-code: 0904
+  - mfc-tom-code: '1917'
+    route-code: 0905
+  - mfc-tom-code: '1917'
+    route-code: 0906
+  - mfc-tom-code: '1917'
+    route-code: 0908
+  - mfc-tom-code: '1917'
+    route-code: 0909
+  - mfc-tom-code: '1917'
+    route-code: 0910
+  - mfc-tom-code: '1917'
+    route-code: 0911
+  - mfc-tom-code: '1917'
+    route-code: 0912
+  - mfc-tom-code: '1917'
+    route-code: 0913
+  - mfc-tom-code: '1917'
+    route-code: 0914
+  - mfc-tom-code: '1917'
+    route-code: 0915
+  - mfc-tom-code: '1917'
+    route-code: 0916
+  - mfc-tom-code: '1917'
+    route-code: 0917
+  - mfc-tom-code: '1917'
+    route-code: 0918
+  - mfc-tom-code: '1917'
+    route-code: 0919
+staging_config:
+  staging-configurations:
+  - mapped-routes:
+    - code: 0907
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1007'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1107'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1207'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1307'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1407'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1507'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1607'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1707'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1807'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1907'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2007'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2107'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2207'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2307'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2407'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011G
+  - mapped-routes:
+    - code: 0905
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1005'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1105'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1205'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1305'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1405'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1505'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1605'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1705'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1805'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1905'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2005'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2105'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2205'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2305'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2405'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011E
+  - mapped-routes:
+    - code: 0903
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1003'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1103'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1203'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1303'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1403'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1503'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1603'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1703'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1803'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1903'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2003'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2103'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2203'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2303'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2403'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011C
+  - mapped-routes:
+    - code: 0909
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1009'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1109'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1209'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1309'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1409'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1509'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1609'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1709'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1809'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1909'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2009'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2109'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2209'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2309'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2409'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011I
+  - mapped-routes:
+    - code: 0904
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1004'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1104'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1204'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1304'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1404'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1504'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1604'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1704'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1804'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1904'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2004'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2104'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2204'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2304'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2404'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011D
+  - mapped-routes:
+    - code: 0901
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1001'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1101'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1201'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1301'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1401'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1501'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1601'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1701'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1801'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1901'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2001'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2101'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2201'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2301'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2401'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011A
+  - mapped-routes:
+    - code: 0913
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1013'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1113'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1213'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1313'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1413'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1513'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1613'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1713'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1813'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1913'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2013'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2113'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2213'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2313'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2413'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011M
+  - mapped-routes:
+    - code: 0911
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1011'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1111'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1211'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1311'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1411'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1511'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1611'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1711'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1811'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1911'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2011'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2111'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2211'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2311'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2411'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011K
+  - mapped-routes:
+    - code: 0908
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1008'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1108'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1208'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1308'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1408'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1508'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1608'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1708'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1808'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1908'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2008'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2108'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2208'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2308'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2408'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011H
+  - mapped-routes:
+    - code: 0912
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1012'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1112'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1212'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1312'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1412'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1512'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1612'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1712'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1812'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1912'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2012'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2112'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2212'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2312'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2412'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011L
+  - mapped-routes:
+    - code: 0906
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1006'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1106'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1206'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1306'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1406'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1506'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1606'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1706'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1806'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1906'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2006'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2106'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2206'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2306'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2406'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011F
+  - mapped-routes:
+    - code: 0902
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1002'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1102'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1202'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1302'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1402'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1502'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1602'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1702'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1802'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1902'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2002'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2102'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2202'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2302'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2402'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011B
+  - mapped-routes:
+    - code: 0917
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1017'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1117'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1217'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1317'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1417'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1517'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1617'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1717'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1817'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1917'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2017'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2117'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2217'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2317'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2417'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010012B
+  - mapped-routes:
+    - code: 0910
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1010'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1110'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1210'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1310'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1410'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1510'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1610'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1710'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1810'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1910'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2010'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2110'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2210'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2310'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2410'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011J
+  - mapped-routes:
+    - code: 0914
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1014'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1114'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1214'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1314'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1414'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1514'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1614'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1714'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1814'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1914'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2014'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2114'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2214'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2314'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2414'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011N
+  - mapped-routes:
+    - code: 0916
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1016'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1116'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1216'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1316'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1416'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1516'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1616'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1716'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1816'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1916'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2016'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2116'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2216'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2316'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2416'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010012A
+  - mapped-routes:
+    - code: 0918
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1018'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1118'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1218'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1318'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1418'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1518'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1618'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1718'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1818'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1918'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2018'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2118'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2218'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2318'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2418'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010012C
+  - mapped-routes:
+    - code: 0915
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1015'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1115'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1215'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1315'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1415'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1515'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1615'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1715'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1815'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1915'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2015'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2115'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2215'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2315'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2415'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010011O
+  - mapped-routes:
+    - code: 0919
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1019'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1119'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1219'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1319'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1419'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1519'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1619'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1719'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1819'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '1919'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2019'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2119'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2219'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2319'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    - code: '2419'
+      last-modified-at: '2022-06-08T10:49:44Z'
+      type: ROUTE
+    staging-location-code: 1917H010012D
+staging_locations:
+  staging-locations:
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011B
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011C
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011D
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011E
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011F
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011G
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011H
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011I
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011J
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011K
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011L
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011M
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011N
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011O
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010012A
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010012B
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010012C
+  - default: false
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010012D
+  - default: true
+    mfc-tom-code: '1917'
+    staging-location-code: 1917H010011A
+tote_types:
+- barcode-format-name: interleaved_2_5
+  custom-tote-prefix: ''
+  is-applicable-for-osr: false
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '1917'
+  temp-zone-name: frozen
+  tote-description: 1917_target_frozen
+  tote-dimensions:
+    tote-inner-dimensions-height: 11.52
+    tote-inner-dimensions-length: 21.47
+    tote-inner-dimensions-width: 13.76
+    tote-outer-dimensions-height: 14.0
+    tote-outer-dimensions-length: 23.46
+    tote-outer-dimensions-width: 15.75
+  tote-kind-name: target
+  tote-threshold-size: 80
+  tote-type-id: 8
+  tote-weight: 3.33
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: false
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '1917'
+  temp-zone-name: ambient
+  tote-dimensions:
+    tote-inner-dimensions-height: 10.23
+    tote-inner-dimensions-length: 20.66
+    tote-inner-dimensions-width: 13.18
+    tote-outer-dimensions-height: 11.0
+    tote-outer-dimensions-length: 20.86
+    tote-outer-dimensions-width: 13.38
+  tote-kind-name: target
+  tote-threshold-size: 80
+  tote-type-id: 5
+  tote-weight: 5.6
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: false
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '1917'
+  temp-zone-name: chilled
+  tote-dimensions:
+    tote-inner-dimensions-height: 12.0
+    tote-inner-dimensions-length: 16.53
+    tote-inner-dimensions-width: 9.84
+    tote-outer-dimensions-height: 12.6
+    tote-outer-dimensions-length: 19.68
+    tote-outer-dimensions-width: 11.81
+  tote-kind-name: target
+  tote-threshold-size: 80
+  tote-type-id: 6
+  tote-weight: 2.0
+- barcode-format-name: interleaved_2_5
+  is-applicable-for-osr: true
+  is-product-category-limit: false
+  is-standard: true
+  location-code-tom: '1917'
+  temp-zone-name: ambient
+  tote-dimensions:
+    tote-inner-dimensions-height: 11.9
+    tote-inner-dimensions-length: 22.1
+    tote-inner-dimensions-width: 14.2
+    tote-outer-dimensions-height: 12.6
+    tote-outer-dimensions-length: 23.5
+    tote-outer-dimensions-width: 15.7
+  tote-kind-name: storage
+  tote-max-weight: 55
+  tote-threshold-size: 80
+  tote-type-id: 4
+  tote-weight: 3.5

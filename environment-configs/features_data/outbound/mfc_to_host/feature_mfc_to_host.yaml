@@ -1,0 +1,8 @@
+key: mfc_to_host
+title: mfc_to_host Feature
+description: MFC to Host
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/mfc_to_host/tsc-config-items.yaml
+

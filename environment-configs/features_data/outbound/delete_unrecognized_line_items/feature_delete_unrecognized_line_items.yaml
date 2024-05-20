@@ -1,0 +1,8 @@
+key: delete_unrecognized_line_items
+title: delete unrecognized line items Feature
+description: delete_unrecognized_line_items from order content
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/delete_unrecognized_line_items/tsc-config-items.yaml
+

@@ -1,0 +1,8 @@
+key: delete_duplicate_line_items
+title: delete duplicate line items Feature
+description: delete_duplicate_line_items from order content
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/delete_duplicate_line_items/tsc-config-items.yaml
+

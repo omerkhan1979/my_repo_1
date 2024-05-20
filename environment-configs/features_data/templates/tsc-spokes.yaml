@@ -1,0 +1,42 @@
+- location-address:
+    city: Boston
+    iso-state: US-MA
+    state: MA
+    street: Wayne Hills Mall
+    zip-code: '01211'
+  location-code-retailer: '2222'
+  location-code-tom: '2222'
+  location-contact-phone: 0000-000-000
+  location-id: 2
+  location-name: TakeOff Technologies 2
+  location-pickup:
+    lat: 40.9626
+    lon: 74.2401
+  location-service-info:
+    desctext: Text Placeholder
+    email: testqa@takeoff.com
+    phone: 000-000-0000
+  location-type: spoke
+  mfc-ref-code: '9999'
+  timezone: America/New_York
+- location-address:
+    city: Milford
+    iso-state: US-MA
+    state: MA
+    street: 250 River Rd
+    zip-code: '07646'
+  location-code-retailer: '1111'
+  location-code-tom: '1111'
+  location-contact-phone: 0000-000-000
+  location-id: 3
+  location-name: TakeOff Technologies 3
+  location-pickup:
+    lat: 40.9449921
+    lon: -74.0225085
+  location-service-info:
+    desctext: Text Placeholder
+    email: testqa@takeoff.com
+    phone: 000-000-0000
+  location-type: spoke
+  mfc-ref-code: '9999'
+  timezone: America/New_York

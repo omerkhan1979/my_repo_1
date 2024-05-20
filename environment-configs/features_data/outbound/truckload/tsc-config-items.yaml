@@ -1,0 +1,12 @@
+- categories:
+    - takeoff-mobile
+  name: TRUCK_LOAD_ENABLED
+  value: true
+  location-code-tom: '9999'
+  value-type: boolean
+- categories:
+  - pickerman
+  name: TRUCK_UNLOAD_SESSION_STATUS
+  value: 'served'
+  location-code-tom: '9999'
+  value-type: string

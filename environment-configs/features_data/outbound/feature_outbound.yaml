@@ -1,0 +1,20 @@
+key: outbound
+title: outbound order flow
+description: outbound flow
+configs:
+  ims:
+    addresses:
+      path: features_data/outbound/ims-addresses.yaml
+  tsc:
+    config_items:
+      path: features_data/outbound/tsc-config-items.yaml
+    routes:
+      path: features_data/outbound/tsc-routes.yaml
+    staging_config:
+      path: features_data/outbound/tsc-staging-config.yaml
+    staging_locations:
+      path: features_data/outbound/tsc-staging-locations.yaml
+  product_catalog:
+      path: features_data/outbound/MFC_itemmaster.json
+  waves:
+    path: features_data/outbound/waves-base.yaml

@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "patternProperties:": {
+    "^[a-zA-Z0-9]+$": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cutoff_time": {
+            "type": "string",
+            "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+          },
+          "from_time": {
+            "type": "string",
+            "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+          },
+          "to_time": {
+            "type": "string",
+            "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+          },
+          "schedules": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "cutoff_time",
+          "from_time",
+          "to_time",
+          "schedules"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

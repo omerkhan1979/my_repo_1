@@ -1,0 +1,6 @@
+- categories:
+    - outbound
+  location-code-tom: '9999'
+  name: ITEMS_AVAILABILITY_MFC
+  value: 'full'
+  value-type: string

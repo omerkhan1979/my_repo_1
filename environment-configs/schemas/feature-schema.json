@@ -1,0 +1,168 @@
+{
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "configs": {
+      "type": "object",
+      "properties": {
+        "fulfillment_profiles": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "format": "uri-reference"
+            },
+            "additionalProperties": false
+          },
+          "required": [
+            "path"
+          ]
+        },
+        "product_catalog": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "format": "uri-reference"
+            },
+            "additionalProperties": false
+          },
+          "required": [
+            "path"
+          ]
+        },
+        "tsc": {
+          "type": "object",
+          "properties": {
+            "config_items": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "flow_racks": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "locations": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "spokes": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "staging_config": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "staging_locations": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "tote_types": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "routes": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "ims": {
+          "type": "object",
+          "properties": {
+            "addresses": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "reason_codes": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "sleeping_area_rules": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "format": "uri-reference"
+            },
+            "additionalProperties": false
+          },
+          "required": [
+            "path"
+          ]
+        },
+        "waves": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "format": "uri-reference"
+            },
+            "additionalProperties": false
+          },
+          "required": [
+            "path"
+          ]
+        },
+        "site_info": {
+          "type": "object",
+          "properties": {
+            "retailer": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            },
+            "sites": {
+              "path": {
+                "type": "string",
+                "format": "uri-reference"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "key",
+    "title",
+    "description",
+    "configs"
+  ]
+}

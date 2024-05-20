@@ -1,0 +1,73 @@
+- categories:
+  - decanting
+  location-code-tom: 0068
+  name: approx_long_divider_weight
+  value: 0.837757
+  value-type: numeric
+- categories:
+  - decanting
+  location-code-tom: 0068
+  name: approx_short_divider_weight
+  value: 0.529109
+  value-type: numeric
+- categories:
+  - decanting
+  location-code-tom: 0068
+  name: approx_source_tote_weight
+  value: 6.684416
+  value-type: numeric
+- categories:
+  - decanting
+  location-code-tom: 0068
+  name: decanting_safety_net_percentage
+  value: 3
+  value-type: integer
+- categories:
+  - decanting-ui
+  location-code-tom: 0068
+  name: DECANTING_UI_OSR_WEIGHT_VARIABLE_ITEM_ENABLED
+  value: true
+  value-type: boolean
+- categories:
+  - planogram
+  location-code-tom: 0068
+  name: MFC_PLANOGRAM
+  value:
+  - '01001'
+  - '01002'
+  - '01003'
+  - '01004'
+  - '01005'
+  - '01006'
+  - '01007'
+  value-type: array
+- categories:
+  - pickerman
+  - outbound
+  location-code-tom: 0068
+  name: WEIGHT_PREFIX
+  value:
+  - '004'
+  - '002'
+  - '4'
+  - '02'
+  - '04'
+  - '2'
+  value-type: set
+- categories:
+  - rint-etl
+  location-code-tom: null
+  name: RINT_ETL__MFC_DIVISION_MAPPING
+  value:
+    0068: '00032'
+    0069: 00019
+    0108: 00029
+    '0707': 00029
+    '1508': '00027'
+    '1531': '00025'
+    '1574': '00025'
+    '2508': 00029
+    '2776': '00025'
+    '3116': '00025'
+    '4500': '00032'
+  value-type: map

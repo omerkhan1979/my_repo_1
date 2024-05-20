@@ -1,0 +1,8 @@
+key: truckload
+title: truckload Feature
+description: truck load
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/truckload/tsc-config-items.yaml
+

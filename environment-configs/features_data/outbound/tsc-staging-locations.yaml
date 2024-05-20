@@ -1,0 +1,15 @@
+- default: false
+  mfc-tom-code: '9999'
+  staging-location-code: 9999H010011B
+- default: false
+  mfc-tom-code: '9999'
+  staging-location-code: 9999H010011C
+- default: false
+  mfc-tom-code: '9999'
+  staging-location-code: 9999H010011D
+- default: false
+  mfc-tom-code: '9999'
+  staging-location-code: 9999H010011E
+- default: false
+  mfc-tom-code: '9999'
+  staging-location-code: 9999H010011F

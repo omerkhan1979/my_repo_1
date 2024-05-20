@@ -1,0 +1,42 @@
+rules:
+  - rule:
+      priority: 10
+      rule: '#and [#eq[#arg[:temperature-zone],["frozen"]], #or [#eq [#arg [:location-info
+        :item-type], "REG"], #eq[#arg[:storage-zone], "manual"]]]'
+      sleeping-area: B
+      store-id: '9999'
+      update-note: B for frozen REG or manual zone products
+  - rule:
+      priority: 20
+      rule: '#and[#insec[#arg[:temperature-zone] ["chilled"]] #or[ #and[ #eq[#arg[:location-info
+        :item-type] "REG"] #eq[#arg[:feature-attributes :is-hazardous], true]] #eq[#arg[:storage-zone]
+        "manual"] #and[ #eq[#arg[:storage-zone] "osr"] #eq[#arg[:feature-attributes
+        :is-hazardous], true ]]]]'
+      sleeping-area: C
+      store-id: '9999'
+      update-note: C for chilled hazardous products or manual zone products
+  - rule:
+      priority: 30
+      rule: '#and[ #eq [#arg[:temperature-zone] ["ambient"]] #or[ #and[#eq[#arg[:location-info
+        :item-type] "REG"] #eq[#arg[:feature-attributes :is-hazardous], true]]#eq[#arg[:storage-zone]
+        "manual"] #and[ #eq[#arg[:storage-zone] "osr"] #eq[#arg[:feature-attributes
+        :is-hazardous], true]]]]'
+      sleeping-area: A
+      store-id: '9999'
+      update-note: A for ambient hazardous products
+  - rule:
+      priority: 40
+      rule: '#and[ #or[#insec[#arg[:temperature-zone],["chilled"]] #insec[#arg[:temperature-zone],["ambient"]]]
+        #or[#eq[#arg[:location-info :item-type], "REG"] #eq[#arg[:storage-zone], "osr"]]
+        #or[#eq[#arg[:feature-attributes :is-hazardous], false], #eq[#arg[:feature-attributes
+        :is-hazardous], nil]]]'
+      sleeping-area: K
+      store-id: '9999'
+      update-note: K for non-hazardous products
+  - rule:
+      priority: 110
+      rule: '#or [#eq [#arg [:location-info :item-type], "FLO"], #eq[#arg[:storage-zone],
+        "in-store"]]'
+      sleeping-area: N
+      store-id: '9999'
+      update-note: N for other FLO items

@@ -1,0 +1,22 @@
+- location-address:
+    city: Waltham
+    iso-state: US-MA
+    state: MA
+    street: Crescent St
+    zip-code: '02453'
+  location-code-retailer: '9999'
+  location-code-tom: '9999'
+  location-code-gold: '9999'
+  location-contact-phone: 000-000-000
+  location-id: 1
+  location-name: TakeOff Technologies Waltham
+  location-pickup:
+    lat: 40.9626
+    lon: 74.2401
+  location-service-info:
+    desctext: Text Placeholder
+    email: testqa@takeoff.com
+    phone: 000-000-0000
+  location-type: mfc
+  mfc-ref-code: '9999'
+  timezone: America/New_York

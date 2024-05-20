@@ -1,0 +1,6 @@
+- name: Default Takeoff Site MA
+  retailer_code: retailer
+  retailer_site_id: '9999'
+  location:
+    lat: 42.36
+    long: -71.24

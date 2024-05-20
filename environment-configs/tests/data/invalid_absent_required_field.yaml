@@ -1,0 +1,14 @@
+key: isps
+description: ISPS feature description
+configs:
+  tsc:
+    path: features_data/isps/tsc-isps.yaml
+  ims:
+    addresses:
+      path: features_data/base/addresses-base.json
+  sleeping_area_rules:
+    path: features_data/base/sleeping-area-rules-base.json
+  product-catalog:
+    type: v6
+    data_transmission: gcp_storage
+    path: features_data/isps/product-catalog-isps.json

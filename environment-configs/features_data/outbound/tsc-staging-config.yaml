@@ -1,0 +1,22 @@
+mfc-tom-code: "9999"
+staging-configurations:
+- mapped-routes:
+  - code: 03B
+    type: ROUTE
+  staging-location-code: 9999H010011B
+- mapped-routes:
+  - code: 04A
+    type: ROUTE
+  staging-location-code: 9999H010011C
+- mapped-routes:
+  - code: 02C
+    type: ROUTE
+  staging-location-code: 9999H010011D
+- mapped-routes:
+  - code: 05A
+    type: ROUTE
+  staging-location-code: 9999H010011E
+- mapped-routes:
+  - code: 01D
+    type: ROUTE
+  staging-location-code: 9999H010011F

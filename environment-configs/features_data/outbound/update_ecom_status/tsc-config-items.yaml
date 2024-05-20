@@ -1,0 +1,13 @@
+- categories:
+    - rint-api
+  name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__SPLIT_STATUSES
+  value:
+    - PickingDownloaded
+  location-code-tom: null
+- categories:
+    - rint-api
+  name: RINT_ENDPOINTS__UPDATE_CUSTOMER_ORDER_ECOM_STATUS__CANCEL_STATUSES
+  value:
+    - CustomerCancelled
+  location-code-tom: null
+  value-type: set

@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "mfc-tom-code": {"type": "string"},
+    "staging-configurations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "staging-location-code": {"type": "string"},
+          "mapped-routes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "code": {"type": "string"},
+                  "type": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,376 @@
+- can-add: true
+  can-remove: true
+  code: CC
+  description: Count. Adjustment of stock as a result of any type of count.
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Count
+  parent-code: ''
+  sort-order: 10
+- can-add: false
+  can-remove: true
+  code: CD
+  description: Charitable donation
+  external-code: '4_8'
+  internal-only: false
+  movement-type: adjustment
+  name: Charity
+  parent-code: ''
+  sort-order: 20
+- can-add: false
+  can-remove: true
+  code: DA
+  description: Damaged items
+  external-code: '4_6'
+  internal-only: false
+  movement-type: adjustment
+  name: Damaged
+  parent-code: ''
+  sort-order: 30
+- can-add: false
+  can-remove: true
+  code: DC
+  description: Dynamic Clearing
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Dynamic Clearing
+  parent-code: ''
+  sort-order: 40
+- can-add: true
+  can-remove: true
+  code: DD
+  description: DSD In/Out
+  external-code: '2'
+  internal-only: false
+  movement-type: adjustment
+  name: DSD In/Out
+  parent-code: ''
+  sort-order: 50
+- can-add: true
+  can-remove: false
+  code: DR
+  description: Dynamic Receiving
+  external-code: '2'
+  internal-only: false
+  movement-type: adjustment
+  name: Dynamic Receiving
+  parent-code: ''
+  sort-order: 60
+- can-add: false
+  can-remove: true
+  code: DS
+  description: Discontinued product
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Discontinued
+  parent-code: ''
+  sort-order: 70
+- can-add: false
+  can-remove: true
+  code: EX
+  description: Expiration. Items were extracted because of expiration dates or poor
+    quality.
+  external-code: '4_2'
+  internal-only: false
+  movement-type: adjustment
+  name: Expired
+  parent-code: ''
+  sort-order: 80
+- can-add: false
+  can-remove: true
+  code: FL
+  description: Fulfillment of customer order
+  external-code: '17'
+  internal-only: false
+  movement-type: shipment
+  name: Customer Order
+  parent-code: ''
+  sort-order: 90
+- can-add: true
+  can-remove: false
+  code: IB
+  description: Inbound receiving from any type of vendor or DC
+  external-code: '18'
+  internal-only: false
+  movement-type: reception
+  name: Inbound Receiving
+  parent-code: ''
+  sort-order: 100
+- can-add: true
+  can-remove: true
+  code: IN
+  description: Internal
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Internal
+  parent-code: ''
+  sort-order: 110
+- can-add: true
+  can-remove: true
+  code: KS
+  description: Quantity adjusted due to the nightly KiSoft -> IMS snapshot synchronization
+  external-code: '1'
+  internal-only: true
+  movement-type: adjustment
+  name: KiSoft Snapshot Sync
+  parent-code: ''
+  sort-order: 120
+- can-add: true
+  can-remove: true
+  code: MI
+  description: Misc Invoice
+  external-code: '2'
+  internal-only: false
+  movement-type: adjustment
+  name: Misc Invoice
+  parent-code: ''
+  sort-order: 130
+- can-add: false
+  can-remove: true
+  code: PQ
+  description: Poor Quality
+  external-code: '4_4'
+  internal-only: false
+  movement-type: adjustment
+  name: Poor Quality
+  parent-code: ''
+  sort-order: 140
+- can-add: true
+  can-remove: true
+  code: RC
+  description: Used to increment or decrement inventory when the wrong product ships
+    from a facility.
+  external-code: '15'
+  internal-only: false
+  movement-type: adjustment
+  name: Receiving Correction
+  parent-code: ''
+  sort-order: 150
+- can-add: false
+  can-remove: true
+  code: RE
+  description: Recall. Product was extracted because of recall signal from retailer's
+    systems.
+  external-code: '4_9'
+  internal-only: false
+  movement-type: adjustment
+  name: Recalled
+  parent-code: ''
+  sort-order: 160
+- can-add: true
+  can-remove: false
+  code: RT
+  description: Item is returned by client
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Returned by Client
+  parent-code: ''
+  sort-order: 170
+- can-add: true
+  can-remove: false
+  code: RV
+  description: Customer order return items
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Returned by Customer
+  parent-code: ''
+  sort-order: 180
+- can-add: true
+  can-remove: true
+  code: ST
+  description: "MFC\u2013Store transfer. Increase means from Store to MFC, decrease\
+    \ means from MFC to Store."
+  external-code: '7'
+  internal-only: false
+  movement-type: adjustment
+  name: Store Transfer
+  parent-code: ''
+  sort-order: 190
+- can-add: false
+  can-remove: true
+  code: TH
+  description: Theft
+  external-code: '4_11'
+  internal-only: false
+  movement-type: adjustment
+  name: Theft
+  parent-code: ''
+  sort-order: 200
+- can-add: false
+  can-remove: true
+  code: VR
+  description: Return to vendor
+  external-code: '1'
+  internal-only: false
+  movement-type: adjustment
+  name: Return to Vendor
+  parent-code: ''
+  sort-order: 210
+- can-add: false
+  can-remove: true
+  code: DV
+  description: Product was delivered to the store damaged.
+  external-code: '4_6'
+  internal-only: true
+  movement-type: adjustment
+  name: Delivered Damaged
+  parent-code: DA
+  sort-order: 220
+- can-add: false
+  can-remove: true
+  code: OC
+  description: Product arrived out of code or short coded.
+  external-code: '4_5'
+  internal-only: true
+  movement-type: adjustment
+  name: Out of Code - DLV
+  parent-code: EX
+  sort-order: 230
+- can-add: false
+  can-remove: true
+  code: PD
+  description: Used for product with a packaging issue (e.g. busted seam on dog food
+    bad)
+  external-code: '4_3'
+  internal-only: true
+  movement-type: adjustment
+  name: Packaging Defect
+  parent-code: DA
+  sort-order: 240
+- can-add: false
+  can-remove: true
+  code: SR
+  description: Product was scanned out due to a special reclamation notice (seasonal
+    cosmetics, sunglasses, bug spray)
+  external-code: '4_10'
+  internal-only: true
+  movement-type: adjustment
+  name: Special Reclamation
+  parent-code: ''
+  sort-order: 250
+- can-add: false
+  can-remove: true
+  code: SW
+  description: Product was short weight
+  external-code: '4_7'
+  internal-only: true
+  movement-type: adjustment
+  name: Short Weight
+  parent-code: DA
+  sort-order: 260
+- can-add: true
+  can-remove: false
+  code: DSDR
+  description: DSD Receiving Operation
+  external-code: '16'
+  internal-only: true
+  movement-type: adjustment
+  name: DSD Receivings
+  parent-code: DD
+  sort-order: 270
+- can-add: false
+  can-remove: true
+  code: RP
+  description: Recall-Pickup
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Recall-Pickup
+  parent-code: ''
+  sort-order: 280
+- can-add: true
+  can-remove: false
+  code: RRP
+  description: Rvse Recall-Pickup
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Rvse Recall-Pickup
+  parent-code: ''
+  sort-order: 290
+- can-add: true
+  can-remove: false
+  code: RCD
+  description: Reversal Donation
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Rvse Donation
+  parent-code: ''
+  sort-order: 300
+- can-add: true
+  can-remove: false
+  code: RDA
+  description: Rvse Damaged
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Rvse Damaged items
+  parent-code: ''
+  sort-order: 310
+- can-add: true
+  can-remove: false
+  code: REX
+  description: Reversal Expired
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Rvse Expired
+  parent-code: ''
+  sort-order: 320
+- can-add: true
+  can-remove: false
+  code: RRE
+  description: Reversal Recall-Destroy
+  external-code: null
+  internal-only: true
+  movement-type: adjustment
+  name: Rvse Recall-Destroy
+  parent-code: ''
+  sort-order: 330
+- can-add: true
+  can-remove: true
+  code: DDR
+  description: DSD Return With Reference
+  external-code: null
+  internal-only: false
+  movement-type: adjustment
+  name: DSD Return With Reference
+  parent-code: ''
+  sort-order: 340
+- can-add: false
+  can-remove: true
+  code: CCSP
+  description: Cycle Count created by a short-pick
+  external-code: '1'
+  internal-only: true
+  movement-type: adjustment
+  name: Cycle Count - Short Pick
+  parent-code: CC
+  sort-order: 400
+- can-add: false
+  can-remove: true
+  code: CCPZ
+  description: Cycle Count created by a pick to zero confirmation
+  external-code: '1'
+  internal-only: true
+  movement-type: adjustment
+  name: Cycle Count - Pick to Zero
+  parent-code: CC
+  sort-order: 410
+- can-add: true
+  can-remove: true
+  code: CCDF
+  description: Default Reason Code
+  external-code: '1'
+  internal-only: true
+  movement-type: adjustment
+  name: Cycle Count Default
+  parent-code: CC
+  sort-order: 960

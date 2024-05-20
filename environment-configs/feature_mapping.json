@@ -1,0 +1,29 @@
+[
+  {
+    "key": "isps",
+    "title": "ISPS",
+    "description": "Isps description"
+  },
+  {
+    "key": "order_management",
+    "title": "Order Management",
+    "description": "Order Management description",
+    "subfeatures": [
+      {
+        "key": "create_order",
+        "title": "Create orders for fulfillment",
+        "descrtion": "Create orders for fulfillment..."
+      },
+      {
+        "key": "update_order_before_fulfillment",
+        "title": "Update order data before fulfillment starts",
+        "descrtion": "Update order data before fulfillment starts..."
+      }
+    ]
+  },
+  {
+    "key": "Lorem ipsum dolor sit amet",
+    "title": "my_very_custom_feature",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]

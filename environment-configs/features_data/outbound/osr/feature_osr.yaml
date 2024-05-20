@@ -1,0 +1,9 @@
+key: osr
+title: osr order flow Feature
+description: bifrost, osr emulator, decanting needs to be enabled
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/osr/tsc-config-items.yaml
+    flow_racks:
+      path: features_data/outbound/osr/tsc-flow-racks.yaml

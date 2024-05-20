@@ -1,0 +1,11 @@
+key: demo
+title: demo retailer
+description: abs like configuration for demo purposes
+configs:
+  tsc:
+    config_items:
+      path: features_data/base/tsc-config-items-demo1.yaml
+    flow_racks:
+      path: features_data/base/tsc-flow-racks-demo.yaml
+  product_catalog:
+    path: features_data/base/MFC_itemmaster_demo1.json

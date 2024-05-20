@@ -1,0 +1,11 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "default": { "type": "boolean" },
+      "mfc-tom-code": { "type": "string" },
+      "staging-location-code": { "type": "string" }
+    }
+  }
+}

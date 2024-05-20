@@ -1,0 +1,7 @@
+key: shortpick
+title: shortpick Feature
+description: Verify shortpick scenario when low in item
+configs:
+  tsc:
+    config_items:
+      path: features_data/outbound/shortpick/tsc-config-items.yaml

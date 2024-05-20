@@ -18,7 +18,7 @@ def add(x, y):
 
 def subtract(x, y):
     """
-    Subtracts two numbers..
+    Subtracts two numbers.
 
     Parameters:
     x (int): The first number.

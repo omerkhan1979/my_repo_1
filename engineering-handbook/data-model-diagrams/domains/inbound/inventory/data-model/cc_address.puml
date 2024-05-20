@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**address**" [[cc_address.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""value"": //text//
+}
+
+@enduml

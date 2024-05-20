@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**messages**" [[inventory-management_messages.puml]] {
+  + ""id"": //character varying [PK]//
+  --
+  *""message"": //character varying//
+  *""parsed_message"": //json//
+  *""processed_at"": //timestamp without time zone//
+  *""user_id"": //character varying//
+}
+
+@enduml

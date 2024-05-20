@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**session_tokens**" [[sonarqube_session_tokens.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""expiration_date"": //bigint//
+  *""updated_at"": //bigint//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

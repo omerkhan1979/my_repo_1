@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**order_parts_changes**" [[oms_order_parts_changes.puml]] {
+  --
+  *""created_at"": //timestamp with time zone//
+  *""order_id"": //text [FK]//
+  *""status"": //text//
+  *""type"": //text//
+  *""user_id"": //text//
+}
+
+@enduml

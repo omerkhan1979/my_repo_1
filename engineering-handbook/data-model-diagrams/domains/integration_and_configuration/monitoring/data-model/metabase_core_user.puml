@@ -1,0 +1,29 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**core_user**" [[metabase_core_user.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""date_joined"": //timestamp with time zone//
+  *""email"": //citext//
+  *""first_name"": //character varying(254)//
+  *""google_auth"": //boolean//
+  *""is_active"": //boolean//
+  *""is_datasetnewb"": //boolean//
+  *""is_qbnewb"": //boolean//
+  *""is_superuser"": //boolean//
+  *""last_login"": //timestamp with time zone//
+  *""last_name"": //character varying(254)//
+  *""ldap_auth"": //boolean//
+  *""locale"": //character varying(5)//
+  *""login_attributes"": //text//
+  *""password"": //character varying(254)//
+  *""password_salt"": //character varying(254)//
+  *""reset_token"": //character varying(254)//
+  *""reset_triggered"": //bigint//
+  *""sso_source"": //character varying(254)//
+  *""updated_at"": //timestamp without time zone//
+}
+
+@enduml

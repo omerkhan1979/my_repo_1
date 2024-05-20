@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**setting**" [[_setting.puml]] {
+  + ""retailer"": //STRING(MAX) [PK]//
+  + ""mfc_id"": //STRING(MAX) [PK]//
+  + ""key"": //STRING(MAX) [PK]//
+  --
+  *""value"": //STRING(MAX)//
+}
+
+@enduml

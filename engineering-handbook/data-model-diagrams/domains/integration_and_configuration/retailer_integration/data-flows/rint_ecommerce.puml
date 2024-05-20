@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+component Assortment
+
+usecase "Ecommerce API" as EcommerceAPI
+usecase "Ecommerce Files" as EcommerceFiles
+
+
+Retailer <-down- EcommerceAPI : products
+Retailer <-down- EcommerceAPI : categories
+Retailer <-down- EcommerceAPI : prices
+Retailer <-down- EcommerceAPI : promotions
+
+Retailer -down-> EcommerceFiles : products
+Retailer -down-> EcommerceFiles : categories
+Retailer -down-> EcommerceFiles : prices
+Retailer -down-> EcommerceFiles : promotions
+
+EcommerceAPI <-down- Assortment
+EcommerceFiles -down-> Assortment
+
+@enduml

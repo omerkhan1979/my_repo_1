@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**perm_templates_users**" [[sonarqube_perm_templates_users.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //timestamp without time zone//
+  *""permission_reference"": //character varying(64)//
+  *""template_uuid"": //character varying(40)//
+  *""updated_at"": //timestamp without time zone//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

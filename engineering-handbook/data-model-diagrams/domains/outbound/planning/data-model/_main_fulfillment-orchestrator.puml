@@ -1,0 +1,18 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "fulfillment-orchestrator" {
+  !include fulfillment-orchestrator_issues.puml
+  !include fulfillment-orchestrator_order_items.puml
+  !include fulfillment-orchestrator_order_part_lines.puml
+  !include fulfillment-orchestrator_order_parts.puml
+  !include fulfillment-orchestrator_orders.puml
+  !include fulfillment-orchestrator_ragtime_migrations.puml
+  !include fulfillment-orchestrator_work_tasks.puml
+}
+"**order_part_lines**" -- "**order_parts**"
+"**order_parts**" -- "**orders**"
+
+@enduml

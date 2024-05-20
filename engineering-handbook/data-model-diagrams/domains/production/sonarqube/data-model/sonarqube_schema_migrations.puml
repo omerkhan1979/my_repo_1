@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**schema_migrations**" [[sonarqube_schema_migrations.puml]] {
+  --
+  *""version"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+database "Slotting Recommendations" as SlottingRecommendations <<link>> [[../data-model/distiller_slotting_recommendations.puml]]
+
+usecase "Dynamic Slotting" as DynamicSlotting
+
+Products -down-> DynamicSlotting : products
+DynamicSlotting -down-> SlottingRecommendations : optimal allocation
+
+@enduml

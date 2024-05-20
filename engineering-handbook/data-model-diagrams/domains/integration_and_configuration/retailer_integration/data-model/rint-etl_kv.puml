@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kv**" [[rint-etl_kv.puml]] {
+  + ""key"": //text [PK]//
+  --
+  *""value"": //text//
+}
+
+@enduml

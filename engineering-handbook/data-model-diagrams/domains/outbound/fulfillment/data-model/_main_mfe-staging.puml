@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "mfe-staging" {
+  !include mfe-staging_messages.puml
+}
+
+@enduml

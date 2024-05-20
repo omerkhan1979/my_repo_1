@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**manual_measures**" [[sonarqube_manual_measures.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""description"": //character varying(4000)//
+  *""metric_uuid"": //character varying(40)//
+  *""text_value"": //character varying(4000)//
+  *""updated_at"": //bigint//
+  *""user_uuid"": //character varying(255)//
+  *""value"": //numeric(38,20)//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**robotic_picking_decision_records**" [[fulfillment_tracker_robotic_picking_decision_records.puml]] {
+  --
+  *""created_datetime"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""message_id"": //text//
+  *""order_id"": //text//
+  *""released_from_inventory"": //boolean//
+}
+
+@enduml

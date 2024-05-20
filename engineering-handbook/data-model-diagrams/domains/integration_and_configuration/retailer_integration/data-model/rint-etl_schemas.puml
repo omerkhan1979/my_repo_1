@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**schemas**" [[rint-etl_schemas.puml]] {
+  + ""id"": //text [PK]//
+  --
+  *""data"": //jsonb//
+  *""meta"": //jsonb//
+  *""registered_ts"": //timestamp with time zone//
+  *""schema_hash"": //text//
+}
+
+@enduml

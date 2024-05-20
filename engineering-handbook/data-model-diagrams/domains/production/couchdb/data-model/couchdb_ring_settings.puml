@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ring_settings**" [[couchdb_ring_settings.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""digits"": //int//
+  *""generator"": //int//
+  *""last_key"": //int//
+  *""name"": //string//
+  *""p"": //int//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**product_event**" [[decanting_product_event.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""operator_id"": //bigint [FK]//
+  *""product_id"": //bigint [FK]//
+  *""task_id"": //bigint [FK]//
+}
+
+@enduml

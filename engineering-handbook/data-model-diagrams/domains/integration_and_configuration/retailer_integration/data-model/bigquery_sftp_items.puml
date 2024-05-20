@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**items**" [[bigquery_sftp_items.puml]] {
+  --
+  *""id"": //string//
+  *""data"": //string//
+  *""file_name"": //string//
+  *""file_hash"": //string//
+  *""run_id"": //string//
+  *""line"": //string//
+  *""line_hash"": //string//
+  *""schema_id"": //string//
+  *""generated_ts"": //timestamp//
+  *""appeared_ts"": //timestamp//
+  *""last_modified_ts"": //timestamp//
+  *""processed_ts"": //timestamp [partitioned]//
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**perm_tpl_characteristics**" [[sonarqube_perm_tpl_characteristics.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""permission_key"": //character varying(64)//
+  *""template_uuid"": //character varying(40)//
+  *""updated_at"": //bigint//
+  *""with_project_creator"": //boolean//
+}
+
+@enduml

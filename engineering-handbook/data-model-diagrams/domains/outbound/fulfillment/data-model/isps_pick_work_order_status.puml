@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_work_order_status**" [[isps_pick_work_order_status.puml]] {
+  + ""pick_work_order_status_id"": //integer [PK]//
+  --
+  *""pick_work_order_status_code"": //character varying(32)//
+  *""pick_work_order_status_created_at"": //timestamp with time zone//
+  *""pick_work_order_status_created_by"": //character varying(64)//
+  *""pick_work_order_status_desc"": //character varying(512)//
+  *""pick_work_order_status_last_modified_at"": //timestamp with time zone//
+  *""pick_work_order_status_last_modified_by"": //character varying(64)//
+  *""pick_work_order_status_name"": //character varying(64)//
+}
+
+@enduml

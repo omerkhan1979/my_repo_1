@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+
+usecase "Order Status Update" as OrderStatusUpdate
+usecase "Order Status History" as OrderStatusHistory
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Picking Session Decisions" as CouchPSD <<link>> [[../../../production/couchdb/data-model/couchdb_picking_session_decisions.puml]]
+database "Changes Feed" as CouchChangesFeed <<link>> [[../../../production/couchdb/data-model/couchdb_changes_feed.puml]]
+
+
+Retailer <-down- OrderStatusUpdate : status
+Retailer <-down- OrderStatusHistory : status
+Retailer <-down- OrderStatusHistory : sales report
+
+CouchPSD -up-> OrderStatusUpdate : status
+CouchChangesFeed -up-> OrderStatusUpdate : status
+DBOMSOrders -up-> OrderStatusUpdate : store
+
+CouchChangesFeed -up-> OrderStatusHistory : order status
+DBOMSOrders -up-> OrderStatusHistory : store
+
+@enduml

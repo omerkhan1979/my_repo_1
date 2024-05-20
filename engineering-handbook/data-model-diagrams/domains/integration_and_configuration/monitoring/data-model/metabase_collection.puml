@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**collection**" [[metabase_collection.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""archived"": //boolean//
+  *""authority_level"": //character varying(255)//
+  *""color"": //character(7)//
+  *""description"": //text//
+  *""location"": //character varying(254)//
+  *""name"": //text//
+  *""namespace"": //character varying(254)//
+  *""personal_owner_id"": //integer [FK]//
+  *""slug"": //character varying(254)//
+}
+
+@enduml

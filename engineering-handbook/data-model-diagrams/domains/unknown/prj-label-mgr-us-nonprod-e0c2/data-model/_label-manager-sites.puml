@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**label-manager-sites**" [[_label-manager-sites.puml]] {
+  --
+  *""deleted_time"": //<unknown>//
+  *""id"": //string//
+}
+
+@enduml

@@ -1,0 +1,22 @@
+<style>
+jsonDiagram {
+  node {
+    BackGroundColor #aliceblue
+    LineColor #black
+    FontName Avenir
+    FontColor black
+    FontSize 14
+    RoundCorner 0
+    LineThickness 1
+  }
+  arrow {
+    BackGroundColor lightblue
+    LineColor black
+    LineThickness 1
+  }
+  highlight {
+    BackGroundColor #technology
+    FontStyle italic
+  }
+}
+</style>

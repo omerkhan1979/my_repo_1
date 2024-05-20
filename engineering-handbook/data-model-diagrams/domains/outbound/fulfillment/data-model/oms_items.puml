@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**items**" [[oms_items.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""creation_datetime"": //timestamp with time zone//
+  *""line_id"": //bigint [FK]//
+  *""order_id"": //text [FK]//
+  *""requested_quantity"": //integer//
+  *""takeoff_item_id"": //text//
+}
+
+@enduml

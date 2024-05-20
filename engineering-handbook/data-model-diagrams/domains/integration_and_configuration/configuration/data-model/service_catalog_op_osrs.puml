@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_osrs**" [[service_catalog_op_osrs.puml]] {
+  + ""osr_id"": //bigint [PK]//
+  --
+  *""location_id"": //bigint [FK]//
+  *""osr_dispatch_error_ramp"": //character varying(100)//
+  *""osr_dispatch_id_gen"": //character varying(100)//
+  *""osr_dispatch_ramp_count"": //bigint//
+  *""osr_dispatch_ramp_depth"": //bigint//
+  *""osr_dispatch_start"": //bigint//
+}
+
+@enduml

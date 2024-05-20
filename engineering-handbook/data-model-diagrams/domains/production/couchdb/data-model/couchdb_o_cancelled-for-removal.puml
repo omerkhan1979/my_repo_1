@@ -1,0 +1,9 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**o_cancelled-for-removal**" [[couchdb_o_cancelled-for-removal.puml]] {
+  --
+}
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "redis1" {
+  !include redis1_celery_task_meta.puml
+}
+
+@enduml

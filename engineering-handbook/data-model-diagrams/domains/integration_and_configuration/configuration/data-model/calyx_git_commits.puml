@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**git_commits**" [[calyx_git_commits.puml]] {
+  + ""git_commit_oid"": //character varying(40) [PK]//
+  + ""git_repo"": //character varying(100) [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""git_commit_message"": //text//
+  *""has_multiple_parents"": //boolean//
+}
+
+@enduml

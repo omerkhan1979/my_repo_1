@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**metric_important_field**" [[metabase_metric_important_field.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""field_id"": //integer [FK]//
+  *""metric_id"": //integer [FK]//
+}
+
+@enduml

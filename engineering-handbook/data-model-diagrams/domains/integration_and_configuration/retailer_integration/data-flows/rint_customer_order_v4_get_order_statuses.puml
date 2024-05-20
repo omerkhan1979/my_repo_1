@@ -1,0 +1,17 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "Outbound Fulfillment" as OutboundFulfillment
+
+usecase "V4 Get Customer Order Statuses History" as GetCustomerOrderStatusesHistory
+
+usecase "Validations" as Validations
+
+Retailer <-down-- GetCustomerOrderStatusesHistory : order statuses
+GetCustomerOrderStatusesHistory <-down-- OutboundFulfillment : statuses
+
+GetCustomerOrderStatusesHistory -down- Validations
+
+@enduml

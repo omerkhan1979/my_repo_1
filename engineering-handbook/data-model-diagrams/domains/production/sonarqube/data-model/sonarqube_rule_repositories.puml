@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**rule_repositories**" [[sonarqube_rule_repositories.puml]] {
+  + ""kee"": //character varying(200) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""language"": //character varying(20)//
+  *""name"": //character varying(4000)//
+}
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_locations**" [[service_catalog_op_locations.puml]] {
+  + ""location_id"": //bigint [PK]//
+  --
+  *""is_enabled"": //boolean//
+  *""location_city"": //character varying(32)//
+  *""location_code_gold"": //character varying(20)//
+  *""location_code_retailer"": //character varying(20)//
+  *""location_code_tom"": //character varying(20)//
+  *""location_contact_phone"": //character varying(20)//
+  *""location_name"": //character varying(128)//
+  *""location_pickup_lat"": //numeric(10,7)//
+  *""location_pickup_lon"": //numeric(10,7)//
+  *""location_service_info_desctext"": //character varying(255)//
+  *""location_service_info_email"": //character varying(100)//
+  *""location_service_info_phone"": //character varying(20)//
+  *""location_street"": //character varying(64)//
+  *""location_type_id"": //bigint [FK]//
+  *""location_zip_code"": //character varying(20)//
+  *""mfc_ref_code"": //character varying(20) [FK]//
+  *""state_iso_code"": //character varying(6) [FK]//
+  *""timezone"": //character varying(40)//
+}
+
+@enduml

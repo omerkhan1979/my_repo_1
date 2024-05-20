@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "label_manager" {
+  !include label_manager_label-manager-sites.puml
+}
+
+@enduml

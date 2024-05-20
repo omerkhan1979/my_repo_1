@@ -1,0 +1,17 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  entity "**line_item**" [[_line_item.puml]] {}
+  entity "**product**" [[_product.puml]] {}
+  entity "**reservation**" [[_reservation.puml]] {}
+  entity "**reserved_products_pending**" [[_reserved_products_pending.puml]] {}
+  entity "**SchemaMigrations**" [[_SchemaMigrations.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**permissions**" [[metabase_permissions.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""group_id"": //integer [FK]//
+  *""object"": //character varying(254)//
+}
+
+@enduml

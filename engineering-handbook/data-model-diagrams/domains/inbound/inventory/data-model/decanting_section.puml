@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**section**" [[decanting_section.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""amount"": //integer//
+  *""event_id"": //integer [FK]//
+  *""expiration_date"": //timestamp with time zone//
+  *""index"": //integer//
+  *""last_modified"": //timestamp with time zone//
+  *""product"": //character varying(250)//
+  *""product_id"": //bigint [FK]//
+  *""purchase_order"": //character varying(250)//
+  *""reason_code"": //enum//
+}
+
+@enduml

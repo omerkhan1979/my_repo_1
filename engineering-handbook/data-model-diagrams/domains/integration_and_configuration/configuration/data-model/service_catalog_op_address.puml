@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_address**" [[service_catalog_op_address.puml]] {
+  + ""address_id"": //bigint [PK]//
+  --
+  *""address_text_name"": //text//
+  *""area_id"": //bigint [FK]//
+  *""bay_id"": //bigint [FK]//
+  *""is_enabled"": //boolean//
+  *""location_id"": //bigint [FK]//
+  *""placement_number"": //bigint//
+  *""sub_placement_letter"": //text//
+}
+
+@enduml

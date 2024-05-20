@@ -1,0 +1,13 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+usecase "Inventory Movements Handler" as InventoryMovements
+database "Inventory Adjustments" as DBInventoryAdjustments  <<link>> [[../data-model/inventory-management_adjustment_history.puml]]
+
+Retailer <-down- InventoryMovements : inventory movements
+InventoryMovements <-down- DBInventoryAdjustments : movements
+
+@enduml

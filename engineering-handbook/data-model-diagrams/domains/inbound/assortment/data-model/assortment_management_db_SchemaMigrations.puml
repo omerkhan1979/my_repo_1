@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**SchemaMigrations**" [[assortment_management_db_SchemaMigrations.puml]] {
+  + ""Version"": //INT64 [PK]//
+  --
+  *""Dirty"": //BOOL//
+}
+
+@enduml

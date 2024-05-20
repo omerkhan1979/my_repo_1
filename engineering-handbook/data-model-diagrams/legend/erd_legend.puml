@@ -1,0 +1,13 @@
+@startuml
+
+hide circle
+!include ../style/default.iuml
+
+entity "**table**" {
+  + ""primary_key"": //text [PK]//
+  --
+  *""required_field"": //text //
+  ""optional_field"": //numeric //
+}
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking_session_items_replacements-for-removal**" [[couchdb_picking_session_items_replacements-for-removal.puml]] {
+  --
+}
+
+@enduml

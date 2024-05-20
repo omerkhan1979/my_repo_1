@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**projects**" [[sonarqube_projects.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""description"": //character varying(2000)//
+  *""kee"": //character varying(400)//
+  *""name"": //character varying(2000)//
+  *""organization_uuid"": //character varying(40)//
+  *""private"": //boolean//
+  *""qualifier"": //character varying(10)//
+  *""tags"": //character varying(500)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

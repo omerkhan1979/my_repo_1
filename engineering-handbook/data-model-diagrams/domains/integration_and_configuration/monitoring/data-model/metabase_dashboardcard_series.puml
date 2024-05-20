@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**dashboardcard_series**" [[metabase_dashboardcard_series.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""card_id"": //integer [FK]//
+  *""dashboardcard_id"": //integer [FK]//
+  *""position"": //integer//
+}
+
+@enduml

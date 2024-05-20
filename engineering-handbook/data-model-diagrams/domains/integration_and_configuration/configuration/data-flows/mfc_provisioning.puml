@@ -1,0 +1,13 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**MFC Provisioning**" as MFCProvisioning
+usecase "MFC Locations" as MFCLocations <<link>> [[./calyx_mfc_locations.puml]]
+usecase "OSR Connection" as OSRConnection <<link>> [[./calyx_osr_connection.puml]]
+
+MFCProvisioning <-down-> MFCLocations
+MFCProvisioning <-down-> OSRConnection
+
+@enduml

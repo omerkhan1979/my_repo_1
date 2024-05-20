@@ -1,0 +1,32 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "couchdb" {
+  entity "**batch_orders**" [[couchdb_batch_orders.puml]] {}
+  entity "**batch_receiving**" [[couchdb_batch_receiving.puml]] {}
+  entity "**changes_feed**" [[couchdb_changes_feed.puml]] {}
+  entity "**kisoft_wpo**" [[couchdb_kisoft_wpo.puml]] {}
+  entity "**o**" [[couchdb_o.puml]] {}
+  entity "**o_cancelled-for-removal**" [[couchdb_o_cancelled-for-removal.puml]] {}
+  entity "**order_queues-for-removal**" [[couchdb_order_queues-for-removal.puml]] {}
+  entity "**picker_queues-for-removal**" [[couchdb_picker_queues-for-removal.puml]] {}
+  entity "**picking-path**" [[couchdb_picking-path.puml]] {}
+  entity "**picking_queue_records**" [[couchdb_picking_queue_records.puml]] {}
+  entity "**picking_session_decisions**" [[couchdb_picking_session_decisions.puml]] {}
+  entity "**picking_session_items_comments-for-removal**" [[couchdb_picking_session_items_comments-for-removal.puml]] {}
+  entity "**picking_session_items_decisions**" [[couchdb_picking_session_items_decisions.puml]] {}
+  entity "**picking_session_items_replacements-for-removal**" [[couchdb_picking_session_items_replacements-for-removal.puml]] {}
+  entity "**planograms**" [[couchdb_planograms.puml]] {}
+  entity "**ring_settings**" [[couchdb_ring_settings.puml]] {}
+  entity "**sequences**" [[couchdb_sequences.puml]] {}
+  entity "**translations-for-removal**" [[couchdb_translations-for-removal.puml]] {}
+  entity "**translations_log-for-removal**" [[couchdb_translations_log-for-removal.puml]] {}
+  entity "**workers_sequences**" [[couchdb_workers_sequences.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

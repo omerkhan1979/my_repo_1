@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_printing_methods**" [[service_catalog_sd_printing_methods.puml]] {
+  + ""printing_method_id"": //bigint [PK]//
+  --
+  *""printing_method_name"": //character varying(20)//
+}
+
+@enduml

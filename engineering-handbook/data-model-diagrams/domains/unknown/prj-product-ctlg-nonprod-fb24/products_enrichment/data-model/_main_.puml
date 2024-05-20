@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  !include _raw_products.puml
+}
+
+@enduml

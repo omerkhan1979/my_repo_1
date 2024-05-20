@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_qgates**" [[sonarqube_project_qgates.puml]] {
+  + ""project_uuid"": //character varying(40) [PK]//
+  --
+  *""quality_gate_uuid"": //character varying(40)//
+}
+
+@enduml

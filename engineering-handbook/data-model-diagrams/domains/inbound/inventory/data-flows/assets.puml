@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+usecase "IMS" as AssetsIMS
+usecase "Printers" as AssetsPrinters
+usecase "Addresses" as AssetsAddresses
+usecase "Totes" as AssetsTotes
+
+TomUI <-up-> AssetsIMS
+TomUI <-down-> AssetsPrinters
+TomUI <-left-> AssetsAddresses
+TomUI <-right-> AssetsTotes
+
+
+@enduml

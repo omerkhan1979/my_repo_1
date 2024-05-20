@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**dispatch_ramp_totes**" [[inventory-management_dispatch_ramp_totes.puml]] {
+  + ""location_id"": //character varying(50) [PK]//
+  + ""tote_id"": //character varying(255) [PK]//
+  --
+  *""allocated_at"": //timestamp with time zone//
+  *""channel"": //smallint//
+  *""order_id"": //character varying(255)//
+}
+
+@enduml

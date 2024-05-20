@@ -1,0 +1,22 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Replenishment
+component Retailer
+component Assortment
+component Inventory
+
+component "GOLD" as GOLD
+Replenishment .-left- GOLD
+
+usecase "**Outbound** Purchase Orders Flow" as OutPOFlow
+usecase "Enrichment & Validations" as OutPOFlow_Enrichment
+
+GOLD -down-> OutPOFlow : purchase orders
+OutPOFlow <-down-> OutPOFlow_Enrichment : purchase order
+Assortment -left-> OutPOFlow_Enrichment : supplier info
+OutPOFlow -right-> Inventory : purchase orders
+OutPOFlow -up-> Retailer : purchase orders
+
+@enduml

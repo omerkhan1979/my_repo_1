@@ -1,0 +1,12 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+usecase "Update Customer Order Ecom Status" as UpdateCustomerOrderEcomStatus
+usecase "V3 Update Customer Order Ecom Status" <<deprecated>> as V3UpdateEcom
+usecase "V4 Update Customer Order Ecom Status" as V4UpdateEcom <<link>> [[./rint_customer_order_v4_update_ecom.puml]]
+
+UpdateCustomerOrderEcomStatus -down-> V3UpdateEcom
+UpdateCustomerOrderEcomStatus -down-> V4UpdateEcom
+
+@enduml

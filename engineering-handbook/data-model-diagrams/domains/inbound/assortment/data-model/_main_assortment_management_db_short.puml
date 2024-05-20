@@ -1,0 +1,16 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "assortment_management_db" {
+  entity "**csvCache**" [[assortment_management_db_csvCache.puml]] {}
+  entity "**recommendationDecision**" [[assortment_management_db_recommendationDecision.puml]] {}
+  entity "**SchemaMigrations**" [[assortment_management_db_SchemaMigrations.puml]] {}
+  entity "**setting**" [[assortment_management_db_setting.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

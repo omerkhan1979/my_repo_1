@@ -1,0 +1,38 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+component "Outbound Planning" as Planning
+component "Takeoff Mobile" as TakeoffMobile
+component TomUI
+component "Data Lake" as DataLake
+
+usecase Fulfillment
+
+' data flows
+Retailer --right-> Fulfillment : [[./retailer_fulfillment_draft_orders.puml draft orders]]
+Retailer --right-> Fulfillment : [[./retailer_fulfillment_order_actions.puml order actions]]
+Retailer <--right- Fulfillment : [[./retailer_fulfillment_order_statuses.puml order statuses]]
+Retailer <--right- Fulfillment : [[./retailer_fulfillment_order_access_layer.puml fulfilment results]]
+Retailer <--right- Fulfillment : [[./retailer_fulfillment_soft_reservations.puml soft reservations]]
+
+Fulfillment <-down-- Planning : [[./retailer_fulfillment_draft_orders.puml ]]
+Fulfillment <-down-- Planning : [[./fulfillment_planning_recalculate_cutoff.puml cutoff table]]
+Fulfillment -down--> Planning : [[./fulfillment_order_split.puml orders]]
+
+' to cover
+Fulfillment <-up-- TakeoffMobile : [[./manual_picking.puml manual picking]]
+Fulfillment <-up--> TakeoffMobile : [[./in_store_picking.puml in-store picking]]
+Fulfillment -up-- TakeoffMobile : [[./staging.puml staging]]
+Fulfillment -up-- TakeoffMobile : truck load/unload
+' changes status of orders
+
+Fulfillment <-right--> TomUI : [[./tom_ui_fulfillment.puml orders & actions]]
+Fulfillment <-right--> TomUI : [[./in_store_picking.puml in-store picking]]
+Fulfillment <-right--> TomUI : staging configurations (tsc)
+Fulfillment <-right--> TomUI : routes (tsc)
+
+Fulfillment --down-> DataLake : customer orders\nlines, items\npicking decisions
+@enduml

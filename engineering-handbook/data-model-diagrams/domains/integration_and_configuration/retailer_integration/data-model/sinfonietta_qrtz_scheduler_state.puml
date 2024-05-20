@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_scheduler_state**" [[sinfonietta_qrtz_scheduler_state.puml]] {
+  + ""instance_name"": //character varying(200) [PK]//
+  + ""sched_name"": //character varying(120) [PK]//
+  --
+  *""checkin_interval"": //bigint//
+  *""last_checkin_time"": //bigint//
+}
+
+@enduml

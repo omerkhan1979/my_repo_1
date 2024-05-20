@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**event_types**" [[webhooks_spanner_event_types.puml]] {
+  + ""event_types_id"": //STRING(MAX) [PK][FK]//
+  --
+  *""name"": //STRING(MAX)//
+  *""description"": //STRING(MAX)//
+  *""version"": //STRING(MAX)//
+  *""schema_url"": //STRING(MAX)//
+}
+
+@enduml

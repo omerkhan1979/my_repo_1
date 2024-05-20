@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**query_cache**" [[metabase_query_cache.puml]] {
+  + ""query_hash"": //bytea [PK]//
+  --
+  *""results"": //bytea//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**report_cardfavorite**" [[metabase_report_cardfavorite.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""card_id"": //integer [FK]//
+  *""created_at"": //timestamp with time zone//
+  *""owner_id"": //integer [FK]//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

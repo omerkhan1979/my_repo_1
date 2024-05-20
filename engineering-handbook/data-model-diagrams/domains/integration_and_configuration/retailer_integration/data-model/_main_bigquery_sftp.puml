@@ -1,0 +1,12 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "bigquery_sftp" {
+  !include bigquery_sftp_events.puml
+  !include bigquery_sftp_items.puml
+  !include bigquery_sftp_schemas.puml
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_work_order_type**" [[isps_pick_work_order_type.puml]] {
+  + ""pick_work_order_type_id"": //integer [PK]//
+  --
+  *""pick_work_order_code_type"": //character varying(32)//
+  *""pick_work_order_created_at_type"": //timestamp with time zone//
+  *""pick_work_order_created_by_type"": //character varying(64)//
+  *""pick_work_order_last_modified_at_type"": //timestamp with time zone//
+  *""pick_work_order_last_modified_by_type"": //character varying(64)//
+  *""pick_work_order_type_desc"": //character varying(512)//
+  *""pick_work_order_type_name"": //character varying(64)//
+}
+
+@enduml

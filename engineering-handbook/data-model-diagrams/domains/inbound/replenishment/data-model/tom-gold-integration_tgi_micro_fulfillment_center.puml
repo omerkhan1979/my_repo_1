@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tgi_micro_fulfillment_center**" [[tom-gold-integration_tgi_micro_fulfillment_center.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""code"": //integer//
+  *""created"": //timestamp with time zone//
+}
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**product**" [[_product.puml]] {
+  + ""reservation_id"": //STRING(36) [PK]//
+  + ""ecomm_id"": //STRING(MAX) [PK]//
+  + ""tom_id"": //STRING(MAX) [PK]//
+  + ""address"": //STRING(MAX) [PK]//
+  --
+  *""reserved_quantity"": //INT64//
+  *""status"": //STRING(MAX)//
+  *""picked_quantity"": //INT64//
+}
+
+@enduml

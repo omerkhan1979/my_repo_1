@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "robotic_message_store" {
+  !include robotic_message_store_camel_messageprocessed.puml
+  !include robotic_message_store_db_migrations.puml
+  !include robotic_message_store_messages.puml
+  !include robotic_message_store_osr_errors.puml
+  !include robotic_message_store_osr_statuses.puml
+}
+
+@enduml

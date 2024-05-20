@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_simprop_triggers**" [[conduttore_qrtz_simprop_triggers.puml]] {
+  + ""sched_name"": //character varying(120) [PK][FK]//
+  + ""trigger_group"": //character varying(200) [PK][FK]//
+  + ""trigger_name"": //character varying(200) [PK][FK]//
+  --
+  *""bool_prop_1"": //boolean//
+  *""bool_prop_2"": //boolean//
+  *""dec_prop_1"": //numeric(13,4)//
+  *""dec_prop_2"": //numeric(13,4)//
+  *""int_prop_1"": //integer//
+  *""int_prop_2"": //integer//
+  *""long_prop_1"": //bigint//
+  *""long_prop_2"": //bigint//
+  *""str_prop_1"": //character varying(512)//
+  *""str_prop_2"": //character varying(512)//
+  *""str_prop_3"": //character varying(512)//
+}
+
+@enduml

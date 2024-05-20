@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_calendars**" [[sinfonietta_qrtz_calendars.puml]] {
+  + ""calendar_name"": //character varying(200) [PK]//
+  + ""sched_name"": //character varying(120) [PK]//
+  --
+  *""calendar"": //bytea//
+}
+
+@enduml

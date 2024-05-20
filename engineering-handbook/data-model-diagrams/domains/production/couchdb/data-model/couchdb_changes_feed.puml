@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**changes_feed**" [[couchdb_changes_feed.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""change_fields"": //array[string]//
+  *""changes[][]"": //string//
+  *""changes[][][]"": //<unknown>//
+  *""changes[][][][].picker_id"": //string//
+  *""changes[][][][].picking_sessions"": //array[string]//
+  *""changes[][][][].status"": //string//
+  *""created"": //datetime//
+  *""instance_id"": //string//
+  *""model"": //string//
+  *""user_id"": //string//
+  *""worker_id"": //string//
+}
+
+@enduml

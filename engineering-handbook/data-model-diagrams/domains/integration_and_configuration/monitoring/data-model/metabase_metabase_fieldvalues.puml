@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**metabase_fieldvalues**" [[metabase_metabase_fieldvalues.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""field_id"": //integer [FK]//
+  *""human_readable_values"": //text//
+  *""updated_at"": //timestamp with time zone//
+  *""values"": //text//
+}
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_printer_models**" [[service_catalog_sd_printer_models.puml]] {
+  + ""printer_model_id"": //bigint [PK]//
+  --
+  *""printer_model_name"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "webhooks_firestore" {
+  !include webhooks_firestore_webhook.puml
+  !include webhooks_firestore_webhook-archive.puml
+}
+
+@enduml

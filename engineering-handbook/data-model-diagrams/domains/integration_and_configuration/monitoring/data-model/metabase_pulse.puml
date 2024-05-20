@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pulse**" [[metabase_pulse.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""alert_above_goal"": //boolean//
+  *""alert_condition"": //character varying(254)//
+  *""alert_first_only"": //boolean//
+  *""archived"": //boolean//
+  *""collection_id"": //integer [FK]//
+  *""collection_position"": //smallint//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""dashboard_id"": //integer [FK]//
+  *""name"": //character varying(254)//
+  *""parameters"": //text//
+  *""skip_if_empty"": //boolean//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

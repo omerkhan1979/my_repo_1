@@ -1,0 +1,15 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "bigquery_sftp" {
+  entity "**events**" [[bigquery_sftp_events.puml]] {}
+  entity "**items**" [[bigquery_sftp_items.puml]] {}
+  entity "**schemas**" [[bigquery_sftp_schemas.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

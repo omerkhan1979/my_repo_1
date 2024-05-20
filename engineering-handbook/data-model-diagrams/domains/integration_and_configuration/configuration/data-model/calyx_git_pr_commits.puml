@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**git_pr_commits**" [[calyx_git_pr_commits.puml]] {
+  + ""git_commit_oid"": //character varying(40) [PK]//
+  + ""git_pr_number"": //integer [PK]//
+  + ""git_repo"": //character varying(100) [PK]//
+  --
+  *""created"": //timestamp with time zone//
+}
+
+@enduml

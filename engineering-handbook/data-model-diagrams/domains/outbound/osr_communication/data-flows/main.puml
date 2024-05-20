@@ -1,0 +1,32 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component OSR
+component Planning
+component Assortment
+component Fulfillment
+component Inventory
+
+usecase "OSR Communication" as OSRCommunication
+
+'bifrost and 'robotic order translator
+
+' data flows
+OSRCommunication <-right-> OSR : work processing order
+OSRCommunication <-right-> OSR : working step
+OSRCommunication <-right-> OSR : function point
+
+Assortment -down-> OSRCommunication : product
+Planning -right-> OSRCommunication : order
+OSRCommunication -up-> Fulfillment : picking decisions
+OSRCommunication -up-> Fulfillment : ??? dispatch ramp
+
+
+OSRCommunication <-down- Inventory : dispatch ramp / flow racks ???
+Inventory -down-> OSRCommunication : decanting
+Inventory <-down- OSRCommunication : inventory snapshot
+Inventory <-down- OSRCommunication : stock (move/mod)
+
+@enduml

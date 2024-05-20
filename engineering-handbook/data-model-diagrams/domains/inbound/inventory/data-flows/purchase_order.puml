@@ -1,0 +1,20 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+usecase "Purchase Order Search" as PurchaseOrderSearch
+usecase "Purchase Order Close" as PurchaseOrderClose
+database "Task" as DBTask <<link>> [[../data-model/decanting_task.puml]]
+database "Product" as DBProduct <<link>> [[../data-model/decanting_product.puml]]
+
+TomUI <-down- PurchaseOrderSearch : purchase order
+PurchaseOrderSearch <-down- DBTask : purchase order
+PurchaseOrderSearch <-down- DBProduct : purchase order
+
+TomUI -down-> PurchaseOrderClose : close purchase order
+PurchaseOrderClose -down-> DBTask : status
+PurchaseOrderClose -down-> GOLD : ???
+
+@enduml

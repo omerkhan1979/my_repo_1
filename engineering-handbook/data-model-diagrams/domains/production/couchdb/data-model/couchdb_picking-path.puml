@@ -1,0 +1,24 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking-path**" [[couchdb_picking-path.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""created_at"": //datetime//
+  *""dynamic[].picking-address"": //string//
+  *""dynamic[].quantity-unit-to-prepare"": //int//
+  *""dynamic[].tom-product-id"": //string//
+  *""error"": //<unknown>//
+  *""in_queue"": //boolean//
+  *""is_full_oos"": //boolean//
+  *""order._id"": //string//
+  *""order.created"": //datetime//
+  *""order.location_id"": //datetime//
+  *""order.secret"": //string//
+  *""retries"": //int//
+  *""updated_at"": //datetime//
+  *""value"": //array//
+}
+
+@enduml

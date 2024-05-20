@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**accounts**" [[inventory-management_accounts.puml]] {
+  + ""account_id"": //character varying [PK]//
+  --
+}
+
+@enduml

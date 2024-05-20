@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ce_task_characteristics**" [[sonarqube_ce_task_characteristics.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""kee"": //character varying(512)//
+  *""task_uuid"": //character varying(40)//
+  *""text_value"": //character varying(512)//
+}
+
+@enduml

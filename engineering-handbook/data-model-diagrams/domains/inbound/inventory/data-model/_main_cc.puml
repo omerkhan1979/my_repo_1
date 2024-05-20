@@ -1,0 +1,21 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "cc" {
+  !include cc_address.puml
+  !include cc_address_status.puml
+  !include cc_adjustment.puml
+  !include cc_event.puml
+  !include cc_ragtime_migrations.puml
+  !include cc_session.puml
+  !include cc_task.puml
+}
+"**address_status**" -- "**event**"
+"**adjustment**" -- "**event**"
+"**event**" -- "**session**"
+"**session**" -- "**address**"
+"**task**" -- "**address**"
+
+@enduml

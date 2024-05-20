@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  !include _lineItem.puml
+  !include _product.puml
+  !include _reservation.puml
+  !include _reserved_products_pending.puml
+  !include _SchemaMigrations.puml
+}
+
+@enduml

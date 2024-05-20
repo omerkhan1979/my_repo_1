@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**adjustment**" [[cc_adjustment.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""adjusted_qty"": //integer//
+  *""event_id"": //bigint [FK]//
+  *""product_id"": //text//
+  *""qty"": //integer//
+  *""qty_before_recount"": //integer//
+  *""reason_code"": //text//
+}
+
+@enduml

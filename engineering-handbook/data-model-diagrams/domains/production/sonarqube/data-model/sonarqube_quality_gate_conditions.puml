@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**quality_gate_conditions**" [[sonarqube_quality_gate_conditions.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //timestamp without time zone//
+  *""metric_uuid"": //character varying(40)//
+  *""operator"": //character varying(3)//
+  *""qgate_uuid"": //character varying(40)//
+  *""updated_at"": //timestamp without time zone//
+  *""value_error"": //character varying(64)//
+}
+
+@enduml

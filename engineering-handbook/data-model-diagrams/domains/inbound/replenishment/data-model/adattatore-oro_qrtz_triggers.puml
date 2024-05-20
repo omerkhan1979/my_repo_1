@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_triggers**" [[adattatore-oro_qrtz_triggers.puml]] {
+  + ""sched_name"": //character varying(120) [PK][FK]//
+  + ""trigger_group"": //character varying(200) [PK]//
+  + ""trigger_name"": //character varying(200) [PK]//
+  --
+  *""calendar_name"": //character varying(200)//
+  *""description"": //character varying(250)//
+  *""end_time"": //bigint//
+  *""job_data"": //bytea//
+  *""job_group"": //character varying(200) [FK]//
+  *""job_name"": //character varying(200) [FK]//
+  *""misfire_instr"": //smallint//
+  *""next_fire_time"": //bigint//
+  *""prev_fire_time"": //bigint//
+  *""priority"": //integer//
+  *""start_time"": //bigint//
+  *""trigger_state"": //character varying(16)//
+  *""trigger_type"": //character varying(8)//
+}
+
+@enduml

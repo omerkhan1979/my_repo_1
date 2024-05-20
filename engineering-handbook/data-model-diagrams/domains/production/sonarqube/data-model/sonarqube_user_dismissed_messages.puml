@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**user_dismissed_messages**" [[sonarqube_user_dismissed_messages.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""message_type"": //character varying(255)//
+  *""project_uuid"": //character varying(40)//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

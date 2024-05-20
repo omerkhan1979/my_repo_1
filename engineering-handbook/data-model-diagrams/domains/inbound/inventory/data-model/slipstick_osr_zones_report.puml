@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**osr_zones_report**" [[slipstick_osr_zones_report.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""aisle_free_positions"": //integer//
+  *""aisle_number"": //integer//
+  *""created"": //timestamp with time zone//
+  *""empty_positions"": //integer//
+  *""free_positions"": //integer//
+  *""location_id"": //text//
+  *""retailer_id"": //character varying//
+  *""total_positions"": //integer//
+  *""zone_name"": //enum//
+}
+
+@enduml

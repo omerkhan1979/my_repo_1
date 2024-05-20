@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_mappings**" [[sonarqube_project_mappings.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""kee"": //character varying(4000)//
+  *""key_type"": //character varying(200)//
+  *""project_uuid"": //character varying(40)//
+}
+
+@enduml

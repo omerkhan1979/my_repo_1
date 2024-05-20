@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**duplications_index**" [[sonarqube_duplications_index.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""analysis_uuid"": //character varying(50)//
+  *""component_uuid"": //character varying(50)//
+  *""end_line"": //integer//
+  *""hash"": //character varying(50)//
+  *""index_in_file"": //integer//
+  *""start_line"": //integer//
+}
+
+@enduml

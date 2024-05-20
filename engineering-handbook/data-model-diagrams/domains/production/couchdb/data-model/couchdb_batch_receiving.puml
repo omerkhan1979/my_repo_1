@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**batch_receiving**" [[couchdb_batch_receiving.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""created_at"": //datetime//
+  *""items"": //array//
+  *""items_stock"": //map//
+  *""location_id"": //datetime//
+  *""status"": //string//
+}
+
+@enduml

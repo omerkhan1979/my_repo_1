@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**items**" [[rint-etl_items.puml]] {
+  + ""id"": //text [PK]//
+  --
+  *""appeared_ts"": //timestamp with time zone//
+  *""data"": //jsonb//
+  *""file_hash"": //text//
+  *""file_name"": //text//
+  *""generated_ts"": //timestamp with time zone//
+  *""last_modified_ts"": //timestamp with time zone//
+  *""line"": //text//
+  *""line_hash"": //text//
+  *""mfc_id"": //character varying(10)//
+  *""processed_ts"": //timestamp with time zone//
+  *""run_id"": //text//
+  *""schema_id"": //text [FK]//
+  *""version"": //character varying(10)//
+}
+
+@enduml

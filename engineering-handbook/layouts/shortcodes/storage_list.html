@@ -1,0 +1,9 @@
+{{ $data := .Site.Data }}
+{{ range $i, $child := split (.Get "dataProvider") "/" }}
+    {{ $data = index $data $child }}
+{{ end }}
+
+{{ $storageType := .Get "type" }}
+{{ $diagramBaseDir := .Get "diagramBaseDir" }}
+{{ range index $data $storageType }}- [{{ .displayName | default .storage }}]({{ $diagramBaseDir }}/{{ .domain }}/data-model/_main_{{ .storage }}/)
+{{ end }}

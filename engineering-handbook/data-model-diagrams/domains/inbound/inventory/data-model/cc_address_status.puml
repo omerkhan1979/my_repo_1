@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**address_status**" [[cc_address_status.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""event_id"": //bigint [FK]//
+  *""value"": //enum//
+}
+
+@enduml

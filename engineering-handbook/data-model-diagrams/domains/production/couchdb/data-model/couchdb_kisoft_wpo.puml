@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_wpo**" [[couchdb_kisoft_wpo.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""containers.<num>.fp.<num>.master-fp-name"": //string//
+  *""containers.<num>.fp.<num>.ws.<num>.expiry-date"": //<unknown>//
+  *""containers.<num>.fp.<num>.ws.<num>.item-no"": //string//
+  *""containers.<num>.fp.<num>.ws.<num>.line-number"": //int//
+  *""containers.<num>.fp.<num>.ws.<num>.lot-id"": //int//
+  *""containers.<num>.fp.<num>.ws.<num>.qty"": //int//
+  *""containers.<num>.fp.<num>.ws.<num>.slot-id"": //<unknown>//
+  *""containers.<num>.fp.<num>.ws.<num>.status"": //int//
+  *""containers.<num>.fp.<num>.ws.<num>.type"": //string//
+  *""containers.<num>.status"": //int//
+  *""containers.<num>.type"": //string//
+  *""location-id"": //datetime//
+  *""order-id"": //string//
+  *""priority"": //int//
+  *""status"": //int//
+}
+
+@enduml

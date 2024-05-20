@@ -1,0 +1,14 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component TakeoffMobile
+
+usecase "Picking Decision" as PickingDecision
+
+database "Picking Decisions" as DBPickingDecisions <<link>> [[../data-model/fulfillment_tracker_picking_decisions.puml]]
+
+TakeoffMobile -down-> PickingDecision : picks
+PickingDecision -down-> DBPickingDecisions : picks
+
+@enduml

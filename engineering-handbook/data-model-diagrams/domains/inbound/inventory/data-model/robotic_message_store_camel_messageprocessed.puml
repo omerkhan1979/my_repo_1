@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**camel_messageprocessed**" [[robotic_message_store_camel_messageprocessed.puml]] {
+  --
+  *""createdat"": //timestamp with time zone//
+  *""messageid"": //text//
+  *""processorname"": //character varying(255)//
+}
+
+@enduml

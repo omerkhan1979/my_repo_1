@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**adjustment_history**" [[inventory-management_adjustment_history.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""address"": //character varying(50)//
+  *""applied_at"": //timestamp with time zone//
+  *""author"": //character varying(50)//
+  *""balance_quantity_before"": //bigint//
+  *""command_id"": //character varying(50)//
+  *""expiration_date"": //timestamp with time zone//
+  *""hidden"": //boolean//
+  *""location_id"": //character varying(50)//
+  *""order_id"": //character varying(255)//
+  *""product_id"": //character varying(255)//
+  *""purchase_order_id"": //character varying(255)//
+  *""quantity"": //bigint//
+  *""reason_code"": //character varying(10)//
+}
+
+@enduml

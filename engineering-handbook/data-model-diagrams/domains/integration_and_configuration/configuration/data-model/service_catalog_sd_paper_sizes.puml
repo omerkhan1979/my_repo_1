@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_paper_sizes**" [[service_catalog_sd_paper_sizes.puml]] {
+  + ""paper_size_id"": //bigint [PK]//
+  --
+  *""paper_size_name"": //character varying(20)//
+}
+
+@enduml

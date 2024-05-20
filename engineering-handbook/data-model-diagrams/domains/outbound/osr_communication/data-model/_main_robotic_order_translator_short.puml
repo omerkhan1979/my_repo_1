@@ -1,0 +1,18 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "robotic_order_translator" {
+  entity "**camel_messageprocessed**" [[robotic_order_translator_camel_messageprocessed.puml]] {}
+  entity "**kisoft_container**" [[robotic_order_translator_kisoft_container.puml]] {}
+  entity "**kisoft_function_point**" [[robotic_order_translator_kisoft_function_point.puml]] {}
+  entity "**kisoft_order**" [[robotic_order_translator_kisoft_order.puml]] {}
+  entity "**kisoft_order_json**" [[robotic_order_translator_kisoft_order_json.puml]] {}
+  entity "**kisoft_working_step**" [[robotic_order_translator_kisoft_working_step.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

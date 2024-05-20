@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**cutoffs**" [[owm_cutoffs.puml]] {
+  + ""cutoff_time"": //character(5) [PK]//
+  + ""mfc_location_id"": //integer [PK][FK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""from_time"": //character(5)//
+  *""to_time"": //character(5)//
+}
+
+@enduml

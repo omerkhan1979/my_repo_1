@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+
+usecase "Order Actions" as OrderActions
+usecase "Retailer Specific Order Split" as OrderSplit <<link>> [[./fulfillment_order_split.puml]]
+usecase "Order Cancel" as OrderCancel <<link>> [[./fulfillment_order_cancel.puml]]
+usecase "Order Update After Split" as OrderUpdateAfterSplit
+
+
+Retailer -down-> OrderActions : action
+OrderActions -down-> OrderSplit : split
+OrderActions -down-> OrderCancel : cancel
+OrderActions -down-> OrderUpdateAfterSplit : update (route, shift, stop-number)
+
+@enduml

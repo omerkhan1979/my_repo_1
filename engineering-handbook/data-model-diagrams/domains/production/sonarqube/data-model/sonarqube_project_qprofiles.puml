@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_qprofiles**" [[sonarqube_project_qprofiles.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""profile_key"": //character varying(50)//
+  *""project_uuid"": //character varying(50)//
+}
+
+@enduml

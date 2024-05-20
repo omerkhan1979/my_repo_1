@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**logged_worker**" [[redis0_logged_worker.puml]] {
+  --
+  *""data"": //string//
+}
+
+@enduml

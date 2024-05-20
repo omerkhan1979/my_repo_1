@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "product_audit" {
+  !include product_audit_changes_audit.puml
+}
+
+@enduml

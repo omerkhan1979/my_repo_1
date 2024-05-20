@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**shortener**" [[redis0_shortener.puml]] {
+  --
+  *""data"": //string//
+}
+
+@enduml

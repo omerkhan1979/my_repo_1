@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ce_task_input**" [[sonarqube_ce_task_input.puml]] {
+  + ""task_uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""input_data"": //bytea//
+  *""updated_at"": //bigint//
+}
+
+@enduml

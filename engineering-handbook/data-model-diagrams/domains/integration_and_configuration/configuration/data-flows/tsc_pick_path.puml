@@ -1,0 +1,22 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Pick Path Configuration API**" as PickPathAPI
+usecase "Get Pick Path Configuration" as GetPickPath
+usecase "Update Pick Path Configuration" as UpdatePickPath
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "Couch Planograms" as CouchPlanogram <<link>> [[../../../production/couchdb/data-model/couchdb_planograms.puml]]
+
+PickPathAPI -down- GetPickPath
+PickPathAPI -down- UpdatePickPath
+
+GetPickPath <-right- GetLocationsAPI
+UpdatePickPath <-down- GetLocationsAPI
+GetPickPath <-down-- CouchPlanogram
+UpdatePickPath -down--> CouchPlanogram
+
+@enduml

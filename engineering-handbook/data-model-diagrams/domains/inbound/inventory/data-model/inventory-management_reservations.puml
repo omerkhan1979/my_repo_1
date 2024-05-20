@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**reservations**" [[inventory-management_reservations.puml]] {
+  + ""address"": //character varying(50) [PK][FK]//
+  + ""location_id"": //character varying(50) [PK][FK]//
+  + ""order_id"": //character varying(255) [PK]//
+  + ""product_id"": //character varying(255) [PK][FK]//
+  --
+  *""added_at"": //timestamp with time zone//
+  *""last_updated"": //timestamp with time zone//
+  *""quantity_released"": //bigint//
+  *""quantity_reserved"": //bigint//
+}
+
+@enduml

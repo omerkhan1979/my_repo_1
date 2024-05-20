@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**computation_job**" [[metabase_computation_job.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""context"": //text//
+  *""created_at"": //timestamp without time zone//
+  *""creator_id"": //integer [FK]//
+  *""ended_at"": //timestamp without time zone//
+  *""status"": //character varying(254)//
+  *""type"": //character varying(254)//
+  *""updated_at"": //timestamp without time zone//
+}
+
+@enduml

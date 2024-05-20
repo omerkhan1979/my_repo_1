@@ -1,0 +1,12 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "tote_dispatcher" {
+  !include tote_dispatcher_configs.puml
+  !include tote_dispatcher_tote_assignments.puml
+  !include tote_dispatcher_tote_assignments_log.puml
+}
+
+@enduml

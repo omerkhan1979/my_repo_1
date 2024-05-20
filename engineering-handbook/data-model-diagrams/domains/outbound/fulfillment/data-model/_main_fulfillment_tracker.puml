@@ -1,0 +1,13 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "fulfillment_tracker" {
+  !include fulfillment_tracker_manual_picking_decision_records.puml
+  !include fulfillment_tracker_picking_decisions.puml
+  !include fulfillment_tracker_ragtime_migrations.puml
+  !include fulfillment_tracker_robotic_picking_decision_records.puml
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**csvCache**" [[_csvCache.puml]] {
+  + ""id"": //STRING(MAX) [PK]//
+  + ""mfc_id"": //STRING(MAX) [PK]//
+  + ""retailer"": //STRING(MAX) [PK]//
+  --
+  *""finish_ts"": //TIMESTAMP//
+  *""source_type"": //STRING(MAX)//
+  *""source_key"": //STRING(MAX)//
+  *""csv"": //STRING(MAX)//
+  *""created_ts"": //TIMESTAMP//
+}
+
+@enduml

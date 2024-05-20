@@ -1,0 +1,29 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "owm" {
+  !include owm_cutoffs.puml
+  !include owm_mfc_locations.puml
+  !include owm_qrtz_blob_triggers.puml
+  !include owm_qrtz_calendars.puml
+  !include owm_qrtz_cron_triggers.puml
+  !include owm_qrtz_fired_triggers.puml
+  !include owm_qrtz_job_details.puml
+  !include owm_qrtz_locks.puml
+  !include owm_qrtz_paused_trigger_grps.puml
+  !include owm_qrtz_scheduler_state.puml
+  !include owm_qrtz_simple_triggers.puml
+  !include owm_qrtz_simprop_triggers.puml
+  !include owm_qrtz_triggers.puml
+  !include owm_ragtime_migrations.puml
+}
+"**cutoffs**" -- "**mfc_locations**"
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+
+@enduml

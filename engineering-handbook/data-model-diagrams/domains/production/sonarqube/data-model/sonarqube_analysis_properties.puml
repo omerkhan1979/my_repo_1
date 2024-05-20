@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**analysis_properties**" [[sonarqube_analysis_properties.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""analysis_uuid"": //character varying(40)//
+  *""clob_value"": //text//
+  *""created_at"": //bigint//
+  *""is_empty"": //boolean//
+  *""kee"": //character varying(512)//
+  *""text_value"": //character varying(4000)//
+}
+
+@enduml

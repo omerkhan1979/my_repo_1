@@ -1,0 +1,17 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "rint-etl" {
+  !include rint-etl_camel_messageprocessed.puml
+  !include rint-etl_events.puml
+  !include rint-etl_items.puml
+  !include rint-etl_kv.puml
+  !include rint-etl_migrations_abs.puml
+  !include rint-etl_migrations_common.puml
+  !include rint-etl_schemas.puml
+}
+"**items**" -- "**schemas**"
+
+@enduml

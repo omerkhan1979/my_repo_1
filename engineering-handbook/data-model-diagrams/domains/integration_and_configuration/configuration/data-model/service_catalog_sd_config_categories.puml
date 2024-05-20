@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_config_categories**" [[service_catalog_sd_config_categories.puml]] {
+  + ""config_category"": //character varying(64) [PK]//
+  --
+}
+
+@enduml

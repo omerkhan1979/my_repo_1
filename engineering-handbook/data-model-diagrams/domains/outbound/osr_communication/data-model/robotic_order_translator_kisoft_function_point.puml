@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_function_point**" [[robotic_order_translator_kisoft_function_point.puml]] {
+  + ""container_number"": //integer [PK]//
+  + ""number"": //integer [PK]//
+  + ""order_id"": //text [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""last_updated"": //timestamp with time zone//
+  *""master_fp_name"": //text//
+}
+
+@enduml

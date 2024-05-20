@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**internal_properties**" [[sonarqube_internal_properties.puml]] {
+  + ""kee"": //character varying(20) [PK]//
+  --
+  *""clob_value"": //text//
+  *""created_at"": //bigint//
+  *""is_empty"": //boolean//
+  *""text_value"": //character varying(4000)//
+}
+
+@enduml

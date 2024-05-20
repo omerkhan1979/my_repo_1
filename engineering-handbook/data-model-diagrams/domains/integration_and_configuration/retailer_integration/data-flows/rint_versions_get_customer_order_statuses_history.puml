@@ -1,0 +1,19 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+usecase "Get Customer Order Statuses" as GetCustomerOrderStatusesHistory
+usecase "Pub/Sub Order Statuses" <<deprecated>> as PubSubOrderStatuses
+usecase "Tangerine Order Statuses Webhook" <<deprecated>> as TangerineOrderStatusesWebhook
+usecase "Order Statuses Webhook"  as OrderStatusesWebhook
+usecase "V3 Get Customer Order Statuses" <<deprecated>> as V3Get
+usecase "V4 Get Customer Order Statuses History" as V4Get <<link>> [[./rint_customer_order_v4_get_order_statuses.puml]]
+
+GetCustomerOrderStatusesHistory <-down- V3Get
+GetCustomerOrderStatusesHistory <-left- TangerineOrderStatusesWebhook
+GetCustomerOrderStatusesHistory <-right- OrderStatusesWebhook
+GetCustomerOrderStatusesHistory <-down-- V4Get
+GetCustomerOrderStatusesHistory <-down-- PubSubOrderStatuses
+
+
+@enduml

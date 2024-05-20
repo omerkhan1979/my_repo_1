@@ -1,0 +1,24 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+
+usecase "V3 Inventory Snapshot" as V3InventorySnapshot <<deprecated>>
+usecase "V4 Inventory Snapshot" as V4InventorySnapshot <<deprecated>>
+usecase "V4 Inventory" as V4Inventory <<link>> [[./rint_inventory_snapshot_v4.puml]]
+usecase "V4 Extended Inventory" as V4ExtendedInventory
+usecase "Alpha 2.0 Inventory Snapshot" as Alpha20InventorySnapshot <<deprecated>>
+usecase "Alpha 2.1 Inventory Snapshot" as Alpha21InventorySnapshot <<deprecated>>
+
+Retailer <-up- Alpha20InventorySnapshot
+Retailer <-up- Alpha21InventorySnapshot
+Retailer <-up- V3InventorySnapshot
+Retailer <-down- V4InventorySnapshot
+Retailer <-down- V4Inventory
+Retailer <-down- V4ExtendedInventory
+
+
+
+
+@enduml

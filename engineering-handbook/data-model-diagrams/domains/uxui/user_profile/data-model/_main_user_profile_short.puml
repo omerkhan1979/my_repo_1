@@ -1,0 +1,19 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "user_profile" {
+  entity "**DATABASECHANGELOG**" [[user_profile_DATABASECHANGELOG.puml]] {}
+  entity "**DATABASECHANGELOGLOCK**" [[user_profile_DATABASECHANGELOGLOCK.puml]] {}
+  entity "**default_settings**" [[user_profile_default_settings.puml]] {}
+  entity "**settings**" [[user_profile_settings.puml]] {}
+  entity "**user_settings**" [[user_profile_user_settings.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**default_settings**" -- "**settings**"
+"**user_settings**" -- "**settings**"
+
+@enduml

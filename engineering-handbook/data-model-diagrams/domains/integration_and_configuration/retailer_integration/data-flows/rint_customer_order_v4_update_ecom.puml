@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "MFC Monitoring" as MFCMonitoring
+component "Outbound Fulfillment" as OutboundFulfillment
+
+usecase "V4 Update Customer Order Ecom Status" as UpdateCustomerOrderEcomsStatus
+usecase "Order Split" as Split
+usecase "Order Cancel" as Cancel
+usecase "Order Events" as OrderEvents
+
+Retailer -down-> UpdateCustomerOrderEcomsStatus : ecom status
+UpdateCustomerOrderEcomsStatus -down--> OutboundFulfillment : order status
+
+UpdateCustomerOrderEcomsStatus -down-> Split : action
+UpdateCustomerOrderEcomsStatus -down-> Cancel : action
+
+Split -down-> OutboundFulfillment
+Cancel -down-> OutboundFulfillment
+
+UpdateCustomerOrderEcomsStatus -right- OrderEvents
+OrderEvents -right-> MFCMonitoring
+
+@enduml

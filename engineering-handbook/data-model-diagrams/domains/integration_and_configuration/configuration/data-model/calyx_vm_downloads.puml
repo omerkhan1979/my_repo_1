@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**vm_downloads**" [[calyx_vm_downloads.puml]] {
+  + ""download_id"": //integer [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""project_name"": //character varying(50)//
+  *""vm_instance"": //character varying(70)//
+}
+
+@enduml

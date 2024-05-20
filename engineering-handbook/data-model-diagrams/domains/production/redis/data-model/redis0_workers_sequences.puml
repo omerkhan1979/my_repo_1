@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**workers_sequences**" [[redis0_workers_sequences.puml]] {
+  --
+  *""invalidation:model:translations"": //string//
+}
+
+@enduml

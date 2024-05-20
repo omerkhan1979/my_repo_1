@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**task_history**" [[metabase_task_history.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""db_id"": //integer//
+  *""duration"": //integer//
+  *""ended_at"": //timestamp with time zone//
+  *""started_at"": //timestamp with time zone//
+  *""task"": //character varying(254)//
+  *""task_details"": //text//
+}
+
+@enduml

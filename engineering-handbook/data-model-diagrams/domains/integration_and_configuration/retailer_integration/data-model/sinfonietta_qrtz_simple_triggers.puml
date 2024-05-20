@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_simple_triggers**" [[sinfonietta_qrtz_simple_triggers.puml]] {
+  + ""sched_name"": //character varying(120) [PK][FK]//
+  + ""trigger_group"": //character varying(200) [PK][FK]//
+  + ""trigger_name"": //character varying(200) [PK][FK]//
+  --
+  *""repeat_count"": //bigint//
+  *""repeat_interval"": //bigint//
+  *""times_triggered"": //bigint//
+}
+
+@enduml

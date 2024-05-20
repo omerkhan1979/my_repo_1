@@ -1,0 +1,31 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "Data Lake" as DataLake
+
+usecase "Inventory Snapshot" as InventorySnapshot
+usecase "Inventory Transactions" as InventoryTransactions
+
+database "Balances" as DBBalances <<link>> [[../data-model/inventory-management_balances.puml]]
+
+database "Task" as DBTask <<link>> [[../data-model/decanting_task.puml]]
+database "Product" as DBProduct <<link>> [[../data-model/decanting_product.puml]]
+database "Section" as DBSection <<link>> [[../data-model/decanting_section.puml]]
+database "Event" as DBEvent <<link>> [[../data-model/decanting_event.puml]]
+database "Operator" as DBOperator <<link>> [[../data-model/decanting_operator.puml]]
+
+DBBalances -down-> InventorySnapshot
+InventorySnapshot -down-> DataLake
+
+DBTask -down-> InventoryTransactions
+DBProduct -down-> InventoryTransactions
+DBSection -down-> InventoryTransactions
+DBOperator -down-> InventoryTransactions
+DBEvent -down-> InventoryTransactions
+
+InventoryTransactions -down-> DataLake
+
+
+@enduml

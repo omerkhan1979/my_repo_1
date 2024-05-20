@@ -1,0 +1,31 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+usecase "Modelling & Optimization" as ModellingAndOptimization
+
+component Assortment
+component Outbound
+component Inventory
+component DataLake
+component Looker
+component Retailer
+
+ModellingAndOptimization <-left-> Assortment : itemmaster prediction
+ModellingAndOptimization <-left-> Assortment : dynamic slotting
+
+ModellingAndOptimization <-right- Outbound : orders
+ModellingAndOptimization -right-> Outbound : cartonization
+ModellingAndOptimization <-up- Inventory : inventory
+ModellingAndOptimization -down-> DataLake : dynamic slotting
+ModellingAndOptimization <-down- DataLake : sales history
+
+ModellingAndOptimization -down-> Looker : dynamic slotting
+
+ModellingAndOptimization -up-> Retailer : initial slotting\n(pre-launch)
+ModellingAndOptimization -up-> Retailer : stores network\n(pre-launch)
+ModellingAndOptimization -up-> Retailer : routes network\n(pre-launch)
+
+@enduml

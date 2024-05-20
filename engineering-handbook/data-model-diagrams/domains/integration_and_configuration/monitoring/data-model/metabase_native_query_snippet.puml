@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**native_query_snippet**" [[metabase_native_query_snippet.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""archived"": //boolean//
+  *""collection_id"": //integer [FK]//
+  *""content"": //text//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""description"": //text//
+  *""name"": //character varying(254)//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

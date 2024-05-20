@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**groups**" [[inventory-management_groups.puml]] {
+  + ""asset_id"": //character varying [PK]//
+  + ""group_id"": //character varying [PK]//
+  --
+}
+
+@enduml

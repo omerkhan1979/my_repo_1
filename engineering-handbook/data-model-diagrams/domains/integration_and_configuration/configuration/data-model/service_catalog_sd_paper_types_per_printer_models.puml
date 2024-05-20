@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_paper_types_per_printer_models**" [[service_catalog_sd_paper_types_per_printer_models.puml]] {
+  + ""paper_type"": //bigint [PK][FK]//
+  + ""printer_model"": //bigint [PK][FK]//
+  --
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**view_log**" [[metabase_view_log.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""metadata"": //text//
+  *""model"": //character varying(16)//
+  *""model_id"": //integer//
+  *""timestamp"": //timestamp with time zone//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

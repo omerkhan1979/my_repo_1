@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_tote_slot_definitions**" [[service_catalog_sd_tote_slot_definitions.puml]] {
+  + ""tote_slot_id"": //bigint [PK]//
+  --
+  *""similar_cells"": //boolean//
+  *""slots_number"": //integer//
+}
+
+@enduml

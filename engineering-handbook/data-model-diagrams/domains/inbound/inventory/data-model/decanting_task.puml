@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**task**" [[decanting_task.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""date_expected"": //timestamp with time zone//
+  *""last_modified"": //timestamp with time zone//
+  *""mfc"": //integer//
+  *""purchase_order"": //character varying(250)//
+  *""rev"": //character varying(100)//
+  *""status"": //enum//
+  *""supplier_account"": //text//
+  *""supplier_id"": //text//
+  *""supplier_name"": //text//
+  *""supplier_type"": //text//
+}
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**event**" [[slipstick_event.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+}
+
+@enduml

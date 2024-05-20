@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tote_assignments**" [[tote_dispatcher_tote_assignments.puml]] {
+  + ""id"": //STRING(36) [PK]//
+  + ""client_id"": //STRING(100) [PK]//
+  + ""mfc_id"": //STRING(100) [PK]//
+  --
+  *""order_id"": //STRING(100)//
+  *""tote_id"": //STRING(100)//
+  *""is_express"": //BOOL//
+  *""lane_idx"": //INT64//
+  *""created_at"": //INT64//
+}
+
+@enduml

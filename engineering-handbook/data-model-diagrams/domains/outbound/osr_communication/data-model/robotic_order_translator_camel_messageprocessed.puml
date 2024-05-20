@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**camel_messageprocessed**" [[robotic_order_translator_camel_messageprocessed.puml]] {
+  + ""messageid"": //text [PK]//
+  + ""processorname"": //text [PK]//
+  --
+  *""createdat"": //timestamp without time zone//
+}
+
+@enduml

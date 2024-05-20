@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pulse_channel**" [[metabase_pulse_channel.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""channel_type"": //character varying(32)//
+  *""created_at"": //timestamp with time zone//
+  *""details"": //text//
+  *""enabled"": //boolean//
+  *""pulse_id"": //integer [FK]//
+  *""schedule_day"": //character varying(64)//
+  *""schedule_frame"": //character varying(32)//
+  *""schedule_hour"": //integer//
+  *""schedule_type"": //character varying(32)//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

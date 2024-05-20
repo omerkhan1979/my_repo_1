@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**group_roles**" [[sonarqube_group_roles.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(40)//
+  *""group_uuid"": //character varying(40)//
+  *""organization_uuid"": //character varying(40)//
+  *""role"": //character varying(64)//
+}
+
+@enduml

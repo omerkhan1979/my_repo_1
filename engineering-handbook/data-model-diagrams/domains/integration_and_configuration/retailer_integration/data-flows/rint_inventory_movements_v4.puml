@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Configuration
+component "User Management" as UserManagement
+component Inventory
+
+usecase "V4 Inventory Movements" as V4InventoryMovements
+usecase "Locations Remapping" as LocationsRemapping
+usecase "User ID Remapping" as UserIDRemapping
+usecase "Inventory Adjustments\nwith Previous Quantity" as IMSInvAdj
+
+usecase "Apply Limit & Offset" as LimitOffset
+
+Retailer <-down- V4InventoryMovements : inventory movements
+Configuration -right-> LocationsRemapping
+LocationsRemapping -right-> V4InventoryMovements
+UserManagement -up-> UserIDRemapping
+UserIDRemapping -up-> V4InventoryMovements : user-id -> user-name
+Inventory -up-> IMSInvAdj : adjustments
+IMSInvAdj -up-> V4InventoryMovements
+LimitOffset <-left- V4InventoryMovements : client limits
+
+@enduml

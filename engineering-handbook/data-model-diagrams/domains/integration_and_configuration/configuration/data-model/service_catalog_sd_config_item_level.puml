@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_config_item_level**" [[service_catalog_sd_config_item_level.puml]] {
+  + ""level"": //character varying(16) [PK]//
+  --
+}
+
+@enduml

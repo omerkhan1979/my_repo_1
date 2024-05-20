@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_measure_unit_definitions**" [[service_catalog_sd_measure_unit_definitions.puml]] {
+  + ""measure_unit_id"": //bigint [PK]//
+  --
+  *""measure_type_id"": //bigint [FK]//
+  *""measure_unit_name"": //character varying(32)//
+}
+
+@enduml

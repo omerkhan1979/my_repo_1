@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**address**" [[inventory-management_address.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""active"": //boolean//
+  *""address"": //character varying(50)//
+  *""aisle"": //character varying(50)//
+  *""area"": //character varying(50)//
+  *""bay"": //character varying(50)//
+  *""dynamic"": //boolean//
+  *""location_id"": //character varying(50)//
+  *""overstock"": //boolean//
+  *""pickable"": //boolean//
+  *""shelf"": //character varying(50)//
+  *""stack"": //character varying(50)//
+  *""temp_zone"": //character varying(50)//
+}
+
+@enduml

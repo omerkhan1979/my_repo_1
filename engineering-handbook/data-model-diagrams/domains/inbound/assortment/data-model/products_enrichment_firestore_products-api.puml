@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**products-api**" [[products_enrichment_firestore_products-api.puml]] {
+  --
+  *""0068"": //int//
+  *""0069"": //int//
+  *""0108"": //int//
+  *""0124"": //int//
+  *""0707"": //int//
+  *""1508"": //int//
+  *""1531"": //int//
+  *""2776"": //int//
+  *""9999"": //int//
+  *""ABS1574"": //int//
+  *""ABS3116"": //int//
+}
+
+@enduml

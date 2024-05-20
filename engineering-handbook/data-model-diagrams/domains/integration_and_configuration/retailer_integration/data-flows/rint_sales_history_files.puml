@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "Data Lake" as DataLake
+
+usecase "ETL Sales History" as ETLSalesHistory
+
+database "Items" as DBItems <<link>> [[../data-model/rint-etl_items.puml]]
+database "Events" as DBEvents <<link>> [[../data-model/rint-etl_events.puml]]
+database "Schemas" as DBSchemas <<link>> [[../data-model/rint-etl_schemas.puml]]
+
+Retailer -down-> ETLSalesHistory : file
+note left
+ support common sales history format (TLogs)
+ and retailer specific formats (alpha movements)
+end note
+ETLSalesHistory -down-> DBItems : abstract json
+ETLSalesHistory -down-> DBEvents : file based events
+ETLSalesHistory <-down- DBSchemas
+
+ETLSalesHistory -right-> DataLake
+
+
+@enduml

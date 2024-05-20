@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**core_session**" [[metabase_core_session.puml]] {
+  + ""id"": //character varying(254) [PK]//
+  --
+  *""anti_csrf_token"": //text//
+  *""created_at"": //timestamp with time zone//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

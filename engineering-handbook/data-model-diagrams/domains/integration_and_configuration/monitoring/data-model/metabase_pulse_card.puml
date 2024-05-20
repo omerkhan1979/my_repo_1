@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pulse_card**" [[metabase_pulse_card.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""card_id"": //integer [FK]//
+  *""dashboard_card_id"": //integer [FK]//
+  *""include_csv"": //boolean//
+  *""include_xls"": //boolean//
+  *""position"": //integer//
+  *""pulse_id"": //integer [FK]//
+}
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_order**" [[robotic_order_translator_kisoft_order.puml]] {
+  + ""id"": //text [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""error_id"": //integer//
+  *""is_express"": //boolean//
+  *""last_updated"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""order_note"": //text//
+  *""picking_completed"": //timestamp with time zone//
+  *""priority"": //smallint//
+  *""status"": //smallint//
+}
+
+@enduml

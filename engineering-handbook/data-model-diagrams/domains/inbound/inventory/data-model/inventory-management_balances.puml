@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**balances**" [[inventory-management_balances.puml]] {
+  + ""address"": //character varying(50) [PK]//
+  + ""location_id"": //character varying(50) [PK]//
+  + ""product_id"": //character varying(255) [PK]//
+  --
+  *""last_updated"": //timestamp with time zone//
+  *""quantity"": //bigint//
+}
+
+@enduml

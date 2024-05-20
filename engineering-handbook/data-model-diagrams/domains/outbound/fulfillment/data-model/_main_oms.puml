@@ -1,0 +1,25 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "oms" {
+  !include oms_items.puml
+  !include oms_lines.puml
+  !include oms_order_parts_changes.puml
+  !include oms_orders.puml
+  !include oms_orders_statuses_history.puml
+  !include oms_pallet.puml
+  !include oms_pick_lists_calculation.puml
+  !include oms_ragtime_migrations.puml
+  !include oms_reserved_line_items.puml
+}
+"**items**" -- "**lines**"
+"**items**" -- "**orders**"
+"**lines**" -- "**orders**"
+"**order_parts_changes**" -- "**orders**"
+"**orders_statuses_history**" -- "**orders**"
+"**pallet**" -- "**orders**"
+"**reserved_line_items**" -- "**lines**"
+
+@enduml

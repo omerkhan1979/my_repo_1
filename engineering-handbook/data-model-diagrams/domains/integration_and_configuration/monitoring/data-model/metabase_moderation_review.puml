@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**moderation_review**" [[metabase_moderation_review.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""moderated_item_id"": //integer//
+  *""moderated_item_type"": //character varying(255)//
+  *""moderator_id"": //integer//
+  *""most_recent"": //boolean//
+  *""status"": //character varying(255)//
+  *""text"": //text//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

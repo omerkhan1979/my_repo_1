@@ -1,0 +1,22 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+component Firebase
+component Okta
+component "Micro Frontends" as MFE
+
+usecase "Refresh Token" as RefreshToken
+
+RefreshToken -right-> Firebase : refresh_token
+Firebase -left-> RefreshToken : access_token
+
+RefreshToken -left-> Okta : refresh_token
+Okta -right-> RefreshToken : access_token
+
+RefreshToken -down-> TomUI : token
+RefreshToken -down-> MFE : token
+
+@enduml

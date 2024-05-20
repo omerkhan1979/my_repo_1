@@ -1,0 +1,15 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "robotic_order_translator" {
+  !include robotic_order_translator_camel_messageprocessed.puml
+  !include robotic_order_translator_kisoft_container.puml
+  !include robotic_order_translator_kisoft_function_point.puml
+  !include robotic_order_translator_kisoft_order.puml
+  !include robotic_order_translator_kisoft_order_json.puml
+  !include robotic_order_translator_kisoft_working_step.puml
+}
+
+@enduml

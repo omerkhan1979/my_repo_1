@@ -1,0 +1,19 @@
+@startjson
+
+!include ../../../../style/data_style.puml
+
+
+{
+  "address": "01K",
+  "location_id": "ABS3116",
+  "product_id": "00011111010406",
+  "order_id": "32667007",
+  "quantity_reserved": 2,
+  "added_at": "2021-09-09T21:26:56.691613Z",
+  "last_updated": "2021-09-09T21:26:56.691613Z",
+  "quantity_released": 0
+}
+
+#highlight "**<-- back**"
+
+@endjson

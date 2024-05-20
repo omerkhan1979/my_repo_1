@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**event**" [[cc_event.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""serial_no"": //text//
+  *""session_id"": //bigint [FK]//
+  *""user_id"": //text//
+}
+
+@enduml

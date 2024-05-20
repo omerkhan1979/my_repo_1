@@ -1,0 +1,34 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component OSR
+
+usecase "Inventory Adjustment" as InventoryAdjustment
+usecase "Decanting Event" as DecantingEvent
+
+database "Inventory Adjustments" as DBInventoryAdjustments  <<link>> [[../data-model/inventory-management_adjustment_history.puml]]
+database "Balances" as DBBalances <<link>> [[../data-model/inventory-management_balances.puml]]
+
+database "Task" as DBTask <<link>> [[../data-model/decanting_task.puml]]
+database "Product" as DBProduct <<link>> [[../data-model/decanting_product.puml]]
+database "Section" as DBSection <<link>> [[../data-model/decanting_section.puml]]
+database "Event" as DBEvent <<link>> [[../data-model/decanting_event.puml]]
+database "Operator" as DBOperator <<link>> [[../data-model/decanting_operator.puml]]
+
+usecase "Daily Inventory Snapshot" as DailyInvSnapshot
+OSR -down-> DailyInvSnapshot : sum stock
+DailyInvSnapshot -down-> InventoryAdjustment : inventory transactions
+InventoryAdjustment -down-> DBBalances : inventory
+InventoryAdjustment -down-> DBInventoryAdjustments : movements
+
+DBEvent -up-> DecantingEvent
+DBSection -up-> DecantingEvent
+DBOperator -up-> DecantingEvent
+DBProduct -up-> DecantingEvent
+DBTask -up-> DecantingEvent
+
+DecantingEvent -up-> OSR : mod stock
+
+@enduml

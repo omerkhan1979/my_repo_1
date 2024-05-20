@@ -1,0 +1,30 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+
+usecase "Order Cancel" as OrderCancel
+' only drafts or not drafts?
+usecase "Order Access" as OrderAccess
+usecase "Order Status Update" as OrderStatusUpdate
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as DBOMSLines <<link>> [[../data-model/oms_lines.puml]]
+database "Items" as DBOMSItems <<link>> [[../data-model/oms_items.puml]]
+database "Orders Status History" as DBOMSOrdersStatusesHistory <<link>> [[../data-model/oms_orders_statuses_history.puml]]
+database "Changes Feed" as CouchChangesFeed <<link>> [[../../../production/couchdb/data-model/couchdb_changes_feed.puml]]
+
+OrderCancel <-down- OrderAccess : order
+OrderCancel -down-> OrderStatusUpdate : status
+
+OrderAccess <-down- DBOMSOrders : order
+OrderAccess <-down- DBOMSLines : lines
+OrderAccess <-down- DBOMSItems : items
+
+OrderStatusUpdate -down-> DBOMSOrders : status
+OrderStatusUpdate -down-> CouchChangesFeed : status
+OrderStatusUpdate -down-> DBOMSOrdersStatusesHistory : status cancelled
+OrderStatusUpdate -up-> Retailer : status
+
+@enduml

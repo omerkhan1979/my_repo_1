@@ -1,0 +1,81 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "sonarqube" {
+  !include sonarqube_active_rule_parameters.puml
+  !include sonarqube_active_rules.puml
+  !include sonarqube_alm_app_installs.puml
+  !include sonarqube_alm_pats.puml
+  !include sonarqube_alm_settings.puml
+  !include sonarqube_analysis_properties.puml
+  !include sonarqube_ce_activity.puml
+  !include sonarqube_ce_queue.puml
+  !include sonarqube_ce_scanner_context.puml
+  !include sonarqube_ce_task_characteristics.puml
+  !include sonarqube_ce_task_input.puml
+  !include sonarqube_ce_task_message.puml
+  !include sonarqube_components.puml
+  !include sonarqube_default_qprofiles.puml
+  !include sonarqube_deprecated_rule_keys.puml
+  !include sonarqube_duplications_index.puml
+  !include sonarqube_es_queue.puml
+  !include sonarqube_event_component_changes.puml
+  !include sonarqube_events.puml
+  !include sonarqube_file_sources.puml
+  !include sonarqube_group_roles.puml
+  !include sonarqube_groups.puml
+  !include sonarqube_groups_users.puml
+  !include sonarqube_internal_component_props.puml
+  !include sonarqube_internal_properties.puml
+  !include sonarqube_issue_changes.puml
+  !include sonarqube_issues.puml
+  !include sonarqube_live_measures.puml
+  !include sonarqube_manual_measures.puml
+  !include sonarqube_metrics.puml
+  !include sonarqube_new_code_periods.puml
+  !include sonarqube_notifications.puml
+  !include sonarqube_org_qprofiles.puml
+  !include sonarqube_org_quality_gates.puml
+  !include sonarqube_organization_alm_bindings.puml
+  !include sonarqube_organization_members.puml
+  !include sonarqube_organizations.puml
+  !include sonarqube_perm_templates_groups.puml
+  !include sonarqube_perm_templates_users.puml
+  !include sonarqube_perm_tpl_characteristics.puml
+  !include sonarqube_permission_templates.puml
+  !include sonarqube_plugins.puml
+  !include sonarqube_project_alm_settings.puml
+  !include sonarqube_project_branches.puml
+  !include sonarqube_project_links.puml
+  !include sonarqube_project_mappings.puml
+  !include sonarqube_project_measures.puml
+  !include sonarqube_project_qgates.puml
+  !include sonarqube_project_qprofiles.puml
+  !include sonarqube_projects.puml
+  !include sonarqube_properties.puml
+  !include sonarqube_qprofile_changes.puml
+  !include sonarqube_qprofile_edit_groups.puml
+  !include sonarqube_qprofile_edit_users.puml
+  !include sonarqube_quality_gate_conditions.puml
+  !include sonarqube_quality_gates.puml
+  !include sonarqube_rule_repositories.puml
+  !include sonarqube_rules.puml
+  !include sonarqube_rules_metadata.puml
+  !include sonarqube_rules_parameters.puml
+  !include sonarqube_rules_profiles.puml
+  !include sonarqube_saml_message_ids.puml
+  !include sonarqube_schema_migrations.puml
+  !include sonarqube_session_tokens.puml
+  !include sonarqube_snapshots.puml
+  !include sonarqube_user_dismissed_messages.puml
+  !include sonarqube_user_properties.puml
+  !include sonarqube_user_roles.puml
+  !include sonarqube_user_tokens.puml
+  !include sonarqube_users.puml
+  !include sonarqube_webhook_deliveries.puml
+  !include sonarqube_webhooks.puml
+}
+
+@enduml

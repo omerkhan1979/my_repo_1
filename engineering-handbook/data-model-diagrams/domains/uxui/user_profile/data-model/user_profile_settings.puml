@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**settings**" [[user_profile_settings.puml]] {
+  + ""name"": //STRING(256) [PK]//
+  --
+  *""description"": //STRING(1024)//
+  *""default_value"": //STRING(4096)//
+  *""created"": //TIMESTAMP//
+  *""modified"": //TIMESTAMP//
+}
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**copy_ff_task_units_of_work**" [[calyx_copy_ff_task_units_of_work.puml]] {
+  + ""flag_key"": //character varying(200) [PK]//
+  + ""target_env_type"": //character varying(50) [PK]//
+  + ""task_id"": //bigint [PK][FK]//
+  --
+  *""error"": //character varying(500)//
+  *""instructions"": //text//
+  *""patches"": //text//
+  *""revert_instructions"": //text//
+  *""settings_before"": //text//
+  *""source_env_type"": //character varying(50)//
+  *""source_retailer_id"": //character varying(50)//
+  *""status"": //character varying(25)//
+}
+
+@enduml

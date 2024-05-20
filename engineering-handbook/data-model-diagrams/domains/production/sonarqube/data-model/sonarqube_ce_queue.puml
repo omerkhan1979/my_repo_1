@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ce_queue**" [[sonarqube_ce_queue.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(40)//
+  *""created_at"": //bigint//
+  *""execution_count"": //integer//
+  *""main_component_uuid"": //character varying(40)//
+  *""started_at"": //bigint//
+  *""status"": //character varying(15)//
+  *""submitter_uuid"": //character varying(255)//
+  *""task_type"": //character varying(15)//
+  *""updated_at"": //bigint//
+  *""worker_uuid"": //character varying(40)//
+}
+
+@enduml

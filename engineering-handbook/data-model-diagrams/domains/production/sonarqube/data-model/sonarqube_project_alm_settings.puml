@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_alm_settings**" [[sonarqube_project_alm_settings.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""alm_repo"": //character varying(256)//
+  *""alm_setting_uuid"": //character varying(40)//
+  *""alm_slug"": //character varying(256)//
+  *""created_at"": //bigint//
+  *""project_uuid"": //character varying(50)//
+  *""summary_comment_enabled"": //boolean//
+  *""updated_at"": //bigint//
+}
+
+@enduml

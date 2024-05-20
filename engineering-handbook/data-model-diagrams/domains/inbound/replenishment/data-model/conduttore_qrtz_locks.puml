@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_locks**" [[conduttore_qrtz_locks.puml]] {
+  + ""lock_name"": //character varying(40) [PK]//
+  + ""sched_name"": //character varying(120) [PK]//
+  --
+}
+
+@enduml

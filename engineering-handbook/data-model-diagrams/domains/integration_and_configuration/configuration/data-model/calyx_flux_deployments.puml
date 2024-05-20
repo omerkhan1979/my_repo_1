@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**flux_deployments**" [[calyx_flux_deployments.puml]] {
+  + ""cluster_name"": //character varying [PK]//
+  + ""project_id"": //character varying [PK]//
+  + ""project_name"": //character varying [PK]//
+  + ""replica_set_name"": //character varying [PK]//
+  --
+  *""deployment_id"": //integer [FK]//
+  *""match_labels"": //jsonb//
+}
+
+@enduml

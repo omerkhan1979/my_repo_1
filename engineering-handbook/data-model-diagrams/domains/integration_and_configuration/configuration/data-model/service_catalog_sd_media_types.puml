@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_media_types**" [[service_catalog_sd_media_types.puml]] {
+  + ""media_type_id"": //bigint [PK]//
+  --
+  *""media_type_name"": //character varying(20)//
+}
+
+@enduml

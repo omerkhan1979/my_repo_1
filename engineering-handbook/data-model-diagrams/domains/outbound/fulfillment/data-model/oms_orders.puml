@@ -1,0 +1,41 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**orders**" [[oms_orders.puml]] {
+  + ""order_id"": //text [PK]//
+  --
+  *""batch_created"": //boolean//
+  *""bypassed"": //boolean//
+  *""cancelled_by_client"": //boolean//
+  *""corp_order_id"": //text//
+  *""creation_datetime"": //timestamp with time zone//
+  *""cutoff_datetime"": //timestamp with time zone//
+  *""deleted_at"": //timestamp with time zone//
+  *""ecom_order_id"": //text//
+  *""ecom_payment_status"": //text//
+  *""ecom_status"": //text//
+  *""fulfillment_datetime"": //timestamp with time zone//
+  *""is_express"": //boolean//
+  *""last_modified"": //timestamp with time zone//
+  *""order_note"": //text//
+  *""preliminary_batch_id"": //text//
+  *""route_number"": //text//
+  *""service_type"": //text//
+  *""service_window_start"": //timestamp with time zone//
+  *""shift_number"": //integer//
+  *""shipping_label"": //text[]//
+  *""splitted"": //boolean//
+  *""splitted_by_client"": //boolean//
+  *""spoke_id"": //text//
+  *""stage_by_datetime"": //timestamp with time zone//
+  *""stage_location"": //character varying(50)//
+  *""status"": //enum//
+  *""stop_number"": //integer//
+  *""store_id"": //text//
+  *""total_route_orders"": //integer//
+  *""total_shift_orders"": //integer//
+  *""tote_estimate"": //json//
+}
+
+@enduml

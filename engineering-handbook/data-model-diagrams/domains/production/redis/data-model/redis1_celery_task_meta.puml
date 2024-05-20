@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**celery_task_meta**" [[redis1_celery_task_meta.puml]] {
+  --
+  *""data"": //string//
+}
+
+@enduml

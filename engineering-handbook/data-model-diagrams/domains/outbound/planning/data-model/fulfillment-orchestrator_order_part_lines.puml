@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**order_part_lines**" [[fulfillment-orchestrator_order_part_lines.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""created_datetime"": //timestamp with time zone//
+  *""order_part_id"": //integer [FK]//
+  *""product_id"": //text//
+  *""quantity"": //integer//
+  *""shelf_address"": //text//
+}
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+database "Raw Products" as RawProducts <<link>> [[../data-model/distiller_raw_products.puml]]
+database "Sleeping Area Rules" as SleepingAreaRules <<link>> [[../data-model/distiller_sleeping_area_rules.puml]]
+database "Preset Area Rules" as PresetAreaRules <<link>> [[../data-model/distiller_preset_area_rules.puml]]
+database "Slotting Recommendations" as SlottingRecommendations <<link>> [[../data-model/distiller_slotting_recommendations.puml]]
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+database "Enrichnment Flow" as EnrichmentFlow <<link>> [[../data-model/distiller_enrichment_flow.puml]]
+
+
+usecase "Enrichment Process" as DistillerEnrichment
+
+DistillerEnrichment <-up-- RawProducts : raw products
+DistillerEnrichment <-up- SleepingAreaRules : sleeping area
+DistillerEnrichment <-up- PresetAreaRules : preset area rules
+DistillerEnrichment <-left- SlottingRecommendations : temp zone
+
+DistillerEnrichment -right-> EnrichmentFlow : steps
+DistillerEnrichment -down--> Products : enriched product
+
+@enduml

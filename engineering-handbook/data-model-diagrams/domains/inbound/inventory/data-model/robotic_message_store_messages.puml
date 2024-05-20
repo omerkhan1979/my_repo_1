@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**messages**" [[robotic_message_store_messages.puml]] {
+  + ""message_id"": //bigint [PK]//
+  --
+  *""attributes"": //jsonb//
+  *""generated_timestamp_millis"": //bigint//
+  *""is_json"": //boolean//
+  *""message_body"": //bytea//
+  *""message_body_json"": //jsonb//
+  *""meta"": //jsonb//
+  *""mfc_id"": //character varying(512)//
+  *""source_id"": //character varying(512)//
+  *""timestamp_nano"": //bigint//
+}
+
+@enduml

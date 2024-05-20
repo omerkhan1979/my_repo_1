@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_links**" [[sonarqube_project_links.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""href"": //character varying(2048)//
+  *""link_type"": //character varying(20)//
+  *""name"": //character varying(128)//
+  *""project_uuid"": //character varying(40)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

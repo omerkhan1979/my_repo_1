@@ -1,0 +1,15 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "redis0" {
+  entity "**logged_worker**" [[redis0_logged_worker.puml]] {}
+  entity "**shortener**" [[redis0_shortener.puml]] {}
+  entity "**workers_sequences**" [[redis0_workers_sequences.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

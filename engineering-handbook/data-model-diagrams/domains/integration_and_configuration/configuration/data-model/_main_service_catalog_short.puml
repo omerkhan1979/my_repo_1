@@ -1,0 +1,117 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "service_catalog" {
+  entity "**migrations_data_abs**" [[service_catalog_migrations_data_abs.puml]] {}
+  entity "**migrations_data_common**" [[service_catalog_migrations_data_common.puml]] {}
+  entity "**migrations_schema_common**" [[service_catalog_migrations_schema_common.puml]] {}
+  entity "**op_address**" [[service_catalog_op_address.puml]] {}
+  entity "**op_address_l1_aisles**" [[service_catalog_op_address_l1_aisles.puml]] {}
+  entity "**op_address_l2_bays**" [[service_catalog_op_address_l2_bays.puml]] {}
+  entity "**op_config_definition_version**" [[service_catalog_op_config_definition_version.puml]] {}
+  entity "**op_config_items**" [[service_catalog_op_config_items.puml]] {}
+  entity "**op_flow_racks**" [[service_catalog_op_flow_racks.puml]] {}
+  entity "**op_location_ip_address_printers**" [[service_catalog_op_location_ip_address_printers.puml]] {}
+  entity "**op_location_ip_addresses_ranges**" [[service_catalog_op_location_ip_addresses_ranges.puml]] {}
+  entity "**op_location_tote_types**" [[service_catalog_op_location_tote_types.puml]] {}
+  entity "**op_locations**" [[service_catalog_op_locations.puml]] {}
+  entity "**op_measure_units**" [[service_catalog_op_measure_units.puml]] {}
+  entity "**op_osrs**" [[service_catalog_op_osrs.puml]] {}
+  entity "**op_planograms**" [[service_catalog_op_planograms.puml]] {}
+  entity "**op_printers**" [[service_catalog_op_printers.puml]] {}
+  entity "**op_printing_nodes**" [[service_catalog_op_printing_nodes.puml]] {}
+  entity "**op_product_category_limits**" [[service_catalog_op_product_category_limits.puml]] {}
+  entity "**op_routes**" [[service_catalog_op_routes.puml]] {}
+  entity "**op_staging_configs**" [[service_catalog_op_staging_configs.puml]] {}
+  entity "**op_staging_locations**" [[service_catalog_op_staging_locations.puml]] {}
+  entity "**op_tote_cell_dimensions**" [[service_catalog_op_tote_cell_dimensions.puml]] {}
+  entity "**op_tote_types**" [[service_catalog_op_tote_types.puml]] {}
+  entity "**op_tote_types_v2**" [[service_catalog_op_tote_types_v2.puml]] {}
+  entity "**sd_area_types**" [[service_catalog_sd_area_types.puml]] {}
+  entity "**sd_areas**" [[service_catalog_sd_areas.puml]] {}
+  entity "**sd_barcode_formats**" [[service_catalog_sd_barcode_formats.puml]] {}
+  entity "**sd_config_categories**" [[service_catalog_sd_config_categories.puml]] {}
+  entity "**sd_config_item_categories**" [[service_catalog_sd_config_item_categories.puml]] {}
+  entity "**sd_config_item_definitions**" [[service_catalog_sd_config_item_definitions.puml]] {}
+  entity "**sd_config_item_level**" [[service_catalog_sd_config_item_level.puml]] {}
+  entity "**sd_countries**" [[service_catalog_sd_countries.puml]] {}
+  entity "**sd_data_types**" [[service_catalog_sd_data_types.puml]] {}
+  entity "**sd_ip_address_purposes**" [[service_catalog_sd_ip_address_purposes.puml]] {}
+  entity "**sd_location_types**" [[service_catalog_sd_location_types.puml]] {}
+  entity "**sd_measure_types**" [[service_catalog_sd_measure_types.puml]] {}
+  entity "**sd_measure_unit_definitions**" [[service_catalog_sd_measure_unit_definitions.puml]] {}
+  entity "**sd_media_types**" [[service_catalog_sd_media_types.puml]] {}
+  entity "**sd_movable_asset_types**" [[service_catalog_sd_movable_asset_types.puml]] {}
+  entity "**sd_number_sides**" [[service_catalog_sd_number_sides.puml]] {}
+  entity "**sd_osr_container_types**" [[service_catalog_sd_osr_container_types.puml]] {}
+  entity "**sd_paper_sizes**" [[service_catalog_sd_paper_sizes.puml]] {}
+  entity "**sd_paper_sizes_per_printer_models**" [[service_catalog_sd_paper_sizes_per_printer_models.puml]] {}
+  entity "**sd_paper_types**" [[service_catalog_sd_paper_types.puml]] {}
+  entity "**sd_paper_types_per_printer_models**" [[service_catalog_sd_paper_types_per_printer_models.puml]] {}
+  entity "**sd_printer_models**" [[service_catalog_sd_printer_models.puml]] {}
+  entity "**sd_printing_methods**" [[service_catalog_sd_printing_methods.puml]] {}
+  entity "**sd_states**" [[service_catalog_sd_states.puml]] {}
+  entity "**sd_static_dynamic_types**" [[service_catalog_sd_static_dynamic_types.puml]] {}
+  entity "**sd_temperature_zones**" [[service_catalog_sd_temperature_zones.puml]] {}
+  entity "**sd_tote_kinds**" [[service_catalog_sd_tote_kinds.puml]] {}
+  entity "**sd_tote_slot_definitions**" [[service_catalog_sd_tote_slot_definitions.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**op_address**" -- "**sd_areas**"
+"**op_address**" -- "**op_address_l2_bays**"
+"**op_address**" -- "**op_locations**"
+"**op_address_l2_bays**" -- "**op_address_l1_aisles**"
+"**op_config_items**" -- "**sd_config_item_definitions**"
+"**op_config_items**" -- "**op_locations**"
+"**op_flow_racks**" -- "**op_locations**"
+"**op_location_ip_address_printers**" -- "**sd_ip_address_purposes**"
+"**op_location_ip_address_printers**" -- "**op_locations**"
+"**op_location_ip_addresses_ranges**" -- "**sd_ip_address_purposes**"
+"**op_location_ip_addresses_ranges**" -- "**op_locations**"
+"**op_location_tote_types**" -- "**op_locations**"
+"**op_location_tote_types**" -- "**op_tote_types**"
+"**op_locations**" -- "**sd_location_types**"
+"**op_locations**" -- "**op_locations**"
+"**op_locations**" -- "**sd_states**"
+"**op_measure_units**" -- "**sd_measure_types**"
+"**op_measure_units**" -- "**sd_measure_unit_definitions**"
+"**op_osrs**" -- "**op_locations**"
+"**op_planograms**" -- "**op_address_l2_bays**"
+"**op_planograms**" -- "**op_locations**"
+"**op_printers**" -- "**op_locations**"
+"**op_printing_nodes**" -- "**op_locations**"
+"**op_printing_nodes**" -- "**sd_media_types**"
+"**op_product_category_limits**" -- "**op_tote_types**"
+"**op_routes**" -- "**op_locations**"
+"**op_staging_configs**" -- "**op_routes**"
+"**op_staging_configs**" -- "**op_staging_locations**"
+"**op_staging_locations**" -- "**op_locations**"
+"**op_tote_cell_dimensions**" -- "**op_tote_types**"
+"**op_tote_types**" -- "**sd_barcode_formats**"
+"**op_tote_types**" -- "**sd_temperature_zones**"
+"**op_tote_types**" -- "**sd_tote_kinds**"
+"**op_tote_types_v2**" -- "**sd_barcode_formats**"
+"**op_tote_types_v2**" -- "**op_locations**"
+"**op_tote_types_v2**" -- "**sd_temperature_zones**"
+"**op_tote_types_v2**" -- "**sd_tote_kinds**"
+"**sd_areas**" -- "**sd_area_types**"
+"**sd_areas**" -- "**sd_temperature_zones**"
+"**sd_config_item_categories**" -- "**sd_config_categories**"
+"**sd_config_item_categories**" -- "**sd_config_item_definitions**"
+"**sd_config_item_definitions**" -- "**sd_config_item_level**"
+"**sd_config_item_definitions**" -- "**sd_measure_types**"
+"**sd_config_item_definitions**" -- "**sd_data_types**"
+"**sd_measure_unit_definitions**" -- "**sd_measure_types**"
+"**sd_paper_sizes_per_printer_models**" -- "**sd_paper_sizes**"
+"**sd_paper_sizes_per_printer_models**" -- "**sd_printer_models**"
+"**sd_paper_types**" -- "**sd_paper_sizes**"
+"**sd_paper_types**" -- "**sd_printing_methods**"
+"**sd_paper_types_per_printer_models**" -- "**sd_paper_types**"
+"**sd_paper_types_per_printer_models**" -- "**sd_printer_models**"
+"**sd_states**" -- "**sd_countries**"
+
+@enduml

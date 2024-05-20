@@ -1,0 +1,30 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "Retailer Integration" as RetailerIntegration
+component OSR
+component TomUI
+component eCommerce
+component Takeoff
+component GOLD
+component "Data Lake" as DataLake
+component "Modeling & Optimization" as ModelingAndOptimization
+
+usecase Assortment
+
+' data flows
+RetailerIntegration <--down-> Assortment : [[./retailer_itemmaster.puml itemmaster]]
+Assortment --up-> OSR : [[./osr_products_sync.puml add article]]
+Assortment <--left--> TomUI : [[./tomui_products.puml products]]
+eCommerce <---> Assortment : [[./ecommerce_catalog.puml ecommerce catalog]]
+Assortment <-up-> RetailerIntegration : [[./replenishment_purchase_orders.puml purchase orders]]
+Assortment ---> GOLD : [[./osr_products_sync.puml add product]]
+Assortment ---> Takeoff : [[./takeoff_mappings.puml mappings]]
+Assortment <--> Takeoff : [[./takeoff_enrichment_rules.puml enrichment rules]]
+Assortment <-right-> ModelingAndOptimization : [[./modeling_and_optimization_itemmaster_prediction.puml itemmaster prediction]]
+ModelingAndOptimization <-left-> Assortment : [[./modeling_and_optimization_dynamic_slotting.puml dynamic slotting]]
+Assortment ---> DataLake : [[./data_lake_products.puml products]]
+
+@enduml

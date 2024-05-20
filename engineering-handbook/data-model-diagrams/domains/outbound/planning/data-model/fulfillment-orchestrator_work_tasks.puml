@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**work_tasks**" [[fulfillment-orchestrator_work_tasks.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""completed_datetime"": //timestamp with time zone//
+  *""created_datetime"": //timestamp with time zone//
+  *""in_progress_datetime"": //timestamp with time zone//
+  *""last_modified_datetime"": //timestamp with time zone//
+  *""status"": //enum//
+  *""type"": //enum//
+}
+
+@enduml

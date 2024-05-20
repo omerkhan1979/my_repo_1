@@ -1,0 +1,31 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "sinfonietta" {
+  !include sinfonietta_activemq_acks.puml
+  !include sinfonietta_activemq_lock.puml
+  !include sinfonietta_activemq_msgs.puml
+  !include sinfonietta_camel_messageprocessed.puml
+  !include sinfonietta_kv.puml
+  !include sinfonietta_qrtz_blob_triggers.puml
+  !include sinfonietta_qrtz_calendars.puml
+  !include sinfonietta_qrtz_cron_triggers.puml
+  !include sinfonietta_qrtz_fired_triggers.puml
+  !include sinfonietta_qrtz_job_details.puml
+  !include sinfonietta_qrtz_locks.puml
+  !include sinfonietta_qrtz_paused_trigger_grps.puml
+  !include sinfonietta_qrtz_scheduler_state.puml
+  !include sinfonietta_qrtz_simple_triggers.puml
+  !include sinfonietta_qrtz_simprop_triggers.puml
+  !include sinfonietta_qrtz_triggers.puml
+  !include sinfonietta_ragtime_migrations.puml
+}
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+
+@enduml

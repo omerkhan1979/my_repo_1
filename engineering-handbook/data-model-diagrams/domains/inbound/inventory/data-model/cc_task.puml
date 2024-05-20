@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**task**" [[cc_task.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""address_id"": //bigint [FK]//
+  *""created"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""status"": //enum//
+}
+
+@enduml

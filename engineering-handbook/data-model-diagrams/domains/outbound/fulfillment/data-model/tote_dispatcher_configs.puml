@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**configs**" [[tote_dispatcher_configs.puml]] {
+  + ""client_id"": //STRING(100) [PK]//
+  + ""env"": //STRING(100) [PK]//
+  + ""mfc_id"": //STRING(100) [PK]//
+  --
+  *""updated_at"": //INT64//
+  *""error_ramp"": //INT64//
+  *""count"": //INT64//
+  *""depth"": //INT64//
+  *""start"": //INT64//
+  *""id_gen"": //STRING(100)//
+  *""lane_mapping"": //JSON//
+  *""express_lane_mapping"": //JSON//
+  *""flow_racks_mapping"": //JSON//
+}
+
+@enduml

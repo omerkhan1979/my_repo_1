@@ -1,0 +1,58 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Staging Configuration API**" as StagingConfigAPI
+usecase "Get Staging Locations" as GetStagingLocations
+usecase "Create Staging Locations" as CreateStagingLocation
+usecase "Set Default Staging Locations" as SetDefaultStagingLocation
+usecase "Add Staging Configuration" as AddStagingConfiguration
+usecase "Get Staging Configurations" as GetStagingConfigurations
+usecase "Get Staging Location For Route" as GetStagingLocationsForRoute
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_staging_locations" as OpStagingLocations <<link>> [[../data-model/service_catalog_op_staging_locations.puml]]
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+database "op_routes" as OpRoutes <<link>> [[../data-model/service_catalog_op_routes.puml]]
+database "op_staging_configs" as OpStagingConfigs <<link>> [[../data-model/service_catalog_op_staging_configs.puml]]
+
+StagingConfigAPI <-down-- GetStagingLocations
+StagingConfigAPI -down--> CreateStagingLocation
+StagingConfigAPI -down--> SetDefaultStagingLocation
+StagingConfigAPI <-down-- GetStagingConfigurations
+StagingConfigAPI -down-- AddStagingConfiguration
+StagingConfigAPI <-down-- GetStagingLocationsForRoute
+
+GetStagingLocations <-up- GetLocationsAPI
+GetStagingLocations <-down- OpStagingLocations
+GetStagingLocations <-down- OpLocations
+
+CreateStagingLocation <-up- GetLocationsAPI
+CreateStagingLocation -down-> OpStagingLocations
+CreateStagingLocation <-down- OpLocations
+
+SetDefaultStagingLocation <-up- GetLocationsAPI
+SetDefaultStagingLocation <-down-> OpStagingLocations
+SetDefaultStagingLocation <-down- OpLocations
+
+AddStagingConfiguration <-up- GetLocationsAPI
+AddStagingConfiguration <-down- OpLocations
+AddStagingConfiguration <-down- OpStagingLocations
+AddStagingConfiguration <=down-> OpStagingConfigs : staging configuration
+AddStagingConfiguration <-down- OpRoutes
+
+GetStagingConfigurations <-up- GetLocationsAPI
+GetStagingConfigurations <-down- OpLocations
+GetStagingConfigurations <-down- OpStagingLocations
+GetStagingConfigurations <-down- OpStagingConfigs
+GetStagingConfigurations <-down- OpRoutes
+
+GetStagingLocationsForRoute <-up- GetLocationsAPI
+GetStagingLocationsForRoute <-down- OpLocations
+GetStagingLocationsForRoute <-down- OpStagingLocations
+GetStagingLocationsForRoute <-down- OpStagingConfigs
+GetStagingLocationsForRoute <-down- OpRoutes
+
+@enduml

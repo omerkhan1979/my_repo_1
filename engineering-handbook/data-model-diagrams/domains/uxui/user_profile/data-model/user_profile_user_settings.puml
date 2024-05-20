@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**user_settings**" [[user_profile_user_settings.puml]] {
+  + ""email"": //STRING(256) [PK]//
+  + ""setting_name"": //STRING(256) [PK][FK]//
+  + ""retailer_id"": //STRING(1024) [PK]//
+  + ""location_id"": //STRING(1024) [PK]//
+  --
+  *""value"": //STRING(4096)//
+  *""created"": //TIMESTAMP//
+  *""modified"": //TIMESTAMP//
+}
+
+@enduml

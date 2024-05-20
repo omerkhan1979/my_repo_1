@@ -1,0 +1,24 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "decanting" {
+  !include decanting_decanting_ui_action.puml
+  !include decanting_event.puml
+  !include decanting_operator.puml
+  !include decanting_product.puml
+  !include decanting_product_event.puml
+  !include decanting_ragtime_migrations.puml
+  !include decanting_section.puml
+  !include decanting_task.puml
+}
+"**event**" -- "**operator**"
+"**product**" -- "**task**"
+"**product_event**" -- "**operator**"
+"**product_event**" -- "**product**"
+"**product_event**" -- "**task**"
+"**section**" -- "**event**"
+"**section**" -- "**product**"
+
+@enduml

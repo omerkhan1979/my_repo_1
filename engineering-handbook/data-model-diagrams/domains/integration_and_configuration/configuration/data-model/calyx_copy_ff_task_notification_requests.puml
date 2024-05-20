@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**copy_ff_task_notification_requests**" [[calyx_copy_ff_task_notification_requests.puml]] {
+  + ""notification_id"": //bigint [PK]//
+  --
+  *""status"": //character varying(25)//
+  *""task_id"": //bigint [FK]//
+}
+
+@enduml

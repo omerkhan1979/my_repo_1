@@ -1,0 +1,33 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Assortment
+
+
+usecase "Order Access Layer" as OrderAccessLayer
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as DBOMSLines <<link>> [[../data-model/oms_lines.puml]]
+database "Items" as DBOMSItems <<link>> [[../data-model/oms_items.puml]]
+database "Pallet" as DBOMSPallet <<link>> [[../data-model/oms_pallet.puml]]
+database "O" as CouchO <<link>> [[../../../production/couchdb/data-model/couchdb_o.puml]]
+database "Picking Path" as CouchPP <<link>> [[../../../production/couchdb/data-model/couchdb_picking-path.puml]]
+database "Picking Decisions" as DBPickingDecisions <<link>> [[../data-model/fulfillment_tracker_picking_decisions.puml]]
+
+'database "Orders Status History" as DBOMSOrdersStatusesHistory <<link>> [[../data-model/oms_orders_statuses_history.puml]]
+
+' data flows
+Retailer <-down- OrderAccessLayer : order & fulfillment results
+
+OrderAccessLayer <-left- Assortment : products
+OrderAccessLayer <-down- DBOMSOrders : order
+OrderAccessLayer <-down- DBOMSPallet : pallet
+OrderAccessLayer <-down- DBOMSLines : order line
+OrderAccessLayer <-down- DBOMSItems : line item
+OrderAccessLayer <-down- CouchO : order
+OrderAccessLayer <-down- CouchPP : picking path
+OrderAccessLayer <-right- DBPickingDecisions : picking decisions
+
+@enduml

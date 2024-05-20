@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_location_types**" [[service_catalog_sd_location_types.puml]] {
+  + ""location_type_id"": //bigint [PK]//
+  --
+  *""location_type_name"": //character varying(20)//
+}
+
+@enduml

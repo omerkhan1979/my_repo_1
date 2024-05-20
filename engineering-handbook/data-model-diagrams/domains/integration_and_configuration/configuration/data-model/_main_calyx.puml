@@ -1,0 +1,41 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "calyx" {
+  !include calyx_argo_deployments.puml
+  !include calyx_copy_ff_task_notification_requests.puml
+  !include calyx_copy_ff_task_units_of_work.puml
+  !include calyx_copy_ff_tasks.puml
+  !include calyx_deployment_commits.puml
+  !include calyx_deployment_commits_processed.puml
+  !include calyx_deployments.puml
+  !include calyx_environment_types.puml
+  !include calyx_environments.puml
+  !include calyx_flux_deployments.puml
+  !include calyx_git_commit_jira_tickets.puml
+  !include calyx_git_commits.puml
+  !include calyx_git_pr_commits.puml
+  !include calyx_git_pull_requests.puml
+  !include calyx_jenkins_deployments.puml
+  !include calyx_key_value_storage.puml
+  !include calyx_kubernetes_containers.puml
+  !include calyx_kubernetes_downloads.puml
+  !include calyx_ragtime_migrations.puml
+  !include calyx_retailers.puml
+  !include calyx_vm_containers.puml
+  !include calyx_vm_downloads.puml
+}
+"**argo_deployments**" -- "**deployments**"
+"**copy_ff_task_notification_requests**" -- "**copy_ff_tasks**"
+"**copy_ff_task_units_of_work**" -- "**copy_ff_tasks**"
+"**deployment_commits**" -- "**deployments**"
+"**deployment_commits_processed**" -- "**deployments**"
+"**environment_types**" -- "**environment_types**"
+"**environments**" -- "**environment_types**"
+"**environments**" -- "**retailers**"
+"**flux_deployments**" -- "**deployments**"
+"**jenkins_deployments**" -- "**deployments**"
+
+@enduml

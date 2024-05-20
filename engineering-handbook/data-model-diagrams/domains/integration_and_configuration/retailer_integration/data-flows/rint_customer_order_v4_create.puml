@@ -1,0 +1,56 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "MFC Monitoring" as MFCMonitoring
+component "Assortment" as Assortment
+component "Configuration" as Configuration
+component "Outbound Fulfillment" as OutboundFulfillment
+
+usecase "V4 Create Customer Order" as CreateCustomerOrder
+usecase "V4 Update Customer Order" as UpdateCustomerOrder
+usecase "Customer Order Validations" as CustomerOrderValidations <<link>> [[./rint_customer_order_validations.puml]]
+usecase "Customer Order Mappings" as CustomerOrderMappings
+usecase "Locations Remapping" as LocationsRemapping
+usecase "Service-window-start mapping" as ServiceWindowStartMapping
+usecase "Tweak Ecom Service Type\n(tangerine)" as TweakEcomServiceType
+usecase "Enrich shipping-label with service-window\n(tangerine)" as PreCreateTangerine
+usecase "Ecom-id Mapping" as EcomIDMapping
+usecase "Customer Order Policies" as ApplyPolicy
+usecase "Request to OMS" as RequestToOMS
+usecase "Events Reporting" as EventsReporting
+usecase UnrecognizedProductsPolicy
+usecase DuplicatedEcomIDsPolicy
+usecase DuplicatedTakeoffIDSPolicy
+usecase WeightedProductsPolicy
+
+Retailer -down-> CreateCustomerOrder : order
+Retailer -down-> UpdateCustomerOrder : order
+CreateCustomerOrder -down-> CustomerOrderValidations
+UpdateCustomerOrder -down-> CustomerOrderValidations
+Configuration -right-> CustomerOrderValidations : locations
+CustomerOrderValidations <-right- PreCreateTangerine
+CustomerOrderValidations -down-> CustomerOrderMappings
+Configuration -down-> LocationsRemapping: locations
+CustomerOrderMappings <-left- LocationsRemapping : retailer->takeoff
+CustomerOrderMappings <-right- ServiceWindowStartMapping
+CustomerOrderMappings <-down- TweakEcomServiceType
+CustomerOrderMappings <-down- EcomIDMapping
+Assortment -right-> EcomIDMapping : ecom-id mappings
+
+CustomerOrderMappings -down--> ApplyPolicy
+
+
+ApplyPolicy -down-> UnrecognizedProductsPolicy
+ApplyPolicy -right-> DuplicatedEcomIDsPolicy
+ApplyPolicy -down-> DuplicatedTakeoffIDSPolicy
+ApplyPolicy -left-> WeightedProductsPolicy
+Assortment -down-> WeightedProductsPolicy : product mappings
+
+ApplyPolicy -down--> EventsReporting
+EventsReporting -right-> MFCMonitoring : order create events
+EventsReporting -down-> RequestToOMS
+RequestToOMS -down-> OutboundFulfillment : customer order
+
+@enduml

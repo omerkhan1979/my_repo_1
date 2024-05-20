@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  !include _csvCache.puml
+  !include _recommendationDecision.puml
+  !include _SchemaMigrations.puml
+  !include _setting.puml
+  !include _test.puml
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tote_assignments_log**" [[tote_dispatcher_tote_assignments_log.puml]] {
+  + ""id"": //STRING(36) [PK]//
+  --
+  *""state"": //JSON//
+  *""input_data"": //JSON//
+  *""output_data"": //JSON//
+  *""created_at"": //INT64//
+}
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+
+actor Engineer
+usecase "Config Metamodel" as ConfigMetaModel
+
+database "sd_config_categories" as SdConfigCategories <<link>> [[../data-model/service_catalog_sd_config_categories.puml]]
+database "sd_config_item_definition" as SdConfigItemDefinition <<link>> [[../data-model/service_catalog_sd_config_item_definition.puml]]
+database "sd_config_item_categories" as SdConfigItemCategories <<link>> [[../data-model/service_catalog_sd_config_item_categories.puml]]
+
+Engineer -down-> ConfigMetaModel : pull request to add config definition
+ConfigMetaModel -down-> SdConfigCategories : config categories
+ConfigMetaModel -down-> SdConfigItemDefinition : config item schema
+ConfigMetaModel -down-> SdConfigItemCategories : config item categories
+
+
+@enduml

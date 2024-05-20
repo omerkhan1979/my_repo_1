@@ -1,0 +1,31 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Firebase
+component TomUI
+component Configuration
+
+usecase "**Users API**" as UsersAPI
+
+usecase "List of Users" as ListUsers <<link>> [[./tomui_list_users.puml]]
+usecase "Create User" as CreateUsers <<link>> [[./tomui_create_user.puml]]
+usecase "Get User Details" as UserDetails <<link>> [[./tomui_user_details.puml]]
+usecase "Change User Details" as ChangeUserDetails <<link>> [[./tomui_update_user.puml]]
+usecase "Reset Password" as ResetPassword <<link>> [[./tomui_update_user.puml]]
+usecase "Suspend User" as SuspendUser <<link>> [[./tomui_update_user.puml]]
+usecase "Assign Role" as AssignRole <<link>> [[./tomui_update_user.puml]]
+
+Firebase <-down--> UsersAPI
+TomUI <-down--> UsersAPI
+Configuration -down-> UsersAPI : locations
+
+UsersAPI -down- ListUsers
+UsersAPI -down- CreateUsers
+UsersAPI -down- ResetPassword
+UsersAPI -right- SuspendUser
+UsersAPI -up- AssignRole
+UsersAPI -up- ChangeUserDetails
+UserDetails -right- UsersAPI
+
+@enduml

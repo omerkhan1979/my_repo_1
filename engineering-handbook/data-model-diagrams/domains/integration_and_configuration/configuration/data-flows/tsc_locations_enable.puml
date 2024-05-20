@@ -1,0 +1,9 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+usecase "Enable/Disable Location" as EnableDisableLocation
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+EnableDisableLocation -down-> OpLocations : is_enabled
+
+@enduml

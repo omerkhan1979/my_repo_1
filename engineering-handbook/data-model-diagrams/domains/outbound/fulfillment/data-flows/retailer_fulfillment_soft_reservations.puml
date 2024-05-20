@@ -1,0 +1,31 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "Not Used" as NotUsed #pink
+
+usecase "Order Lines" as OrderLines
+usecase "Demand Of Lines" as DemandOfLines
+usecase "Future Order Lines" as FutureOrderLines
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as DBOMSLines <<link>> [[../data-model/oms_lines.puml]]
+
+
+Retailer <-down- OrderLines : reservations
+
+
+DBOMSOrders -up-> OrderLines : order
+DBOMSLines -up-> OrderLines : lines
+
+DBOMSOrders -down-> FutureOrderLines : order
+DBOMSLines -down-> FutureOrderLines : lines
+
+DBOMSOrders -down-> DemandOfLines : order
+DBOMSLines -down-> DemandOfLines : lines
+
+FutureOrderLines -down-> NotUsed : soft reservations
+DemandOfLines -down-> NotUsed : demand
+
+@enduml

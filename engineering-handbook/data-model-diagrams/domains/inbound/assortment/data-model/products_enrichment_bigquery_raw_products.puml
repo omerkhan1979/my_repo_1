@@ -1,0 +1,82 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**raw_products**" [[products_enrichment_bigquery_raw_products.puml]] {
+  --
+  *""tom_id"": //string//
+  *""mfc_id"": //string//
+  *""barcodes"": //array<string>//
+  *""corp_ids"": //array<string>//
+  *""primary_corp_id"": //string//
+  *""ecom_ids"": //array<string>//
+  *""name"": //string//
+  *""description"": //string//
+  *""temperature_zone"": //array<string>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""retail_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""case_item"": //struct<weight struct<weight float64, unit_of_measure string>, dimensions struct<height float64, width float64, length float64, unit_of_measure string>, case_count int64>//
+  *""shelf_life"": //int64//
+  *""min_remaining_shelf_life"": //int64//
+  *""requires_expiration_date"": //bool//
+  *""image"": //string//
+  *""categories_hierarchy"": //array<struct<name string, id string>>//
+  *""categories_hierarchy"": //array<struct<name string, id string>>//
+  *""categories_hierarchy"": //array<struct<name string, id string>>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""feature_attributes"": //struct<is_bulk bool, is_crushable bool, is_hazardous bool, is_heavy bool, is_raw bool, is_chemical bool, is_specific_chilled bool, is_glass_packaged bool, is_vertical bool, is_stackable bool, is_case_storage bool, is_requires_plastic_bag bool, is_weight_variable_on_receipt bool>//
+  *""mfc_stop_buy"": //bool//
+  *""mfc_stop_fulfill"": //bool//
+  *""item_type"": //string//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""supplier_info"": //array<struct<supplier_id string, supplier_name string, supplier_sub_account string, supplier_type string, supplier_product_id string, supplier_keep_buy bool, supplier_perform_cycle int64>>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""item_address"": //struct<area string, aisle string, bay string, shelf string, position string>//
+  *""slotting_eligible"": //bool//
+  *""discontinued"": //bool//
+  *""seasonal"": //bool//
+  *""customfields"": //array<struct<key string, value string>>//
+  *""customfields"": //array<struct<key string, value string>>//
+  *""customfields"": //array<struct<key string, value string>>//
+  *""env"": //string//
+  *""retailer"": //string//
+  *""run_id"": //string//
+  *""item_id"": //string//
+  *""file_name"": //string//
+  *""created_ts"": //timestamp [partitioned]//
+}
+
+@enduml

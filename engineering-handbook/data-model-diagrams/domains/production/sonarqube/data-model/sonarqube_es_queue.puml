@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**es_queue**" [[sonarqube_es_queue.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""doc_id"": //character varying(4000)//
+  *""doc_id_type"": //character varying(20)//
+  *""doc_routing"": //character varying(4000)//
+  *""doc_type"": //character varying(40)//
+}
+
+@enduml

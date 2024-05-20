@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sales_pick_list_order**" [[isps_sales_pick_list_order.puml]] {
+  + ""sales_pick_list_order_id"": //integer [PK]//
+  --
+  *""pick_list_id"": //integer [FK]//
+  *""sales_order_number"": //character varying(64)//
+  *""sales_pick_list_order_created_at"": //timestamp with time zone//
+  *""sales_pick_list_order_created_by"": //character varying(64)//
+  *""sales_pick_list_order_last_modified_at"": //timestamp with time zone//
+  *""sales_pick_list_order_last_modified_by"": //character varying(64)//
+}
+
+@enduml

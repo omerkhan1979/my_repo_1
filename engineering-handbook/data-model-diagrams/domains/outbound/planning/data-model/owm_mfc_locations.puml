@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**mfc_locations**" [[owm_mfc_locations.puml]] {
+  + ""mfc_location_id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""flag_last_updated"": //timestamp with time zone//
+  *""mfc_location"": //text//
+  *""orders_need_recalculation"": //boolean//
+  *""timezone"": //text//
+}
+
+@enduml

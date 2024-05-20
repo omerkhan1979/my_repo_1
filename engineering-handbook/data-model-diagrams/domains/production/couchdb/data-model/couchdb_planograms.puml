@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**planograms**" [[couchdb_planograms.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""location_id"": //string//
+  *""shelves"": //array[string]//
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_list**" [[isps_pick_list.puml]] {
+  + ""pick_list_id"": //integer [PK]//
+  --
+  *""pick_list_begin_at"": //timestamp with time zone//
+  *""pick_list_closed_at"": //timestamp with time zone//
+  *""pick_list_complete_at"": //timestamp with time zone//
+  *""pick_list_created_at"": //timestamp with time zone//
+  *""pick_list_created_by"": //character varying(64)//
+  *""pick_list_cutoffs"": //timestamp with time zone[]//
+  *""pick_list_last_modified_at"": //timestamp with time zone//
+  *""pick_list_last_modified_by"": //character varying(64)//
+  *""pick_list_mfc"": //character varying(32)//
+  *""pick_list_number"": //character varying(36)//
+  *""pick_list_status_id"": //integer [FK]//
+  *""pick_list_type_id"": //integer [FK]//
+  *""pick_zone_id"": //integer [FK]//
+}
+
+@enduml

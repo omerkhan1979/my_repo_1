@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_number_sides**" [[service_catalog_sd_number_sides.puml]] {
+  + ""number_side_id"": //bigint [PK]//
+  --
+  *""number_side_name"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component DataLake
+
+database "Items" as DBItems <<link>> [[../data-model/rint-etl_items.puml]]
+database "Events" as DBEvents <<link>> [[../data-model/rint-etl_events.puml]]
+database "Schemas" as DBSchemas <<link>> [[../data-model/rint-etl_schemas.puml]]
+
+database SFTP
+database "Google Storage" as GCS
+usecase "ETL File Process" as Files
+usecase "Events Processing" as Events
+
+SFTP -[hidden]d- GCS
+
+Retailer -> GCS : sales history (tlogs)
+Retailer -> SFTP : sales history (tlogs)
+Retailer -> SFTP : allocations
+Retailer -> SFTP : promotions
+
+GCS -right-> Files
+SFTP -right-> Files
+
+Files -right-> Events
+Events -right-> DataLake
+
+Files -down-> DBEvents
+Files -down-> DBItems
+DBSchemas -up-> Files
+
+@enduml

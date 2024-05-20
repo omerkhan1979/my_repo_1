@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**line_item**" [[reservations_line_item.puml]] {
+  + ""reservation_id"": //STRING(36) [PK]//
+  + ""ecomm_id"": //STRING(MAX) [PK]//
+  --
+  *""status"": //STRING(MAX)//
+  *""requested_quantity"": //INT64//
+  *""picked_quantity"": //INT64//
+}
+
+@enduml

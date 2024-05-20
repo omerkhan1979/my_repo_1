@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tote_assets**" [[inventory-management_tote_assets.puml]] {
+  + ""account_id"": //character varying [PK][FK]//
+  + ""tote_id"": //character varying [PK]//
+  --
+}
+
+@enduml

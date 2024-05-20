@@ -1,0 +1,29 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+component Calyx
+
+usecase "Configuration Diff Page" as ConfigDiffPage
+
+usecase "Retailers API" as CalyxAPIRetailer
+usecase "Environment Types" as CalyxAPIEnvs
+usecase "Service Catalog Proxy" as SCProxy
+usecase "Config Items API" as ConfigsAPI <<link>> [[./tsc_configs_get.puml]]
+
+database "retailers" as DBRetailers <<link>> [[../data-model/calyx_retailers.puml]]
+database "environment_types" as DBEnvTypes <<link>> [[../data-model/calyx_environment_types.puml]]
+
+Calyx <-down- ConfigDiffPage
+
+ConfigDiffPage <-down- CalyxAPIRetailer : retailers
+ConfigDiffPage <-down- CalyxAPIEnvs : environment
+ConfigDiffPage <-down- SCProxy : config items
+CalyxAPIRetailer <-down- DBRetailers
+CalyxAPIEnvs <-down- DBEnvTypes
+SCProxy <-down- ConfigsAPI
+
+
+@enduml

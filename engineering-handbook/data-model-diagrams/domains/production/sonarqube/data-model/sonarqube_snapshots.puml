@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**snapshots**" [[sonarqube_snapshots.puml]] {
+  + ""uuid"": //character varying(50) [PK]//
+  --
+  *""build_date"": //bigint//
+  *""build_string"": //character varying(100)//
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""islast"": //boolean//
+  *""period1_date"": //bigint//
+  *""period1_mode"": //character varying(100)//
+  *""period1_param"": //character varying(100)//
+  *""purge_status"": //integer//
+  *""revision"": //character varying(100)//
+  *""status"": //character varying(4)//
+  *""version"": //character varying(500)//
+}
+
+@enduml

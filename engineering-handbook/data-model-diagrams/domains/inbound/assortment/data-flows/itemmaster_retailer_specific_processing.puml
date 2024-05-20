@@ -1,0 +1,40 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+database "Tangerine Departments" as TangerineDepartments <<link>> [[../data-model/distiller_tangerine_departments.puml]]
+database "Orderable DSD Items" as TangerineOrderableDSDItems <<link>> [[../data-model/distiller_tangerine_orderable_dsd_items.puml]]
+database "Tangerine Orderable CIC" as  TangerineOrderableCICDB <<link>> [[../data-model/distiller_tangerine_orderable_cic.puml]]
+database "Tangerine System UPCs" as  TangerineSystemUPCsDB <<link>> [[../data-model/distiller_tangerine_system_upcs.puml]]
+database "Tangerine Merged UPCs" as  TangerineMergedUPCsDB <<link>> [[../data-model/distiller_tangerine_merged_upcs.puml]]
+database "Tangerine Rog Products" as  TangerineRogProductsDB <<link>> [[../data-model/distiller_tangerine_rog_products.puml]]
+
+usecase "Retailer Specific Products Processing" as RetailerSpecificProcessing
+usecase "Tangerine" as TangerineProcessing
+
+usecase "Categories Hierarchy" as TangerineCategoriesHierarchy
+usecase "Suppliers" as TangerineVendors
+usecase "Product Mappings" as TangerineProductMappings
+
+RetailerSpecificProcessing -down-> TangerineProcessing
+
+TangerineProcessing --down-> TangerineCategoriesHierarchy
+TangerineCategoriesHierarchy <-down-> TangerineDepartments
+TangerineCategoriesHierarchy --down-> Products
+
+TangerineProcessing --down-> TangerineVendors
+TangerineVendors --down-> Products
+
+TangerineVendors <-up-> TangerineOrderableDSDItems
+TangerineVendors <-right-> TangerineOrderableCICDB
+
+TangerineProcessing --down-> TangerineProductMappings
+TangerineProductMappings --down-> Products
+
+TangerineProductMappings <-down-> TangerineSystemUPCsDB
+TangerineProductMappings <-right-> TangerineMergedUPCsDB
+TangerineProductMappings <-up-> TangerineRogProductsDB
+
+@enduml

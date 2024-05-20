@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picker_queues-for-removal**" [[couchdb_picker_queues-for-removal.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""closed_info.reason"": //string//
+  *""closed_info.session_id"": //string//
+  *""end"": //datetime//
+  *""params"": //map//
+  *""queue_id"": //datetime//
+  *""start"": //datetime//
+  *""user_id"": //string//
+}
+
+@enduml

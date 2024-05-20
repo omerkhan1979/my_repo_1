@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ragtime_migrations**" [[adattatore-oro_ragtime_migrations.puml]] {
+  --
+  *""created_at"": //character varying(32)//
+  *""id"": //character varying(255)//
+}
+
+@enduml

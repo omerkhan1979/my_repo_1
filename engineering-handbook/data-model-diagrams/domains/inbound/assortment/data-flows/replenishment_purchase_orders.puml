@@ -1,0 +1,29 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "Retailer Integration" as RetailerIntegration
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+database "Purchase Orders" as PurchaseOrders <<link>> [[../data-model/distiller_purchase_orders.puml]]
+database "Purchase Orders v5" as PurchaseOrdersV5 <<link>> [[../data-model/distiller_purchase_orders_v5.puml]]
+database "Items" as Items <<link>> [[../data-model/distiller_items.puml]]
+
+usecase "Distiller\nPurchase Order\nProcessing" as DistillerPurchaseOrderProcessing
+usecase "Purchase Orders API" as PurchaseOrdersAPI
+
+' data flow
+
+RetailerIntegration -down-> DistillerPurchaseOrderProcessing : items
+RetailerIntegration <-down- DistillerPurchaseOrderProcessing : events
+DistillerPurchaseOrderProcessing -down-> Items : items
+Products -left-> DistillerPurchaseOrderProcessing : products
+
+DistillerPurchaseOrderProcessing -down-> PurchaseOrders
+DistillerPurchaseOrderProcessing -down-> PurchaseOrdersV5
+
+PurchaseOrdersV5 -up-> PurchaseOrdersAPI
+PurchaseOrdersAPI -up-> RetailerIntegration : purchase orders
+
+@enduml

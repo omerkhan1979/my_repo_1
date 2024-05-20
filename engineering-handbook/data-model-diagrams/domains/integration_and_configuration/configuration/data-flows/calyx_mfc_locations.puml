@@ -1,0 +1,32 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+component Calyx
+
+usecase "MFC Locations Page" as MFCLocations <<link>> [[./calyx_mfc_locations_page.puml]]
+usecase "Create MFC" as CreateMFC
+usecase "Clone MFC" as CloneMFC
+usecase "Enable MFC" as EnableMFC
+
+usecase "Locations API / Create MFC" as LocationsCreateAPI <<link>> [[./tsc_locations_create_mfc.puml]]
+usecase "Locations API / Enable MFC" as LocationsEnableAPI <<link>> [[./tsc_locations_enable.puml]]
+usecase "Locations Sync" as LocationsSync <<link>> [[./tsc_locations_sync.puml]]
+
+Calyx <-left- MFCLocations
+
+Calyx -down-> CreateMFC
+Calyx -down-> CloneMFC
+Calyx -down-> EnableMFC
+
+CreateMFC -down-> LocationsCreateAPI
+EnableMFC -down-> LocationsEnableAPI
+CloneMFC -down-> LocationsCreateAPI
+
+CreateMFC -down-> LocationsSync
+EnableMFC -down-> LocationsSync
+
+
+@enduml

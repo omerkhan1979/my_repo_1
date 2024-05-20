@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**saml_message_ids**" [[sonarqube_saml_message_ids.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""expiration_date"": //bigint//
+  *""message_id"": //character varying(255)//
+}
+
+@enduml

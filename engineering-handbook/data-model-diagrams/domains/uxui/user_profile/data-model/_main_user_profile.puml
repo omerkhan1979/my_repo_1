@@ -1,0 +1,16 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "user_profile" {
+  !include user_profile_DATABASECHANGELOG.puml
+  !include user_profile_DATABASECHANGELOGLOCK.puml
+  !include user_profile_default_settings.puml
+  !include user_profile_settings.puml
+  !include user_profile_user_settings.puml
+}
+"**default_settings**" -- "**settings**"
+"**user_settings**" -- "**settings**"
+
+@enduml

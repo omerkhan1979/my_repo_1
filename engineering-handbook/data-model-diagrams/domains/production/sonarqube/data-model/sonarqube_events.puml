@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**events**" [[sonarqube_events.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""analysis_uuid"": //character varying(50)//
+  *""category"": //character varying(50)//
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""description"": //character varying(4000)//
+  *""event_data"": //character varying(4000)//
+  *""event_date"": //bigint//
+  *""name"": //character varying(400)//
+}
+
+@enduml

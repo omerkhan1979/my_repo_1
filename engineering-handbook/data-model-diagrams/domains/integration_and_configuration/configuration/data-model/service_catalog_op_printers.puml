@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_printers**" [[service_catalog_op_printers.puml]] {
+  + ""printer_id"": //bigint [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""display_name"": //text//
+  *""is_enabled"": //boolean//
+  *""last_modified_at"": //timestamp with time zone//
+  *""location_id"": //bigint [FK]//
+  *""media_type"": //text//
+  *""node_id"": //text//
+  *""status"": //text//
+}
+
+@enduml

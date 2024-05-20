@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ce_scanner_context**" [[sonarqube_ce_scanner_context.puml]] {
+  + ""task_uuid"": //character varying(40) [PK]//
+  --
+  *""context_data"": //bytea//
+  *""created_at"": //bigint//
+  *""updated_at"": //bigint//
+}
+
+@enduml

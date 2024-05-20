@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**active_rules**" [[sonarqube_active_rules.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""failure_level"": //integer//
+  *""inheritance"": //character varying(10)//
+  *""profile_uuid"": //character varying(40)//
+  *""rule_uuid"": //character varying(40)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "slipstick" {
+  entity "**alerts**" [[slipstick_alerts.puml]] {}
+  entity "**event**" [[slipstick_event.puml]] {}
+  entity "**osr_load**" [[slipstick_osr_load.puml]] {}
+  entity "**osr_zones_report**" [[slipstick_osr_zones_report.puml]] {}
+  entity "**ragtime_migrations**" [[slipstick_ragtime_migrations.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

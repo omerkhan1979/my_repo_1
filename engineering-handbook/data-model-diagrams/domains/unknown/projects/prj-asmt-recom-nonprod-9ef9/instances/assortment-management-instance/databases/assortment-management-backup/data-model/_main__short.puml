@@ -1,0 +1,17 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  entity "**csvCache**" [[_csvCache.puml]] {}
+  entity "**recommendationDecision**" [[_recommendationDecision.puml]] {}
+  entity "**SchemaMigrations**" [[_SchemaMigrations.puml]] {}
+  entity "**setting**" [[_setting.puml]] {}
+  entity "**test**" [[_test.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

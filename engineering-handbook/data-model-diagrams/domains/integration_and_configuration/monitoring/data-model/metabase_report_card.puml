@@ -1,0 +1,31 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**report_card**" [[metabase_report_card.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""archived"": //boolean//
+  *""cache_ttl"": //integer//
+  *""collection_id"": //integer [FK]//
+  *""collection_position"": //smallint//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""database_id"": //integer [FK]//
+  *""dataset"": //boolean//
+  *""dataset_query"": //text//
+  *""description"": //text//
+  *""display"": //character varying(254)//
+  *""embedding_params"": //text//
+  *""enable_embedding"": //boolean//
+  *""made_public_by_id"": //integer [FK]//
+  *""name"": //character varying(254)//
+  *""public_uuid"": //character(36)//
+  *""query_type"": //character varying(16)//
+  *""result_metadata"": //text//
+  *""table_id"": //integer [FK]//
+  *""updated_at"": //timestamp with time zone//
+  *""visualization_settings"": //text//
+}
+
+@enduml

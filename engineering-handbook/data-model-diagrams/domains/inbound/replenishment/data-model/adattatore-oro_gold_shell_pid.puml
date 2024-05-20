@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**gold_shell_pid**" [[adattatore-oro_gold_shell_pid.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""command"": //character varying(255)//
+  *""finished_at"": //timestamp with time zone//
+  *""pid"": //integer//
+  *""started_at"": //timestamp with time zone//
+  *""status"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+skinparam actorStyle awesome
+
+actor "Manual User" as ManualUser
+component Planning
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+
+
+usecase "Recalculate Cutoff" as RecalculateCutoff
+
+ManualUser -down-> RecalculateCutoff : trigger when dst is on/off
+Planning -down-> RecalculateCutoff : cutoff table
+RecalculateCutoff <-down-> DBOMSOrders : order cutoffs
+
+@enduml

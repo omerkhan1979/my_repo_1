@@ -1,0 +1,37 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Distiller
+component Retailer
+component Inventory
+
+component DataStudio
+
+usecase "**Inbound** Purchase Order Flow" as InboundPOFlow
+usecase "ETL Entities Pipeline*" as ETLEntitiesPipeline
+usecase "ETL Events Pipeline" as ETLEventsPipeline
+
+database "Items" as DBItems <<link>> [[../data-model/rint-etl_items.puml]]
+database "Events" as DBEvents <<link>> [[../data-model/rint-etl_events.puml]]
+database "Schemas" as DBSchemas <<link>> [[../data-model/rint-etl_schemas.puml]]
+database "BigQueryEvents" as BigQueryEvents
+
+Retailer -down-> InboundPOFlow : file
+InboundPOFlow -down-> DBItems : abstract json
+InboundPOFlow -down-> DBEvents : file based events
+InboundPOFlow -down-> BigQueryEvents
+InboundPOFlow <-down- DBSchemas
+
+InboundPOFlow -left-> ETLEntitiesPipeline
+
+DataStudio <-up-- BigQueryEvents : report
+ETLEntitiesPipeline -up-> Distiller : **purchase orders**
+
+Distiller -down-> ETLEventsPipeline : events\nsemantic validations\nenrichments\ncompletion
+ETLEventsPipeline -down-> DBEvents
+ETLEventsPipeline -down-> BigQueryEvents
+
+InboundPOFlow -up-> Inventory : purchase order
+
+@enduml

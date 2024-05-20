@@ -1,0 +1,12 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+usecase "Inbound Purchase Order Flow" as POInbound <<link>> [[./rint_distiller_purchase_orders.puml]]
+usecase "Outbound Purchase Order Flow" as POOutbound <<link>> [[./rint_outbound_po_flow.puml]]
+
+Retailer -down-> POInbound
+POOutbound -up-> Retailer
+
+@enduml

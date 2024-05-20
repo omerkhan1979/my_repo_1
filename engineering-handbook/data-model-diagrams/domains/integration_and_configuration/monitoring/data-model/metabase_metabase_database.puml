@@ -1,0 +1,31 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**metabase_database**" [[metabase_metabase_database.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""auto_run_queries"": //boolean//
+  *""cache_field_values_schedule"": //character varying(254)//
+  *""cache_ttl"": //integer//
+  *""caveats"": //text//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""description"": //text//
+  *""details"": //text//
+  *""engine"": //character varying(254)//
+  *""initial_sync_status"": //character varying(32)//
+  *""is_full_sync"": //boolean//
+  *""is_on_demand"": //boolean//
+  *""is_sample"": //boolean//
+  *""metadata_sync_schedule"": //character varying(254)//
+  *""name"": //character varying(254)//
+  *""options"": //text//
+  *""points_of_interest"": //text//
+  *""refingerprint"": //boolean//
+  *""settings"": //text//
+  *""timezone"": //character varying(254)//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

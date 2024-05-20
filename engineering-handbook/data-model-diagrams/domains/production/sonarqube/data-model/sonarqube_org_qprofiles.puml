@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**org_qprofiles**" [[sonarqube_org_qprofiles.puml]] {
+  + ""uuid"": //character varying(255) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""last_used"": //bigint//
+  *""organization_uuid"": //character varying(40)//
+  *""parent_uuid"": //character varying(255)//
+  *""rules_profile_uuid"": //character varying(255)//
+  *""updated_at"": //bigint//
+  *""user_updated_at"": //bigint//
+}
+
+@enduml

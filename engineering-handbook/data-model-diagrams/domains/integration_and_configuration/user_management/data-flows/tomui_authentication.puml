@@ -1,0 +1,23 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Okta
+component Firebase
+component AzureAD
+
+' participants
+usecase "**TomUI Authentication**" as Authentication
+usecase "Login" as Login <<link>> [[./tomui_login.puml]]
+usecase "Logout" as Logout
+usecase "Refresh Token" as RefreshToken  <<link>> [[./tomui_refresh_token.puml]]
+
+Authentication -down- Login
+Authentication -down- RefreshToken
+Authentication -down- Logout
+
+Authentication <-up-> Okta
+Authentication <-up-> Firebase
+Authentication <-up-> AzureAD
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**order_parts**" [[fulfillment-orchestrator_order_parts.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""cartonization_plan"": //jsonb//
+  *""created_datetime"": //timestamp with time zone//
+  *""dispatched_datetime"": //timestamp with time zone//
+  *""finished_datetime"": //timestamp with time zone//
+  *""last_updated_datetime"": //timestamp with time zone//
+  *""order_id"": //character varying [FK]//
+  *""status"": //enum//
+  *""status_inferred"": //boolean//
+  *""tote_ids"": //jsonb//
+  *""type"": //enum//
+  *""work_task_id"": //bigint//
+}
+
+@enduml

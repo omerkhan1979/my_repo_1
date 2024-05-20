@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_flow_racks**" [[service_catalog_op_flow_racks.puml]] {
+  + ""dispatch_ramp_number"": //smallint [PK]//
+  + ""flow_rack_address"": //text [PK]//
+  + ""location_id"": //bigint [PK][FK]//
+  --
+}
+
+@enduml

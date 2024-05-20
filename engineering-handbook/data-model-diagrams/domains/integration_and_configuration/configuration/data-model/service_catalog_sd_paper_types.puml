@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_paper_types**" [[service_catalog_sd_paper_types.puml]] {
+  + ""paper_type_id"": //bigint [PK]//
+  --
+  *""paper_size_id"": //bigint [FK]//
+  *""paper_type_name"": //character varying(20)//
+  *""printing_method_id"": //bigint [FK]//
+}
+
+@enduml

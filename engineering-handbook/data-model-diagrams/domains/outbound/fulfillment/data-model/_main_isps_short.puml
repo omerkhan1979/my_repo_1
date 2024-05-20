@@ -1,0 +1,37 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "isps" {
+  entity "**pick_list**" [[isps_pick_list.puml]] {}
+  entity "**pick_list_item**" [[isps_pick_list_item.puml]] {}
+  entity "**pick_list_status**" [[isps_pick_list_status.puml]] {}
+  entity "**pick_list_type**" [[isps_pick_list_type.puml]] {}
+  entity "**pick_work_item_reason_code**" [[isps_pick_work_item_reason_code.puml]] {}
+  entity "**pick_work_order**" [[isps_pick_work_order.puml]] {}
+  entity "**pick_work_order_item**" [[isps_pick_work_order_item.puml]] {}
+  entity "**pick_work_order_status**" [[isps_pick_work_order_status.puml]] {}
+  entity "**pick_work_order_type**" [[isps_pick_work_order_type.puml]] {}
+  entity "**pick_zone**" [[isps_pick_zone.puml]] {}
+  entity "**ragtime_migrations**" [[isps_ragtime_migrations.puml]] {}
+  entity "**sales_pick_list_item_order_item**" [[isps_sales_pick_list_item_order_item.puml]] {}
+  entity "**sales_pick_list_order**" [[isps_sales_pick_list_order.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**pick_list**" -- "**pick_list_status**"
+"**pick_list**" -- "**pick_list_type**"
+"**pick_list**" -- "**pick_zone**"
+"**pick_list_item**" -- "**pick_list**"
+"**pick_work_order**" -- "**pick_list**"
+"**pick_work_order**" -- "**pick_work_order_status**"
+"**pick_work_order**" -- "**pick_work_order_type**"
+"**pick_work_order_item**" -- "**pick_list_item**"
+"**pick_work_order_item**" -- "**pick_work_order**"
+"**pick_work_order_item**" -- "**pick_work_item_reason_code**"
+"**sales_pick_list_item_order_item**" -- "**pick_list_item**"
+"**sales_pick_list_order**" -- "**pick_list**"
+
+@enduml

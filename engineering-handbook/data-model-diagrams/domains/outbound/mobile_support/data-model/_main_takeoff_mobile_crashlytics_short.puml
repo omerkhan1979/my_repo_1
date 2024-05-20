@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "takeoff_mobile_crashlytics" {
+  entity "**com_takeoff_mobileapp_ANDROID**" [[takeoff_mobile_crashlytics_com_takeoff_mobileapp_ANDROID.puml]] {}
+  entity "**com_takeoff_mobileapp_ANDROID_REALTIME**" [[takeoff_mobile_crashlytics_com_takeoff_mobileapp_ANDROID_REALTIME.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

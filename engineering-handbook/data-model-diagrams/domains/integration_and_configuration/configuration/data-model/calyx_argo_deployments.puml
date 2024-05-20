@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**argo_deployments**" [[calyx_argo_deployments.puml]] {
+  + ""argo_application_name"": //character varying [PK]//
+  + ""argo_deployment_id"": //integer [PK]//
+  + ""cluster_name"": //character varying [PK]//
+  + ""deployment_name"": //character varying [PK]//
+  + ""project_id"": //character varying [PK]//
+  + ""project_name"": //character varying [PK]//
+  --
+  *""deployment_id"": //integer [FK]//
+  *""match_labels"": //jsonb//
+}
+
+@enduml

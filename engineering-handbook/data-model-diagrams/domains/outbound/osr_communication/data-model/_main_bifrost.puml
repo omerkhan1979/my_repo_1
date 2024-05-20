@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "bifrost" {
+  !include bifrost_ragtime_migrations.puml
+}
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Configuration
+component Inventory
+component "Outbound Fulfillment" as OutboundFulfillment
+component Replenishment
+
+usecase "V4 Extended Inventory" as V4ExtendedInventory
+usecase "Locations Remapping" as LocationsRemapping
+usecase "Stock Collapsed by Location" as Stock
+usecase "Purchase Order Reservations" as POReservation
+usecase "Customer Order Reservations" as COReservation
+usecase "Abs UPC Trim" as AbsUPCTrim
+
+V4ExtendedInventory -up-> Retailer : inventory snapshot
+Configuration -right-> LocationsRemapping
+LocationsRemapping -right-> V4ExtendedInventory
+
+Inventory -up-> Stock
+Stock -up-> V4ExtendedInventory
+OutboundFulfillment -up-> COReservation
+COReservation -up-> V4ExtendedInventory
+Replenishment -up-> POReservation
+POReservation -up-> V4ExtendedInventory
+
+V4ExtendedInventory -right-> AbsUPCTrim
+
+@enduml

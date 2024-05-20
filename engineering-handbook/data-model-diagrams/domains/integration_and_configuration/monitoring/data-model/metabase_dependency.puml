@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**dependency**" [[metabase_dependency.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""dependent_on_id"": //integer//
+  *""dependent_on_model"": //character varying(32)//
+  *""model"": //character varying(32)//
+  *""model_id"": //integer//
+}
+
+@enduml

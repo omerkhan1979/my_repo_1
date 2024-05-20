@@ -1,0 +1,24 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "cc" {
+  entity "**address**" [[cc_address.puml]] {}
+  entity "**address_status**" [[cc_address_status.puml]] {}
+  entity "**adjustment**" [[cc_adjustment.puml]] {}
+  entity "**event**" [[cc_event.puml]] {}
+  entity "**ragtime_migrations**" [[cc_ragtime_migrations.puml]] {}
+  entity "**session**" [[cc_session.puml]] {}
+  entity "**task**" [[cc_task.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**address_status**" -- "**event**"
+"**adjustment**" -- "**event**"
+"**event**" -- "**session**"
+"**session**" -- "**address**"
+"**task**" -- "**address**"
+
+@enduml

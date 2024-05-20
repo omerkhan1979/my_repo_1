@@ -1,0 +1,28 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking_queue_records**" [[couchdb_picking_queue_records.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""added_by[].assigned_at"": //datetime//
+  *""added_by[].user_id"": //string//
+  *""added_by[].worker_id"": //<unknown>//
+  *""assignee"": //array//
+  *""assignee[].assigned_at"": //datetime//
+  *""assignee[].picker_queue_id"": //string//
+  *""assignee[].user_id"": //string//
+  *""dropped_by[].dropped_at"": //datetime//
+  *""dropped_by[].reason"": //string//
+  *""dropped_by[].user_id"": //string//
+  *""dropped_by[].worker_id"": //<unknown>//
+  *""last_updated"": //datetime//
+  *""params"": //map//
+  *""priority"": //int//
+  *""queue_id"": //datetime//
+  *""queue_type"": //string//
+  *""session_id"": //string//
+  *""status"": //int//
+}
+
+@enduml

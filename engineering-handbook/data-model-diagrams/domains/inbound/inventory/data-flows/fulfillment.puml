@@ -1,0 +1,38 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Outbound
+usecase "Customer Order Split" as CustomerOrderSplit
+usecase "Reservation Process" as ReservationProcess
+usecase "OSR Fulfillment" as OSRFulfillment
+usecase "Recalculate Pick-Path" as RecalculatePickPath
+usecase "Manual Fulfillment" as ManualFulfillment
+usecase "Inventory Adjustment" as InventoryAdjustment
+
+usecase "Staging & Consolidation" as Staging
+
+database "Reservations" as DBReservations  <<link>> [[../data-model/inventory-management_reservations.puml]]
+database "Inventory Adjustments" as DBInventoryAdjustments  <<link>> [[../data-model/inventory-management_adjustment_history.puml]]
+database "Balances" as DBBalances <<link>> [[../data-model/inventory-management_balances.puml]]
+
+ReservationProcess -down-> DBReservations : reservation
+
+Outbound -down-> CustomerOrderSplit : customer order
+CustomerOrderSplit -down-> ReservationProcess : lines
+Outbound -down-> OSRFulfillment : customer order
+OSRFulfillment -down-> ReservationProcess : item
+OSRFulfillment -down-> InventoryAdjustment : balances
+OSRFulfillment -down-> RecalculatePickPath : item
+
+RecalculatePickPath -down-> DBReservations : reservation
+
+InventoryAdjustment -down-> DBBalances : inventory
+InventoryAdjustment -down-> DBInventoryAdjustments : movements
+OSRFulfillment -right-> ManualFulfillment : manual order part
+ManualFulfillment -down-> InventoryAdjustment : balances
+
+Outbound -right-> Staging : customer order
+
+@enduml

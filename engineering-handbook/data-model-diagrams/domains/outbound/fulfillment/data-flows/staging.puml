@@ -1,0 +1,12 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component TakeoffMobile
+usecase "Staging Location" as StagingLocation
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+
+TakeoffMobile <-down-> StagingLocation : staging location
+StagingLocation <-down-> DBOMSOrders : staging location
+
+@enduml

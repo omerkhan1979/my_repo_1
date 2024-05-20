@@ -1,0 +1,32 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Takeoff
+left to right direction
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+
+usecase "Supplier Info Mapping" as SupplierInfoMapping
+usecase "Linked UPC" as LinkedUPC
+usecase "ecom Mapping" as EComMapping
+usecase "upc-ecom Mapping" as UPCecomMapping
+usecase "stop-buy Mapping" as StopBuyMapping
+usecase "search by barcode" as SearchByBarcode
+
+Products -down-> EComMapping
+Products -down-> UPCecomMapping
+Products -down-> StopBuyMapping
+Products -down-> LinkedUPC
+Products -down-> SupplierInfoMapping
+
+Products -down-> SearchByBarcode
+
+EComMapping -down-> Takeoff : ecom-id -> tom-id
+UPCecomMapping -down-> Takeoff : upc -> ecom-id
+StopBuyMapping -down-> Takeoff : upc -> stop-buy flag
+LinkedUPC -down-> Takeoff : upc -> stop-buy flag
+SupplierInfoMapping -down-> Takeoff : tom-id -> supplier-info
+SearchByBarcode -down-> Takeoff : product
+@enduml

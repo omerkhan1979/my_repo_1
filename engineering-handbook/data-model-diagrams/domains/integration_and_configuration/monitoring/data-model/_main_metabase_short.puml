@@ -1,0 +1,135 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "metabase" {
+  entity "**activity**" [[metabase_activity.puml]] {}
+  entity "**card_label**" [[metabase_card_label.puml]] {}
+  entity "**collection**" [[metabase_collection.puml]] {}
+  entity "**collection_permission_graph_revision**" [[metabase_collection_permission_graph_revision.puml]] {}
+  entity "**computation_job**" [[metabase_computation_job.puml]] {}
+  entity "**computation_job_result**" [[metabase_computation_job_result.puml]] {}
+  entity "**core_session**" [[metabase_core_session.puml]] {}
+  entity "**core_user**" [[metabase_core_user.puml]] {}
+  entity "**dashboard_favorite**" [[metabase_dashboard_favorite.puml]] {}
+  entity "**dashboardcard_series**" [[metabase_dashboardcard_series.puml]] {}
+  entity "**data_migrations**" [[metabase_data_migrations.puml]] {}
+  entity "**databasechangelog**" [[metabase_databasechangelog.puml]] {}
+  entity "**databasechangeloglock**" [[metabase_databasechangeloglock.puml]] {}
+  entity "**dependency**" [[metabase_dependency.puml]] {}
+  entity "**dimension**" [[metabase_dimension.puml]] {}
+  entity "**group_table_access_policy**" [[metabase_group_table_access_policy.puml]] {}
+  entity "**label**" [[metabase_label.puml]] {}
+  entity "**login_history**" [[metabase_login_history.puml]] {}
+  entity "**metabase_database**" [[metabase_metabase_database.puml]] {}
+  entity "**metabase_field**" [[metabase_metabase_field.puml]] {}
+  entity "**metabase_fieldvalues**" [[metabase_metabase_fieldvalues.puml]] {}
+  entity "**metabase_table**" [[metabase_metabase_table.puml]] {}
+  entity "**metric**" [[metabase_metric.puml]] {}
+  entity "**metric_important_field**" [[metabase_metric_important_field.puml]] {}
+  entity "**moderation_review**" [[metabase_moderation_review.puml]] {}
+  entity "**native_query_snippet**" [[metabase_native_query_snippet.puml]] {}
+  entity "**permissions**" [[metabase_permissions.puml]] {}
+  entity "**permissions_group**" [[metabase_permissions_group.puml]] {}
+  entity "**permissions_group_membership**" [[metabase_permissions_group_membership.puml]] {}
+  entity "**permissions_revision**" [[metabase_permissions_revision.puml]] {}
+  entity "**pulse**" [[metabase_pulse.puml]] {}
+  entity "**pulse_card**" [[metabase_pulse_card.puml]] {}
+  entity "**pulse_channel**" [[metabase_pulse_channel.puml]] {}
+  entity "**pulse_channel_recipient**" [[metabase_pulse_channel_recipient.puml]] {}
+  entity "**qrtz_blob_triggers**" [[metabase_qrtz_blob_triggers.puml]] {}
+  entity "**qrtz_calendars**" [[metabase_qrtz_calendars.puml]] {}
+  entity "**qrtz_cron_triggers**" [[metabase_qrtz_cron_triggers.puml]] {}
+  entity "**qrtz_fired_triggers**" [[metabase_qrtz_fired_triggers.puml]] {}
+  entity "**qrtz_job_details**" [[metabase_qrtz_job_details.puml]] {}
+  entity "**qrtz_locks**" [[metabase_qrtz_locks.puml]] {}
+  entity "**qrtz_paused_trigger_grps**" [[metabase_qrtz_paused_trigger_grps.puml]] {}
+  entity "**qrtz_scheduler_state**" [[metabase_qrtz_scheduler_state.puml]] {}
+  entity "**qrtz_simple_triggers**" [[metabase_qrtz_simple_triggers.puml]] {}
+  entity "**qrtz_simprop_triggers**" [[metabase_qrtz_simprop_triggers.puml]] {}
+  entity "**qrtz_triggers**" [[metabase_qrtz_triggers.puml]] {}
+  entity "**query**" [[metabase_query.puml]] {}
+  entity "**query_cache**" [[metabase_query_cache.puml]] {}
+  entity "**query_execution**" [[metabase_query_execution.puml]] {}
+  entity "**report_card**" [[metabase_report_card.puml]] {}
+  entity "**report_cardfavorite**" [[metabase_report_cardfavorite.puml]] {}
+  entity "**report_dashboard**" [[metabase_report_dashboard.puml]] {}
+  entity "**report_dashboardcard**" [[metabase_report_dashboardcard.puml]] {}
+  entity "**revision**" [[metabase_revision.puml]] {}
+  entity "**secret**" [[metabase_secret.puml]] {}
+  entity "**segment**" [[metabase_segment.puml]] {}
+  entity "**setting**" [[metabase_setting.puml]] {}
+  entity "**task_history**" [[metabase_task_history.puml]] {}
+  entity "**view_log**" [[metabase_view_log.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**activity**" -- "**core_user**"
+"**card_label**" -- "**report_card**"
+"**card_label**" -- "**label**"
+"**collection**" -- "**core_user**"
+"**collection_permission_graph_revision**" -- "**core_user**"
+"**computation_job**" -- "**core_user**"
+"**computation_job_result**" -- "**computation_job**"
+"**core_session**" -- "**core_user**"
+"**dashboard_favorite**" -- "**report_dashboard**"
+"**dashboard_favorite**" -- "**core_user**"
+"**dashboardcard_series**" -- "**report_card**"
+"**dashboardcard_series**" -- "**report_dashboardcard**"
+"**dimension**" -- "**metabase_field**"
+"**dimension**" -- "**metabase_field**"
+"**group_table_access_policy**" -- "**report_card**"
+"**group_table_access_policy**" -- "**permissions_group**"
+"**group_table_access_policy**" -- "**metabase_table**"
+"**login_history**" -- "**core_session**"
+"**login_history**" -- "**core_user**"
+"**metabase_database**" -- "**core_user**"
+"**metabase_field**" -- "**metabase_field**"
+"**metabase_field**" -- "**metabase_table**"
+"**metabase_fieldvalues**" -- "**metabase_field**"
+"**metabase_table**" -- "**metabase_database**"
+"**metric**" -- "**core_user**"
+"**metric**" -- "**metabase_table**"
+"**metric_important_field**" -- "**metabase_field**"
+"**metric_important_field**" -- "**metric**"
+"**native_query_snippet**" -- "**collection**"
+"**native_query_snippet**" -- "**core_user**"
+"**permissions**" -- "**permissions_group**"
+"**permissions_group_membership**" -- "**permissions_group**"
+"**permissions_group_membership**" -- "**core_user**"
+"**permissions_revision**" -- "**core_user**"
+"**pulse**" -- "**collection**"
+"**pulse**" -- "**core_user**"
+"**pulse**" -- "**report_dashboard**"
+"**pulse_card**" -- "**report_card**"
+"**pulse_card**" -- "**report_dashboardcard**"
+"**pulse_card**" -- "**pulse**"
+"**pulse_channel**" -- "**pulse**"
+"**pulse_channel_recipient**" -- "**pulse_channel**"
+"**pulse_channel_recipient**" -- "**core_user**"
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+"**report_card**" -- "**collection**"
+"**report_card**" -- "**core_user**"
+"**report_card**" -- "**core_user**"
+"**report_card**" -- "**metabase_database**"
+"**report_card**" -- "**metabase_table**"
+"**report_cardfavorite**" -- "**report_card**"
+"**report_cardfavorite**" -- "**core_user**"
+"**report_dashboard**" -- "**collection**"
+"**report_dashboard**" -- "**core_user**"
+"**report_dashboard**" -- "**core_user**"
+"**report_dashboardcard**" -- "**report_card**"
+"**report_dashboardcard**" -- "**report_dashboard**"
+"**revision**" -- "**core_user**"
+"**secret**" -- "**core_user**"
+"**segment**" -- "**core_user**"
+"**segment**" -- "**metabase_table**"
+"**view_log**" -- "**core_user**"
+
+@enduml

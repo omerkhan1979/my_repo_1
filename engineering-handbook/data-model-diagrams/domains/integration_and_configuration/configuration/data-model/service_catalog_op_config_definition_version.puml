@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_config_definition_version**" [[service_catalog_op_config_definition_version.puml]] {
+  + ""version"": //bigint [PK]//
+  --
+}
+
+@enduml

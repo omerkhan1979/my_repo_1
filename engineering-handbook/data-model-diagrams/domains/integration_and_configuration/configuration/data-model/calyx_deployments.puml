@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**deployments**" [[calyx_deployments.puml]] {
+  + ""deployment_id"": //integer [PK]//
+  --
+  *""code_repo_name"": //character varying(100)//
+  *""code_version"": //character varying(100)//
+  *""config_repo_name"": //character varying(100)//
+  *""config_version"": //character varying(100)//
+  *""deployment_date"": //timestamp with time zone//
+  *""environment_id"": //character varying(50)//
+  *""git_remote_url"": //character varying(255)//
+  *""initiated_by_email"": //character varying(100)//
+  *""initiated_by_name"": //character varying(100)//
+  *""replaced_code_version"": //character varying(100)//
+  *""replaced_config_version"": //character varying(100)//
+  *""successful"": //boolean//
+  *""updated_in_jira"": //timestamp with time zone//
+}
+
+@enduml

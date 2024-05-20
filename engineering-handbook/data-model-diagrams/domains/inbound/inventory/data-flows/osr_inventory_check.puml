@@ -1,0 +1,20 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+component OSR
+usecase InventoryCheck
+usecase InventoryAdjustment
+database "Inventory Adjustments" as DBInventoryAdjustments  <<link>> [[../data-model/inventory-management_adjustment_history.puml]]
+database "Balances" as DBBalances <<link>> [[../data-model/inventory-management_balances.puml]]
+
+TomUI -> InventoryCheck : products
+InventoryCheck -> OSR : add inventory
+OSR -> InventoryCheck : tote
+InventoryCheck -down-> InventoryAdjustment : mod stock
+InventoryAdjustment -down-> DBBalances
+InventoryAdjustment -down-> DBInventoryAdjustments
+
+@enduml

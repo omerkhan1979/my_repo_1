@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**login_history**" [[metabase_login_history.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""device_description"": //text//
+  *""device_id"": //character(36)//
+  *""ip_address"": //text//
+  *""session_id"": //character varying(254) [FK]//
+  *""timestamp"": //timestamp with time zone//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

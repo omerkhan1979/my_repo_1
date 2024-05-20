@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**vm_containers**" [[calyx_vm_containers.puml]] {
+  + ""container_name"": //character varying(253) [PK]//
+  + ""project_name"": //character varying(50) [PK]//
+  + ""vm_instance"": //character varying(70) [PK]//
+  --
+  *""container_image"": //character varying(200)//
+  *""created"": //timestamp with time zone//
+  *""environment_id"": //character varying(50)//
+  *""ip_address"": //inet//
+  *""last_download_id"": //integer//
+  *""last_updated"": //timestamp with time zone//
+  *""service_name"": //character varying(55)//
+}
+
+@enduml

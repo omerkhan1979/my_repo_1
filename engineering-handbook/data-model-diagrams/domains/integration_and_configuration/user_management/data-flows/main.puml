@@ -1,0 +1,43 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+component "TomUI (New)" as TomUI_New
+component Okta
+component Firebase
+component Retailer
+component Configuration
+component "Azure AD" as AzureAD
+component "Takeoff Services" as Takeoff
+component "Calyx" as CalyxUI
+component "Takeoff Mobile" as TakeoffMobile
+component "DecantingUI" as DecantingUI
+
+
+usecase "User Management" as UserManagement
+
+TomUI <-> UserManagement : [[./tomui_users.puml users & roles]]
+TomUI <-> UserManagement : [[./tomui_authentication.puml authentication]]
+TomUI <-> UserManagement : authorization
+
+CalyxUI <-down-> UserManagement : [[./calyx_authentication.puml authentication]]
+TakeoffMobile <-down-> UserManagement : [[./firebase_authentication.puml authentication]]
+DecantingUI <-down-> UserManagement : [[./firebase_authentication.puml authentication]]
+TomUI_New <-down-> UserManagement : [[./firebase_authentication.puml authentication]]
+
+
+Okta <-up-> UserManagement : [[./tomui_authentication.puml authentication]]
+AzureAD -up-> UserManagement : [[./tomui_authentication.puml authentication]]
+Takeoff <-left- UserManagement : user info
+Takeoff <-left- UserManagement : permissions
+Firebase <-up-> UserManagement : [[./tomui_authentication.puml authentication]]\n[[./tomui_users.puml users]]
+
+TomUI <.[norank]u. Firebase : [[./firebase_token.puml token]]
+Takeoff <.[norank]. Firebase : [[./firebase_token.puml token]]
+Retailer <.u. Firebase : [[./firebase_token.puml token]]
+
+Configuration -up-> UserManagement : [[./tomui_users.puml locations]]
+
+@enduml

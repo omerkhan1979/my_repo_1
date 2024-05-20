@@ -1,0 +1,48 @@
+@startuml order_split
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Configuration
+component Assortment
+component Inventory
+component Planning
+
+usecase "Split Process" as SplitProcess
+
+usecase "Order Access" as OrderAccess
+usecase "Orders Prioritization" as OrdersPrioritization
+usecase "Order Status Update" as OrderStatusUpdate
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as DBOMSLines <<link>> [[../data-model/oms_lines.puml]]
+database "Items" as DBOMSItems <<link>> [[../data-model/oms_items.puml]]
+database "Orders Status History" as DBOMSOrdersStatusesHistory <<link>> [[../data-model/oms_orders_statuses_history.puml]]
+database "O" as CouchO <<link>> [[../../../production/couchdb/data-model/couchdb_o.puml]]
+database "PickingPath" as CouchPP <<link>> [[../../../production/couchdb/data-model/couchdb_picking-path.puml]]
+
+OrderAccess <-down- DBOMSOrders : order
+OrderAccess <-down- DBOMSLines : lines
+OrderAccess <-down- DBOMSItems : items
+
+SplitProcess <-right- OrderAccess : orders & lines
+SplitProcess -left-> OrdersPrioritization
+
+SplitProcess <-up- Configuration : locations
+SplitProcess <-up- Assortment : products
+SplitProcess <-up- Inventory : stock
+SplitProcess -up-> Inventory : reservations
+
+SplitProcess <-up- DBOMSOrders : order 
+SplitProcess -left-> DBOMSItems : items
+SplitProcess -down-> CouchO : order data
+SplitProcess -down-> DBOMSOrders : status, routes
+SplitProcess -down-> OrderStatusUpdate : status
+OrderStatusUpdate -down-> DBOMSOrdersStatusesHistory : status (new or served)
+
+OrderStatusUpdate -down-> Retailer : status
+SplitProcess -down-> CouchPP : picking path
+
+SplitProcess -up-> Planning : split orders
+
+@enduml

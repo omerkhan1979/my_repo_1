@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**query_execution**" [[metabase_query_execution.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""cache_hit"": //boolean//
+  *""card_id"": //integer//
+  *""context"": //character varying(32)//
+  *""dashboard_id"": //integer//
+  *""database_id"": //integer//
+  *""error"": //text//
+  *""executor_id"": //integer//
+  *""hash"": //bytea//
+  *""native"": //boolean//
+  *""pulse_id"": //integer//
+  *""result_rows"": //integer//
+  *""running_time"": //integer//
+  *""started_at"": //timestamp with time zone//
+}
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "calyx" {
+  entity "**argo_deployments**" [[calyx_argo_deployments.puml]] {}
+  entity "**copy_ff_task_notification_requests**" [[calyx_copy_ff_task_notification_requests.puml]] {}
+  entity "**copy_ff_task_units_of_work**" [[calyx_copy_ff_task_units_of_work.puml]] {}
+  entity "**copy_ff_tasks**" [[calyx_copy_ff_tasks.puml]] {}
+  entity "**deployment_commits**" [[calyx_deployment_commits.puml]] {}
+  entity "**deployment_commits_processed**" [[calyx_deployment_commits_processed.puml]] {}
+  entity "**deployments**" [[calyx_deployments.puml]] {}
+  entity "**environment_types**" [[calyx_environment_types.puml]] {}
+  entity "**environments**" [[calyx_environments.puml]] {}
+  entity "**flux_deployments**" [[calyx_flux_deployments.puml]] {}
+  entity "**git_commit_jira_tickets**" [[calyx_git_commit_jira_tickets.puml]] {}
+  entity "**git_commits**" [[calyx_git_commits.puml]] {}
+  entity "**git_pr_commits**" [[calyx_git_pr_commits.puml]] {}
+  entity "**git_pull_requests**" [[calyx_git_pull_requests.puml]] {}
+  entity "**jenkins_deployments**" [[calyx_jenkins_deployments.puml]] {}
+  entity "**key_value_storage**" [[calyx_key_value_storage.puml]] {}
+  entity "**kubernetes_containers**" [[calyx_kubernetes_containers.puml]] {}
+  entity "**kubernetes_downloads**" [[calyx_kubernetes_downloads.puml]] {}
+  entity "**ragtime_migrations**" [[calyx_ragtime_migrations.puml]] {}
+  entity "**retailers**" [[calyx_retailers.puml]] {}
+  entity "**vm_containers**" [[calyx_vm_containers.puml]] {}
+  entity "**vm_downloads**" [[calyx_vm_downloads.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**argo_deployments**" -- "**deployments**"
+"**copy_ff_task_notification_requests**" -- "**copy_ff_tasks**"
+"**copy_ff_task_units_of_work**" -- "**copy_ff_tasks**"
+"**deployment_commits**" -- "**deployments**"
+"**deployment_commits_processed**" -- "**deployments**"
+"**environment_types**" -- "**environment_types**"
+"**environments**" -- "**environment_types**"
+"**environments**" -- "**retailers**"
+"**flux_deployments**" -- "**deployments**"
+"**jenkins_deployments**" -- "**deployments**"
+
+@enduml

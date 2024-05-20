@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_order_json**" [[robotic_order_translator_kisoft_order_json.puml]] {
+  + ""id"": //text [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""json"": //jsonb//
+  *""location_id"": //text//
+}
+
+@enduml

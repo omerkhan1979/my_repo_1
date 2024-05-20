@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Calyx
+component LaunchDarkly
+
+' participants
+usecase "Copy Feature Flags Task" as FFCopy
+usecase "Notifications" as FFNotify
+usecase "Email Notification" as FFNotifyEmail
+
+database "copy_ff_tasks" as DBCopyFFTasks <<link>> [[../data-model/calyx_copy_ff_tasks.puml]]
+database "copy_ff_task_units_of_work" as DBCopyFFUnits <<link>> [[../data-model/calyx_copy_ff_task_units_of_work.puml]]
+database "copy_ff_task_notification_requests" as DBCopyFFNotify <<link>> [[../data-model/calyx_copy_ff_task_notification_requests.puml]]
+
+
+Calyx -down-> FFCopy : source env\ntarget env\nfeatureflags
+FFCopy <-down-> DBCopyFFTasks : copy task
+FFCopy <-down-> DBCopyFFUnits : units of work
+FFCopy -right-> FFNotify
+FFNotify <-down-> DBCopyFFNotify : notifications
+FFNotify -right-> FFNotifyEmail
+FFCopy <-down-> LaunchDarkly : feature flags
+
+@enduml

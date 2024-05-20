@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**test**" [[_test.puml]] {
+  + ""one"": //STRING(MAX) [PK]//
+  + ""two"": //STRING(MAX) [PK]//
+  + ""three"": //STRING(MAX) [PK]//
+  --
+  *""four"": //STRING(MAX)//
+}
+
+@enduml

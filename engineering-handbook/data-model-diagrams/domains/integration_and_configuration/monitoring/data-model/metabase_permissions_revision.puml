@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**permissions_revision**" [[metabase_permissions_revision.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""after"": //text//
+  *""before"": //text//
+  *""created_at"": //timestamp without time zone//
+  *""remark"": //text//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

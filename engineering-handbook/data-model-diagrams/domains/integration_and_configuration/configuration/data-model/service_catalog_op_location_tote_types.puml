@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_location_tote_types**" [[service_catalog_op_location_tote_types.puml]] {
+  + ""location_id"": //bigint [PK][FK]//
+  + ""tote_type_id"": //bigint [PK][FK]//
+  --
+}
+
+@enduml

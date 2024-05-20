@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**order_items**" [[fulfillment-orchestrator_order_items.puml]] {
+  + ""item_id"": //character varying [PK]//
+  + ""line_id"": //bigint [PK]//
+  + ""order_id"": //character varying [PK]//
+  --
+  *""created_datetime"": //timestamp with time zone//
+  *""quantity"": //integer//
+}
+
+@enduml

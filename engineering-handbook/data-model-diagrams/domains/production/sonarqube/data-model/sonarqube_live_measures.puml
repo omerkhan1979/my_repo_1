@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**live_measures**" [[sonarqube_live_measures.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""measure_data"": //bytea//
+  *""metric_uuid"": //character varying(40)//
+  *""project_uuid"": //character varying(50)//
+  *""text_value"": //character varying(4000)//
+  *""update_marker"": //character varying(40)//
+  *""updated_at"": //bigint//
+  *""value"": //numeric(38,20)//
+  *""variation"": //numeric(38,20)//
+}
+
+@enduml

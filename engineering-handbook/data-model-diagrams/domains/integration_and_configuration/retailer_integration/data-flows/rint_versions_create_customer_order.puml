@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+usecase "Create Customer Order" as CreateCustomerOrder
+usecase "V2 Alpha Release Customer Order" <<deprecated>> as V2Create
+usecase "V3 Set Customer Order" <<deprecated>> as V3Create
+usecase "V4 Create Customer Order" as V4Create <<link>> [[./rint_customer_order_v4_create.puml]]
+
+CreateCustomerOrder -down-> V2Create
+CreateCustomerOrder -down-> V3Create
+CreateCustomerOrder -down-> V4Create
+
+
+@enduml

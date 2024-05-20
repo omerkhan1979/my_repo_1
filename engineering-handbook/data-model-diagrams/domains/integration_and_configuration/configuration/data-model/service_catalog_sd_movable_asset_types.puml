@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_movable_asset_types**" [[service_catalog_sd_movable_asset_types.puml]] {
+  + ""asset_type_id"": //bigint [PK]//
+  --
+  *""asset_type_name"": //character varying(255)//
+  *""is_osr_tote"": //boolean//
+  *""is_target_tote"": //boolean//
+}
+
+@enduml

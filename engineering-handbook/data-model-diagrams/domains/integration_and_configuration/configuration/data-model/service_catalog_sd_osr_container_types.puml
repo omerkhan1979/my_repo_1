@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_osr_container_types**" [[service_catalog_sd_osr_container_types.puml]] {
+  + ""osr_container_type_id"": //bigint [PK]//
+  --
+  *""osr_container_type_name"": //character varying(50)//
+}
+
+@enduml

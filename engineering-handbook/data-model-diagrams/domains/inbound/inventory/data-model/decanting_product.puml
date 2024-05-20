@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**product**" [[decanting_product.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""corp_id"": //text//
+  *""date_received"": //timestamp with time zone//
+  *""description"": //character varying(250)//
+  *""last_modified"": //timestamp with time zone//
+  *""product"": //character varying(250)//
+  *""purchase_price"": //integer//
+  *""qty"": //integer//
+  *""qty_decanted"": //integer//
+  *""quantity_in_ship_unit"": //integer//
+  *""ship_unit_description"": //text//
+  *""task_id"": //integer [FK]//
+  *""units"": //integer//
+  *""upc"": //text//
+}
+
+@enduml

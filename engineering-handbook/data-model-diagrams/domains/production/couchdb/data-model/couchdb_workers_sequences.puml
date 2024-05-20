@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**workers_sequences**" [[couchdb_workers_sequences.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""seq"": //string//
+  *""worker_seq_id"": //string//
+}
+
+@enduml

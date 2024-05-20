@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**reserved_inventory_items**" [[conduttore_reserved_inventory_items.puml]] {
+  + ""mfc_code"": //character varying(20) [PK]//
+  + ""operational_date"": //date [PK]//
+  + ""run_id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""items_to_adapter"": //integer//
+  *""items_to_queue"": //integer//
+}
+
+@enduml

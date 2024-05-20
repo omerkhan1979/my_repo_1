@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**key_value_storage**" [[calyx_key_value_storage.puml]] {
+  + ""key"": //character varying(100) [PK]//
+  --
+  *""bigint_value"": //bigint//
+  *""last_updated"": //timestamp with time zone//
+  *""str_value"": //character varying(1000)//
+}
+
+@enduml

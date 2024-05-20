@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "slipstick" {
+  !include slipstick_alerts.puml
+  !include slipstick_event.puml
+  !include slipstick_osr_load.puml
+  !include slipstick_osr_zones_report.puml
+  !include slipstick_ragtime_migrations.puml
+}
+
+@enduml

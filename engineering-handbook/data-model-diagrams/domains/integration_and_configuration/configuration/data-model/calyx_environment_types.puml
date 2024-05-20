@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**environment_types**" [[calyx_environment_types.puml]] {
+  + ""environment_type_id"": //character varying(20) [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""environment_type_name"": //character varying(50)//
+  *""last_updated"": //timestamp with time zone//
+  *""parent_environment_type_id"": //character varying(20) [FK]//
+}
+
+@enduml

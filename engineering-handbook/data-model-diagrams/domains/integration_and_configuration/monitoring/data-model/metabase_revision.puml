@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**revision**" [[metabase_revision.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""is_creation"": //boolean//
+  *""is_reversion"": //boolean//
+  *""message"": //text//
+  *""model"": //character varying(16)//
+  *""model_id"": //integer//
+  *""object"": //text//
+  *""timestamp"": //timestamp with time zone//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

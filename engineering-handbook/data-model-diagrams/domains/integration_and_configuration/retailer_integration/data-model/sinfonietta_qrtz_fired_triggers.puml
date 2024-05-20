@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_fired_triggers**" [[sinfonietta_qrtz_fired_triggers.puml]] {
+  + ""entry_id"": //character varying(95) [PK]//
+  + ""sched_name"": //character varying(120) [PK]//
+  --
+  *""fired_time"": //bigint//
+  *""instance_name"": //character varying(200)//
+  *""is_nonconcurrent"": //boolean//
+  *""job_group"": //character varying(200)//
+  *""job_name"": //character varying(200)//
+  *""priority"": //integer//
+  *""requests_recovery"": //boolean//
+  *""sched_time"": //bigint//
+  *""state"": //character varying(16)//
+  *""trigger_group"": //character varying(200)//
+  *""trigger_name"": //character varying(200)//
+}
+
+@enduml

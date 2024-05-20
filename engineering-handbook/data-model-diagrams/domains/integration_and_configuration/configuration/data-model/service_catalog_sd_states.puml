@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_states**" [[service_catalog_sd_states.puml]] {
+  + ""iso_code"": //character varying(6) [PK]//
+  --
+  *""country_iso_code"": //character(3) [FK]//
+  *""short_code"": //character varying(3)//
+  *""state_name"": //character varying(64)//
+}
+
+@enduml

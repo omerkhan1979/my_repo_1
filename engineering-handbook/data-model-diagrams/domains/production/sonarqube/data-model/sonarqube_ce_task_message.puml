@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**ce_task_message**" [[sonarqube_ce_task_message.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""message"": //character varying(4000)//
+  *""message_type"": //character varying(255)//
+  *""task_uuid"": //character varying(40)//
+}
+
+@enduml

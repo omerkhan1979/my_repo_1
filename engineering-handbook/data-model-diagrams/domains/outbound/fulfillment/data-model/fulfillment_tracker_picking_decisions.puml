@@ -1,0 +1,26 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking_decisions**" [[fulfillment_tracker_picking_decisions.puml]] {
+  --
+  *""barcodes"": //text[]//
+  *""created_datetime"": //timestamp with time zone//
+  *""deleted_datetime"": //timestamp with time zone//
+  *""device_id"": //text//
+  *""message_id"": //text//
+  *""observed_datetime"": //timestamp with time zone//
+  *""order_id"": //text//
+  *""picked_quantity"": //integer//
+  *""picked_weight"": //double precision[]//
+  *""picking_address"": //text//
+  *""picking_decisions_id"": //bigint//
+  *""picking_source"": //enum//
+  *""reason_code"": //enum//
+  *""takeoff_item_id"": //text//
+  *""tote_id"": //text//
+  *""user_id"": //text//
+  *""work_task_id"": //bigint//
+}
+
+@enduml

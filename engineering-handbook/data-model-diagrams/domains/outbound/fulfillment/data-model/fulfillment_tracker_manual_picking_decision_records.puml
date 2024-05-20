@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**manual_picking_decision_records**" [[fulfillment_tracker_manual_picking_decision_records.puml]] {
+  --
+  *""bags_quantity"": //integer//
+  *""build_version"": //text//
+  *""created_time"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""message_id"": //text//
+  *""order_id"": //text//
+  *""user_email"": //text//
+  *""user_id"": //text//
+}
+
+@enduml

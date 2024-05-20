@@ -1,0 +1,27 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Calyx
+component LaunchDarkly
+
+' participants
+usecase "Feature Flags Table" as FFTable
+
+usecase "Retailers API" as CalyxAPIRetailer
+usecase "Environment Types" as CalyxAPIEnvs
+usecase "Feature Flags State" as CalyxAPIFF
+
+database "retailers" as DBRetailers <<link>> [[../data-model/calyx_retailers.puml]]
+database "environment_types" as DBEnvTypes <<link>> [[../data-model/calyx_environment_types.puml]]
+
+Calyx <-down- FFTable
+FFTable <-down- CalyxAPIRetailer
+FFTable <-down- CalyxAPIEnvs
+FFTable <-down- CalyxAPIFF
+CalyxAPIFF <-down- LaunchDarkly
+
+CalyxAPIRetailer <-down- DBRetailers
+CalyxAPIEnvs <-down- DBEnvTypes
+
+@enduml

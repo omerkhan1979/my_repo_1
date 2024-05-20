@@ -1,0 +1,42 @@
+@startjson
+
+!include ../../../../style/data_style.puml
+
+{
+  "order_id": "20210528051303793",
+  "store_id": "ABS3116",
+  "ecom_order_id": "20210528051303794",
+  "service_type": "DELIVERY",
+  "spoke_id": "ABS3116",
+  "creation_datetime": "2021-05-28T18:13:03+00:00",
+  "ecom_status": "CREATED",
+  "ecom_payment_status": "none",
+  "shift_number": 12,
+  "route_number": "DUG",
+  "stop_number": 223,
+  "total_shift_orders": 1,
+  "total_route_orders": 0,
+  "fulfillment_datetime": null,
+  "stage_by_datetime": "2021-05-28T18:13:03+00:00",
+  "service_window_start": "2021-05-28T18:13:03+00:00",
+  "shipping_label": [
+    "AQA",
+    "2019-11-06T12:34:56.123Z-2019-11-06T12:34:56.123Z"
+  ],
+  "splitted": false,
+  "cutoff_datetime": "2021-05-28T16:00:00+00:00",
+  "corp_order_id": "12345",
+  "order_note": null,
+  "empty_tom_items": false,
+  "cancelled_by_client": false,
+  "tote_estimate": null,
+  "splitted_by_client": false,
+  "batch_created": true,
+  "preliminary_batch_id": null,
+  "bypassed": false,
+  "last_modified": "2021-05-28T12:13:03.944805+00:00",
+  "status": "draft",
+  "stage_location": null
+}
+
+@endjson

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**schemas**" [[bigquery_sftp_schemas.puml]] {
+  --
+  *""id"": //string//
+  *""schema_hash"": //string//
+  *""data"": //string//
+  *""meta"": //string//
+  *""registered_ts"": //timestamp//
+}
+
+@enduml

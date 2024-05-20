@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_config_item_definitions**" [[service_catalog_sd_config_item_definitions.puml]] {
+  + ""config_item_id"": //bigint [PK]//
+  --
+  *""default_value"": //json//
+  *""item_level"": //character varying(16) [FK]//
+  *""item_measure_type_id"": //bigint [FK]//
+  *""item_name"": //character varying(255)//
+  *""item_type_id"": //bigint [FK]//
+}
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "tom-gold-integration" {
+  !include tom-gold-integration_activemq_acks.puml
+  !include tom-gold-integration_activemq_lock.puml
+  !include tom-gold-integration_activemq_msgs.puml
+  !include tom-gold-integration_camel_messageprocessed.puml
+  !include tom-gold-integration_ragtime_migrations.puml
+  !include tom-gold-integration_tgi_item_error.puml
+  !include tom-gold-integration_tgi_item_status.puml
+  !include tom-gold-integration_tgi_kisoft_ftp_endpoint.puml
+  !include tom-gold-integration_tgi_kisoft_response.puml
+  !include tom-gold-integration_tgi_micro_fulfillment_center.puml
+}
+"**tgi_kisoft_ftp_endpoint**" -- "**tgi_micro_fulfillment_center**"
+"**tgi_kisoft_response**" -- "**tgi_micro_fulfillment_center**"
+
+@enduml

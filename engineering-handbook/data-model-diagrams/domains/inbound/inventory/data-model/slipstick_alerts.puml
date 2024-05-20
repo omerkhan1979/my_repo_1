@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**alerts**" [[slipstick_alerts.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""acked"": //boolean//
+  *""created"": //timestamp with time zone//
+  *""level"": //enum//
+  *""location_id"": //text//
+  *""totes_remaining"": //integer//
+  *""user_id"": //text//
+  *""zone_name"": //enum//
+}
+
+@enduml

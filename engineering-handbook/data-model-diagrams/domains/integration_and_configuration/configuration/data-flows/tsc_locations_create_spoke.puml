@@ -1,0 +1,14 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "Create Spoke" as CreateSpokeAPI
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+
+CreateSpokeAPI -down-> OpLocations : spoke
+CreateSpokeAPI <-down- GetLocationsAPI : locations
+
+@enduml

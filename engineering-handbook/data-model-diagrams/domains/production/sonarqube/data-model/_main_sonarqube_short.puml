@@ -1,0 +1,84 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "sonarqube" {
+  entity "**active_rule_parameters**" [[sonarqube_active_rule_parameters.puml]] {}
+  entity "**active_rules**" [[sonarqube_active_rules.puml]] {}
+  entity "**alm_app_installs**" [[sonarqube_alm_app_installs.puml]] {}
+  entity "**alm_pats**" [[sonarqube_alm_pats.puml]] {}
+  entity "**alm_settings**" [[sonarqube_alm_settings.puml]] {}
+  entity "**analysis_properties**" [[sonarqube_analysis_properties.puml]] {}
+  entity "**ce_activity**" [[sonarqube_ce_activity.puml]] {}
+  entity "**ce_queue**" [[sonarqube_ce_queue.puml]] {}
+  entity "**ce_scanner_context**" [[sonarqube_ce_scanner_context.puml]] {}
+  entity "**ce_task_characteristics**" [[sonarqube_ce_task_characteristics.puml]] {}
+  entity "**ce_task_input**" [[sonarqube_ce_task_input.puml]] {}
+  entity "**ce_task_message**" [[sonarqube_ce_task_message.puml]] {}
+  entity "**components**" [[sonarqube_components.puml]] {}
+  entity "**default_qprofiles**" [[sonarqube_default_qprofiles.puml]] {}
+  entity "**deprecated_rule_keys**" [[sonarqube_deprecated_rule_keys.puml]] {}
+  entity "**duplications_index**" [[sonarqube_duplications_index.puml]] {}
+  entity "**es_queue**" [[sonarqube_es_queue.puml]] {}
+  entity "**event_component_changes**" [[sonarqube_event_component_changes.puml]] {}
+  entity "**events**" [[sonarqube_events.puml]] {}
+  entity "**file_sources**" [[sonarqube_file_sources.puml]] {}
+  entity "**group_roles**" [[sonarqube_group_roles.puml]] {}
+  entity "**groups**" [[sonarqube_groups.puml]] {}
+  entity "**groups_users**" [[sonarqube_groups_users.puml]] {}
+  entity "**internal_component_props**" [[sonarqube_internal_component_props.puml]] {}
+  entity "**internal_properties**" [[sonarqube_internal_properties.puml]] {}
+  entity "**issue_changes**" [[sonarqube_issue_changes.puml]] {}
+  entity "**issues**" [[sonarqube_issues.puml]] {}
+  entity "**live_measures**" [[sonarqube_live_measures.puml]] {}
+  entity "**manual_measures**" [[sonarqube_manual_measures.puml]] {}
+  entity "**metrics**" [[sonarqube_metrics.puml]] {}
+  entity "**new_code_periods**" [[sonarqube_new_code_periods.puml]] {}
+  entity "**notifications**" [[sonarqube_notifications.puml]] {}
+  entity "**org_qprofiles**" [[sonarqube_org_qprofiles.puml]] {}
+  entity "**org_quality_gates**" [[sonarqube_org_quality_gates.puml]] {}
+  entity "**organization_alm_bindings**" [[sonarqube_organization_alm_bindings.puml]] {}
+  entity "**organization_members**" [[sonarqube_organization_members.puml]] {}
+  entity "**organizations**" [[sonarqube_organizations.puml]] {}
+  entity "**perm_templates_groups**" [[sonarqube_perm_templates_groups.puml]] {}
+  entity "**perm_templates_users**" [[sonarqube_perm_templates_users.puml]] {}
+  entity "**perm_tpl_characteristics**" [[sonarqube_perm_tpl_characteristics.puml]] {}
+  entity "**permission_templates**" [[sonarqube_permission_templates.puml]] {}
+  entity "**plugins**" [[sonarqube_plugins.puml]] {}
+  entity "**project_alm_settings**" [[sonarqube_project_alm_settings.puml]] {}
+  entity "**project_branches**" [[sonarqube_project_branches.puml]] {}
+  entity "**project_links**" [[sonarqube_project_links.puml]] {}
+  entity "**project_mappings**" [[sonarqube_project_mappings.puml]] {}
+  entity "**project_measures**" [[sonarqube_project_measures.puml]] {}
+  entity "**project_qgates**" [[sonarqube_project_qgates.puml]] {}
+  entity "**project_qprofiles**" [[sonarqube_project_qprofiles.puml]] {}
+  entity "**projects**" [[sonarqube_projects.puml]] {}
+  entity "**properties**" [[sonarqube_properties.puml]] {}
+  entity "**qprofile_changes**" [[sonarqube_qprofile_changes.puml]] {}
+  entity "**qprofile_edit_groups**" [[sonarqube_qprofile_edit_groups.puml]] {}
+  entity "**qprofile_edit_users**" [[sonarqube_qprofile_edit_users.puml]] {}
+  entity "**quality_gate_conditions**" [[sonarqube_quality_gate_conditions.puml]] {}
+  entity "**quality_gates**" [[sonarqube_quality_gates.puml]] {}
+  entity "**rule_repositories**" [[sonarqube_rule_repositories.puml]] {}
+  entity "**rules**" [[sonarqube_rules.puml]] {}
+  entity "**rules_metadata**" [[sonarqube_rules_metadata.puml]] {}
+  entity "**rules_parameters**" [[sonarqube_rules_parameters.puml]] {}
+  entity "**rules_profiles**" [[sonarqube_rules_profiles.puml]] {}
+  entity "**saml_message_ids**" [[sonarqube_saml_message_ids.puml]] {}
+  entity "**schema_migrations**" [[sonarqube_schema_migrations.puml]] {}
+  entity "**session_tokens**" [[sonarqube_session_tokens.puml]] {}
+  entity "**snapshots**" [[sonarqube_snapshots.puml]] {}
+  entity "**user_dismissed_messages**" [[sonarqube_user_dismissed_messages.puml]] {}
+  entity "**user_properties**" [[sonarqube_user_properties.puml]] {}
+  entity "**user_roles**" [[sonarqube_user_roles.puml]] {}
+  entity "**user_tokens**" [[sonarqube_user_tokens.puml]] {}
+  entity "**users**" [[sonarqube_users.puml]] {}
+  entity "**webhook_deliveries**" [[sonarqube_webhook_deliveries.puml]] {}
+  entity "**webhooks**" [[sonarqube_webhooks.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "Update MFC" as UpdateMFCAPI
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+
+UpdateMFCAPI -down-> OpLocations : mfc
+UpdateMFCAPI <-down- GetLocationsAPI : locations
+
+@enduml

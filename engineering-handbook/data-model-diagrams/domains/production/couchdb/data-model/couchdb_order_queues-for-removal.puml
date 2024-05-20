@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**order_queues-for-removal**" [[couchdb_order_queues-for-removal.puml]] {
+  + ""_id"": //datetime [PK]//
+  --
+  *""location_id"": //datetime//
+  *""queue_type"": //string//
+  *""session_params"": //map//
+}
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**issue_changes**" [[sonarqube_issue_changes.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""change_data"": //text//
+  *""change_type"": //character varying(20)//
+  *""created_at"": //bigint//
+  *""issue_change_creation_date"": //bigint//
+  *""issue_key"": //character varying(50)//
+  *""kee"": //character varying(50)//
+  *""project_uuid"": //character varying(50)//
+  *""updated_at"": //bigint//
+  *""user_login"": //character varying(255)//
+}
+
+@enduml

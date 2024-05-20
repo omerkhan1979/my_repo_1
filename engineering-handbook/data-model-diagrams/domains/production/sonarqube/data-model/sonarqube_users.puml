@@ -1,0 +1,30 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**users**" [[sonarqube_users.puml]] {
+  + ""uuid"": //character varying(255) [PK]//
+  --
+  *""active"": //boolean//
+  *""created_at"": //bigint//
+  *""crypted_password"": //character varying(100)//
+  *""email"": //character varying(100)//
+  *""external_id"": //character varying(255)//
+  *""external_identity_provider"": //character varying(100)//
+  *""external_login"": //character varying(255)//
+  *""hash_method"": //character varying(10)//
+  *""homepage_parameter"": //character varying(40)//
+  *""homepage_type"": //character varying(40)//
+  *""is_root"": //boolean//
+  *""last_connection_date"": //bigint//
+  *""login"": //character varying(255)//
+  *""name"": //character varying(200)//
+  *""onboarded"": //boolean//
+  *""organization_uuid"": //character varying(40)//
+  *""salt"": //character varying(40)//
+  *""scm_accounts"": //character varying(4000)//
+  *""updated_at"": //bigint//
+  *""user_local"": //boolean//
+}
+
+@enduml

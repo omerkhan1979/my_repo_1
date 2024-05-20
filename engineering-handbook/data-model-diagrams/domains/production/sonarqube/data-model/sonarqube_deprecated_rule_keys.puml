@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**deprecated_rule_keys**" [[sonarqube_deprecated_rule_keys.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""old_repository_key"": //character varying(255)//
+  *""old_rule_key"": //character varying(200)//
+  *""rule_uuid"": //character varying(40)//
+}
+
+@enduml

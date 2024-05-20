@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qprofile_edit_groups**" [[sonarqube_qprofile_edit_groups.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""group_uuid"": //character varying(40)//
+  *""qprofile_uuid"": //character varying(255)//
+}
+
+@enduml

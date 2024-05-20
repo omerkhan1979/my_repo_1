@@ -1,0 +1,20 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Replenishment
+
+usecase "Sales History" as SalesHistory
+usecase "Winter MFC Sales Report" as MFCSalesReport <<link>> [[./rint_mfc_sales_report.puml]]
+usecase "Looker Sales History" as LookerSalesHistory <<link>> [[./rint_looker_sales_history.puml]]
+usecase "Sales History Files" as SalesHistoryFiles <<link>> [[./rint_sales_history_files.puml]]
+
+
+Retailer <-down-> SalesHistory
+SalesHistory <-down- MFCSalesReport : mfc sales report
+SalesHistory <-down- LookerSalesHistory
+SalesHistory -down-> SalesHistoryFiles
+
+LookerSalesHistory -up-> Replenishment
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**rules_profiles**" [[sonarqube_rules_profiles.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //timestamp without time zone//
+  *""is_built_in"": //boolean//
+  *""language"": //character varying(20)//
+  *""name"": //character varying(100)//
+  *""rules_updated_at"": //character varying(100)//
+  *""updated_at"": //timestamp without time zone//
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**organization_alm_bindings**" [[sonarqube_organization_alm_bindings.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""alm_app_install_uuid"": //character varying(40)//
+  *""alm_id"": //character varying(40)//
+  *""created_at"": //bigint//
+  *""members_sync_enabled"": //boolean//
+  *""organization_uuid"": //character varying(40)//
+  *""url"": //character varying(2000)//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

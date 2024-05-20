@@ -1,0 +1,16 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "fulfillment_tracker" {
+  entity "**manual_picking_decision_records**" [[fulfillment_tracker_manual_picking_decision_records.puml]] {}
+  entity "**picking_decisions**" [[fulfillment_tracker_picking_decisions.puml]] {}
+  entity "**ragtime_migrations**" [[fulfillment_tracker_ragtime_migrations.puml]] {}
+  entity "**robotic_picking_decision_records**" [[fulfillment_tracker_robotic_picking_decision_records.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

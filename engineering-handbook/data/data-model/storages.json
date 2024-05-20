@@ -1,0 +1,286 @@
+{
+  "bigquery": [
+    {
+      "displayName": "Retailer Integration All Sftp",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "all_sftp"
+    },
+    {
+      "displayName": "Retailer Integration Sftp",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "bigquery_sftp"
+    },
+    {
+      "displayName": "Https",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "https"
+    },
+    {
+      "displayName": "Product Audit",
+      "domain": "inbound/assortment",
+      "storage": "product_audit"
+    },
+    {
+      "displayName": "Products Enrichment",
+      "domain": "inbound/assortment",
+      "storage": "products_enrichment_bigquery"
+    },
+    {
+      "displayName": "Semantic",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "semantic"
+    },
+    {
+      "displayName": "Mobile Analytics",
+      "domain": "outbound/mobile_support",
+      "storage": "takeoff_mobile_analytics"
+    },
+    {
+      "displayName": "Mobile Crash Analytics",
+      "domain": "outbound/mobile_support",
+      "storage": "takeoff_mobile_crashlytics"
+    },
+    {
+      "displayName": "Mobile Performance",
+      "domain": "outbound/mobile_support",
+      "storage": "takeoff_mobile_firebase_performance"
+    }
+  ],
+  "cloudsql": [
+    {
+      "displayName": "Adattatore-oro",
+      "domain": "inbound/replenishment",
+      "storage": "adattatore-oro"
+    },
+    {
+      "displayName": "Bifrost",
+      "domain": "outbound/osr_communication",
+      "storage": "bifrost"
+    },
+    {
+      "displayName": "",
+      "domain": "integration_and_configuration/configuration",
+      "storage": "calyx"
+    },
+    {
+      "displayName": "Cycle Count",
+      "domain": "inbound/inventory",
+      "storage": "cc"
+    },
+    {
+      "displayName": "Conduttore",
+      "domain": "inbound/replenishment",
+      "storage": "conduttore"
+    },
+    {
+      "displayName": "Decanting",
+      "domain": "inbound/inventory",
+      "storage": "decanting"
+    },
+    {
+      "displayName": "Fulfillment Orchestrator",
+      "domain": "outbound/planning",
+      "storage": "fulfillment-orchestrator"
+    },
+    {
+      "displayName": "Fulfillment Tracker",
+      "domain": "outbound/fulfillment",
+      "storage": "fulfillment_tracker"
+    },
+    {
+      "displayName": "IMS",
+      "domain": "inbound/inventory",
+      "storage": "inventory-management"
+    },
+    {
+      "displayName": "ISPS",
+      "domain": "outbound/fulfillment",
+      "storage": "isps"
+    },
+    {
+      "displayName": "Metabase",
+      "domain": "integration_and_configuration/monitoring",
+      "storage": "metabase"
+    },
+    {
+      "displayName": "OMS",
+      "domain": "outbound/fulfillment",
+      "storage": "oms"
+    },
+    {
+      "displayName": "OWM",
+      "domain": "outbound/planning",
+      "storage": "owm"
+    },
+    {
+      "displayName": "Rint-ETL",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "rint-etl"
+    },
+    {
+      "displayName": "Robotic Message Store",
+      "domain": "inbound/inventory",
+      "storage": "robotic_message_store"
+    },
+    {
+      "displayName": "Robotic Order Translator",
+      "domain": "outbound/osr_communication",
+      "storage": "robotic_order_translator"
+    },
+    {
+      "displayName": "Service Catalog",
+      "domain": "integration_and_configuration/configuration",
+      "storage": "service_catalog"
+    },
+    {
+      "displayName": "Sinfonietta",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "sinfonietta"
+    },
+    {
+      "displayName": "Slipstick",
+      "domain": "inbound/inventory",
+      "storage": "slipstick"
+    },
+    {
+      "displayName": "",
+      "domain": "production/sonarqube",
+      "storage": "sonarqube"
+    },
+    {
+      "displayName": "TGIM",
+      "domain": "inbound/replenishment",
+      "storage": "tom-gold-integration"
+    }
+  ],
+  "couchdb": [
+    {
+      "displayName": "CouchDB",
+      "domain": "production/couchdb",
+      "storage": "couchdb"
+    }
+  ],
+  "elasticsearch": [
+    {
+      "displayName": "Elasticsearch-master",
+      "domain": "production/elasticsearch",
+      "storage": "elasticsearch"
+    }
+  ],
+  "firestore": [
+    {
+      "displayName": "",
+      "domain": "unknown/prj-label-mgr-au-nonprod-9ac6",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/prj-label-mgr-eu-nonprod-be67",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/prj-label-mgr-us-nonprod-e0c2",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/prj-site-info-eu-nonprod-2a63",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/prj-site-info-au-nonprod-4862",
+      "storage": ""
+    },
+    {
+      "displayName": "User Management",
+      "domain": "integration_and_configuration/users",
+      "storage": "inc_user_management"
+    },
+    {
+      "displayName": "Label Manager",
+      "domain": "outbound/fulfillment",
+      "storage": "label_manager"
+    },
+    {
+      "displayName": "MFE Staging",
+      "domain": "outbound/fulfillment",
+      "storage": "mfe-staging"
+    },
+    {
+      "displayName": "On-demand Environment Firestore",
+      "domain": "production/ondemand",
+      "storage": "ondemand_firestore"
+    },
+    {
+      "displayName": "Products Enrichment (Firestore)",
+      "domain": "inbound/assortment",
+      "storage": "products_enrichment_firestore"
+    },
+    {
+      "displayName": "Site Info",
+      "domain": "integration_and_configuration/configuration",
+      "storage": "site_info"
+    },
+    {
+      "displayName": "Webhooks",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "webhooks_firestore"
+    }
+  ],
+  "redis": [
+    {
+      "displayName": "Redis DB:0",
+      "domain": "production/redis",
+      "storage": "redis0"
+    },
+    {
+      "displayName": "Redis DB:1",
+      "domain": "production/redis",
+      "storage": "redis1"
+    }
+  ],
+  "spanner": [
+    {
+      "displayName": "",
+      "domain": "unknown/projects/prj-reservations-nonprod-06d9/instances/nonprod-reservations-instance/databases/qai-reservations-db",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/projects/prj-reservations-nonprod-06d9/instances/nonprod-reservations-instance/databases/dev-reservations-db",
+      "storage": ""
+    },
+    {
+      "displayName": "",
+      "domain": "unknown/projects/prj-asmt-recom-nonprod-9ef9/instances/assortment-management-instance/databases/reservations-ci",
+      "storage": ""
+    },
+    {
+      "displayName": "Assortment Management",
+      "domain": "inbound/assortment",
+      "storage": "assortment_management_db"
+    },
+    {
+      "displayName": "Reservations",
+      "domain": "inbound/inventory",
+      "storage": "reservations"
+    },
+    {
+      "displayName": "PoC Tote Dispatcher",
+      "domain": "outbound/fulfillment",
+      "storage": "tote_dispatcher"
+    },
+    {
+      "displayName": "User Profile",
+      "domain": "uxui/user_profile",
+      "storage": "user_profile"
+    },
+    {
+      "displayName": "Webhooks",
+      "domain": "integration_and_configuration/retailer_integration",
+      "storage": "webhooks_spanner"
+    }
+  ]
+}

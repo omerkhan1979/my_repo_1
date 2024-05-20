@@ -1,0 +1,39 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**com_takeoff_mobileapp_ANDROID**" [[takeoff_mobile_firebase_performance_com_takeoff_mobileapp_ANDROID.puml]] {
+  --
+  *""event_timestamp"": //timestamp//
+  *""app_display_version"": //string//
+  *""app_build_version"": //string//
+  *""os_version"": //string//
+  *""device_name"": //string//
+  *""country"": //string//
+  *""carrier"": //string//
+  *""radio_type"": //string//
+  *""custom_attributes"": //array<struct<key string, value string>>//
+  *""custom_attributes"": //array<struct<key string, value string>>//
+  *""custom_attributes"": //array<struct<key string, value string>>//
+  *""event_type"": //string//
+  *""event_name"": //string//
+  *""parent_trace_name"": //string//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""trace_info"": //struct<duration_us int64, screen_info struct<slow_frame_ratio float64, frozen_frame_ratio float64>, metric_info struct<metric_value int64>>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+  *""network_info"": //struct<response_code int64, response_mime_type string, request_http_method string, request_payload_bytes int64, response_payload_bytes int64, request_completed_time_us int64, response_initiated_time_us int64, response_completed_time_us int64>//
+}
+
+@enduml

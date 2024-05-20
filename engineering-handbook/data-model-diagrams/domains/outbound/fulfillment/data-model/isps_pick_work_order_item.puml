@@ -1,0 +1,24 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_work_order_item**" [[isps_pick_work_order_item.puml]] {
+  + ""pick_work_order_item_id"": //integer [PK]//
+  --
+  *""pick_list_item_id"": //integer [FK]//
+  *""pick_prod_work_order_item"": //character varying(64)//
+  *""pick_work_item_reason_code_id"": //integer [FK]//
+  *""pick_work_order_id"": //integer [FK]//
+  *""pick_work_order_item_asked_qnty"": //integer//
+  *""pick_work_order_item_asked_weight"": //numeric(15,3)//
+  *""pick_work_order_item_asked_weight_unit_of_measure"": //enum//
+  *""pick_work_order_item_created_at"": //timestamp with time zone//
+  *""pick_work_order_item_last_modified_at"": //timestamp with time zone//
+  *""pick_work_order_item_location"": //character varying(64)//
+  *""pick_work_order_item_number"": //character varying(36)//
+  *""pick_work_order_item_performed_at"": //timestamp with time zone//
+  *""pick_work_order_item_picked_qnty"": //integer//
+  *""pick_work_order_item_picked_weight"": //numeric(15,3)//
+}
+
+@enduml

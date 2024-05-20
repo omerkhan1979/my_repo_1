@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**organizations**" [[sonarqube_organizations.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""avatar_url"": //character varying(256)//
+  *""created_at"": //bigint//
+  *""default_group_uuid"": //character varying(40)//
+  *""default_perm_template_app"": //character varying(40)//
+  *""default_perm_template_port"": //character varying(40)//
+  *""default_perm_template_project"": //character varying(40)//
+  *""default_quality_gate_uuid"": //character varying(40)//
+  *""description"": //character varying(256)//
+  *""guarded"": //boolean//
+  *""kee"": //character varying(255)//
+  *""name"": //character varying(255)//
+  *""new_project_private"": //boolean//
+  *""subscription"": //character varying(40)//
+  *""updated_at"": //bigint//
+  *""url"": //character varying(256)//
+}
+
+@enduml

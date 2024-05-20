@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**retailers**" [[calyx_retailers.puml]] {
+  + ""retailer_id"": //character varying(20) [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""last_updated"": //timestamp with time zone//
+  *""retailer_name"": //character varying(50)//
+}
+
+@enduml

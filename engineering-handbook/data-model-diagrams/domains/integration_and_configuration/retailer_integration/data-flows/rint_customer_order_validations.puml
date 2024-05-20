@@ -1,0 +1,41 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component "Configuration" as Configuration
+component "Configuration" as Configuration2
+
+usecase "**Customer Order Validations**" as CustomerOrderValidations
+usecase "mfc-id is not blank" as Validation_MFCID_Blank
+usecase "ecom-id is not blank" as Validation_EcomID_Blank
+usecase "lines.ecom-item-id is not blank" as Validation_EcomItemID_Blank
+usecase "stage-by-datetime should be greater than now\n(optional)" as Validation_StageByDatetime_Now
+usecase "service-window-start should be greater than stage-by-datetime\n(optional)" as Validation_StageByDatetime_ServiceWindowStart
+usecase "ecom-order-status is not blank" as Validation_EcomOrderStatus_Blank
+usecase "ecom-order-status is known" as Validation_EcomOrderStatus_Known
+usecase "spoke-id is not blank" as Validation_Spoke_Blank
+usecase "lines.ecom-line-id is not blank" as Validation_EcomLineID_Blank
+usecase "ecom-line-id are not duplicated" as Validation_EcomLineID_Duplications
+usecase "mfc-id exists" as Validation_MFCID_Exists
+usecase "spoke-id exists" as Validation_SpokeID_Exists
+usecase "Variable Weight Validations" as Validation_VariableWeightFlow
+
+CustomerOrderValidations -down-> Validation_MFCID_Blank : order
+Validation_MFCID_Blank -down-> Validation_EcomID_Blank
+Validation_EcomID_Blank -down-> Validation_EcomItemID_Blank
+Validation_EcomItemID_Blank -down-> Validation_StageByDatetime_Now
+Validation_StageByDatetime_Now -down-> Validation_StageByDatetime_ServiceWindowStart
+Validation_StageByDatetime_ServiceWindowStart -down-> Validation_EcomOrderStatus_Blank
+Validation_EcomOrderStatus_Blank -down-> Validation_EcomOrderStatus_Known
+Validation_EcomOrderStatus_Known -down-> Validation_Spoke_Blank
+Validation_Spoke_Blank -down-> Validation_EcomLineID_Blank
+Validation_EcomLineID_Blank -down-> Validation_EcomLineID_Duplications
+Validation_EcomLineID_Duplications -down-> Validation_MFCID_Exists
+Validation_MFCID_Exists <-left-- Configuration : locations
+Validation_MFCID_Exists -down-> Validation_SpokeID_Exists
+Validation_SpokeID_Exists <-left-- Configuration2 : locations
+Validation_SpokeID_Exists -down-> Validation_VariableWeightFlow
+
+
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_job_details**" [[adattatore-oro_qrtz_job_details.puml]] {
+  + ""job_group"": //character varying(200) [PK]//
+  + ""job_name"": //character varying(200) [PK]//
+  + ""sched_name"": //character varying(120) [PK]//
+  --
+  *""description"": //character varying(250)//
+  *""is_durable"": //boolean//
+  *""is_nonconcurrent"": //boolean//
+  *""is_update_data"": //boolean//
+  *""job_class_name"": //character varying(250)//
+  *""job_data"": //bytea//
+  *""requests_recovery"": //boolean//
+}
+
+@enduml

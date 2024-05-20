@@ -1,0 +1,30 @@
+{{ $data := .Site.Data }}
+{{ range $i, $child := split .Params.dataProvider "/" }}
+    {{ $data = index $data $child }}
+{{ end }}
+
+{{ $diagramBaseDir := .Params.diagramBaseDir }}
+
+{{ "## Summary" | markdownify }}
+<table>
+    <thead>
+    <tr>
+        <th>Storage</th>
+        <th>Storage Type</th>
+        <th>Domain</th>
+        <th>Total Complexity</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range sort $data "totalComplexity" "desc" }}
+        <tr>
+            <td><a href="{{ $diagramBaseDir }}/{{ .domain }}/data-model/_main_{{ .name }}/">{{ .displayName | default .name }}</a></td>
+            <td>{{ .type }}</td>
+            <td>{{ .domain }}</td>
+            <td>{{ .totalComplexity }}</td>
+            <td><a href="#{{ .name }}">Details</a></td>
+        </tr>
+    {{ end }}
+    </tbody>
+</table>

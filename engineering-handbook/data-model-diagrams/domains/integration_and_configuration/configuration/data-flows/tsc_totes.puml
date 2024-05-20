@@ -1,0 +1,38 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Totes Configuration API**" as TotesAPI
+
+usecase "Get Tote Types" as GetToteTypes
+usecase "Create Tote Type" as CreateToteTypes
+usecase "Update Tote Type" as UpdateToteTypes
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_tote_types_v2" as OpToteTypes <<link>> [[../data-model/service_catalog_op_tote_types_v2.puml]]
+database "sd_tote_kinds" as SdToteKinds <<link>> [[../data-model/service_catalog_sd_tote_kinds.puml]]
+database "sd_temperature_zones" as SdTempZones <<link>> [[../data-model/service_catalog_sd_temperature_zones.puml]]
+database "sd_barcode_formats" as SdBarcodeFormats <<link>> [[../data-model/service_catalog_sd_barcode_formats.puml]]
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+
+TotesAPI <-down-- GetToteTypes
+GetToteTypes <-down- OpToteTypes
+GetToteTypes <-down- SdToteKinds
+GetToteTypes <-up- SdTempZones
+GetToteTypes <-down- SdBarcodeFormats
+GetToteTypes <-down- OpLocations
+GetToteTypes <-up- GetLocationsAPI
+
+TotesAPI -down-> CreateToteTypes
+GetLocationsAPI -down-> CreateToteTypes
+GetToteTypes -right-> CreateToteTypes
+CreateToteTypes -down-> OpToteTypes
+
+TotesAPI -down--> UpdateToteTypes
+GetLocationsAPI -down-> UpdateToteTypes
+GetToteTypes -left-> UpdateToteTypes
+UpdateToteTypes -down-> OpToteTypes
+
+
+@enduml

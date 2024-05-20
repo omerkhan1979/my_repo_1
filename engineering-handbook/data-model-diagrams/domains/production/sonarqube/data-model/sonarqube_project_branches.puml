@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_branches**" [[sonarqube_project_branches.puml]] {
+  + ""uuid"": //character varying(50) [PK]//
+  --
+  *""branch_type"": //character varying(12)//
+  *""created_at"": //bigint//
+  *""exclude_from_purge"": //boolean//
+  *""kee"": //character varying(255)//
+  *""manual_baseline_analysis_uuid"": //character varying(40)//
+  *""merge_branch_uuid"": //character varying(50)//
+  *""need_issue_sync"": //boolean//
+  *""project_uuid"": //character varying(50)//
+  *""pull_request_binary"": //bytea//
+  *""updated_at"": //bigint//
+}
+
+@enduml

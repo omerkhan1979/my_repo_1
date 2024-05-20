@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**lines**" [[oms_lines.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""creation_datetime"": //timestamp with time zone//
+  *""ecom_item_id"": //text//
+  *""ecom_line_id"": //text//
+  *""fulfillment_location"": //text//
+  *""line_note"": //text//
+  *""order_id"": //text [FK]//
+  *""price_formatted"": //character varying(32)//
+  *""requested_quantity"": //integer//
+  *""requested_weight"": //numeric(15,3)//
+  *""takeoff_item_ids"": //text[]//
+  *""unit_of_measure"": //character varying(16)//
+  *""value"": //double precision//
+}
+
+@enduml

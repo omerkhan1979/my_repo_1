@@ -1,0 +1,30 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component "OSR Communication" as OSRCommunication
+
+' participants
+usecase "**FTP Connection API**" as FTPConnectionAPI
+
+usecase "Check FTP Connection" as CheckFTPConnection
+usecase "Update FTP Connection Config" as UpdateFTPConnection
+usecase "Put Config Items" as PutConfigItems <<link>> [[./tsc_configs_set.puml]]
+usecase "Sync Bifrost Data" as SyncBifrost <<link>> [[./tsc_sync_bifrost.puml]]
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+
+FTPConnectionAPI -down--> CheckFTPConnection
+FTPConnectionAPI -down--> UpdateFTPConnection
+GetLocationsAPI -down-> CheckFTPConnection
+GetLocationsAPI -down-> UpdateFTPConnection
+
+CheckFTPConnection -down-> OSRCommunication : ftp credentials
+UpdateFTPConnection -down-> PutConfigItems : ftp credentials
+UpdateFTPConnection -down--> SyncBifrost
+
+SyncBifrost -right-> OSRCommunication : tasks
+' system settings per MFC
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking_session_decisions**" [[couchdb_picking_session_decisions.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""last_updated"": //datetime//
+  *""printing_statuses[].created"": //datetime//
+  *""printing_statuses[].is_printed"": //boolean//
+  *""printing_statuses[].user_id"": //string//
+  *""record_id"": //string//
+  *""serial"": //string//
+  *""statuses[].created"": //datetime//
+  *""statuses[].status"": //string//
+  *""statuses[].user_id"": //string//
+  *""user_id"": //string//
+}
+
+@enduml

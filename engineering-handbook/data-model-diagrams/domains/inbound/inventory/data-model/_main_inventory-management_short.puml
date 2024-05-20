@@ -1,0 +1,28 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "inventory-management" {
+  entity "**accounts**" [[inventory-management_accounts.puml]] {}
+  entity "**address**" [[inventory-management_address.puml]] {}
+  entity "**adjustment_history**" [[inventory-management_adjustment_history.puml]] {}
+  entity "**adjustment_reasons**" [[inventory-management_adjustment_reasons.puml]] {}
+  entity "**balances**" [[inventory-management_balances.puml]] {}
+  entity "**body_assets**" [[inventory-management_body_assets.puml]] {}
+  entity "**dispatch_ramp_totes**" [[inventory-management_dispatch_ramp_totes.puml]] {}
+  entity "**groups**" [[inventory-management_groups.puml]] {}
+  entity "**messages**" [[inventory-management_messages.puml]] {}
+  entity "**ragtime_migrations**" [[inventory-management_ragtime_migrations.puml]] {}
+  entity "**reservations**" [[inventory-management_reservations.puml]] {}
+  entity "**tote_assets**" [[inventory-management_tote_assets.puml]] {}
+  entity "**txs**" [[inventory-management_txs.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**body_assets**" -- "**accounts**"
+"**reservations**" -- "**balances**"
+"**tote_assets**" -- "**accounts**"
+
+@enduml

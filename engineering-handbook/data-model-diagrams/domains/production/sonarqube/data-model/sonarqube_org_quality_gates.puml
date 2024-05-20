@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**org_quality_gates**" [[sonarqube_org_quality_gates.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""organization_uuid"": //character varying(40)//
+  *""quality_gate_uuid"": //character varying(40)//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**active_rule_parameters**" [[sonarqube_active_rule_parameters.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""active_rule_uuid"": //character varying(40)//
+  *""rules_parameter_key"": //character varying(128)//
+  *""rules_parameter_uuid"": //character varying(40)//
+  *""value"": //character varying(4000)//
+}
+
+@enduml

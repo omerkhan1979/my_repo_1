@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**databasechangeloglock**" [[metabase_databasechangeloglock.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""locked"": //boolean//
+  *""lockedby"": //character varying(255)//
+  *""lockgranted"": //timestamp without time zone//
+}
+
+@enduml

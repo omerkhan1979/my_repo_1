@@ -1,0 +1,28 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "oms" {
+  entity "**items**" [[oms_items.puml]] {}
+  entity "**lines**" [[oms_lines.puml]] {}
+  entity "**order_parts_changes**" [[oms_order_parts_changes.puml]] {}
+  entity "**orders**" [[oms_orders.puml]] {}
+  entity "**orders_statuses_history**" [[oms_orders_statuses_history.puml]] {}
+  entity "**pallet**" [[oms_pallet.puml]] {}
+  entity "**pick_lists_calculation**" [[oms_pick_lists_calculation.puml]] {}
+  entity "**ragtime_migrations**" [[oms_ragtime_migrations.puml]] {}
+  entity "**reserved_line_items**" [[oms_reserved_line_items.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**items**" -- "**lines**"
+"**items**" -- "**orders**"
+"**lines**" -- "**orders**"
+"**order_parts_changes**" -- "**orders**"
+"**orders_statuses_history**" -- "**orders**"
+"**pallet**" -- "**orders**"
+"**reserved_line_items**" -- "**lines**"
+
+@enduml

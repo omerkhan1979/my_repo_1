@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**metrics**" [[sonarqube_metrics.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""best_value"": //numeric(38,20)//
+  *""decimal_scale"": //integer//
+  *""delete_historical_data"": //boolean//
+  *""description"": //character varying(255)//
+  *""direction"": //integer//
+  *""domain"": //character varying(64)//
+  *""enabled"": //boolean//
+  *""hidden"": //boolean//
+  *""name"": //character varying(64)//
+  *""optimized_best_value"": //boolean//
+  *""qualitative"": //boolean//
+  *""short_name"": //character varying(64)//
+  *""user_managed"": //boolean//
+  *""val_type"": //character varying(8)//
+  *""worst_value"": //numeric(38,20)//
+}
+
+@enduml

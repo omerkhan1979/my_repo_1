@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**translations-for-removal**" [[couchdb_translations-for-removal.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""changed"": //<unknown>//
+  *""created"": //<unknown>//
+  *""msg_id"": //string//
+  *""msg_plural_id"": //<unknown>//
+  *""msg_str.en"": //array[string]//
+  *""msg_str.ru"": //array[string]//
+  *""msg_str.uk"": //array[string]//
+  *""msg_type"": //string//
+  *""project"": //string//
+}
+
+@enduml

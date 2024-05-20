@@ -1,0 +1,27 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+component TomUI
+component Configuration
+
+usecase "Reset Password" as ResetPassword
+usecase "Suspend User" as SuspendUser
+usecase "Assign Role" as AssignRole
+usecase "Update User" as UpdateUser
+
+
+TomUI -down-> ResetPassword
+ResetPassword -down-> UpdateUser : password
+UpdateUser -down-> Firebase
+
+TomUI -down-> SuspendUser
+SuspendUser -down-> UpdateUser : disabled
+
+TomUI -down-> AssignRole
+AssignRole -down-> UpdateUser : role & location
+Configuration -down-> AssignRole : locations
+
+@enduml

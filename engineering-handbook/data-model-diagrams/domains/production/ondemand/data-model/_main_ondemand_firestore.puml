@@ -1,0 +1,10 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "ondemand_firestore" {
+  !include ondemand_firestore_users_audit.puml
+}
+
+@enduml

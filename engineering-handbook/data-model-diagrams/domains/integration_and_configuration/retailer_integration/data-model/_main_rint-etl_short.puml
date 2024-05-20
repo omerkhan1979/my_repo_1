@@ -1,0 +1,20 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "rint-etl" {
+  entity "**camel_messageprocessed**" [[rint-etl_camel_messageprocessed.puml]] {}
+  entity "**events**" [[rint-etl_events.puml]] {}
+  entity "**items**" [[rint-etl_items.puml]] {}
+  entity "**kv**" [[rint-etl_kv.puml]] {}
+  entity "**migrations_abs**" [[rint-etl_migrations_abs.puml]] {}
+  entity "**migrations_common**" [[rint-etl_migrations_common.puml]] {}
+  entity "**schemas**" [[rint-etl_schemas.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**items**" -- "**schemas**"
+
+@enduml

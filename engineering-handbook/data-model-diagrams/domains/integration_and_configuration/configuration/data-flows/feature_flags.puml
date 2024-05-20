@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Feature Flags**" as FeatureFlags
+usecase "Feature Flags Table" as FFTable <<link>> [[./ff_table.puml]]
+usecase "Feature Flag Details" as FFDetails <<link>> [[./ff_details.puml]]
+usecase "Copy Flags" as FFCopyFlags <<link>> [[./ff_copy_flags.puml]]
+
+FeatureFlags <-up- FFTable
+FeatureFlags <-up- FFDetails
+FeatureFlags -down-> FFCopyFlags
+
+@enduml

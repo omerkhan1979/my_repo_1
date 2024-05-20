@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**card_label**" [[metabase_card_label.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""card_id"": //integer [FK]//
+  *""label_id"": //integer [FK]//
+}
+
+@enduml

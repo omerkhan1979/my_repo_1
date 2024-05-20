@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**DATABASECHANGELOG**" [[webhooks_spanner_DATABASECHANGELOG.puml]] {
+  + ""id"": //STRING(MAX) [PK]//
+  + ""author"": //STRING(MAX) [PK]//
+  + ""filename"": //STRING(MAX) [PK]//
+  --
+  *""dateExecuted"": //TIMESTAMP//
+  *""orderExecuted"": //INT64//
+  *""execType"": //STRING(MAX)//
+  *""md5sum"": //STRING(MAX)//
+  *""description"": //STRING(MAX)//
+  *""comments"": //STRING(MAX)//
+  *""tag"": //STRING(MAX)//
+  *""liquibase"": //STRING(MAX)//
+  *""contexts"": //STRING(MAX)//
+  *""labels"": //STRING(MAX)//
+  *""deployment_id"": //STRING(MAX)//
+}
+
+@enduml

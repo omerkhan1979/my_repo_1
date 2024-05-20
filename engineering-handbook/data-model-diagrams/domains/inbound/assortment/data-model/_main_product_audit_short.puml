@@ -1,0 +1,13 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "product_audit" {
+  entity "**changes_audit**" [[product_audit_changes_audit.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

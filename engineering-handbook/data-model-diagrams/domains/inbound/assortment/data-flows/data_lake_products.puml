@@ -1,0 +1,16 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+' participants
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+component "Data Lake" as DataLake
+
+usecase "Data Lake Processing" as DataLakeProcessing
+
+' data flow
+Products -down-> DataLakeProcessing : product
+DataLakeProcessing -down-> DataLake : product
+
+@enduml

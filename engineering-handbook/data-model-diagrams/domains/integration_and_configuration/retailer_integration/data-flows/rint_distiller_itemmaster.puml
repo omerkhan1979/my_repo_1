@@ -1,0 +1,52 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Assortment
+component Retailer
+
+component DataStudio
+note right
+[[https://takeofftech.atlassian.net/wiki/spaces/RINT/pages/2387019752/ETL+Google+Data+Studio+report Datastudio report structure]]
+[[https://takeofftech.atlassian.net/wiki/spaces/RINT/pages/1841070321/Google+Data+Studio+dashboards+of+Clients+ETL+Alpha+Sales+report List of reports]]
+end note
+
+component Metabase
+note right
+[[https://takeofftech.atlassian.net/wiki/spaces/RINT/pages/1474330674/Metabase+reports List of reports]]
+end note
+
+usecase "Item Master Upload" as IMUpload
+usecase "ETL Entities Pipeline" as ETLEntitiesPipeline
+usecase "ETL Events Pipeline" as ETLEventsPipeline
+
+database "Items" as DBItems <<link>> [[../data-model/rint-etl_items.puml]]
+database "Events" as DBEvents <<link>> [[../data-model/rint-etl_events.puml]]
+database "Schemas" as DBSchemas <<link>> [[../data-model/rint-etl_schemas.puml]]
+
+note bottom
+[[https://takeofftech.atlassian.net/wiki/spaces/takeoff/pages/2287698041/ETL+schemas List of schemas]]
+end note
+
+database "BigQueryEvents" as BigQueryEvents
+
+Retailer -down-> IMUpload : file
+IMUpload -down-> DBItems : abstract json
+IMUpload -down-> DBEvents : file based events
+IMUpload -down-> BigQueryEvents
+IMUpload <-down- DBSchemas
+
+IMUpload -left-> ETLEntitiesPipeline
+
+DataStudio <-up- BigQueryEvents : report
+ETLEntitiesPipeline -up-> Assortment : **items**
+
+Assortment -down-> ETLEventsPipeline : events\nsemantic validations\nenrichments\ncompletion
+ETLEventsPipeline -down-> DBEvents
+ETLEventsPipeline -down-> BigQueryEvents
+
+DBEvents -down-> Metabase : report
+
+Metabase .[norank]> Retailer
+DataStudio .[norank]> Retailer
+@enduml

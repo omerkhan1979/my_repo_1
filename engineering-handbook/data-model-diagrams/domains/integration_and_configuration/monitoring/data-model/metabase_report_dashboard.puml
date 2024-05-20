@@ -1,0 +1,28 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**report_dashboard**" [[metabase_report_dashboard.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""archived"": //boolean//
+  *""cache_ttl"": //integer//
+  *""caveats"": //text//
+  *""collection_id"": //integer [FK]//
+  *""collection_position"": //smallint//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""description"": //text//
+  *""embedding_params"": //text//
+  *""enable_embedding"": //boolean//
+  *""made_public_by_id"": //integer [FK]//
+  *""name"": //character varying(254)//
+  *""parameters"": //text//
+  *""points_of_interest"": //text//
+  *""position"": //integer//
+  *""public_uuid"": //character(36)//
+  *""show_in_getting_started"": //boolean//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

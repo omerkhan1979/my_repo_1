@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**txs**" [[inventory-management_txs.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""action"": //character varying//
+  *""applied_at"": //timestamp without time zone//
+  *""args"": //json//
+  *""author"": //character varying//
+  *""context"": //json//
+  *""message_id"": //character varying//
+}
+
+@enduml

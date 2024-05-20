@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tgi_item_error**" [[tom-gold-integration_tgi_item_error.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""data"": //jsonb//
+  *""label"": //character varying(255)//
+}
+
+@enduml

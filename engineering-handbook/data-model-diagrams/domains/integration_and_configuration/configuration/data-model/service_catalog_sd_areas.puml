@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_areas**" [[service_catalog_sd_areas.puml]] {
+  + ""area_id"": //bigint [PK]//
+  --
+  *""area_descr"": //text//
+  *""area_name"": //character varying(50)//
+  *""area_type_id"": //bigint [FK]//
+  *""area_zcode"": //character varying(10)//
+  *""is_retailer_specific"": //boolean//
+  *""temperature_zone_id"": //bigint [FK]//
+}
+
+@enduml

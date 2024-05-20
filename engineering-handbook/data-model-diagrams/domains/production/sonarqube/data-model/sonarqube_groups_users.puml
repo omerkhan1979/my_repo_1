@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**groups_users**" [[sonarqube_groups_users.puml]] {
+  --
+  *""group_uuid"": //character varying(40)//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

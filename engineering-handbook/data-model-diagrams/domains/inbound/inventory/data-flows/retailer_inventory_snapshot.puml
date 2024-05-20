@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+component TomUI
+usecase "Inventory Snapshot Handler" as InventorySnapshot
+database "Balances" as DBBalances <<link>> [[../data-model/inventory-management_balances.puml]]
+database "Reservations" as DBReservations <<link>> [[../data-model/inventory-management_reservations.puml]]
+
+TomUI <-down- InventorySnapshot : inventory snapshot
+Retailer <-down- InventorySnapshot : inventory snapshot
+
+InventorySnapshot <-down- DBBalances : balances
+InventorySnapshot <-down- DBReservations : reservations
+
+@enduml

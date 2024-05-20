@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**webhooks**" [[webhooks_spanner_webhooks.puml]] {
+  + ""webhook_id"": //STRING(MAX) [PK][FK]//
+  --
+  *""url"": //STRING(MAX)//
+  *""email"": //STRING(MAX)//
+  *""created_ts"": //TIMESTAMP//
+  *""updated_ts"": //TIMESTAMP//
+  *""mfc_ids"": //ARRAY<STRING(MAX)>//
+  *""auth_target"": //STRING(MAX)//
+  *""auth_secret_name"": //STRING(MAX)//
+  *""sign_secret_name"": //STRING(MAX)//
+  *""enabled"": //BOOL//
+  *""retailer_id"": //STRING(MAX)//
+  *""env_type"": //STRING(MAX)//
+  *""labels"": //JSON//
+}
+
+@enduml

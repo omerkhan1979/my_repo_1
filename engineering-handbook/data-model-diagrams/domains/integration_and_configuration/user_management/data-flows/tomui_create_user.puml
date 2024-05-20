@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+component TomUI
+
+usecase "Create User" as CreateUser
+
+
+TomUI -down-> CreateUser : user
+CreateUser -down-> Firebase : user
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**git_commit_jira_tickets**" [[calyx_git_commit_jira_tickets.puml]] {
+  + ""git_commit_oid"": //character varying(40) [PK]//
+  + ""git_repo"": //character varying(100) [PK]//
+  + ""jira_key"": //character varying(20) [PK]//
+  --
+  *""created"": //timestamp with time zone//
+}
+
+@enduml

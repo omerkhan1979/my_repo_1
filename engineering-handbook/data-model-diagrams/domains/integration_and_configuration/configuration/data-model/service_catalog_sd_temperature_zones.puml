@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_temperature_zones**" [[service_catalog_sd_temperature_zones.puml]] {
+  + ""temp_zone_id"": //bigint [PK]//
+  --
+  *""temp_zone_descr"": //text//
+  *""temp_zone_name"": //character varying(50)//
+  *""temp_zone_prefix"": //character varying(6)//
+  *""temp_zone_tote_code"": //integer//
+}
+
+@enduml

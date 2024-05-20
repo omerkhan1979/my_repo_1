@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**reserved_products_pending**" [[_reserved_products_pending.puml]] {
+  + ""ecomm_id"": //STRING(MAX) [PK]//
+  + ""tom_id"": //STRING(MAX) [PK]//
+  + ""address"": //STRING(MAX) [PK]//
+  --
+  *""retailer_id"": //STRING(MAX)//
+  *""mfc_id"": //STRING(MAX)//
+  *""quantity"": //INT64//
+}
+
+@enduml

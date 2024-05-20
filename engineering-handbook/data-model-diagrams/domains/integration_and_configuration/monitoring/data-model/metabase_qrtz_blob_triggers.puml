@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_blob_triggers**" [[metabase_qrtz_blob_triggers.puml]] {
+  + ""sched_name"": //character varying(120) [PK][FK]//
+  + ""trigger_group"": //character varying(200) [PK][FK]//
+  + ""trigger_name"": //character varying(200) [PK][FK]//
+  --
+  *""blob_data"": //bytea//
+}
+
+@enduml

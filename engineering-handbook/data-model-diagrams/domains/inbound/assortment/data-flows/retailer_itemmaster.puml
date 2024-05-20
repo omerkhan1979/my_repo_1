@@ -1,0 +1,30 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "Retailer Integration" as RetailerIntegration
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+database "Raw Products" as RawProducts <<link>> [[../data-model/distiller_raw_products.puml]]
+database "Items" as Items <<link>> [[../data-model/distiller_items.puml]]
+database "Enrichnment Flow" as EnrichmentFlow <<link>> [[../data-model/distiller_enrichment_flow.puml]]
+
+usecase "Distiller\nFile Processing" as DistillerFileProcessing
+usecase "Enrichment Process" as DistillerEnrichment <<link>> [[./itemmaster_enrichment_process]]
+usecase "Retailer\nSpecific\nProcessing" as RetailerSpecificProcessing <<link>> [[./itemmaster_retailer_specific_processing.puml]]
+
+' data flow
+RetailerIntegration -down-> DistillerFileProcessing : items
+RetailerIntegration <-down- DistillerFileProcessing : events
+DistillerFileProcessing -left-> RetailerSpecificProcessing
+RetailerSpecificProcessing -down-> Products : product
+DistillerFileProcessing -right-> Items : items
+DistillerFileProcessing -down-> RawProducts : product
+RawProducts -left-> DistillerEnrichment
+DistillerFileProcessing -down-> Products : product
+DistillerFileProcessing -down-> DistillerEnrichment : product
+DistillerEnrichment -down-> Products : product
+DistillerEnrichment -down-> EnrichmentFlow
+
+@enduml

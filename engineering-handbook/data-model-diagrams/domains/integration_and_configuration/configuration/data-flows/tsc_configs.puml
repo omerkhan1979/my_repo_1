@@ -1,0 +1,17 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Generic Configs API**" as ConfigsAPI
+
+usecase "Get Config Items" as GetConfigItems <<link>> [[./tsc_configs_get.puml]]
+usecase "Put Config Items" as PutConfigItems <<link>> [[./tsc_configs_set.puml]]
+
+
+ConfigsAPI <-down- GetConfigItems : config items
+ConfigsAPI -down-> PutConfigItems : config items
+
+
+
+@enduml

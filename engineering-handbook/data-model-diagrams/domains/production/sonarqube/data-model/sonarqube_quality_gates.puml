@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**quality_gates**" [[sonarqube_quality_gates.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //timestamp without time zone//
+  *""is_built_in"": //boolean//
+  *""name"": //character varying(100)//
+  *""updated_at"": //timestamp without time zone//
+}
+
+@enduml

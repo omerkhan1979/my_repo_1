@@ -1,0 +1,24 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "tom-gold-integration" {
+  entity "**activemq_acks**" [[tom-gold-integration_activemq_acks.puml]] {}
+  entity "**activemq_lock**" [[tom-gold-integration_activemq_lock.puml]] {}
+  entity "**activemq_msgs**" [[tom-gold-integration_activemq_msgs.puml]] {}
+  entity "**camel_messageprocessed**" [[tom-gold-integration_camel_messageprocessed.puml]] {}
+  entity "**ragtime_migrations**" [[tom-gold-integration_ragtime_migrations.puml]] {}
+  entity "**tgi_item_error**" [[tom-gold-integration_tgi_item_error.puml]] {}
+  entity "**tgi_item_status**" [[tom-gold-integration_tgi_item_status.puml]] {}
+  entity "**tgi_kisoft_ftp_endpoint**" [[tom-gold-integration_tgi_kisoft_ftp_endpoint.puml]] {}
+  entity "**tgi_kisoft_response**" [[tom-gold-integration_tgi_kisoft_response.puml]] {}
+  entity "**tgi_micro_fulfillment_center**" [[tom-gold-integration_tgi_micro_fulfillment_center.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**tgi_kisoft_ftp_endpoint**" -- "**tgi_micro_fulfillment_center**"
+"**tgi_kisoft_response**" -- "**tgi_micro_fulfillment_center**"
+
+@enduml

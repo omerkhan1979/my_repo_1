@@ -1,0 +1,32 @@
+{{ $data := .Site.Data }}
+{{ range $i, $child := split .Params.dataProvider "/" }}
+    {{ $data = index $data $child }}
+{{ end }}
+
+{{ $diagramBaseDir := .Params.diagramBaseDir }}
+
+{{ range sort $data "displayName"}}
+    {{ $storageName := .name }}
+    {{ $storageDomain := .domain }}
+    {{ $entities := .entities | default slice }}
+
+    <h2 id="{{ $storageName }}">{{ .displayName | default $storageName }}</h2>
+    <table>
+        <thead>
+        <tr>
+            <td>Entity</td>
+            <td>Complexity</td>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range sort $entities "complexity" "desc" }}
+            <tr>
+                <td>
+                    <a href="{{ $diagramBaseDir }}/{{ $storageDomain }}/data-model/{{ $storageName }}_{{ .name }}/">{{ .name }}</a>
+                </td>
+                <td>{{ .complexity }}</td>
+            </tr>
+        {{ end }}
+        </tbody>
+    </table>
+{{ end }}

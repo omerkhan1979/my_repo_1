@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**alm_settings**" [[sonarqube_alm_settings.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""alm_id"": //character varying(40)//
+  *""app_id"": //character varying(80)//
+  *""client_id"": //character varying(80)//
+  *""client_secret"": //character varying(80)//
+  *""created_at"": //bigint//
+  *""kee"": //character varying(200)//
+  *""pat"": //character varying(2000)//
+  *""private_key"": //character varying(2000)//
+  *""updated_at"": //bigint//
+  *""url"": //character varying(2000)//
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+usecase "Purchase Order Handler" as PurchaseOrderHandler
+usecase "Items Deduplication" as ItemsDeduplication
+database "Task" as DBTask <<link>> [[../data-model/decanting_task.puml]]
+database "Product" as DBProduct <<link>> [[../data-model/decanting_product.puml]]
+
+Retailer -down-> PurchaseOrderHandler : purchase order
+PurchaseOrderHandler -down-> DBTask : purchase order
+PurchaseOrderHandler -down-> ItemsDeduplication : purchase order lines
+ItemsDeduplication -down-> DBProduct : purchase order lines
+
+@enduml

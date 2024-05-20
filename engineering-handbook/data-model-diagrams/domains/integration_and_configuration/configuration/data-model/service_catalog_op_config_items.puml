@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_config_items**" [[service_catalog_op_config_items.puml]] {
+  --
+  *""config_item_id"": //bigint [FK]//
+  *""item_value"": //json//
+  *""location_id"": //bigint [FK]//
+}
+
+@enduml

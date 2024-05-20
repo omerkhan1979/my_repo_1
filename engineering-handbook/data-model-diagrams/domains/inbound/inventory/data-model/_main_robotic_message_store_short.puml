@@ -1,0 +1,17 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "robotic_message_store" {
+  entity "**camel_messageprocessed**" [[robotic_message_store_camel_messageprocessed.puml]] {}
+  entity "**db_migrations**" [[robotic_message_store_db_migrations.puml]] {}
+  entity "**messages**" [[robotic_message_store_messages.puml]] {}
+  entity "**osr_errors**" [[robotic_message_store_osr_errors.puml]] {}
+  entity "**osr_statuses**" [[robotic_message_store_osr_statuses.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

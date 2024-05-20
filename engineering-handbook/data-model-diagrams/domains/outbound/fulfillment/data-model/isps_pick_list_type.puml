@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_list_type**" [[isps_pick_list_type.puml]] {
+  + ""pick_list_type_id"": //integer [PK]//
+  --
+  *""pick_list_code_type"": //character varying(32)//
+  *""pick_list_created_at_type"": //timestamp with time zone//
+  *""pick_list_created_by_type"": //character varying(64)//
+  *""pick_list_last_modified_at_type"": //timestamp with time zone//
+  *""pick_list_last_modified_by_type"": //character varying(64)//
+  *""pick_list_type_desc"": //character varying(512)//
+  *""pick_list_type_name"": //character varying(64)//
+}
+
+@enduml

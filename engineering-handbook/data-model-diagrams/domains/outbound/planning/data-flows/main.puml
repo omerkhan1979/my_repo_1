@@ -1,0 +1,24 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+component Fulfillment
+component Inventory
+component "OSR Communication" as OSRCommunication
+
+usecase Planning
+
+' data flows
+
+Planning <--right-> TomUI : mfc cutoff table
+
+Planning <-left-> Fulfillment : orders
+Planning <-left-> Fulfillment : mfc cutoff table
+
+Planning -down-> OSRCommunication : orders
+
+Planning <-up- Inventory : reservation
+
+@enduml

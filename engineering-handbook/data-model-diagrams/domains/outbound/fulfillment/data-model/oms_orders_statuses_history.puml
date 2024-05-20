@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**orders_statuses_history**" [[oms_orders_statuses_history.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""order_id"": //text [FK]//
+  *""status"": //enum//
+  *""user_id"": //text//
+}
+
+@enduml

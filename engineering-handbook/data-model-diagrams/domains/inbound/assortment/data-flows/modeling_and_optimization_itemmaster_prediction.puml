@@ -1,0 +1,24 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+database "Raw Products" as RawProducts <<link>> [[../data-model/distiller_raw_products.puml]]
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+
+
+
+usecase "Itemmaster Aggregation" as ItemMasterAggregation
+usecase "Itemmaster Prediction\n**Model Training**" as ItemMasterPredictionModelTraining
+usecase "Itemmaster Prediction\n**Attribute Prediction**" as ItemMasterPrediction
+
+
+ItemMasterAggregation -up-> ItemMasterPredictionModelTraining : products\nfrom all retailers
+RawProducts -down-> ItemMasterPrediction : raw products
+RawProducts -down-> ItemMasterPredictionModelTraining : raw products
+ItemMasterPredictionModelTraining -right-> ItemMasterPrediction : model
+ItemMasterPrediction -down--> Products : temp-zone
+ItemMasterPrediction -down--> Products : dimensions
+
+
+@enduml

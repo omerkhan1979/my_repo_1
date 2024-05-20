@@ -1,0 +1,27 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Locations API**" as LocationsAPI
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+usecase "Create MFC" as CreateMFCAPI <<link>> [[./tsc_locations_create_mfc.puml]]
+usecase "Update MFC" as UpdateMFCAPI <<link>> [[./tsc_locations_update_mfc.puml]]
+usecase "Create Spoke" as CreateSpokeAPI <<link>> [[./tsc_locations_create_spoke.puml]]
+usecase "Update Spoke" as UpdateSpokeAPI <<link>> [[./tsc_locations_update_spoke.puml]]
+usecase "Sync Locations" as SyncLocations <<link>> [[./tsc_locations_sync.puml]]
+usecase "Enable/Disable Location" as EnableDisableLocation <<link>> [[./tsc_locations_enable.puml]]
+usecase "Apply Profile" as ApplyProfile <<link>> [[./tsc_locations_apply_profile.puml]]
+
+LocationsAPI <-up- GetLocationsAPI : mfc and spokes
+LocationsAPI -down-> CreateMFCAPI : mfc
+LocationsAPI -down-> CreateSpokeAPI : spoke
+LocationsAPI -down-> UpdateMFCAPI : mfc
+LocationsAPI -down-> UpdateSpokeAPI : spoke
+
+
+LocationsAPI -right-> SyncLocations
+LocationsAPI -left-> EnableDisableLocation : is_enabled
+LocationsAPI -up-> ApplyProfile
+
+@enduml

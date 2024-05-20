@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "webhooks_firestore" {
+  entity "**webhook**" [[webhooks_firestore_webhook.puml]] {}
+  entity "**webhook-archive**" [[webhooks_firestore_webhook-archive.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

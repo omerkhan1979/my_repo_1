@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**default_settings**" [[user_profile_default_settings.puml]] {
+  + ""setting_name"": //STRING(256) [PK][FK]//
+  + ""retailer_id"": //STRING(64) [PK]//
+  + ""location_id"": //STRING(1024) [PK]//
+  --
+  *""value"": //STRING(4096)//
+  *""created"": //TIMESTAMP//
+  *""modified"": //TIMESTAMP//
+}
+
+@enduml

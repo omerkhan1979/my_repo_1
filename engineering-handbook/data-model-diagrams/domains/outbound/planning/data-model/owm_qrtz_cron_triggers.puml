@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_cron_triggers**" [[owm_qrtz_cron_triggers.puml]] {
+  + ""sched_name"": //character varying(120) [PK][FK]//
+  + ""trigger_group"": //character varying(200) [PK][FK]//
+  + ""trigger_name"": //character varying(200) [PK][FK]//
+  --
+  *""cron_expression"": //character varying(120)//
+  *""time_zone_id"": //character varying(80)//
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**changes_audit**" [[product_audit_changes_audit.puml]] {
+  --
+  *""tom_id"": //string//
+  *""mfc_id"": //string//
+  *""attribute"": //string//
+  *""action"": //string//
+  *""value"": //string//
+  *""source_type"": //string//
+  *""item_id"": //string//
+  *""run_id"": //string//
+  *""file_name"": //string//
+  *""user_id"": //string//
+  *""user_email"": //string//
+  *""date"": //timestamp [partitioned]//
+  *""retailer"": //string//
+  *""env"": //string//
+}
+
+@enduml

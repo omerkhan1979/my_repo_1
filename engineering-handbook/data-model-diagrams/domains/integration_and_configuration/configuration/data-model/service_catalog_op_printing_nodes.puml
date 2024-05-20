@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_printing_nodes**" [[service_catalog_op_printing_nodes.puml]] {
+  + ""printer_node_id"": //bigint [PK]//
+  --
+  *""is_enabled_for_media_type"": //boolean//
+  *""location_id"": //bigint [FK]//
+  *""media_type_id"": //bigint [FK]//
+}
+
+@enduml

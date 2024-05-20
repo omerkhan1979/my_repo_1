@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "Get Locations" as GetLocationsAPI
+
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+database "sd_location_types" as SdLocationTypes <<link>> [[../data-model/service_catalog_sd_location_types.puml]]
+database "sd_states" as SdStates <<link>> [[../data-model/service_catalog_sd_states.puml]]
+
+GetLocationsAPI <-down- OpLocations
+GetLocationsAPI <-down- SdLocationTypes
+GetLocationsAPI <-down- SdStates
+
+
+
+@enduml

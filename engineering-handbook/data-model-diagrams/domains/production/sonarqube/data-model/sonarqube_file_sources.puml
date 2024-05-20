@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**file_sources**" [[sonarqube_file_sources.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""binary_data"": //bytea//
+  *""created_at"": //bigint//
+  *""data_hash"": //character varying(50)//
+  *""file_uuid"": //character varying(50)//
+  *""line_count"": //integer//
+  *""line_hashes"": //text//
+  *""line_hashes_version"": //integer//
+  *""project_uuid"": //character varying(50)//
+  *""revision"": //character varying(100)//
+  *""src_hash"": //character varying(50)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

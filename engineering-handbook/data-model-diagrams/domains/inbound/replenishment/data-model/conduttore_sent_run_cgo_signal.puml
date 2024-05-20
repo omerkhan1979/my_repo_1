@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sent_run_cgo_signal**" [[conduttore_sent_run_cgo_signal.puml]] {
+  + ""operational_date"": //date [PK]//
+  + ""run_id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+}
+
+@enduml

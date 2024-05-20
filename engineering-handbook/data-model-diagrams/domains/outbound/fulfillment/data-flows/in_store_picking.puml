@@ -1,0 +1,82 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+left to right direction
+
+component "Takeoff Mobile" as TakeoffMobile
+component "TomUI" as TomUI
+
+usecase "Pick Lists" as PickLists
+usecase "Pick List Items" as PickListItems
+usecase "Start Picking" as StartPicking
+usecase "Close Pick List" as ClosePickList
+usecase "Pick List Status Change" as PickListStatusChange
+usecase "Work Order" as WorkOrder
+usecase "Export to PDF" as ExportToPDF
+usecase "Start Work Order" as StartWorkOrder
+usecase "Finish Work Order" as FinishWorkOrder
+usecase "Update Work Order Item" as UpdateWorkOrderItem
+
+
+database "Pick Lists" as DB_ISPS_PickLists <<link>> [[../data-model/isps_pick_list.puml]]
+database "Pick Zone" as DB_ISPS_PickZone <<link>> [[../data-model/isps_pick_zone.puml]]
+database "Pick List Status" as DB_ISPS_PickListStatus <<link>> [[../data-model/isps_pick_list_status.puml]]
+database "Pick List Type" as DB_ISPS_PickListType <<link>> [[../data-model/isps_pick_list_type.puml]]
+database "Pick List Item" as DB_ISPS_PickListItem <<link>> [[../data-model/isps_pick_list_item.puml]]
+database "Pick Work Order" as DB_ISPS_PickWorkOrder <<link>> [[../data-model/isps_pick_work_order.puml]]
+database "Pick Work Order Item" as DB_ISPS_PickWorkOrderItem <<link>> [[../data-model/isps_pick_work_order_item.puml]]
+database "Pick Work Order Status" as DB_ISPS_PickWorkOrderStatus <<link>> [[../data-model/isps_pick_work_order_status.puml]]
+database "Pick Work Order Type" as DB_ISPS_PickWorkOrderType <<link>> [[../data-model/isps_pick_work_order_type.puml]]
+database "Pick Work Item Reason Code" as DB_ISPS_PickWorkOrderItemReasonCode <<link>> [[../data-model/isps_pick_work_item_reason_code.puml]]
+
+'rels
+
+TomUI <-- PickLists
+TomUI <-- PickListItems
+TomUI --> ClosePickList : status
+TomUI <-- WorkOrder : work order
+ClosePickList --> PickListStatusChange : status
+TomUI <-- ExportToPDF : data
+
+'note left
+' frontend based feature
+' access data rendered on the page
+'end note
+
+TakeoffMobile <-- PickLists : pick list
+TakeoffMobile <-- PickListItems : pick list items
+TakeoffMobile <-- WorkOrder : work order
+TakeoffMobile --> StartPicking : status
+StartPicking --> PickListStatusChange : status
+TakeoffMobile --> StartWorkOrder
+TakeoffMobile --> FinishWorkOrder
+TakeoffMobile --> UpdateWorkOrderItem
+StartWorkOrder --> DB_ISPS_PickWorkOrder
+FinishWorkOrder --> DB_ISPS_PickWorkOrder
+UpdateWorkOrderItem <-- WorkOrder
+UpdateWorkOrderItem --> DB_ISPS_PickWorkOrderItem
+
+PickLists <--- DB_ISPS_PickLists : pick list
+PickLists <--- DB_ISPS_PickZone : pick zone
+PickLists <--- DB_ISPS_PickListStatus : status
+PickLists <--- DB_ISPS_PickListType : type
+
+PickListItems <--- DB_ISPS_PickLists : pick list
+PickListItems <--- DB_ISPS_PickListItem : pick list item
+PickListItems <--- DB_ISPS_PickWorkOrderItem : work order item
+PickListItems <--- DB_ISPS_PickWorkOrderItemReasonCode : work order reason
+
+WorkOrder <-- DB_ISPS_PickWorkOrder
+WorkOrder <-- DB_ISPS_PickLists : pick list
+WorkOrder <-- DB_ISPS_PickWorkOrderItem
+WorkOrder <-- DB_ISPS_PickWorkOrderStatus
+WorkOrder <-- DB_ISPS_PickWorkOrderType
+WorkOrder <-- DB_ISPS_PickWorkOrderItemReasonCode
+
+
+PickListStatusChange <--> DB_ISPS_PickLists : pick list
+PickListStatusChange <-- DB_ISPS_PickListStatus : status
+
+
+@enduml

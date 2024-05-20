@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**activemq_lock**" [[tom-gold-integration_activemq_lock.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""broker_name"": //character varying(250)//
+  *""time"": //bigint//
+}
+
+@enduml

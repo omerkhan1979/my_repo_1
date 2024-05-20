@@ -1,0 +1,27 @@
+@startuml
+
+!include ../style/default.iuml
+
+' participants
+component "External Entity A" as EntityA
+component "External Entity B" as EntityB
+file "File Store A" as FileA
+usecase "Process A" as ProcessA
+usecase "Process B" as ProcessB
+usecase "Process C" as ProcessC
+database "Data Store A" as DataStoreA
+database "Data Store B" as DataStoreB
+
+' flow
+EntityA --> FileA : file
+FileA --> ProcessA : file
+ProcessA --> EntityA : data
+ProcessA --> DataStoreA : data
+ProcessA --> DataStoreB : data
+DataStoreA --> ProcessB : data
+DataStoreB --> ProcessC : data
+ProcessC --> DataStoreA : data
+ProcessA --> ProcessB : data
+ProcessB --> EntityB : data
+
+@enduml

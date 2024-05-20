@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_planograms**" [[service_catalog_op_planograms.puml]] {
+  + ""planogram_id"": //bigint [PK]//
+  --
+  *""address_order_number"": //character varying(20)//
+  *""bay_id"": //bigint [FK]//
+  *""location_id"": //bigint [FK]//
+}
+
+@enduml

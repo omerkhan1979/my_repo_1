@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**project_measures**" [[sonarqube_project_measures.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""alert_status"": //character varying(5)//
+  *""alert_text"": //character varying(4000)//
+  *""analysis_uuid"": //character varying(50)//
+  *""component_uuid"": //character varying(50)//
+  *""description"": //character varying(4000)//
+  *""measure_data"": //bytea//
+  *""metric_uuid"": //character varying(40)//
+  *""person_id"": //integer//
+  *""text_value"": //character varying(4000)//
+  *""value"": //numeric(38,20)//
+  *""variation_value_1"": //numeric(38,20)//
+}
+
+@enduml

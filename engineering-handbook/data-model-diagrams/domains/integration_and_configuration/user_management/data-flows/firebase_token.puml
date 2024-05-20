@@ -1,0 +1,32 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+note right
+ GET https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword
+ GET https://securetoken.googleapis.com/v1/token
+end note
+component Retailer
+component TomUI
+component "Takeoff Services" as TakeoffServices
+
+usecase "Get Token" as GetToken
+
+usecase "Refresh Token" as RefreshToken
+
+Retailer <--down-> GetToken
+TomUI <--down-> GetToken
+
+GetToken .down--> Firebase : username\npassword\n**firebase_api_key**
+Firebase .up--> GetToken : id_token\nrefresh_token
+
+Retailer <--down-> RefreshToken
+TomUI <--down-> RefreshToken
+TakeoffServices <--down-> RefreshToken
+
+RefreshToken .down-> Firebase : refresh_token
+Firebase .up--> RefreshToken : id_token
+
+@enduml

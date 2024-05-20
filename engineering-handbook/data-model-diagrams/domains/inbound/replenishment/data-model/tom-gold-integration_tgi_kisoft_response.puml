@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tgi_kisoft_response**" [[tom-gold-integration_tgi_kisoft_response.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""data"": //bytea//
+  *""mfc"": //integer [FK]//
+}
+
+@enduml

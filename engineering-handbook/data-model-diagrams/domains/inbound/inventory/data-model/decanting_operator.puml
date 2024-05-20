@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**operator**" [[decanting_operator.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""last_modified"": //timestamp with time zone//
+  *""serial"": //character varying(30)//
+  *""user_id"": //character varying(30)//
+  *""username"": //character varying(100)//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**default_qprofiles**" [[sonarqube_default_qprofiles.puml]] {
+  + ""language"": //character varying(20) [PK]//
+  + ""organization_uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""qprofile_uuid"": //character varying(255)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

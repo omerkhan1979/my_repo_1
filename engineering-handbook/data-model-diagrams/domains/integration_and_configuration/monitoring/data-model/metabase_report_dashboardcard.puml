@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**report_dashboardcard**" [[metabase_report_dashboardcard.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""card_id"": //integer [FK]//
+  *""col"": //integer//
+  *""created_at"": //timestamp with time zone//
+  *""dashboard_id"": //integer [FK]//
+  *""parameter_mappings"": //text//
+  *""row"": //integer//
+  *""sizeX"": //integer//
+  *""sizeY"": //integer//
+  *""updated_at"": //timestamp with time zone//
+  *""visualization_settings"": //text//
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**webhooks**" [[sonarqube_webhooks.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""name"": //character varying(100)//
+  *""organization_uuid"": //character varying(40)//
+  *""project_uuid"": //character varying(40)//
+  *""secret"": //character varying(200)//
+  *""updated_at"": //bigint//
+  *""url"": //character varying(2000)//
+}
+
+@enduml

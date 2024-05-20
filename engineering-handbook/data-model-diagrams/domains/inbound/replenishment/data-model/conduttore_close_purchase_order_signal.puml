@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**close_purchase_order_signal**" [[conduttore_close_purchase_order_signal.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""sent_times"": //integer//
+  *""signal"": //jsonb//
+}
+
+@enduml

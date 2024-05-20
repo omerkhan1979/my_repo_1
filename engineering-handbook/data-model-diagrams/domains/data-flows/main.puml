@@ -1,0 +1,58 @@
+@startmindmap
+
+!include ../../style/default.iuml
+
+<style>
+mindmapDiagram {
+  node {
+      HorizontalAlignment center
+      LineColor black
+      LineThickness 1.5
+      FontSize 18
+      BackgroundColor #aliceblue
+  }
+  arrow {
+      LineThickness 1
+      LineColor black
+  }
+  .done {
+      BackgroundColor #technology
+  }
+  .todo {
+      BackgroundColor #pink
+  }
+}
+
+</style>
+
+* Takeoff Domains
+** Outbound
+*** [[../outbound/fulfillment/ Fulfillment]]
+*** [[../outbound/planning/ Outbound Planning]]
+*** [[../outbound/osr_communication/ OSR Communication]]
+*** Mobile Support
+
+** Inbound
+*** [[../inbound/inventory/ Inventory]]
+*** [[../inbound/assortment/ Assortment]] <<done>>
+*** [[../inbound/replenishment/ Replenishment]]
+*** [[../inbound/modeling_and_optimization/ Modeling & Optimization]]
+
+
+** Integration & Configuration
+*** [[../integration_and_configuration/retailer_integration/ Retailer Integration]] <<done>>
+*** [[../integration_and_configuration/user_management/ User Management]]
+*** [[../integration_and_configuration/configuration/ MFC Configuration]] <<done>>
+*** MFC Monitoring
+
+** Production
+*** Quality
+*** Security
+*** SRE
+
+** Business Intelligence
+** Data Lake
+** UX/UI
+*** [[../uxui/user_preferences/ User Preferences]]
+
+@endmindmap

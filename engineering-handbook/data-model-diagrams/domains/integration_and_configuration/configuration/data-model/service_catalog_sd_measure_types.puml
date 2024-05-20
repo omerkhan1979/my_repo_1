@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_measure_types**" [[service_catalog_sd_measure_types.puml]] {
+  + ""measure_type_id"": //bigint [PK]//
+  --
+  *""measure_type_name"": //character varying(64)//
+}
+
+@enduml

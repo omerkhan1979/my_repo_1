@@ -1,0 +1,30 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+component Calyx
+
+
+usecase "OSR Connections Page" as OSRConnectionsPage
+usecase "Connect to UAT" as ConnectToUAT
+usecase "Switch to PROD" as SwitchToProd
+
+database "retailers" as DBRetailers <<link>> [[../data-model/calyx_retailers.puml]]
+usecase "Retailers API" as CalyxAPIRetailer
+usecase "Config Items API" as ConfigsAPI <<link>> [[./tsc_configs_get.puml]]
+usecase "FTP Connections API" as FTPConnectionsAPI <<link>> [[./tsc_ftp_connection.puml]]
+
+Calyx <-down- OSRConnectionsPage
+OSRConnectionsPage <-down- CalyxAPIRetailer : retailers
+OSRConnectionsPage <-down-- ConfigsAPI : osr configuration for **prod** and **uat**
+CalyxAPIRetailer <-down- DBRetailers
+
+Calyx -down-> ConnectToUAT
+Calyx -down-> SwitchToProd
+ConnectToUAT -down--> FTPConnectionsAPI : osr ftp credentials
+SwitchToProd -down--> FTPConnectionsAPI : osr ftp credentials
+
+
+@enduml

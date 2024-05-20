@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Replenishment
+component Looker
+
+usecase "API Looker Sales History" as LookerSalesHistory
+
+Retailer <-down- LookerSalesHistory
+Replenishment <-down- LookerSalesHistory
+LookerSalesHistory <-down- Looker : order items data
+
+@enduml

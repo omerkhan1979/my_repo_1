@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**plugins**" [[sonarqube_plugins.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""base_plugin_key"": //character varying(200)//
+  *""created_at"": //bigint//
+  *""file_hash"": //character varying(200)//
+  *""kee"": //character varying(200)//
+  *""type"": //character varying(10)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

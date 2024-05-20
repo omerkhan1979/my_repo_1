@@ -1,0 +1,13 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "products_enrichment_firestore" {
+  entity "**products-api**" [[products_enrichment_firestore_products-api.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

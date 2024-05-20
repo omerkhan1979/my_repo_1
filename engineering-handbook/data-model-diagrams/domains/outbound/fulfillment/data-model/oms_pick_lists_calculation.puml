@@ -1,0 +1,28 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pick_lists_calculation**" [[oms_pick_lists_calculation.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""available_stock"": //integer//
+  *""cutoffs"": //timestamp with time zone[]//
+  *""demand_after_target_cutoffs"": //integer//
+  *""demand_before_target_cutoffs"": //integer//
+  *""finished_at"": //timestamp with time zone//
+  *""order_ids"": //text[]//
+  *""pick_list_code"": //text//
+  *""pick_list_type"": //text//
+  *""quantity_to_include_in_picklist"": //integer//
+  *""requested_quantity_total"": //integer//
+  *""started_at"": //timestamp with time zone//
+  *""stock_from_open_picklists_after_target_cutoffs"": //integer//
+  *""stock_from_open_picklists_before_target_cutoffs"": //integer//
+  *""stock_on_shelves"": //jsonb//
+  *""stock_on_shelves_total"": //integer//
+  *""store_id"": //text//
+  *""takeoff_item_id"": //text//
+  *""takeoff_item_ids"": //text[]//
+}
+
+@enduml

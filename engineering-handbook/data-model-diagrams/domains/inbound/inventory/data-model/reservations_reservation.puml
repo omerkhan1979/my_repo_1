@@ -1,0 +1,20 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**reservation**" [[reservations_reservation.puml]] {
+  + ""reservation_id"": //STRING(36) [PK]//
+  --
+  *""retailer_id"": //STRING(MAX)//
+  *""mfc_id"": //STRING(MAX)//
+  *""reservation_external_id"": //STRING(MAX)//
+  *""strategy"": //STRING(MAX)//
+  *""auto_release_date_time_UTC"": //TIMESTAMP//
+  *""created_ts"": //TIMESTAMP//
+  *""updated_ts"": //TIMESTAMP//
+  *""exclude_address"": //ARRAY<STRING(1024)>//
+  *""only_address"": //ARRAY<STRING(1024)>//
+  *""status"": //STRING(MAX)//
+}
+
+@enduml

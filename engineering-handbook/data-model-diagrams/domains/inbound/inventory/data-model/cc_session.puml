@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**session**" [[cc_session.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""address_id"": //bigint [FK]//
+}
+
+@enduml

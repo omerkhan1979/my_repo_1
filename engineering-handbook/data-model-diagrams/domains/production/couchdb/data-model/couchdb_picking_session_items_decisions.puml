@@ -1,0 +1,27 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**picking_session_items_decisions**" [[couchdb_picking_session_items_decisions.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""amount"": //int//
+  *""barcodes"": //array[string]//
+  *""created_time"": //datetime//
+  *""done_with_address"": //boolean//
+  *""item_id"": //string//
+  *""line_number"": //int//
+  *""lot_id"": //string//
+  *""origin_decision"": //<unknown>//
+  *""picking_address"": //string//
+  *""released_from_inventory"": //boolean//
+  *""serial"": //string//
+  *""session_id"": //string//
+  *""tote_ids"": //array[string]//
+  *""type"": //int//
+  *""user_id"": //string//
+  *""weights"": //array//
+  *""ws_number"": //string//
+}
+
+@enduml

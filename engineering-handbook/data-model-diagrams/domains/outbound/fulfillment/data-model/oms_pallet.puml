@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pallet**" [[oms_pallet.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""order_id"": //text [FK]//
+  *""pallet_id"": //integer//
+}
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_address_l1_aisles**" [[service_catalog_op_address_l1_aisles.puml]] {
+  + ""aisle_id"": //bigint [PK]//
+  --
+  *""aisle_number"": //bigint//
+  *""aisle_text_name"": //text//
+}
+
+@enduml

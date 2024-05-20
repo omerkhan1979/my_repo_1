@@ -1,0 +1,38 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component DecantingUI
+
+usecase "View Purchase Orders" as ViewPO
+usecase "Init Container" as InitContainer
+usecase "Decanting Task" as DecantingTask
+usecase "Decanting Operation" as DecantingOperation
+usecase "Event Handler" as EventHandler
+
+database "Task" as DBTask <<link>> [[../data-model/decanting_task.puml]]
+database "Product" as DBProduct <<link>> [[../data-model/decanting_product.puml]]
+
+database "Section" as DBSection <<link>> [[../data-model/decanting_section.puml]]
+database "Event" as DBEvent <<link>> [[../data-model/decanting_event.puml]]
+database "Operator" as DBOperator <<link>> [[../data-model/decanting_operator.puml]]
+
+DecantingUI <-down- ViewPO : purchase order
+ViewPO <-down-- DBTask : purchase order header
+ViewPO <-down-- DBProduct : purchase order lines
+
+DecantingUI <-down-> DecantingTask : decanting task
+DecantingTask -down-> InitContainer : tote
+InitContainer -down-> EventHandler : event
+EventHandler <-down-> DBEvent : event
+EventHandler <-down-> DBSection : section?
+EventHandler <-down-> DBOperator : user
+
+DecantingTask -down-> DecantingOperation : operation
+
+DecantingOperation <-left-- DBTask : purchase order header
+DecantingOperation <-left-> DBProduct : purchase order lines
+DecantingOperation -down-> EventHandler : event
+
+@enduml

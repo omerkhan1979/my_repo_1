@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_address_l2_bays**" [[service_catalog_op_address_l2_bays.puml]] {
+  + ""bay_id"": //bigint [PK]//
+  --
+  *""aisle_id"": //bigint [FK]//
+  *""bay_number"": //bigint//
+  *""bay_text_name"": //text//
+}
+
+@enduml

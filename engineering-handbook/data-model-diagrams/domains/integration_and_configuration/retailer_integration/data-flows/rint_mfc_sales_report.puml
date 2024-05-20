@@ -1,0 +1,33 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "Outbound Fulfillment" as OutboundFulfillment
+component Configuration
+database SFTP
+database "Google Cloud Storage" as GCS
+
+usecase "OMS Order Statuses" as OrderStatuses
+usecase "OMS Order Lines" as OrderLines
+usecase "Aggregate Report" as MFCSalesReportAggregate
+
+usecase "Filter served orders" as FilterServed
+Configuration -> MFCSalesReportAggregate : locations
+
+OutboundFulfillment -right-> OrderStatuses : order statuses
+OrderStatuses -down-> FilterServed
+OutboundFulfillment -right-> OrderLines  : get order
+FilterServed -down-> OrderLines  : for each order
+OrderLines -down-> MFCSalesReportAggregate
+note right
+ Aggregate on MFC, SPOKE, TOM_ID
+ Convert to the Wakefern file format
+end note
+MFCSalesReportAggregate -down-> SFTP
+MFCSalesReportAggregate -down-> GCS
+GCS -down-> Retailer
+SFTP -down-> Retailer
+
+
+@enduml

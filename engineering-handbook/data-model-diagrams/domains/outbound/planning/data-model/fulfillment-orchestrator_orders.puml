@@ -1,0 +1,24 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**orders**" [[fulfillment-orchestrator_orders.puml]] {
+  + ""order_id"": //character varying [PK]//
+  --
+  *""created_datetime"": //timestamp with time zone//
+  *""fulfillment_datetime"": //timestamp with time zone//
+  *""is_express"": //boolean//
+  *""order_note"": //text//
+  *""ready_for_picking"": //boolean//
+  *""route_number"": //text//
+  *""service_type"": //character varying//
+  *""service_window_start"": //timestamp with time zone//
+  *""spoke_id"": //character varying//
+  *""stage_by_datetime"": //timestamp with time zone//
+  *""stale"": //boolean//
+  *""status"": //enum//
+  *""stop_number"": //integer//
+  *""store_id"": //character varying//
+}
+
+@enduml

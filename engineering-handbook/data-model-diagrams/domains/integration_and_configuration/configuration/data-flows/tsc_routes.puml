@@ -1,0 +1,22 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Routes API**" as RoutesConfigAPI
+usecase "Get Routes" as GetRoutes
+usecase "Create Route" as CreateRoute
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_routes" as OpRoutes <<link>> [[../data-model/service_catalog_op_routes.puml]]
+
+RoutesConfigAPI -down- GetRoutes
+RoutesConfigAPI -down- CreateRoute
+
+GetRoutes <-right- GetLocationsAPI
+CreateRoute <-down- GetLocationsAPI
+GetRoutes <-down-- OpRoutes
+CreateRoute --down-> OpRoutes
+
+@enduml

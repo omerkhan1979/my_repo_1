@@ -1,0 +1,24 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component "TomUI (New)" as TomUINew
+component DecantingUI
+component "Takeoff Mobile" as TakeoffMobile
+component Firebase
+
+component Configuration
+
+' participants
+usecase "Firebase Authentication" as Authentication
+
+Configuration -right-> Authentication : locations
+
+TomUINew -down-> Authentication
+DecantingUI -down-> Authentication
+TakeoffMobile -down-> Authentication
+
+Authentication -down-> Firebase : **username**\n**password**
+Firebase -up--> Authentication : token + roles
+
+@enduml

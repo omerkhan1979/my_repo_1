@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kubernetes_containers**" [[calyx_kubernetes_containers.puml]] {
+  + ""cluster_name"": //character varying(50) [PK]//
+  + ""container_name"": //character varying(253) [PK]//
+  + ""pod_name"": //character varying(253) [PK]//
+  + ""pod_namespace"": //character varying(50) [PK]//
+  + ""project_name"": //character varying(50) [PK]//
+  + ""service_name"": //text [PK]//
+  --
+  *""annotations"": //jsonb//
+  *""container_image"": //character varying(200)//
+  *""container_status"": //enum//
+  *""created"": //timestamp with time zone//
+  *""labels"": //jsonb//
+  *""last_download_id"": //integer//
+  *""last_updated"": //timestamp with time zone//
+}
+
+@enduml

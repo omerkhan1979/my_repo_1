@@ -1,0 +1,15 @@
+@startjson
+
+!include ../../../../style/data_style.puml
+
+{
+  "address": "01K",
+  "location_id": "ABS3116",
+  "product_id": "00011111262850",
+  "quantity": 4,
+  "last_updated": "2020-10-26T22:02:11.574Z"
+}
+
+#highlight "**<-- back**"
+
+@endjson

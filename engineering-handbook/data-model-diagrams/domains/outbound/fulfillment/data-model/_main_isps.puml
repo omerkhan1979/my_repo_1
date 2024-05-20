@@ -1,0 +1,34 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "isps" {
+  !include isps_pick_list.puml
+  !include isps_pick_list_item.puml
+  !include isps_pick_list_status.puml
+  !include isps_pick_list_type.puml
+  !include isps_pick_work_item_reason_code.puml
+  !include isps_pick_work_order.puml
+  !include isps_pick_work_order_item.puml
+  !include isps_pick_work_order_status.puml
+  !include isps_pick_work_order_type.puml
+  !include isps_pick_zone.puml
+  !include isps_ragtime_migrations.puml
+  !include isps_sales_pick_list_item_order_item.puml
+  !include isps_sales_pick_list_order.puml
+}
+"**pick_list**" -- "**pick_list_status**"
+"**pick_list**" -- "**pick_list_type**"
+"**pick_list**" -- "**pick_zone**"
+"**pick_list_item**" -- "**pick_list**"
+"**pick_work_order**" -- "**pick_list**"
+"**pick_work_order**" -- "**pick_work_order_status**"
+"**pick_work_order**" -- "**pick_work_order_type**"
+"**pick_work_order_item**" -- "**pick_list_item**"
+"**pick_work_order_item**" -- "**pick_work_order**"
+"**pick_work_order_item**" -- "**pick_work_item_reason_code**"
+"**sales_pick_list_item_order_item**" -- "**pick_list_item**"
+"**sales_pick_list_order**" -- "**pick_list**"
+
+@enduml

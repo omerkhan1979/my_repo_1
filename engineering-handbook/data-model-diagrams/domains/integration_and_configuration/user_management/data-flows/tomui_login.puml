@@ -1,0 +1,42 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+component Firebase
+component Okta
+component AzureAD
+component Configuration
+component "Micro Frontends" as MFE
+
+usecase "Login Flow" as Login
+usecase "Login via Firebase" as LoginFirebase
+usecase "Login via Okta" as OktaLogin
+usecase "Login via Azure AD" as AzureADLogin
+usecase "GroupsRolesMapping" as GroupsRolesMapping
+
+
+TomUI -down-> Login : initiate
+TomUI <-down- Login : token & roles
+
+Login <-down--> LoginFirebase
+Login <-down--> OktaLogin
+Login <-down--> AzureADLogin
+
+LoginFirebase -down-> Firebase : credentials
+Firebase -up-> LoginFirebase : token & roles
+
+AzureADLogin -down-> AzureAD : credentials
+AzureAD -up-> AzureADLogin : token & roles
+
+OktaLogin -down-> Okta : credentials
+Okta -up-> OktaLogin : token & groups
+
+OktaLogin -up-> GroupsRolesMapping : groups
+GroupsRolesMapping -up-> Login : roles
+
+Configuration -right-> Login : locations
+Login -right-> MFE : token
+
+@enduml

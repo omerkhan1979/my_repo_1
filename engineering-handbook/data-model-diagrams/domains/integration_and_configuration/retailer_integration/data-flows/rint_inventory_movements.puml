@@ -1,0 +1,23 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+
+usecase "V3 Inventory Adjustment" as V3InventoryAdjustment <<deprecated>>
+usecase "V4 Inventory Movements" as V4InventoryMovements <<link>> [[./rint_inventory_movements_v4.puml]]
+usecase "Webhook Inventory Movements\n(planned)" as WebhookInventoryMovements <<future>>
+usecase "V4 Pub/Sub Inventory Movements" as V4PubSubInventoryMovements <<deprecated>>
+usecase "Winter Push Inventory Adjustment" as WinterPushInventoryAdjustment <<deprecated>>
+usecase "Alpha 2.0 Inventory Adjustments" as Alpha20InventoryAdjustments <<deprecated>>
+
+Retailer <-up- V3InventoryAdjustment
+Retailer <-up- V4InventoryMovements
+Retailer <-up- WebhookInventoryMovements
+Retailer <-down- V4PubSubInventoryMovements
+Retailer <-down- WinterPushInventoryAdjustment
+Retailer <-down- Alpha20InventoryAdjustments
+
+
+
+@enduml

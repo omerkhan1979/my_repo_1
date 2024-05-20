@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_staging_locations**" [[service_catalog_op_staging_locations.puml]] {
+  + ""staging_location_id"": //bigint [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""created_by"": //text//
+  *""deleted_at"": //timestamp with time zone//
+  *""is_default"": //boolean//
+  *""location_id"": //bigint [FK]//
+  *""staging_location_code"": //text//
+}
+
+@enduml

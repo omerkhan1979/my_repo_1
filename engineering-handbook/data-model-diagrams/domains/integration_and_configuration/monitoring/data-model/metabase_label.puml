@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**label**" [[metabase_label.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""icon"": //character varying(128)//
+  *""name"": //character varying(254)//
+  *""slug"": //character varying(254)//
+}
+
+@enduml

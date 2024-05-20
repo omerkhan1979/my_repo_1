@@ -1,0 +1,11 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "" {
+  !include _site-info-retailers.puml
+  !include _site-info-status-transitions.puml
+}
+
+@enduml

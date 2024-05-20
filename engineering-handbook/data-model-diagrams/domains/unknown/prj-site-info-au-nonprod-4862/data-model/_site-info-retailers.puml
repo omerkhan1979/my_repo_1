@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**site-info-retailers**" [[_site-info-retailers.puml]] {
+  --
+  *""code"": //string//
+  *""created_by"": //string//
+  *""created_time"": //datetime//
+  *""deactivated_by"": //string//
+  *""deactivated_time"": //<unknown>//
+  *""deployed_region"": //string//
+  *""id"": //string//
+  *""name"": //string//
+  *""updated_by"": //string//
+  *""updated_time"": //datetime//
+}
+
+@enduml

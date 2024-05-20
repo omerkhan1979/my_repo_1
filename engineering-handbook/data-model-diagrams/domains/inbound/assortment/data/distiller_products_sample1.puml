@@ -1,0 +1,188 @@
+@startjson
+
+!include ../../../../style/data_style.puml
+
+{
+  "tom_id": "00486690162011",
+  "barcodes": [
+    "00486690162011",
+    "0430157000002"
+  ],
+  "corp_ids": [
+    "86690162"
+  ],
+  "ecom_ids": [
+    "960071428"
+  ],
+  "name": "Seafood Counter Crab King Leg & Claw 16-20 Size Frozen",
+  "temperature_zone": [
+    "frozen"
+  ],
+  "retail_item": {
+    "weight": {
+      "weight": 1.5,
+      "unit-of-measure": "lb"
+    },
+    "dimensions": {
+      "width": 1.2034948,
+      "height": 1.0736413,
+      "length": 1.0504515,
+      "unit-of-measure": "in"
+    }
+  },
+  "case_item": {
+    "weight": {
+      "weight": 21.0,
+      "unit-of-measure": "lb"
+    },
+    "case-count": 1,
+    "dimensions": {
+      "width": 1,
+      "height": 1,
+      "length": 1,
+      "unit-of-measure": "in"
+    }
+  },
+  "shelf_life": 0,
+  "is_weight_variable_on_webcart": false,
+  "is_weight_variable_on_receipt": true,
+  "is_weight_variable_on_po": false,
+  "image": "https://images.albertsons-media.com/is/image/ABS/960071428",
+  "requires_expiration_date": false,
+  "categories_hierarchy": [
+    {
+      "id": "000",
+      "name": "DEFAULT DEPARTMENT"
+    },
+    {
+      "id": "00086",
+      "name": "SEAFOOD"
+    },
+    {
+      "id": "0008645",
+      "name": "CRAB (BULK)"
+    },
+    {
+      "id": "000864505",
+      "name": "KING CRAB BULK"
+    },
+    {
+      "id": "00086450520",
+      "name": "KING CRAB >= 20 MEDIUM"
+    }
+  ],
+  "feature_attributes": {
+    "is-raw": false,
+    "is-heavy": false,
+    "is-crushable": false,
+    "is-hazardous": false,
+    "is-stackable": true,
+    "is-glass-packaged": false
+  },
+  "location_info": [
+    {
+      "store-id": "1574",
+      "item-type": "FLO",
+      "preset-area": "not_in_osr",
+      "item-address": {
+      },
+      "mfc-stop-buy": true,
+      "sleeping-area": "Z",
+      "supplier-info": [
+        {
+          "supplier-id": "000013",
+          "supplier-name": "DUMMY VENDOR SAFEWAY MEAT",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "048669016201",
+          "supplier-sub-account": "025"
+        }
+      ],
+      "mfc-stop-fulfill": false
+    },
+    {
+      "store-id": "3116",
+      "item-type": "FLO",
+      "preset-area": "not_in_osr",
+      "item-address": {
+      },
+      "mfc-stop-buy": true,
+      "sleeping-area": "Z",
+      "supplier-info": [
+        {
+          "supplier-id": "000013",
+          "supplier-name": "DUMMY VENDOR SAFEWAY MEAT",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "048669016201",
+          "supplier-sub-account": "025"
+        }
+      ],
+      "mfc-stop-fulfill": false
+    },
+    {
+      "store-id": "2776",
+      "item-type": "FLO",
+      "item-address": {
+      },
+      "mfc-stop-buy": true,
+      "sleeping-area": "Z",
+      "supplier-info": [
+        {
+          "supplier-id": "000013",
+          "supplier-name": "DUMMY VENDOR SAFEWAY MEAT",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "048669016201",
+          "supplier-sub-account": "025"
+        }
+      ],
+      "mfc-stop-fulfill": false
+    }
+  ],
+  "extra": {
+    "boxcase": {
+      "86690162": 1.0
+    },
+    "supplier": {
+      "86690162": {
+        "id": "000013",
+        "name": "DUMMY VENDOR SAFEWAY MEAT",
+        "type": "DSD",
+        "sub-acc": "025"
+      }
+    },
+    "categories-hierarchy": {
+      "86690162": [
+        {
+          "id": "000",
+          "name": "DEFAULT DEPARTMENT"
+        },
+        {
+          "id": "00086",
+          "name": "SEAFOOD"
+        },
+        {
+          "id": "0008645",
+          "name": "CRAB (BULK)"
+        },
+        {
+          "id": "000864505",
+          "name": "KING CRAB BULK"
+        },
+        {
+          "id": "00086450520",
+          "name": "KING CRAB >= 20 MEDIUM"
+        }
+      ]
+    }
+  },
+  "last_modified_ts": "2021-07-19T07:31:34.678067+00:00",
+  "revision": 29442073,
+  "media": null,
+  "description": null,
+  "created_ts": "2021-02-15T09:13:04.836385+00:00",
+  "linked_tom_ids": null
+}
+
+@endjson

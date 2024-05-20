@@ -1,0 +1,15 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "tote_dispatcher" {
+  entity "**configs**" [[tote_dispatcher_configs.puml]] {}
+  entity "**tote_assignments**" [[tote_dispatcher_tote_assignments.puml]] {}
+  entity "**tote_assignments_log**" [[tote_dispatcher_tote_assignments_log.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

@@ -1,0 +1,37 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+component ECommerce
+component Integration
+usecase "Ecommerce Files Process" as EcommerceFileProcess
+
+database "Ecommerce Products" as EcommerceProducts <<link>> [[../data-model/distiller_ecommerce_products.puml]]
+database "Ecommerce Categories" as EcommerceCategories <<link>> [[../data-model/distiller_ecommerce_categories.puml]]
+database "Ecommerce Prices" as EcommercePrices <<link>> [[../data-model/distiller_ecommerce_prices.puml]]
+database "Ecommerce Promotions" as EcommercePromotions <<link>> [[../data-model/distiller_ecommerce_promotions.puml]]
+
+Retailer -down-> Integration : products
+Retailer -down-> Integration : categories
+Retailer -down-> Integration : prices
+Retailer -down-> Integration : promotions
+
+Integration -up-> ECommerce : products
+Integration -up-> ECommerce : categories
+Integration -up-> ECommerce : prices
+Integration -up-> ECommerce : promotions
+
+EcommerceFileProcess <-up-> Integration : products
+EcommerceFileProcess <-up-> Integration : categories
+EcommerceFileProcess <-up-> Integration : prices
+EcommerceFileProcess <-up-> Integration : promotions
+
+EcommerceFileProcess <-down-> EcommerceProducts
+EcommerceFileProcess <-down--> EcommerceCategories
+EcommerceFileProcess <-down--> EcommercePrices
+EcommerceFileProcess <-down-> EcommercePromotions
+
+
+@enduml

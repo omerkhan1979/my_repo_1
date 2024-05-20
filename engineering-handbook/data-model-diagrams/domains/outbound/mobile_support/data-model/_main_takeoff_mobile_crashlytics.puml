@@ -1,0 +1,11 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "takeoff_mobile_crashlytics" {
+  !include takeoff_mobile_crashlytics_com_takeoff_mobileapp_ANDROID.puml
+  !include takeoff_mobile_crashlytics_com_takeoff_mobileapp_ANDROID_REALTIME.puml
+}
+
+@enduml

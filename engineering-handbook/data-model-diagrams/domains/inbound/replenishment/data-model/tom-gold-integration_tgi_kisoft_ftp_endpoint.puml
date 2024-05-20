@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tgi_kisoft_ftp_endpoint**" [[tom-gold-integration_tgi_kisoft_ftp_endpoint.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""host"": //character varying(300)//
+  *""mfc"": //integer [FK]//
+  *""passive_mode"": //boolean//
+  *""password"": //bytea//
+  *""port"": //integer//
+  *""protocol"": //character varying(10)//
+  *""username"": //character varying(100)//
+}
+
+@enduml

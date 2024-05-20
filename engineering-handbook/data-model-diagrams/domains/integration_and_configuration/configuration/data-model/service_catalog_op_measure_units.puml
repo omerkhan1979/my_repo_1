@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_measure_units**" [[service_catalog_op_measure_units.puml]] {
+  + ""measure_type_id"": //bigint [PK][FK]//
+  + ""measure_unit_id"": //bigint [PK][FK]//
+  --
+}
+
+@enduml

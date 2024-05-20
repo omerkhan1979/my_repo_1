@@ -1,0 +1,26 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+usecase "Put Config Items" as PutConfigItems
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+
+' VIEW V_CONFIG_ITEMS
+database "op_config_items" as OPConfigItems <<link>> [[../data-model/service_catalog_op_config_items.puml]]
+database "sd_config_item_definitions" as SDConfigItemDefs <<link>> [[../data-model/service_catalog_sd_config_item_definitions.puml]]
+database "sd_data_types" as SDDataTypes <<link>> [[../data-model/service_catalog_sd_data_types.puml]]
+database "sd_config_item_categories" as SDConfigItemCategories <<link>> [[../data-model/service_catalog_sd_config_item_categories.puml]]
+
+GetLocationsAPI -right-> PutConfigItems
+
+
+PutConfigItems <-down- SDConfigItemDefs
+PutConfigItems <-down- SDDataTypes
+PutConfigItems <-down- SDConfigItemCategories
+PutConfigItems -right=-> OPConfigItems : config values
+
+@enduml

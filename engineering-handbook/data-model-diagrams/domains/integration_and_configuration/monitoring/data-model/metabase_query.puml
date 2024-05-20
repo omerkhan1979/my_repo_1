@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**query**" [[metabase_query.puml]] {
+  + ""query_hash"": //bytea [PK]//
+  --
+  *""average_execution_time"": //integer//
+  *""query"": //text//
+}
+
+@enduml

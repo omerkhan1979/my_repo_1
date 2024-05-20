@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**event**" [[decanting_event.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""container_type"": //enum//
+  *""created"": //timestamp with time zone//
+  *""last_modified"": //timestamp with time zone//
+  *""licenceplate"": //character varying(10)//
+  *""mfc"": //integer//
+  *""operator_id"": //integer [FK]//
+  *""sent_timestamp"": //timestamp with time zone//
+  *""status"": //enum//
+}
+
+@enduml

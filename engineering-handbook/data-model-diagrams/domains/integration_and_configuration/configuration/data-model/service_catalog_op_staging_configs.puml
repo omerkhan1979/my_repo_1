@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_staging_configs**" [[service_catalog_op_staging_configs.puml]] {
+  + ""staging_config_id"": //bigint [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""created_by"": //text//
+  *""deleted_at"": //timestamp with time zone//
+  *""last_modified_at"": //timestamp with time zone//
+  *""last_modified_by"": //text//
+  *""route_id"": //bigint [FK]//
+  *""staging_config_type"": //enum//
+  *""staging_location_id"": //bigint [FK]//
+}
+
+@enduml

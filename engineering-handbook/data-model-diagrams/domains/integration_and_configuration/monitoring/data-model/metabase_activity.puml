@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**activity**" [[metabase_activity.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""custom_id"": //character varying(48)//
+  *""database_id"": //integer//
+  *""details"": //text//
+  *""model"": //character varying(16)//
+  *""model_id"": //integer//
+  *""table_id"": //integer//
+  *""timestamp"": //timestamp with time zone//
+  *""topic"": //character varying(32)//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

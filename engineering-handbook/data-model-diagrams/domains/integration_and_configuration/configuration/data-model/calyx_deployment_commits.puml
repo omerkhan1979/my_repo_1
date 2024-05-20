@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**deployment_commits**" [[calyx_deployment_commits.puml]] {
+  + ""deployment_id"": //integer [PK][FK]//
+  + ""git_commit"": //character varying(40) [PK]//
+  + ""git_repo"": //character varying(100) [PK]//
+  + ""service_name"": //text [PK]//
+  --
+  *""git_commit_message"": //text//
+  *""reverted"": //boolean//
+}
+
+@enduml

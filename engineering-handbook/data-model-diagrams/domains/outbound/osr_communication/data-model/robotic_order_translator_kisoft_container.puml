@@ -1,0 +1,18 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_container**" [[robotic_order_translator_kisoft_container.puml]] {
+  + ""number"": //integer [PK]//
+  + ""order_id"": //text [PK]//
+  --
+  *""created"": //timestamp with time zone//
+  *""error_id"": //integer//
+  *""last_updated"": //timestamp with time zone//
+  *""license_plate"": //text//
+  *""priority"": //smallint//
+  *""status"": //smallint//
+  *""type"": //text//
+}
+
+@enduml

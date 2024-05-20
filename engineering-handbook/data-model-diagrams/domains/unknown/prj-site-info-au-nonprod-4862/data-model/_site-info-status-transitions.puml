@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**site-info-status-transitions**" [[_site-info-status-transitions.puml]] {
+  --
+  *""id"": //string//
+  *""status-transitions.active"": //array[string]//
+  *""status-transitions.deprecated"": //array//
+  *""status-transitions.deprovisioning"": //array[string]//
+  *""status-transitions.draft"": //array[string]//
+  *""status-transitions.inactive"": //array[string]//
+  *""status-transitions.provisioning"": //array[string]//
+  *""status-transitions.provisioning-failed"": //array[string]//
+}
+
+@enduml

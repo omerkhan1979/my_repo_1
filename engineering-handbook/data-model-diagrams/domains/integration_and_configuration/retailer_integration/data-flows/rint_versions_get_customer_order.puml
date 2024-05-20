@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+usecase "Get Customer Order" as GetCustomerOrder
+usecase "V2 Alpha Get Customer Orders" <<deprecated>> as V2Get
+usecase "V3 Get Customer Order" <<deprecated>> as V3Get
+usecase "V4 Get Customer Order" as V4Get <<link>> [[./rint_customer_order_v4_get.puml]]
+
+GetCustomerOrder <-down- V2Get
+GetCustomerOrder <-down- V3Get
+GetCustomerOrder <-down- V4Get
+
+
+@enduml

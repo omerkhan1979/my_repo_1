@@ -1,0 +1,13 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "TomUI" as TomUI
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+usecase "Create Spoke" as CreateSpoke <<link>> [[./tsc_locations_create_spoke.puml]]
+
+TomUI -down-> CreateSpoke: spoke
+TomUI <-down- GetLocationsAPI : locations
+
+@enduml

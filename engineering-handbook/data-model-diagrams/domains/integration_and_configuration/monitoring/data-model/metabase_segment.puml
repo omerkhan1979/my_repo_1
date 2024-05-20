@@ -1,0 +1,21 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**segment**" [[metabase_segment.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""archived"": //boolean//
+  *""caveats"": //text//
+  *""created_at"": //timestamp with time zone//
+  *""creator_id"": //integer [FK]//
+  *""definition"": //text//
+  *""description"": //text//
+  *""name"": //character varying(254)//
+  *""points_of_interest"": //text//
+  *""show_in_getting_started"": //boolean//
+  *""table_id"": //integer [FK]//
+  *""updated_at"": //timestamp with time zone//
+}
+
+@enduml

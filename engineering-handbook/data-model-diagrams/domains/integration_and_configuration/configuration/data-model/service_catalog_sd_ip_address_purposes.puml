@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_ip_address_purposes**" [[service_catalog_sd_ip_address_purposes.puml]] {
+  + ""ip_address_purpose_id"": //bigint [PK]//
+  --
+  *""ip_address_purpose_name"": //character varying(255)//
+}
+
+@enduml

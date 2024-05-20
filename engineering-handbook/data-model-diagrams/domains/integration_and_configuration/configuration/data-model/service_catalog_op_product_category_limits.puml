@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_product_category_limits**" [[service_catalog_op_product_category_limits.puml]] {
+  + ""product_category_id"": //character varying [PK]//
+  + ""tote_type_id"": //bigint [PK][FK]//
+  --
+}
+
+@enduml

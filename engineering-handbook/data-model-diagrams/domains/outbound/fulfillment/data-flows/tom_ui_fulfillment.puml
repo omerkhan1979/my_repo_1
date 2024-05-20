@@ -1,0 +1,49 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component TomUI
+
+usecase "Order Search" as OrderSearch
+usecase "Draft Order Search" as DraftOrderSearch
+
+database "Elastic Orders" as ElasticOrders <<link>> [[../../../production/elasticsearch/data-model/elasticsearch_orders.puml]]
+database "Orders" as Orders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as Lines <<link>> [[../data-model/oms_lines.puml]]
+database "Items" as Items <<link>> [[../data-model/oms_items.puml]]
+
+TomUI <-down- OrderSearch
+OrderSearch <-down- ElasticOrders
+
+TomUI <-down- DraftOrderSearch
+DraftOrderSearch <-down- Orders
+DraftOrderSearch <-down- Lines
+DraftOrderSearch <-down- Items
+
+'TomUI - startpicking
+''(something new)
+'
+
+'TomUI - DraftOrderSearch
+''(?)
+'TomUI - OrderOverview
+''(oms)
+'TomUI - ActionSplit
+'TomUI - ActionCancel
+'TomUI - ActionQueue
+''(start picking: move to queue status)
+'TomUI - ActionReenqueue
+''(the same as queue)
+'
+'OrderOverview -down- OMS
+'PickingQueue -down- Couch
+'' (batch orders)
+'
+'
+'TomUI - A : dispatch ramp
+'TomUI - A : dispatch ramp
+''/ (clear totes fix)
+
+
+
+@enduml

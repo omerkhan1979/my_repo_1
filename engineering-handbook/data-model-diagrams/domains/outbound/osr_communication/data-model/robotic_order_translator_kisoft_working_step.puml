@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**kisoft_working_step**" [[robotic_order_translator_kisoft_working_step.puml]] {
+  + ""container_number"": //integer [PK]//
+  + ""function_point_number"": //integer [PK]//
+  + ""number"": //integer [PK]//
+  + ""order_id"": //text [PK]//
+  --
+  *""actual_quantity"": //smallint//
+  *""created"": //timestamp with time zone//
+  *""error_id"": //integer//
+  *""item_code_scan"": //boolean//
+  *""item_codes"": //text[]//
+  *""item_id"": //text//
+  *""last_updated"": //timestamp with time zone//
+  *""quantity"": //smallint//
+  *""status"": //smallint//
+}
+
+@enduml

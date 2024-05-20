@@ -1,0 +1,46 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component DecantingUI
+component TomUI
+component Retailer
+component Outbound
+component "Takeoff Mobile" as TakeoffMobile 
+component OSR
+component Replenishment
+
+component "Modeling & Optimization" as ModelingAndOptimization
+component "Data Lake" as DataLake
+
+usecase Inventory
+
+' data flows
+Inventory --left--> Retailer : [[./retailer_inventory_snapshot.puml inventory snapshot]]
+Inventory --left--> Retailer : [[./retailer_inventory_movements.puml inventory movements]]
+Inventory <--left- Retailer : [[./retailer_purchase_order.puml purchase order]]
+
+Inventory <--right--> TomUI :  [[./osr_inventory_check.puml osr inventory check]]
+Inventory <--right--> TomUI : [[./retailer_inventory_snapshot.puml inventory snapshot]]
+Inventory <--right--> TomUI : [[./purchase_order.puml purchase order]]
+Inventory <--right--> TomUI : [[./assets.puml assets]]
+Inventory <--right--> TomUI : [[./dispatch_ramp.puml dispatch ramp]]
+
+Inventory <-down-- Outbound : [[./fulfillment.puml reservations\nfulfillment\nstaging]]
+
+Inventory <--up-> ModelingAndOptimization : ???
+
+Inventory <--up-> DecantingUI : [[./decanting.puml purchase orders\ndecanting tasks]]
+Inventory <--up-> OSR : [[./knapp_inventory.puml inventory snapshot\ndecanting]]
+Inventory <-down--> DataLake : [[./data_lake.puml inventory]]
+
+' progress
+
+' Verify with OLEG / Knapp, MnO, Replenishment, Assortment
+Inventory <-down--> Replenishment : purchase order
+Inventory <-down--> TakeoffMobile : cycle count
+Inventory <-down--> TakeoffMobile : put away
+
+
+@enduml

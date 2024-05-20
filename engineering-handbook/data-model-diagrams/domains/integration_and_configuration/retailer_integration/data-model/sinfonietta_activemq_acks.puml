@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**activemq_acks**" [[sinfonietta_activemq_acks.puml]] {
+  + ""client_id"": //character varying(250) [PK]//
+  + ""container"": //character varying(250) [PK]//
+  + ""priority"": //bigint [PK]//
+  + ""sub_name"": //character varying(250) [PK]//
+  --
+  *""last_acked_id"": //bigint//
+  *""selector"": //character varying(250)//
+  *""sub_dest"": //character varying(250)//
+  *""xid"": //character varying(250)//
+}
+
+@enduml

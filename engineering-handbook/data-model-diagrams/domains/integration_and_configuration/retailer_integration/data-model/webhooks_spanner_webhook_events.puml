@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**webhook_events**" [[webhooks_spanner_webhook_events.puml]] {
+  + ""webhook_id"": //STRING(MAX) [PK][FK]//
+  + ""event_types_id"": //STRING(MAX) [PK][FK]//
+  --
+}
+
+@enduml

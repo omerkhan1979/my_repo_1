@@ -1,0 +1,23 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**databasechangelog**" [[metabase_databasechangelog.puml]] {
+  --
+  *""author"": //character varying(255)//
+  *""comments"": //character varying(255)//
+  *""contexts"": //character varying(255)//
+  *""dateexecuted"": //timestamp without time zone//
+  *""deployment_id"": //character varying(10)//
+  *""description"": //character varying(255)//
+  *""exectype"": //character varying(10)//
+  *""filename"": //character varying(255)//
+  *""id"": //character varying(255)//
+  *""labels"": //character varying(255)//
+  *""liquibase"": //character varying(20)//
+  *""md5sum"": //character varying(35)//
+  *""orderexecuted"": //integer//
+  *""tag"": //character varying(255)//
+}
+
+@enduml

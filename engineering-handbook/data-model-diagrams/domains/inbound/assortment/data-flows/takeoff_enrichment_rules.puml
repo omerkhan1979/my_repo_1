@@ -1,0 +1,20 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+' set by ImpEng during discussion with the Retailer
+component Takeoff
+
+database "Sleeping Area Rules" as SleepingAreaRules <<link>> [[../data-model/distiller_sleeping_area_rules.puml]]
+database "Preset Area Rules" as PresetAreaRules <<link>> [[../data-model/distiller_preset_area_rules.puml]]
+
+usecase "Enrichment Rules Management" as EnrichmentRulesManagement
+
+
+Takeoff -down-> EnrichmentRulesManagement : rules
+EnrichmentRulesManagement -down-> SleepingAreaRules : sleeping area rules
+EnrichmentRulesManagement -down-> PresetAreaRules : preset area rules
+
+
+@enduml

@@ -1,0 +1,179 @@
+@startjson
+
+!include ../../../../style/data_style.puml
+
+{
+  "tom_id": "00000000246361",
+  "barcodes": [
+    "00000000246361",
+    "0000000246361",
+    "0404011000002",
+    "00821783242377",
+    "00733821032720",
+    "00484060025027",
+    "00484060031011",
+    "00245155000004",
+    "00749289000027",
+    "00749289000287",
+    "07502264920009",
+    "00749289000034",
+    "00749289000010",
+    "00733821042316",
+    "00484060039024",
+    "00484060039017",
+    "00733821040114",
+    "00484060041010",
+    "07503017260007",
+    "07500462829216",
+    "07500462829230",
+    "07500462829209",
+    "07500462829247",
+    "00066022040110",
+    "00074904040110",
+    "00821783240113",
+    "00643126040118",
+    "00484060007016",
+    "00821783140444",
+    "07862103083914",
+    "00717524111128"
+  ],
+  "corp_ids": [
+    "84060007",
+    "84060039"
+  ],
+  "ecom_ids": [
+    "960556737",
+    "184060007"
+  ],
+  "name": "Bananas",
+  "temperature_zone": [
+    "ambient"
+  ],
+  "retail_item": {
+    "weight": {
+      "weight": 40.0,
+      "unit-of-measure": "lb"
+    },
+    "dimensions": {
+      "width": 1.0,
+      "height": 1.0,
+      "length": 1.0,
+      "unit-of-measure": "in"
+    }
+  },
+  "case_item": {
+    "weight": {
+      "weight": 40.0,
+      "unit-of-measure": "lb"
+    },
+    "case-count": 1,
+    "dimensions": {
+      "width": 16.0,
+      "height": 10.0,
+      "length": 20.0,
+      "unit-of-measure": "in"
+    }
+  },
+  "shelf_life": 7,
+  "is_weight_variable_on_webcart": false,
+  "is_weight_variable_on_receipt": false,
+  "is_weight_variable_on_po": false,
+  "image": "https://images.albertsons-media.com/is/image/ABS/184060007",
+  "requires_expiration_date": false,
+  "categories_hierarchy": [
+    {
+      "id": "229",
+      "name": "PRODUCE WAREHOUSE"
+    },
+    {
+      "id": "22984",
+      "name": "FRESH PRODUCE"
+    },
+    {
+      "id": "2298406",
+      "name": "BANANAS"
+    },
+    {
+      "id": "229840601",
+      "name": "BANANAS"
+    },
+    {
+      "id": "22984060100",
+      "name": "BANANAS"
+    }
+  ],
+  "feature_attributes": {
+    "is-raw": false
+  },
+  "location_info": [
+    {
+      "store-id": "1574",
+      "item-type": "FLO",
+      "mfc-stop-buy": false,
+      "sleeping-area": "A",
+      "supplier-info": [
+        {
+          "supplier-id": "123126",
+          "supplier-name": "TOFF SYNTHETIC DSD",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "7490404011",
+          "supplier-sub-account": "001"
+        }
+      ],
+      "ecom-only-item": true,
+      "primary-corp-id": "84060007",
+      "mfc-stop-fulfill": false
+    },
+    {
+      "store-id": "3116",
+      "item-type": "FLO",
+      "mfc-stop-buy": false,
+      "sleeping-area": "A",
+      "supplier-info": [
+        {
+          "supplier-id": "123126",
+          "supplier-name": "TOFF SYNTHETIC DSD",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "7490404011",
+          "supplier-sub-account": "001"
+        }
+      ],
+      "ecom-only-item": true,
+      "primary-corp-id": "84060007",
+      "mfc-stop-fulfill": false
+    },
+    {
+      "store-id": "2776",
+      "item-type": "FLO",
+      "mfc-stop-buy": false,
+      "sleeping-area": "A",
+      "supplier-info": [
+        {
+          "supplier-id": "123126",
+          "supplier-name": "TOFF SYNTHETIC DSD",
+          "supplier-type": "DSD",
+          "supplier-keep-buy": true,
+          "supplier-product-id": "7490404011",
+          "supplier-sub-account": "001"
+        }
+      ],
+      "ecom-only-item": true,
+      "primary-corp-id": "84060007",
+      "mfc-stop-fulfill": false
+    }
+  ],
+  "extra": {
+  },
+  "last_modified_ts": "2021-07-19T10:12:10.583551+00:00",
+  "revision": 29475193,
+  "media": null,
+  "description": "synthetic product",
+  "created_ts": "2020-07-22T10:13:05.876768+00:00",
+  "linked_tom_ids": null,
+  "**<-- back**" : "[[../data-model/distiller_products.puml Products]]"
+}
+
+#highlight "**<-- back**"
+@endjson

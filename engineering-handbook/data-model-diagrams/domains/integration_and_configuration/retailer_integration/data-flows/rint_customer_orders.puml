@@ -1,0 +1,34 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Configuration
+component "MFC Monitoring" as MFCMonitoring
+component "Assortment" as Assortment
+component "Outbound Fulfillment" as OutboundFulfillment
+usecase "**Customer Orders API**" as CustomerOrdersAPI
+usecase "Create Customer Order" as CreateCustomerOrder <<link>> [[./rint_versions_create_customer_order.puml]]
+usecase "Update Customer Order" as UpdateCustomerOrder <<link>> [[./rint_versions_update_customer_order.puml]]
+usecase "Update Customer Order Ecom Status" as UpdateCustomerOrderEcomStatus <<link>> [[./rint_versions_update_customer_order_ecom_status.puml]]
+usecase "Get Customer Order" as GetCustomerOrder <<link>> [[./rint_versions_get_customer_order.puml]]
+usecase "Get Customer Order Statuses History" as GetCustomerOrderStatusesHistory <<link>> [[./rint_versions_get_customer_order_statuses_history.puml]]
+
+Retailer <==down=> CustomerOrdersAPI : orders
+CustomerOrdersAPI -up-> MFCMonitoring : order events
+Configuration -down-> CustomerOrdersAPI : locations
+Assortment -down-> CustomerOrdersAPI : product mappings
+
+CustomerOrdersAPI -down-> CreateCustomerOrder : order
+CreateCustomerOrder -down-> OutboundFulfillment : post order
+CustomerOrdersAPI -down-> UpdateCustomerOrder : order subset
+UpdateCustomerOrder -down-> OutboundFulfillment : put order
+CustomerOrdersAPI <-left- GetCustomerOrder : order
+GetCustomerOrder <-down- OutboundFulfillment
+CustomerOrdersAPI <-down- GetCustomerOrderStatusesHistory : order statuses
+GetCustomerOrderStatusesHistory <- OutboundFulfillment
+CustomerOrdersAPI -down-> UpdateCustomerOrderEcomStatus : order status
+UpdateCustomerOrderEcomStatus -down- OutboundFulfillment
+
+
+@enduml

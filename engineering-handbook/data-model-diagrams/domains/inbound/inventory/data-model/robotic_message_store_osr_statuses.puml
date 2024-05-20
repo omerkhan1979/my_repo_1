@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**osr_statuses**" [[robotic_message_store_osr_statuses.puml]] {
+  + ""status_code"": //integer [PK]//
+  + ""subaction"": //character varying(16) [PK]//
+  --
+  *""status_text"": //character varying(32)//
+}
+
+@enduml

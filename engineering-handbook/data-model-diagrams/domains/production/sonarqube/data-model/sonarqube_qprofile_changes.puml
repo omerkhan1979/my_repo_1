@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qprofile_changes**" [[sonarqube_qprofile_changes.puml]] {
+  + ""kee"": //character varying(40) [PK]//
+  --
+  *""change_data"": //text//
+  *""change_type"": //character varying(20)//
+  *""created_at"": //bigint//
+  *""rules_profile_uuid"": //character varying(255)//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "site_info" {
+  entity "**site-info-retailers**" [[site_info_site-info-retailers.puml]] {}
+  entity "**site-info-status-transitions**" [[site_info_site-info-status-transitions.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

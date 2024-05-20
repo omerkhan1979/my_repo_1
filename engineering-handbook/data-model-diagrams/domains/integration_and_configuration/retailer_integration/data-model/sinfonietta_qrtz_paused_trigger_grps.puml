@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**qrtz_paused_trigger_grps**" [[sinfonietta_qrtz_paused_trigger_grps.puml]] {
+  + ""sched_name"": //character varying(120) [PK]//
+  + ""trigger_group"": //character varying(200) [PK]//
+  --
+}
+
+@enduml

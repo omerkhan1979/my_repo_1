@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**adjustment_reasons**" [[inventory-management_adjustment_reasons.puml]] {
+  + ""code"": //character varying [PK]//
+  --
+  *""can_add"": //boolean//
+  *""can_remove"": //boolean//
+  *""description"": //character varying//
+  *""external_code"": //character varying//
+  *""internal_only"": //boolean//
+  *""movement_type"": //character varying//
+  *""name"": //character varying//
+  *""parent_code"": //character varying//
+  *""sort_order"": //smallint//
+}
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "redis0" {
+  !include redis0_logged_worker.puml
+  !include redis0_shortener.puml
+  !include redis0_workers_sequences.puml
+}
+
+@enduml

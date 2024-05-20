@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**event_component_changes**" [[sonarqube_event_component_changes.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""change_category"": //character varying(12)//
+  *""component_branch_key"": //character varying(255)//
+  *""component_key"": //character varying(400)//
+  *""component_name"": //character varying(2000)//
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""event_analysis_uuid"": //character varying(50)//
+  *""event_component_uuid"": //character varying(50)//
+  *""event_uuid"": //character varying(40)//
+}
+
+@enduml

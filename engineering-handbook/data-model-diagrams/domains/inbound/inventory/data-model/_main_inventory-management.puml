@@ -1,0 +1,25 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "inventory-management" {
+  !include inventory-management_accounts.puml
+  !include inventory-management_address.puml
+  !include inventory-management_adjustment_history.puml
+  !include inventory-management_adjustment_reasons.puml
+  !include inventory-management_balances.puml
+  !include inventory-management_body_assets.puml
+  !include inventory-management_dispatch_ramp_totes.puml
+  !include inventory-management_groups.puml
+  !include inventory-management_messages.puml
+  !include inventory-management_ragtime_migrations.puml
+  !include inventory-management_reservations.puml
+  !include inventory-management_tote_assets.puml
+  !include inventory-management_txs.puml
+}
+"**body_assets**" -- "**accounts**"
+"**reservations**" -- "**balances**"
+"**tote_assets**" -- "**accounts**"
+
+@enduml

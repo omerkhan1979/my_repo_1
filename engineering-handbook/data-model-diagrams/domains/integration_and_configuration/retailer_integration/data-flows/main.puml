@@ -1,0 +1,48 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Retailer
+component Configuration
+component "MFC Monitoring" as MFCMonitoring
+component Assortment
+component Outbound
+component Inventory
+component Replenishment
+component Looker
+component "Data Lake" as DataLake
+
+usecase "Retailer Integration" as RetailerIntegration
+
+' data flows
+Retailer <-right-> RetailerIntegration : [[./rint_customer_orders.puml customer orders]]
+Retailer <-right-> RetailerIntegration : [[./rint_purchase_orders.puml purchase order]]
+Retailer <-right-> RetailerIntegration : [[./rint_distiller_itemmaster.puml assortment]]
+Retailer <-right-> RetailerIntegration : [[./rint_sales_history.puml sales history]]
+Retailer <-right-> RetailerIntegration : [[./rint_inventory.puml inventory]]
+Retailer <-right-> RetailerIntegration : [[./rint_ecommerce.puml ecommerce]]
+
+Configuration -down--> RetailerIntegration : [[./rint_customer_orders.puml locations]]
+RetailerIntegration -up--> MFCMonitoring : [[./rint_customer_orders.puml order events]]
+
+RetailerIntegration -down--> DataLake : [[./rint_data_lake.puml sales history\nallocations\npromos]]
+
+RetailerIntegration <-up-> Assortment : [[./rint_distiller_itemmaster.puml itemmaster]]
+RetailerIntegration <-up-> Assortment : [[./rint_distiller_purchase_orders.puml purchase orders]]
+RetailerIntegration <-up-- Assortment : [[./rint_customer_orders.puml product info & mappings]]
+RetailerIntegration <-up-> Assortment : [[./rint_ecommerce.puml ecommerce]]
+
+
+RetailerIntegration <-down-- Looker : [[./rint_looker_sales_history.puml sales history]]
+RetailerIntegration <-down--> Outbound : [[./rint_customer_orders.puml customer orders]]
+RetailerIntegration <-down--> Outbound : [[./rint_mfc_sales_report.puml sales history]]
+
+RetailerIntegration <-right-- Inventory : [[./rint_inventory_snapshot.puml inventory snapshot]]
+RetailerIntegration <-right-- Inventory : [[./rint_inventory_movements.puml inventory movements]]
+RetailerIntegration -right-> Inventory : [[./rint_distiller_purchase_orders.puml purchase orders]]
+
+RetailerIntegration <-down-- Replenishment : [[./rint_outbound_po_flow.puml purchase orders]]
+
+
+@enduml

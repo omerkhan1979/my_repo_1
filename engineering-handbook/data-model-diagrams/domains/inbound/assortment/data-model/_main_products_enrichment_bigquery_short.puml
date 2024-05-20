@@ -1,0 +1,13 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "products_enrichment_bigquery" {
+  entity "**raw_products**" [[products_enrichment_bigquery_raw_products.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+
+@enduml

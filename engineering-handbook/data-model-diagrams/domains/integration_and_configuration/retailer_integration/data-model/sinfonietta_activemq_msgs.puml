@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**activemq_msgs**" [[sinfonietta_activemq_msgs.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""container"": //character varying(250)//
+  *""expiration"": //bigint//
+  *""msg"": //bytea//
+  *""msgid_prod"": //character varying(250)//
+  *""msgid_seq"": //bigint//
+  *""priority"": //bigint//
+  *""xid"": //character varying(250)//
+}
+
+@enduml

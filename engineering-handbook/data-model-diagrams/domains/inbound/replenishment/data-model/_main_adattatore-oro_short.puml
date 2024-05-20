@@ -1,0 +1,31 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "adattatore-oro" {
+  entity "**camel_messageprocessed**" [[adattatore-oro_camel_messageprocessed.puml]] {}
+  entity "**gold_shell_pid**" [[adattatore-oro_gold_shell_pid.puml]] {}
+  entity "**qrtz_blob_triggers**" [[adattatore-oro_qrtz_blob_triggers.puml]] {}
+  entity "**qrtz_calendars**" [[adattatore-oro_qrtz_calendars.puml]] {}
+  entity "**qrtz_cron_triggers**" [[adattatore-oro_qrtz_cron_triggers.puml]] {}
+  entity "**qrtz_fired_triggers**" [[adattatore-oro_qrtz_fired_triggers.puml]] {}
+  entity "**qrtz_job_details**" [[adattatore-oro_qrtz_job_details.puml]] {}
+  entity "**qrtz_locks**" [[adattatore-oro_qrtz_locks.puml]] {}
+  entity "**qrtz_paused_trigger_grps**" [[adattatore-oro_qrtz_paused_trigger_grps.puml]] {}
+  entity "**qrtz_scheduler_state**" [[adattatore-oro_qrtz_scheduler_state.puml]] {}
+  entity "**qrtz_simple_triggers**" [[adattatore-oro_qrtz_simple_triggers.puml]] {}
+  entity "**qrtz_simprop_triggers**" [[adattatore-oro_qrtz_simprop_triggers.puml]] {}
+  entity "**qrtz_triggers**" [[adattatore-oro_qrtz_triggers.puml]] {}
+  entity "**ragtime_migrations**" [[adattatore-oro_ragtime_migrations.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+
+@enduml

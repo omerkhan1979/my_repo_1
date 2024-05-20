@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**DATABASECHANGELOGLOCK**" [[user_profile_DATABASECHANGELOGLOCK.puml]] {
+  + ""id"": //INT64 [PK]//
+  --
+  *""locked"": //BOOL//
+  *""lockgranted"": //TIMESTAMP//
+  *""lockedby"": //STRING(MAX)//
+}
+
+@enduml

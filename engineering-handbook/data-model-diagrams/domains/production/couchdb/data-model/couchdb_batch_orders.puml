@@ -1,0 +1,26 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**batch_orders**" [[couchdb_batch_orders.puml]] {
+  + ""_id"": //string [PK]//
+  --
+  *""contracts[].contract_id"": //<unknown>//
+  *""contracts[].delivery_price"": //int//
+  *""contracts[].delivery_type"": //string//
+  *""contracts[].dump"": //map//
+  *""contracts[].end_time"": //<unknown>//
+  *""contracts[].location_id"": //string//
+  *""contracts[].route_id"": //string//
+  *""contracts[].start_time"": //datetime//
+  *""contracts[].timezone"": //<unknown>//
+  *""contracts[].zone_id"": //string//
+  *""created_at"": //datetime//
+  *""items"": //array//
+  *""items_stock"": //map//
+  *""last_printed_at"": //<unknown>//
+  *""location_id"": //string//
+  *""order_ids"": //array[string]//
+}
+
+@enduml

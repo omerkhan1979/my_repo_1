@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_barcode_formats**" [[service_catalog_sd_barcode_formats.puml]] {
+  + ""barcode_format_id"": //bigint [PK]//
+  --
+  *""barcode_format_name"": //character varying//
+}
+
+@enduml

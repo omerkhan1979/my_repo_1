@@ -1,0 +1,29 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+component Calyx
+
+usecase "MFC Locations Page" as MFCLocations
+
+usecase "Retailers API" as CalyxAPIRetailer
+usecase "Environment Types" as CalyxAPIEnvs
+usecase "Service Catalog Proxy" as SCProxy
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "retailers" as DBRetailers <<link>> [[../data-model/calyx_retailers.puml]]
+database "environment_types" as DBEnvTypes <<link>> [[../data-model/calyx_environment_types.puml]]
+
+Calyx <-down- MFCLocations
+
+MFCLocations <-down- CalyxAPIRetailer : retailers
+MFCLocations <-down- CalyxAPIEnvs : environment
+MFCLocations <-down- SCProxy : locations
+CalyxAPIRetailer <-down- DBRetailers
+CalyxAPIEnvs <-down- DBEnvTypes
+SCProxy <-down- GetLocationsAPI
+
+
+@enduml

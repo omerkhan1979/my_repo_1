@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**delivery_history**" [[webhooks_spanner_delivery_history.puml]] {
+  + ""delivery_id"": //STRING(MAX) [PK]//
+  + ""webhook_id"": //STRING(MAX) [PK][FK]//
+  --
+  *""request"": //STRING(MAX)//
+  *""response"": //STRING(MAX)//
+  *""status"": //INT64//
+  *""completed_in"": //INT64//
+  *""created_at_ts"": //TIMESTAMP//
+  *""entity_id"": //STRING(MAX)//
+  *""mfc_id"": //STRING(MAX)//
+  *""event_id"": //STRING(MAX)//
+  *""event_name"": //STRING(MAX)//
+  *""event_version"": //STRING(MAX)//
+  *""event_created_ts"": //TIMESTAMP//
+}
+
+@enduml

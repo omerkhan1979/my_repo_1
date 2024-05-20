@@ -1,0 +1,22 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "OSR Communication" as OSRCommunication
+
+usecase "**Sync Bifrost Data**" as SyncBifrost
+usecase GetBifrostSequenceTask
+usecase RegisterNewBifrostSequence
+usecase RestartBifrostRoutes
+
+SyncBifrost -down-> GetBifrostSequenceTask
+GetBifrostSequenceTask -down-> OSRCommunication
+
+SyncBifrost -down-> RegisterNewBifrostSequence
+RegisterNewBifrostSequence -down-> OSRCommunication
+
+SyncBifrost -down-> RestartBifrostRoutes
+RestartBifrostRoutes -down-> OSRCommunication
+
+@enduml

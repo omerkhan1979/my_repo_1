@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**jenkins_deployments**" [[calyx_jenkins_deployments.puml]] {
+  + ""jenkins_build_number"": //integer [PK]//
+  + ""jenkins_job_name"": //character varying(100) [PK]//
+  --
+  *""deployment_id"": //integer [FK]//
+}
+
+@enduml

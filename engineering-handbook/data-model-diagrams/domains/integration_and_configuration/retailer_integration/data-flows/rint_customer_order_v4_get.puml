@@ -1,0 +1,29 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component "MFC Monitoring" as MFCMonitoring
+component "Configuration" as Configuration
+component "Outbound Fulfillment" as OutboundFulfillment
+
+usecase "V4 Get Customer Order" as GetCustomerOrder
+usecase "Order Transformations" as OrderTransformations
+usecase "Order Events" as OrderEvents
+usecase "Location Mappings" as MFCIDMappings
+usecase "Validations" as Validations
+usecase "Winter Hacks" as WinterHacks
+
+Retailer <-down-- GetCustomerOrder : order & fulfillment results
+GetCustomerOrder <-down- OrderTransformations : order
+
+OrderTransformations <-down- OutboundFulfillment
+GetCustomerOrder <-down- Validations
+GetCustomerOrder <-down- WinterHacks
+
+GetCustomerOrder -right-> OrderEvents
+OrderEvents -down-> MFCMonitoring : order events
+
+MFCIDMappings -> GetCustomerOrder
+Configuration -up-> MFCIDMappings : locations
+@enduml

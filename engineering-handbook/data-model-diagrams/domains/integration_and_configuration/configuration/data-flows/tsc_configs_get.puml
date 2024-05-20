@@ -1,0 +1,37 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+usecase "Get Config Items" as GetConfigItems
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+
+' VIEW V_CONFIG_ITEMS
+database "op_config_items" as OPConfigItems <<link>> [[../data-model/service_catalog_op_config_items.puml]]
+database "op_locations" as OPLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+database "sd_config_item_definitions" as SDConfigItemDefs <<link>> [[../data-model/service_catalog_sd_config_item_definitions.puml]]
+database "sd_data_types" as SDDataTypes <<link>> [[../data-model/service_catalog_sd_data_types.puml]]
+database "sd_config_item_categories" as SDConfigItemCategories <<link>> [[../data-model/service_catalog_sd_config_item_categories.puml]]
+database "sd_measure_types" as SDMeasureTypes <<link>> [[../data-model/service_catalog_sd_measure_types.puml]]
+database "op_measure_units" as OPMeasureUnits <<link>> [[../data-model/service_catalog_op_measure_units.puml]]
+database "sd_measure_unit_definitions" as SDMeasureUnitDefinitions <<link>> [[../data-model/service_catalog_sd_measure_unit_definitions.puml]]
+
+database "sd_config_categories" as SDConfigCategories <<link>> [[../data-model/service_catalog_sd_config_categories.puml]]
+' Links
+GetLocationsAPI -down-> GetConfigItems
+
+
+GetConfigItems <-right=- OPConfigItems : config values
+GetConfigItems <-down- OPLocations
+GetConfigItems <-down- SDConfigItemDefs
+GetConfigItems <-down- SDDataTypes
+GetConfigItems <-up- SDConfigCategories
+GetConfigItems <-down- SDMeasureTypes
+GetConfigItems <-down- SDConfigItemCategories
+GetConfigItems <-down- OPMeasureUnits
+GetConfigItems <-left- SDMeasureUnitDefinitions
+
+@enduml

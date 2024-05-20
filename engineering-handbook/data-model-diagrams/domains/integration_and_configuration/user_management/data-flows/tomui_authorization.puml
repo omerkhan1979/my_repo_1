@@ -1,0 +1,11 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+usecase "**Authorization**" as Authorization
+
+Firebase <-down-> Authorization
+
+@enduml

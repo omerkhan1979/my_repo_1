@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_location_ip_addresses_ranges**" [[service_catalog_op_location_ip_addresses_ranges.puml]] {
+  + ""ip_address_location_range_id"": //bigint [PK]//
+  --
+  *""ip_address_purpose_id"": //bigint [FK]//
+  *""location_id"": //bigint [FK]//
+  *""location_ip_address_purpose_from"": //character varying(255)//
+  *""location_ip_address_purpose_to"": //character varying(255)//
+}
+
+@enduml

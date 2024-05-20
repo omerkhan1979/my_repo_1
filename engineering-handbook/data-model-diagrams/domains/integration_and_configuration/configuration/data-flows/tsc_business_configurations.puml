@@ -1,0 +1,27 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Business Configuration**" as BusinessConfiguration
+
+usecase "Locations" as Locations <<link>> [[./tsc_locations.puml]]
+usecase "Generic Configs" as Configs <<link>> [[./tsc_configs.puml]]
+usecase "FTP Connection" as FTPConnection <<link>> [[./tsc_ftp_connection.puml]]
+usecase "Pick Path" as PickPath <<link>> [[./tsc_pick_path.puml]]
+usecase "Totes" as Totes <<link>> [[./tsc_totes.puml]]
+usecase "Routes" as Routes <<link>> [[./tsc_routes.puml]]
+usecase "Flow Racks" as FlowRacks <<link>> [[./tsc_flow_racks.puml]]
+usecase "Staging" as Staging <<link>> [[./tsc_staging_config.puml]]
+
+BusinessConfiguration -down- Locations
+BusinessConfiguration -down- Configs
+BusinessConfiguration -down- FTPConnection
+BusinessConfiguration -left- PickPath
+BusinessConfiguration -right- Totes
+BusinessConfiguration -up- Routes
+BusinessConfiguration -up- FlowRacks
+BusinessConfiguration -up- Staging
+
+
+@enduml

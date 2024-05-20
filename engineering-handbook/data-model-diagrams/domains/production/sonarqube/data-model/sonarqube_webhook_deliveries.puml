@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**webhook_deliveries**" [[sonarqube_webhook_deliveries.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""analysis_uuid"": //character varying(40)//
+  *""ce_task_uuid"": //character varying(40)//
+  *""component_uuid"": //character varying(40)//
+  *""created_at"": //bigint//
+  *""duration_ms"": //bigint//
+  *""error_stacktrace"": //text//
+  *""http_status"": //integer//
+  *""name"": //character varying(100)//
+  *""payload"": //text//
+  *""success"": //boolean//
+  *""url"": //character varying(2000)//
+  *""webhook_uuid"": //character varying(40)//
+}
+
+@enduml

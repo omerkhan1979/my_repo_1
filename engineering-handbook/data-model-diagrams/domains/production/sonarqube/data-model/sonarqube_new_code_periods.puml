@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**new_code_periods**" [[sonarqube_new_code_periods.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""branch_uuid"": //character varying(40)//
+  *""created_at"": //bigint//
+  *""project_uuid"": //character varying(40)//
+  *""type"": //character varying(30)//
+  *""updated_at"": //bigint//
+  *""value"": //character varying(40)//
+}
+
+@enduml

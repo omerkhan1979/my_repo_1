@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**issues**" [[fulfillment-orchestrator_issues.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""created_datetime"": //timestamp with time zone//
+  *""err_content"": //character varying//
+  *""message"": //bytea//
+  *""message_id"": //character varying//
+  *""subscription"": //character varying//
+  *""will_retry"": //boolean//
+}
+
+@enduml

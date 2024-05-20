@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**user_roles**" [[sonarqube_user_roles.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(40)//
+  *""organization_uuid"": //character varying(40)//
+  *""role"": //character varying(64)//
+  *""user_uuid"": //character varying(255)//
+}
+
+@enduml

@@ -1,0 +1,42 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**components**" [[sonarqube_components.puml]] {
+  --
+  *""b_changed"": //boolean//
+  *""b_copy_component_uuid"": //character varying(50)//
+  *""b_description"": //character varying(2000)//
+  *""b_enabled"": //boolean//
+  *""b_language"": //character varying(20)//
+  *""b_long_name"": //character varying(500)//
+  *""b_module_uuid"": //character varying(50)//
+  *""b_module_uuid_path"": //character varying(1500)//
+  *""b_name"": //character varying(500)//
+  *""b_path"": //character varying(2000)//
+  *""b_qualifier"": //character varying(10)//
+  *""b_uuid_path"": //character varying(1500)//
+  *""copy_component_uuid"": //character varying(50)//
+  *""created_at"": //timestamp without time zone//
+  *""deprecated_kee"": //character varying(400)//
+  *""description"": //character varying(2000)//
+  *""enabled"": //boolean//
+  *""kee"": //character varying(400)//
+  *""language"": //character varying(20)//
+  *""long_name"": //character varying(2000)//
+  *""main_branch_project_uuid"": //character varying(50)//
+  *""module_uuid"": //character varying(50)//
+  *""module_uuid_path"": //character varying(1500)//
+  *""name"": //character varying(2000)//
+  *""organization_uuid"": //character varying(40)//
+  *""path"": //character varying(2000)//
+  *""private"": //boolean//
+  *""project_uuid"": //character varying(50)//
+  *""qualifier"": //character varying(10)//
+  *""root_uuid"": //character varying(50)//
+  *""scope"": //character varying(3)//
+  *""uuid"": //character varying(50)//
+  *""uuid_path"": //character varying(1500)//
+}
+
+@enduml

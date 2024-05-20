@@ -1,0 +1,27 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_tote_types**" [[service_catalog_op_tote_types.puml]] {
+  + ""tote_type_id"": //bigint [PK]//
+  --
+  *""barcode_format_id"": //bigint [FK]//
+  *""custom_tote_prefix"": //character varying//
+  *""is_applicable_for_osr"": //boolean//
+  *""is_product_category_limit"": //boolean//
+  *""is_standard"": //boolean//
+  *""temp_zone_id"": //bigint [FK]//
+  *""tote_description"": //text//
+  *""tote_inner_dimensions_height"": //numeric(10,4)//
+  *""tote_inner_dimensions_length"": //numeric(10,4)//
+  *""tote_inner_dimensions_width"": //numeric(10,4)//
+  *""tote_kind_id"": //bigint [FK]//
+  *""tote_max_weight"": //numeric//
+  *""tote_outer_dimensions_height"": //numeric(10,4)//
+  *""tote_outer_dimensions_length"": //numeric(10,4)//
+  *""tote_outer_dimensions_width"": //numeric(10,4)//
+  *""tote_threshold_size"": //integer//
+  *""tote_weight"": //numeric(10,4)//
+}
+
+@enduml

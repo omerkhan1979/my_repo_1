@@ -1,0 +1,15 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Calyx
+component Okta
+
+' participants
+usecase "Calyx Authentication" as Authentication
+
+Calyx -down-> Authentication : initiate authentication flow
+Authentication -down-> Okta : token
+Okta -up-> Authentication : session\n**groups**
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**dashboard_favorite**" [[metabase_dashboard_favorite.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""dashboard_id"": //integer [FK]//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

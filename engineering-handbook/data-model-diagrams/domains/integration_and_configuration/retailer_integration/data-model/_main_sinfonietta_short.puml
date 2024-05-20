@@ -1,0 +1,34 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "sinfonietta" {
+  entity "**activemq_acks**" [[sinfonietta_activemq_acks.puml]] {}
+  entity "**activemq_lock**" [[sinfonietta_activemq_lock.puml]] {}
+  entity "**activemq_msgs**" [[sinfonietta_activemq_msgs.puml]] {}
+  entity "**camel_messageprocessed**" [[sinfonietta_camel_messageprocessed.puml]] {}
+  entity "**kv**" [[sinfonietta_kv.puml]] {}
+  entity "**qrtz_blob_triggers**" [[sinfonietta_qrtz_blob_triggers.puml]] {}
+  entity "**qrtz_calendars**" [[sinfonietta_qrtz_calendars.puml]] {}
+  entity "**qrtz_cron_triggers**" [[sinfonietta_qrtz_cron_triggers.puml]] {}
+  entity "**qrtz_fired_triggers**" [[sinfonietta_qrtz_fired_triggers.puml]] {}
+  entity "**qrtz_job_details**" [[sinfonietta_qrtz_job_details.puml]] {}
+  entity "**qrtz_locks**" [[sinfonietta_qrtz_locks.puml]] {}
+  entity "**qrtz_paused_trigger_grps**" [[sinfonietta_qrtz_paused_trigger_grps.puml]] {}
+  entity "**qrtz_scheduler_state**" [[sinfonietta_qrtz_scheduler_state.puml]] {}
+  entity "**qrtz_simple_triggers**" [[sinfonietta_qrtz_simple_triggers.puml]] {}
+  entity "**qrtz_simprop_triggers**" [[sinfonietta_qrtz_simprop_triggers.puml]] {}
+  entity "**qrtz_triggers**" [[sinfonietta_qrtz_triggers.puml]] {}
+  entity "**ragtime_migrations**" [[sinfonietta_ragtime_migrations.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+
+@enduml

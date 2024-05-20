@@ -1,0 +1,27 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "decanting" {
+  entity "**decanting_ui_action**" [[decanting_decanting_ui_action.puml]] {}
+  entity "**event**" [[decanting_event.puml]] {}
+  entity "**operator**" [[decanting_operator.puml]] {}
+  entity "**product**" [[decanting_product.puml]] {}
+  entity "**product_event**" [[decanting_product_event.puml]] {}
+  entity "**ragtime_migrations**" [[decanting_ragtime_migrations.puml]] {}
+  entity "**section**" [[decanting_section.puml]] {}
+  entity "**task**" [[decanting_task.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**event**" -- "**operator**"
+"**product**" -- "**task**"
+"**product_event**" -- "**operator**"
+"**product_event**" -- "**product**"
+"**product_event**" -- "**task**"
+"**section**" -- "**event**"
+"**section**" -- "**product**"
+
+@enduml

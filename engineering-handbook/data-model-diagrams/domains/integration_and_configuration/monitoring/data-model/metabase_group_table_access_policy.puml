@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**group_table_access_policy**" [[metabase_group_table_access_policy.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""attribute_remappings"": //text//
+  *""card_id"": //integer [FK]//
+  *""group_id"": //integer [FK]//
+  *""table_id"": //integer [FK]//
+}
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**body_assets**" [[inventory-management_body_assets.puml]] {
+  + ""account_id"": //character varying [PK][FK]//
+  + ""body_id"": //character varying [PK]//
+  --
+  *""amount"": //bigint//
+  *""last_update_date"": //timestamp with time zone//
+}
+
+@enduml

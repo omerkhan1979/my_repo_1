@@ -1,0 +1,31 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "conduttore" {
+  !include conduttore_camel_messageprocessed.puml
+  !include conduttore_close_purchase_order_signal.puml
+  !include conduttore_qrtz_blob_triggers.puml
+  !include conduttore_qrtz_calendars.puml
+  !include conduttore_qrtz_cron_triggers.puml
+  !include conduttore_qrtz_fired_triggers.puml
+  !include conduttore_qrtz_job_details.puml
+  !include conduttore_qrtz_locks.puml
+  !include conduttore_qrtz_paused_trigger_grps.puml
+  !include conduttore_qrtz_scheduler_state.puml
+  !include conduttore_qrtz_simple_triggers.puml
+  !include conduttore_qrtz_simprop_triggers.puml
+  !include conduttore_qrtz_triggers.puml
+  !include conduttore_ragtime_migrations.puml
+  !include conduttore_reserved_inventory_items.puml
+  !include conduttore_sales_history_items.puml
+  !include conduttore_sent_run_cgo_signal.puml
+}
+"**qrtz_blob_triggers**" -- "**qrtz_triggers**"
+"**qrtz_cron_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simple_triggers**" -- "**qrtz_triggers**"
+"**qrtz_simprop_triggers**" -- "**qrtz_triggers**"
+"**qrtz_triggers**" -- "**qrtz_job_details**"
+
+@enduml

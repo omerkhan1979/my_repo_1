@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**osr_errors**" [[robotic_message_store_osr_errors.puml]] {
+  + ""error_code"": //bigint [PK]//
+  + ""error_type"": //character varying(16) [PK]//
+  --
+  *""error_description"": //text//
+  *""error_name"": //character varying(32)//
+}
+
+@enduml

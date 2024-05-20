@@ -1,0 +1,52 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "Apply Profile" as ApplyProfile
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+usecase "Config Value Presets" as ConfigPresets
+usecase "Tote Type Presets" as TotePresets
+
+file "default_staging_mfc_profile.json" as Profiles
+
+database "op_config_items" as OPConfigItems <<link>> [[../data-model/service_catalog_op_config_items.puml]]
+database "op_locations" as OPLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+database "sd_config_item_definitions" as SDConfigItemDefs <<link>> [[../data-model/service_catalog_sd_config_item_definitions.puml]]
+database "sd_data_types" as SDDataTypes <<link>> [[../data-model/service_catalog_sd_data_types.puml]]
+
+database "sd_measure_types" as SDMeasureTypes <<link>> [[../data-model/service_catalog_sd_measure_types.puml]]
+database "op_measure_units" as OPMeasureUnits <<link>> [[../data-model/service_catalog_op_measure_units.puml]]
+database "sd_measure_unit_definitions" as SDMeasureUnitDefinitions <<link>> [[../data-model/service_catalog_sd_measure_unit_definitions.puml]]
+
+database "sd_config_item_categories" as SDConfigItemCategories <<link>> [[../data-model/service_catalog_sd_config_item_categories.puml]]
+
+'tote presets
+database "op_tote_types_v2" as OpToteTypesV2 <<link>> [[../data-model/service_catalog_op_tote_types_v2.puml]]
+database "sd_tote_kinds" as SdToteKinds <<link>> [[../data-model/service_catalog_sd_tote_kinds.puml]]
+database "sd_temperature_zones" as SdTempZones <<link>> [[../data-model/service_catalog_sd_temperature_zones.puml]]
+database "sd_barcode_formats" as SdBarcodeFormats <<link>> [[../data-model/service_catalog_sd_barcode_formats.puml]]
+
+Profiles -left-> ApplyProfile : profiles
+ApplyProfile <-left- GetLocationsAPI : locations
+ApplyProfile -down--> ConfigPresets
+ApplyProfile -down--> TotePresets
+
+ConfigPresets <-right- OPLocations
+ConfigPresets <-down- SDDataTypes
+ConfigPresets <-down- SDConfigItemDefs
+ConfigPresets <=left-> OPConfigItems : config items
+
+ConfigPresets <-down- SDMeasureTypes
+ConfigPresets <-up- OPMeasureUnits
+ConfigPresets <-up- SDMeasureUnitDefinitions
+ConfigPresets <-down- SDConfigItemCategories
+
+TotePresets <-left- OPLocations
+TotePresets <=right-> OpToteTypesV2 : totes
+TotePresets <-down- SdToteKinds
+TotePresets <-up- SdTempZones
+TotePresets <-down- SdBarcodeFormats
+
+
+@enduml

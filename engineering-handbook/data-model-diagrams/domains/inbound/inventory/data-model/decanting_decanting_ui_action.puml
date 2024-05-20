@@ -1,0 +1,13 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**decanting_ui_action**" [[decanting_decanting_ui_action.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""action"": //text//
+  *""time_millis"": //timestamp without time zone//
+  *""user_id"": //text//
+}
+
+@enduml

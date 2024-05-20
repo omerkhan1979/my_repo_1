@@ -1,0 +1,51 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "**Flow Racks API**" as FlowRacksAPI
+usecase "Get Flow Racks" as GetFlowRacks
+usecase "Create Flow Racks" as CreateFlowRacks
+
+
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_flow_racks" as OpFlowRacks <<link>> [[../data-model/service_catalog_op_flow_racks.puml]]
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+
+database "op_config_items" as OPConfigItems <<link>> [[../data-model/service_catalog_op_config_items.puml]]
+database "sd_config_item_definitions" as SDConfigItemDefs <<link>> [[../data-model/service_catalog_sd_config_item_definitions.puml]]
+database "sd_data_types" as SDDataTypes <<link>> [[../data-model/service_catalog_sd_data_types.puml]]
+
+database "sd_measure_types" as SDMeasureTypes <<link>> [[../data-model/service_catalog_sd_measure_types.puml]]
+database "op_measure_units" as OPMeasureUnits <<link>> [[../data-model/service_catalog_op_measure_units.puml]]
+database "sd_measure_unit_definitions" as SDMeasureUnitDefinitions <<link>> [[../data-model/service_catalog_sd_measure_unit_definitions.puml]]
+
+database "sd_config_item_categories" as SDConfigItemCategories <<link>> [[../data-model/service_catalog_sd_config_item_categories.puml]]
+database "sd_config_categories" as SDConfigCategories <<link>> [[../data-model/service_catalog_sd_config_categories.puml]]
+
+
+FlowRacksAPI -down-- GetFlowRacks
+FlowRacksAPI -down-- CreateFlowRacks
+
+
+GetFlowRacks <-down- GetLocationsAPI
+GetFlowRacks <-down-- OpFlowRacks
+GetFlowRacks <-left-- OpLocations
+
+CreateFlowRacks <-down- GetLocationsAPI
+
+CreateFlowRacks <-left- SDConfigItemDefs
+CreateFlowRacks <-right- OPConfigItems : dispatch ramp count
+CreateFlowRacks <-right- OpLocations
+CreateFlowRacks <-down- SDMeasureTypes
+CreateFlowRacks <-up- OPMeasureUnits
+CreateFlowRacks <-up- SDMeasureUnitDefinitions
+CreateFlowRacks <-left- SDDataTypes
+CreateFlowRacks <-down- SDConfigItemCategories
+CreateFlowRacks <-down- SDConfigCategories
+
+CreateFlowRacks -down--> OpFlowRacks : flow racks
+
+
+@enduml

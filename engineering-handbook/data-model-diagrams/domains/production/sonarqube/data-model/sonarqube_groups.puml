@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**groups**" [[sonarqube_groups.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //timestamp without time zone//
+  *""description"": //character varying(200)//
+  *""name"": //character varying(500)//
+  *""organization_uuid"": //character varying(40)//
+  *""updated_at"": //timestamp without time zone//
+}
+
+@enduml

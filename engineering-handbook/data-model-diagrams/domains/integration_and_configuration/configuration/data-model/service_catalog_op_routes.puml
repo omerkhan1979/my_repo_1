@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_routes**" [[service_catalog_op_routes.puml]] {
+  + ""route_id"": //bigint [PK]//
+  --
+  *""created_at"": //timestamp with time zone//
+  *""created_by"": //text//
+  *""deleted_at"": //timestamp with time zone//
+  *""location_id"": //bigint [FK]//
+  *""route_code"": //text//
+}
+
+@enduml

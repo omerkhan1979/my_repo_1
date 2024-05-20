@@ -1,0 +1,27 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+component TomUI
+component Configuration
+
+
+usecase "User Details" as UserDetails
+usecase "Locations" as Locations
+usecase "User Info" as UserInfo
+usecase "User Roles" as UserRoles
+
+
+TomUI <-down- UserDetails : user details
+UserDetails <-down- UserInfo
+UserDetails <-down- UserRoles : roles
+
+UserInfo <-down- Firebase
+UserRoles <-down- Firebase
+
+UserDetails <-down- Locations
+Locations <-down- Configuration
+
+@enduml

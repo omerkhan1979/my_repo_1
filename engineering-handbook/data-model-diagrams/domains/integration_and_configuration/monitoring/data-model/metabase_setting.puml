@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**setting**" [[metabase_setting.puml]] {
+  + ""key"": //character varying(254) [PK]//
+  --
+  *""value"": //text//
+}
+
+@enduml

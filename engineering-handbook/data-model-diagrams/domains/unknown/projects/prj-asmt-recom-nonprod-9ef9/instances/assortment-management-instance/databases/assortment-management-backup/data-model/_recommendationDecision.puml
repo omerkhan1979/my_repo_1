@@ -1,0 +1,22 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**recommendationDecision**" [[_recommendationDecision.puml]] {
+  + ""id"": //STRING(MAX) [PK]//
+  + ""mfc_id"": //STRING(MAX) [PK]//
+  + ""retailer"": //STRING(MAX) [PK]//
+  --
+  *""item_movement_recommendation_id"": //INT64//
+  *""consolidated_inventory_id"": //INT64//
+  *""decision_status"": //STRING(MAX)//
+  *""decision_state"": //STRING(MAX)//
+  *""reason_code"": //ARRAY<STRING(1024)>//
+  *""created_by_user"": //STRING(MAX)//
+  *""created_by_ts"": //TIMESTAMP//
+  *""ecomm_id"": //STRING(MAX)//
+  *""recommendation_details_json"": //STRING(MAX)//
+  *""pre_approved"": //BOOL//
+}
+
+@enduml

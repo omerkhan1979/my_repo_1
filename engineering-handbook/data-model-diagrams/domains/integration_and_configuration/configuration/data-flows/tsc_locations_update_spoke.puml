@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+usecase "Update Spoke" as UpdateSpokeAPI
+usecase "Reparent MFC" as ReparentMFC
+usecase "Get Locations" as GetLocationsAPI <<link>> [[./tsc_locations_get_locations.puml]]
+
+database "op_locations" as OpLocations <<link>> [[../data-model/service_catalog_op_locations.puml]]
+
+UpdateSpokeAPI -down-> OpLocations : spoke
+UpdateSpokeAPI -down-> ReparentMFC
+UpdateSpokeAPI <-down- GetLocationsAPI : locations
+ReparentMFC <-left- GetLocationsAPI
+ReparentMFC -right-> OpLocations : parent mfc
+
+@enduml

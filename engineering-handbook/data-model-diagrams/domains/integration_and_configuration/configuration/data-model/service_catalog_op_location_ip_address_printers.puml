@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**op_location_ip_address_printers**" [[service_catalog_op_location_ip_address_printers.puml]] {
+  + ""location_ip_address_id"": //bigint [PK]//
+  --
+  *""ip_address"": //character varying(15)//
+  *""ip_address_purpose_id"": //bigint [FK]//
+  *""is_used"": //boolean//
+  *""location_id"": //bigint [FK]//
+}
+
+@enduml

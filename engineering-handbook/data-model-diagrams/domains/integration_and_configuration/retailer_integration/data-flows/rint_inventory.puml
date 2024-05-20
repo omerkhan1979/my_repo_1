@@ -1,0 +1,19 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Inventory
+
+usecase "Inventory Movements" as InventoryMovements <<link>> [[./rint_inventory_movements.puml]]
+usecase "Inventory Snapshot" as InventorySnapshot <<link>> [[./rint_inventory_snapshot.puml]]
+
+Retailer <-down- InventoryMovements
+Retailer <-down- InventorySnapshot
+InventoryMovements <-down- Inventory
+InventorySnapshot <-down- Inventory
+
+
+
+
+@enduml

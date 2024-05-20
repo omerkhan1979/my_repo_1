@@ -1,0 +1,21 @@
+@startuml
+hide stereotype
+hide circle
+!include ../../../../style/default.iuml
+
+package "fulfillment-orchestrator" {
+  entity "**issues**" [[fulfillment-orchestrator_issues.puml]] {}
+  entity "**order_items**" [[fulfillment-orchestrator_order_items.puml]] {}
+  entity "**order_part_lines**" [[fulfillment-orchestrator_order_part_lines.puml]] {}
+  entity "**order_parts**" [[fulfillment-orchestrator_order_parts.puml]] {}
+  entity "**orders**" [[fulfillment-orchestrator_orders.puml]] {}
+  entity "**ragtime_migrations**" [[fulfillment-orchestrator_ragtime_migrations.puml]] {}
+  entity "**work_tasks**" [[fulfillment-orchestrator_work_tasks.puml]] {}
+}
+
+hide empty fields
+hide empty methods
+"**order_part_lines**" -- "**order_parts**"
+"**order_parts**" -- "**orders**"
+
+@enduml

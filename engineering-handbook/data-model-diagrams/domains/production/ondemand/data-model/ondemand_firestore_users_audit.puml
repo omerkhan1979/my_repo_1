@@ -1,0 +1,45 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**users_audit**" [[ondemand_firestore_users_audit.puml]] {
+  --
+  *""actor.email"": //string//
+  *""actor.id"": //string//
+  *""actor.name"": //string//
+  *""author.email"": //string//
+  *""author.id"": //string//
+  *""author.name"": //string//
+  *""changed"": //array//
+  *""operation-type"": //string//
+  *""options"": //array//
+  *""record-after.created"": //datetime//
+  *""record-after.is-disabled"": //boolean//
+  *""record-after.is-email-verified"": //boolean//
+  *""record-after.last-refresh"": //datetime//
+  *""record-after.last-sign-in"": //datetime//
+  *""record-after.pin"": //string//
+  *""record-after.providers"": //array[string]//
+  *""record-after.roles[].locations"": //array[datetime]//
+  *""record-after.roles[].role"": //string//
+  *""record-after.user-email"": //string//
+  *""record-after.user-id"": //string//
+  *""record-after.user-name"": //string//
+  *""record-before"": //<unknown>//
+  *""record-before.created"": //datetime//
+  *""record-before.is-disabled"": //boolean//
+  *""record-before.is-email-verified"": //boolean//
+  *""record-before.last-refresh"": //datetime//
+  *""record-before.last-sign-in"": //datetime//
+  *""record-before.pin"": //string//
+  *""record-before.providers"": //array[string]//
+  *""record-before.roles[].locations"": //array[datetime]//
+  *""record-before.roles[].role"": //string//
+  *""record-before.user-email"": //string//
+  *""record-before.user-id"": //string//
+  *""record-before.user-name"": //string//
+  *""timestamp"": //int//
+  *""user-id"": //string//
+}
+
+@enduml

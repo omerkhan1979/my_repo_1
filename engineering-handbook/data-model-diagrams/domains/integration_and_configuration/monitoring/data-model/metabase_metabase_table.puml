@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**metabase_table**" [[metabase_metabase_table.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""active"": //boolean//
+  *""caveats"": //text//
+  *""created_at"": //timestamp with time zone//
+  *""db_id"": //integer [FK]//
+  *""description"": //text//
+  *""display_name"": //character varying(254)//
+  *""entity_type"": //character varying(254)//
+  *""field_order"": //character varying(254)//
+  *""initial_sync_status"": //character varying(32)//
+  *""name"": //character varying(254)//
+  *""points_of_interest"": //text//
+  *""schema"": //character varying(254)//
+  *""show_in_getting_started"": //boolean//
+  *""updated_at"": //timestamp with time zone//
+  *""visibility_type"": //character varying(254)//
+}
+
+@enduml

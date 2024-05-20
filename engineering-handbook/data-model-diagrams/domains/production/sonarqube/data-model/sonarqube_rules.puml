@@ -1,0 +1,34 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**rules**" [[sonarqube_rules.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""created_at"": //bigint//
+  *""def_remediation_base_effort"": //character varying(20)//
+  *""def_remediation_function"": //character varying(20)//
+  *""def_remediation_gap_mult"": //character varying(20)//
+  *""description"": //text//
+  *""description_format"": //character varying(20)//
+  *""gap_description"": //character varying(4000)//
+  *""is_ad_hoc"": //boolean//
+  *""is_external"": //boolean//
+  *""is_template"": //boolean//
+  *""language"": //character varying(20)//
+  *""name"": //character varying(200)//
+  *""plugin_config_key"": //character varying(200)//
+  *""plugin_key"": //character varying(200)//
+  *""plugin_name"": //character varying(255)//
+  *""plugin_rule_key"": //character varying(200)//
+  *""priority"": //integer//
+  *""rule_type"": //smallint//
+  *""scope"": //character varying(20)//
+  *""security_standards"": //character varying(4000)//
+  *""status"": //character varying(40)//
+  *""system_tags"": //character varying(4000)//
+  *""template_uuid"": //character varying(40)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

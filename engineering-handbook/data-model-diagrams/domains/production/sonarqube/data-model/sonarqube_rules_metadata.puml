@@ -1,0 +1,25 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**rules_metadata**" [[sonarqube_rules_metadata.puml]] {
+  + ""organization_uuid"": //character varying(40) [PK]//
+  + ""rule_uuid"": //character varying(40) [PK]//
+  --
+  *""ad_hoc_description"": //text//
+  *""ad_hoc_name"": //character varying(200)//
+  *""ad_hoc_severity"": //character varying(10)//
+  *""ad_hoc_type"": //smallint//
+  *""created_at"": //bigint//
+  *""note_created_at"": //bigint//
+  *""note_data"": //text//
+  *""note_updated_at"": //bigint//
+  *""note_user_uuid"": //character varying(255)//
+  *""remediation_base_effort"": //character varying(20)//
+  *""remediation_function"": //character varying(20)//
+  *""remediation_gap_mult"": //character varying(20)//
+  *""tags"": //character varying(4000)//
+  *""updated_at"": //bigint//
+}
+
+@enduml

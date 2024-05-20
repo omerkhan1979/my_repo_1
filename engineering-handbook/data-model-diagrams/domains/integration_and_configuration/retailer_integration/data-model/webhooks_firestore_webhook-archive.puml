@@ -1,0 +1,28 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**webhook-archive**" [[webhooks_firestore_webhook-archive.puml]] {
+  --
+  *""auth_secret_name"": //string//
+  *""auth_target"": //string//
+  *""created_by"": //string//
+  *""created_ts"": //datetime//
+  *""enabled"": //boolean//
+  *""env_type"": //string//
+  *""events[].description"": //string//
+  *""events[].name"": //string//
+  *""events[].schema_url"": //string//
+  *""events[].version"": //string//
+  *""id"": //string//
+  *""labels.additionalProp1"": //string//
+  *""labels.additionalProp2"": //string//
+  *""labels.additionalProp3"": //string//
+  *""mfc_ids"": //array[string]//
+  *""retailer_id"": //string//
+  *""sign_secret_name"": //string//
+  *""updated_ts"": //datetime//
+  *""url"": //string//
+}
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component "Takeoff Services" as Takeoff
+component "TomUI" as TomUI
+component "OSR Communication" as OSRCommunication
+usecase "Configuration" as Configuration
+
+'data flows
+TomUI <-down-> Configuration : [[./tom_ui_locations.puml locations]]
+Takeoff <-left-> Configuration : [[./tsc_business_configurations.puml business configurations]]
+Takeoff -left-> Configuration : [[./tsc_config_metamodel.puml config metamodel]]
+Takeoff -left-> Configuration : [[./tsc_locations_get_locations.puml locations]]
+Configuration -down-> OSRCommunication : [[./tsc_ftp_connection.puml osr connections\nbifrost sync]]
+
+@enduml

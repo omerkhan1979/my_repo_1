@@ -1,0 +1,19 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**sd_area_types**" [[service_catalog_sd_area_types.puml]] {
+  + ""area_type_id"": //bigint [PK]//
+  --
+  *""area_type_name"": //character varying(50)//
+  *""is_area_customizable"": //boolean//
+  *""is_barcode_applied_for_addresses"": //boolean//
+  *""is_for_products"": //boolean//
+  *""is_for_storage_totes"": //boolean//
+  *""is_for_target_totes"": //boolean//
+  *""is_near_mc"": //boolean//
+  *""is_near_spoke"": //boolean//
+  *""is_used_for_batch_picking"": //boolean//
+}
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**migrations_abs**" [[rint-etl_migrations_abs.puml]] {
+  --
+  *""created_at"": //character varying(32)//
+  *""id"": //character varying(255)//
+}
+
+@enduml

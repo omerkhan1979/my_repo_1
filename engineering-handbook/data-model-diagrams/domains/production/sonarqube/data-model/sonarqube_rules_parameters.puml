@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**rules_parameters**" [[sonarqube_rules_parameters.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""default_value"": //character varying(4000)//
+  *""description"": //character varying(4000)//
+  *""name"": //character varying(128)//
+  *""param_type"": //character varying(512)//
+  *""rule_uuid"": //character varying(40)//
+}
+
+@enduml

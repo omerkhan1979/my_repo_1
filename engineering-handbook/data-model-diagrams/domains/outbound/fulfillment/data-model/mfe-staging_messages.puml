@@ -1,0 +1,10 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**messages**" [[mfe-staging_messages.puml]] {
+  --
+  *""timestamp"": //int//
+}
+
+@enduml

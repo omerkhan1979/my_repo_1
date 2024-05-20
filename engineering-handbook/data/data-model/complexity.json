@@ -1,0 +1,2236 @@
+[
+  {
+    "displayName": "",
+    "domain": "unknown/projects/prj-reservations-nonprod-06d9/instances/nonprod-reservations-instance/databases/dev-reservations-db",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "SchemaMigrations"
+      },
+      {
+        "complexity": 11,
+        "name": "line_item"
+      },
+      {
+        "complexity": 15,
+        "name": "product"
+      },
+      {
+        "complexity": 34,
+        "name": "reservation"
+      },
+      {
+        "complexity": 13,
+        "name": "reserved_products_pending"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 78,
+    "type": "spanner"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/projects/prj-asmt-recom-nonprod-9ef9/instances/assortment-management-instance/databases/reservations-ci",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "SchemaMigrations"
+      },
+      {
+        "complexity": 9,
+        "name": "line_item"
+      },
+      {
+        "complexity": 13,
+        "name": "product"
+      },
+      {
+        "complexity": 34,
+        "name": "reservation"
+      },
+      {
+        "complexity": 13,
+        "name": "reserved_products_pending"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 74,
+    "type": "spanner"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/prj-site-info-eu-nonprod-2a63",
+    "entities": [
+      {
+        "complexity": 27,
+        "name": "site-info-retailers"
+      },
+      {
+        "complexity": 33,
+        "name": "site-info-status-transitions"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 60,
+    "type": "firestore"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/prj-site-info-au-nonprod-4862",
+    "entities": [
+      {
+        "complexity": 27,
+        "name": "site-info-retailers"
+      },
+      {
+        "complexity": 33,
+        "name": "site-info-status-transitions"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 60,
+    "type": "firestore"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/prj-label-mgr-au-nonprod-9ac6",
+    "entities": [
+      {
+        "complexity": 10,
+        "name": "label-manager-sites"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 10,
+    "type": "firestore"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/prj-label-mgr-us-nonprod-e0c2",
+    "entities": [
+      {
+        "complexity": 9,
+        "name": "label-manager-sites"
+      }
+    ],
+    "name": "",
+    "totalComplexity": 9,
+    "type": "firestore"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/prj-label-mgr-eu-nonprod-be67",
+    "entities": null,
+    "name": "",
+    "totalComplexity": 0,
+    "type": "firestore"
+  },
+  {
+    "displayName": "",
+    "domain": "unknown/projects/prj-reservations-nonprod-06d9/instances/nonprod-reservations-instance/databases/qai-reservations-db",
+    "entities": null,
+    "name": "",
+    "totalComplexity": 0,
+    "type": "spanner"
+  },
+  {
+    "displayName": "Adattatore-oro",
+    "domain": "inbound/replenishment",
+    "entities": [
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 15,
+        "name": "gold_shell_pid"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_blob_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_calendars"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_cron_triggers"
+      },
+      {
+        "complexity": 27,
+        "name": "qrtz_fired_triggers"
+      },
+      {
+        "complexity": 23,
+        "name": "qrtz_job_details"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_locks"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_paused_trigger_grps"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_scheduler_state"
+      },
+      {
+        "complexity": 18,
+        "name": "qrtz_simple_triggers"
+      },
+      {
+        "complexity": 34,
+        "name": "qrtz_simprop_triggers"
+      },
+      {
+        "complexity": 40,
+        "name": "qrtz_triggers"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      }
+    ],
+    "name": "adattatore-oro",
+    "totalComplexity": 230,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Retailer Integration All Sftp",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": null,
+    "name": "all_sftp",
+    "totalComplexity": 0,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Assortment Management",
+    "domain": "inbound/assortment",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "SchemaMigrations"
+      },
+      {
+        "complexity": 19,
+        "name": "csvCache"
+      },
+      {
+        "complexity": 32,
+        "name": "recommendationDecision"
+      },
+      {
+        "complexity": 9,
+        "name": "setting"
+      }
+    ],
+    "name": "assortment_management_db",
+    "totalComplexity": 65,
+    "type": "spanner"
+  },
+  {
+    "displayName": "Bifrost",
+    "domain": "outbound/osr_communication",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      }
+    ],
+    "name": "bifrost",
+    "totalComplexity": 5,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Retailer Integration Sftp",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": [
+      {
+        "complexity": 16,
+        "name": "events"
+      },
+      {
+        "complexity": 29,
+        "name": "items"
+      },
+      {
+        "complexity": 12,
+        "name": "schemas"
+      }
+    ],
+    "name": "bigquery_sftp",
+    "totalComplexity": 57,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "",
+    "domain": "integration_and_configuration/configuration",
+    "entities": [
+      {
+        "complexity": 24,
+        "name": "argo_deployments"
+      },
+      {
+        "complexity": 10,
+        "name": "copy_ff_task_notification_requests"
+      },
+      {
+        "complexity": 26,
+        "name": "copy_ff_task_units_of_work"
+      },
+      {
+        "complexity": 17,
+        "name": "copy_ff_tasks"
+      },
+      {
+        "complexity": 16,
+        "name": "deployment_commits"
+      },
+      {
+        "complexity": 15,
+        "name": "deployment_commits_processed"
+      },
+      {
+        "complexity": 31,
+        "name": "deployments"
+      },
+      {
+        "complexity": 16,
+        "name": "environment_types"
+      },
+      {
+        "complexity": 21,
+        "name": "environments"
+      },
+      {
+        "complexity": 20,
+        "name": "flux_deployments"
+      },
+      {
+        "complexity": 10,
+        "name": "git_commit_jira_tickets"
+      },
+      {
+        "complexity": 12,
+        "name": "git_commits"
+      },
+      {
+        "complexity": 10,
+        "name": "git_pr_commits"
+      },
+      {
+        "complexity": 10,
+        "name": "git_pull_requests"
+      },
+      {
+        "complexity": 10,
+        "name": "jenkins_deployments"
+      },
+      {
+        "complexity": 10,
+        "name": "key_value_storage"
+      },
+      {
+        "complexity": 37,
+        "name": "kubernetes_containers"
+      },
+      {
+        "complexity": 10,
+        "name": "kubernetes_downloads"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 11,
+        "name": "retailers"
+      },
+      {
+        "complexity": 27,
+        "name": "vm_containers"
+      },
+      {
+        "complexity": 10,
+        "name": "vm_downloads"
+      }
+    ],
+    "name": "calyx",
+    "totalComplexity": 358,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Cycle Count",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "address"
+      },
+      {
+        "complexity": 10,
+        "name": "address_status"
+      },
+      {
+        "complexity": 18,
+        "name": "adjustment"
+      },
+      {
+        "complexity": 17,
+        "name": "event"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 8,
+        "name": "session"
+      },
+      {
+        "complexity": 15,
+        "name": "task"
+      }
+    ],
+    "name": "cc",
+    "totalComplexity": 78,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Conduttore",
+    "domain": "inbound/replenishment",
+    "entities": [
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 14,
+        "name": "close_purchase_order_signal"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_blob_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_calendars"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_cron_triggers"
+      },
+      {
+        "complexity": 27,
+        "name": "qrtz_fired_triggers"
+      },
+      {
+        "complexity": 23,
+        "name": "qrtz_job_details"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_locks"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_paused_trigger_grps"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_scheduler_state"
+      },
+      {
+        "complexity": 18,
+        "name": "qrtz_simple_triggers"
+      },
+      {
+        "complexity": 34,
+        "name": "qrtz_simprop_triggers"
+      },
+      {
+        "complexity": 40,
+        "name": "qrtz_triggers"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 15,
+        "name": "reserved_inventory_items"
+      },
+      {
+        "complexity": 15,
+        "name": "sales_history_items"
+      },
+      {
+        "complexity": 9,
+        "name": "sent_run_cgo_signal"
+      }
+    ],
+    "name": "conduttore",
+    "totalComplexity": 268,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "CouchDB",
+    "domain": "production/couchdb",
+    "entities": [
+      {
+        "complexity": 67,
+        "name": "batch_orders"
+      },
+      {
+        "complexity": 23,
+        "name": "batch_receiving"
+      },
+      {
+        "complexity": 34,
+        "name": "changes_feed"
+      },
+      {
+        "complexity": 42,
+        "name": "kisoft_wpo"
+      },
+      {
+        "complexity": 566,
+        "name": "o"
+      },
+      {
+        "complexity": 1,
+        "name": "o_cancelled-for-removal"
+      },
+      {
+        "complexity": 15,
+        "name": "order_queues-for-removal"
+      },
+      {
+        "complexity": 24,
+        "name": "picker_queues-for-removal"
+      },
+      {
+        "complexity": 43,
+        "name": "picking-path"
+      },
+      {
+        "complexity": 60,
+        "name": "picking_queue_records"
+      },
+      {
+        "complexity": 26,
+        "name": "picking_session_decisions"
+      },
+      {
+        "complexity": 1,
+        "name": "picking_session_items_comments-for-removal"
+      },
+      {
+        "complexity": 50,
+        "name": "picking_session_items_decisions"
+      },
+      {
+        "complexity": 1,
+        "name": "picking_session_items_replacements-for-removal"
+      },
+      {
+        "complexity": 9,
+        "name": "planograms"
+      },
+      {
+        "complexity": 13,
+        "name": "ring_settings"
+      },
+      {
+        "complexity": 5,
+        "name": "sequences"
+      },
+      {
+        "complexity": 39,
+        "name": "translations-for-removal"
+      },
+      {
+        "complexity": 36,
+        "name": "translations_log-for-removal"
+      },
+      {
+        "complexity": 7,
+        "name": "workers_sequences"
+      }
+    ],
+    "name": "couchdb",
+    "totalComplexity": 1062,
+    "type": "couchdb"
+  },
+  {
+    "displayName": "Decanting",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 10,
+        "name": "decanting_ui_action"
+      },
+      {
+        "complexity": 25,
+        "name": "event"
+      },
+      {
+        "complexity": 12,
+        "name": "operator"
+      },
+      {
+        "complexity": 34,
+        "name": "product"
+      },
+      {
+        "complexity": 21,
+        "name": "product_event"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 29,
+        "name": "section"
+      },
+      {
+        "complexity": 28,
+        "name": "task"
+      }
+    ],
+    "name": "decanting",
+    "totalComplexity": 164,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Fulfillment Orchestrator",
+    "domain": "outbound/planning",
+    "entities": [
+      {
+        "complexity": 18,
+        "name": "issues"
+      },
+      {
+        "complexity": 12,
+        "name": "order_items"
+      },
+      {
+        "complexity": 17,
+        "name": "order_part_lines"
+      },
+      {
+        "complexity": 40,
+        "name": "order_parts"
+      },
+      {
+        "complexity": 35,
+        "name": "orders"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 19,
+        "name": "work_tasks"
+      }
+    ],
+    "name": "fulfillment-orchestrator",
+    "totalComplexity": 146,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Fulfillment Tracker",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 18,
+        "name": "manual_picking_decision_records"
+      },
+      {
+        "complexity": 44,
+        "name": "picking_decisions"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 12,
+        "name": "robotic_picking_decision_records"
+      }
+    ],
+    "name": "fulfillment_tracker",
+    "totalComplexity": 79,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Https",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": null,
+    "name": "https",
+    "totalComplexity": 0,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "User Management",
+    "domain": "integration_and_configuration/users",
+    "entities": null,
+    "name": "inc_user_management",
+    "totalComplexity": 0,
+    "type": "firestore"
+  },
+  {
+    "displayName": "IMS",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 3,
+        "name": "accounts"
+      },
+      {
+        "complexity": 27,
+        "name": "address"
+      },
+      {
+        "complexity": 31,
+        "name": "adjustment_history"
+      },
+      {
+        "complexity": 21,
+        "name": "adjustment_reasons"
+      },
+      {
+        "complexity": 12,
+        "name": "balances"
+      },
+      {
+        "complexity": 13,
+        "name": "body_assets"
+      },
+      {
+        "complexity": 12,
+        "name": "dispatch_ramp_totes"
+      },
+      {
+        "complexity": 5,
+        "name": "groups"
+      },
+      {
+        "complexity": 16,
+        "name": "messages"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 24,
+        "name": "reservations"
+      },
+      {
+        "complexity": 8,
+        "name": "tote_assets"
+      },
+      {
+        "complexity": 24,
+        "name": "txs"
+      }
+    ],
+    "name": "inventory-management",
+    "totalComplexity": 201,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "ISPS",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 44,
+        "name": "pick_list"
+      },
+      {
+        "complexity": 21,
+        "name": "pick_list_item"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_list_status"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_list_type"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_work_item_reason_code"
+      },
+      {
+        "complexity": 40,
+        "name": "pick_work_order"
+      },
+      {
+        "complexity": 43,
+        "name": "pick_work_order_item"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_work_order_status"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_work_order_type"
+      },
+      {
+        "complexity": 19,
+        "name": "pick_zone"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 22,
+        "name": "sales_pick_list_item_order_item"
+      },
+      {
+        "complexity": 20,
+        "name": "sales_pick_list_order"
+      }
+    ],
+    "name": "isps",
+    "totalComplexity": 309,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Label Manager",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 9,
+        "name": "label-manager-sites"
+      }
+    ],
+    "name": "label_manager",
+    "totalComplexity": 9,
+    "type": "firestore"
+  },
+  {
+    "displayName": "Metabase",
+    "domain": "integration_and_configuration/monitoring",
+    "entities": [
+      {
+        "complexity": 25,
+        "name": "activity"
+      },
+      {
+        "complexity": 13,
+        "name": "card_label"
+      },
+      {
+        "complexity": 24,
+        "name": "collection"
+      },
+      {
+        "complexity": 17,
+        "name": "collection_permission_graph_revision"
+      },
+      {
+        "complexity": 23,
+        "name": "computation_job"
+      },
+      {
+        "complexity": 18,
+        "name": "computation_job_result"
+      },
+      {
+        "complexity": 13,
+        "name": "core_session"
+      },
+      {
+        "complexity": 48,
+        "name": "core_user"
+      },
+      {
+        "complexity": 13,
+        "name": "dashboard_favorite"
+      },
+      {
+        "complexity": 15,
+        "name": "dashboardcard_series"
+      },
+      {
+        "complexity": 6,
+        "name": "data_migrations"
+      },
+      {
+        "complexity": 30,
+        "name": "databasechangelog"
+      },
+      {
+        "complexity": 10,
+        "name": "databasechangeloglock"
+      },
+      {
+        "complexity": 14,
+        "name": "dependency"
+      },
+      {
+        "complexity": 23,
+        "name": "dimension"
+      },
+      {
+        "complexity": 20,
+        "name": "group_table_access_policy"
+      },
+      {
+        "complexity": 9,
+        "name": "label"
+      },
+      {
+        "complexity": 22,
+        "name": "login_history"
+      },
+      {
+        "complexity": 50,
+        "name": "metabase_database"
+      },
+      {
+        "complexity": 64,
+        "name": "metabase_field"
+      },
+      {
+        "complexity": 18,
+        "name": "metabase_fieldvalues"
+      },
+      {
+        "complexity": 38,
+        "name": "metabase_table"
+      },
+      {
+        "complexity": 35,
+        "name": "metric"
+      },
+      {
+        "complexity": 13,
+        "name": "metric_important_field"
+      },
+      {
+        "complexity": 21,
+        "name": "moderation_review"
+      },
+      {
+        "complexity": 27,
+        "name": "native_query_snippet"
+      },
+      {
+        "complexity": 10,
+        "name": "permissions"
+      },
+      {
+        "complexity": 5,
+        "name": "permissions_group"
+      },
+      {
+        "complexity": 13,
+        "name": "permissions_group_membership"
+      },
+      {
+        "complexity": 17,
+        "name": "permissions_revision"
+      },
+      {
+        "complexity": 40,
+        "name": "pulse"
+      },
+      {
+        "complexity": 24,
+        "name": "pulse_card"
+      },
+      {
+        "complexity": 28,
+        "name": "pulse_channel"
+      },
+      {
+        "complexity": 13,
+        "name": "pulse_channel_recipient"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_blob_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_calendars"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_cron_triggers"
+      },
+      {
+        "complexity": 27,
+        "name": "qrtz_fired_triggers"
+      },
+      {
+        "complexity": 23,
+        "name": "qrtz_job_details"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_locks"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_paused_trigger_grps"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_scheduler_state"
+      },
+      {
+        "complexity": 18,
+        "name": "qrtz_simple_triggers"
+      },
+      {
+        "complexity": 34,
+        "name": "qrtz_simprop_triggers"
+      },
+      {
+        "complexity": 40,
+        "name": "qrtz_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "query"
+      },
+      {
+        "complexity": 12,
+        "name": "query_cache"
+      },
+      {
+        "complexity": 32,
+        "name": "query_execution"
+      },
+      {
+        "complexity": 62,
+        "name": "report_card"
+      },
+      {
+        "complexity": 19,
+        "name": "report_cardfavorite"
+      },
+      {
+        "complexity": 50,
+        "name": "report_dashboard"
+      },
+      {
+        "complexity": 31,
+        "name": "report_dashboardcard"
+      },
+      {
+        "complexity": 23,
+        "name": "revision"
+      },
+      {
+        "complexity": 26,
+        "name": "secret"
+      },
+      {
+        "complexity": 33,
+        "name": "segment"
+      },
+      {
+        "complexity": 5,
+        "name": "setting"
+      },
+      {
+        "complexity": 17,
+        "name": "task_history"
+      },
+      {
+        "complexity": 17,
+        "name": "view_log"
+      }
+    ],
+    "name": "metabase",
+    "totalComplexity": 1297,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "MFE Staging",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 3,
+        "name": "messages"
+      }
+    ],
+    "name": "mfe-staging",
+    "totalComplexity": 3,
+    "type": "firestore"
+  },
+  {
+    "displayName": "OMS",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 20,
+        "name": "items"
+      },
+      {
+        "complexity": 33,
+        "name": "lines"
+      },
+      {
+        "complexity": 15,
+        "name": "order_parts_changes"
+      },
+      {
+        "complexity": 78,
+        "name": "orders"
+      },
+      {
+        "complexity": 15,
+        "name": "orders_statuses_history"
+      },
+      {
+        "complexity": 10,
+        "name": "pallet"
+      },
+      {
+        "complexity": 50,
+        "name": "pick_lists_calculation"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 17,
+        "name": "reserved_line_items"
+      }
+    ],
+    "name": "oms",
+    "totalComplexity": 243,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "On-demand Environment Firestore",
+    "domain": "production/ondemand",
+    "entities": [
+      {
+        "complexity": 101,
+        "name": "users_audit"
+      }
+    ],
+    "name": "ondemand_firestore",
+    "totalComplexity": 101,
+    "type": "firestore"
+  },
+  {
+    "displayName": "OWM",
+    "domain": "outbound/planning",
+    "entities": [
+      {
+        "complexity": 15,
+        "name": "cutoffs"
+      },
+      {
+        "complexity": 15,
+        "name": "mfc_locations"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_blob_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_calendars"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_cron_triggers"
+      },
+      {
+        "complexity": 27,
+        "name": "qrtz_fired_triggers"
+      },
+      {
+        "complexity": 23,
+        "name": "qrtz_job_details"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_locks"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_paused_trigger_grps"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_scheduler_state"
+      },
+      {
+        "complexity": 18,
+        "name": "qrtz_simple_triggers"
+      },
+      {
+        "complexity": 34,
+        "name": "qrtz_simprop_triggers"
+      },
+      {
+        "complexity": 40,
+        "name": "qrtz_triggers"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      }
+    ],
+    "name": "owm",
+    "totalComplexity": 237,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Product Audit",
+    "domain": "inbound/assortment",
+    "entities": [
+      {
+        "complexity": 30,
+        "name": "changes_audit"
+      }
+    ],
+    "name": "product_audit",
+    "totalComplexity": 30,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Products Enrichment",
+    "domain": "inbound/assortment",
+    "entities": [
+      {
+        "complexity": 348,
+        "name": "raw_products"
+      }
+    ],
+    "name": "products_enrichment_bigquery",
+    "totalComplexity": 348,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Products Enrichment (Firestore)",
+    "domain": "inbound/assortment",
+    "entities": [
+      {
+        "complexity": 23,
+        "name": "products-api"
+      }
+    ],
+    "name": "products_enrichment_firestore",
+    "totalComplexity": 23,
+    "type": "firestore"
+  },
+  {
+    "displayName": "Redis DB:0",
+    "domain": "production/redis",
+    "entities": [
+      {
+        "complexity": 3,
+        "name": "logged_worker"
+      },
+      {
+        "complexity": 3,
+        "name": "shortener"
+      },
+      {
+        "complexity": 3,
+        "name": "workers_sequences"
+      }
+    ],
+    "name": "redis0",
+    "totalComplexity": 9,
+    "type": "redis"
+  },
+  {
+    "displayName": "Redis DB:1",
+    "domain": "production/redis",
+    "entities": [
+      {
+        "complexity": 3,
+        "name": "celery_task_meta"
+      }
+    ],
+    "name": "redis1",
+    "totalComplexity": 3,
+    "type": "redis"
+  },
+  {
+    "displayName": "Reservations",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "SchemaMigrations"
+      },
+      {
+        "complexity": 11,
+        "name": "line_item"
+      },
+      {
+        "complexity": 15,
+        "name": "product"
+      },
+      {
+        "complexity": 34,
+        "name": "reservation"
+      },
+      {
+        "complexity": 13,
+        "name": "reserved_products_pending"
+      }
+    ],
+    "name": "reservations",
+    "totalComplexity": 78,
+    "type": "spanner"
+  },
+  {
+    "displayName": "Rint-ETL",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": [
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 20,
+        "name": "events"
+      },
+      {
+        "complexity": 40,
+        "name": "items"
+      },
+      {
+        "complexity": 5,
+        "name": "kv"
+      },
+      {
+        "complexity": 5,
+        "name": "migrations_abs"
+      },
+      {
+        "complexity": 5,
+        "name": "migrations_common"
+      },
+      {
+        "complexity": 20,
+        "name": "schemas"
+      }
+    ],
+    "name": "rint-etl",
+    "totalComplexity": 103,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Robotic Message Store",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 5,
+        "name": "db_migrations"
+      },
+      {
+        "complexity": 35,
+        "name": "messages"
+      },
+      {
+        "complexity": 9,
+        "name": "osr_errors"
+      },
+      {
+        "complexity": 7,
+        "name": "osr_statuses"
+      }
+    ],
+    "name": "robotic_message_store",
+    "totalComplexity": 64,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Robotic Order Translator",
+    "domain": "outbound/osr_communication",
+    "entities": [
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 21,
+        "name": "kisoft_container"
+      },
+      {
+        "complexity": 15,
+        "name": "kisoft_function_point"
+      },
+      {
+        "complexity": 24,
+        "name": "kisoft_order"
+      },
+      {
+        "complexity": 14,
+        "name": "kisoft_order_json"
+      },
+      {
+        "complexity": 31,
+        "name": "kisoft_working_step"
+      }
+    ],
+    "name": "robotic_order_translator",
+    "totalComplexity": 113,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Semantic",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": null,
+    "name": "semantic",
+    "totalComplexity": 0,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Service Catalog",
+    "domain": "integration_and_configuration/configuration",
+    "entities": [
+      {
+        "complexity": 5,
+        "name": "migrations_data_abs"
+      },
+      {
+        "complexity": 5,
+        "name": "migrations_data_common"
+      },
+      {
+        "complexity": 5,
+        "name": "migrations_schema_common"
+      },
+      {
+        "complexity": 26,
+        "name": "op_address"
+      },
+      {
+        "complexity": 7,
+        "name": "op_address_l1_aisles"
+      },
+      {
+        "complexity": 12,
+        "name": "op_address_l2_bays"
+      },
+      {
+        "complexity": 3,
+        "name": "op_config_definition_version"
+      },
+      {
+        "complexity": 17,
+        "name": "op_config_items"
+      },
+      {
+        "complexity": 10,
+        "name": "op_flow_racks"
+      },
+      {
+        "complexity": 17,
+        "name": "op_location_ip_address_printers"
+      },
+      {
+        "complexity": 17,
+        "name": "op_location_ip_addresses_ranges"
+      },
+      {
+        "complexity": 11,
+        "name": "op_location_tote_types"
+      },
+      {
+        "complexity": 48,
+        "name": "op_locations"
+      },
+      {
+        "complexity": 11,
+        "name": "op_measure_units"
+      },
+      {
+        "complexity": 18,
+        "name": "op_osrs"
+      },
+      {
+        "complexity": 15,
+        "name": "op_planograms"
+      },
+      {
+        "complexity": 24,
+        "name": "op_printers"
+      },
+      {
+        "complexity": 15,
+        "name": "op_printing_nodes"
+      },
+      {
+        "complexity": 8,
+        "name": "op_product_category_limits"
+      },
+      {
+        "complexity": 18,
+        "name": "op_routes"
+      },
+      {
+        "complexity": 28,
+        "name": "op_staging_configs"
+      },
+      {
+        "complexity": 20,
+        "name": "op_staging_locations"
+      },
+      {
+        "complexity": 16,
+        "name": "op_tote_cell_dimensions"
+      },
+      {
+        "complexity": 46,
+        "name": "op_tote_types"
+      },
+      {
+        "complexity": 51,
+        "name": "op_tote_types_v2"
+      },
+      {
+        "complexity": 21,
+        "name": "sd_area_types"
+      },
+      {
+        "complexity": 21,
+        "name": "sd_areas"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_barcode_formats"
+      },
+      {
+        "complexity": 3,
+        "name": "sd_config_categories"
+      },
+      {
+        "complexity": 11,
+        "name": "sd_config_item_categories"
+      },
+      {
+        "complexity": 26,
+        "name": "sd_config_item_definitions"
+      },
+      {
+        "complexity": 3,
+        "name": "sd_config_item_level"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_countries"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_data_types"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_ip_address_purposes"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_location_types"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_measure_types"
+      },
+      {
+        "complexity": 10,
+        "name": "sd_measure_unit_definitions"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_media_types"
+      },
+      {
+        "complexity": 9,
+        "name": "sd_movable_asset_types"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_number_sides"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_osr_container_types"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_paper_sizes"
+      },
+      {
+        "complexity": 11,
+        "name": "sd_paper_sizes_per_printer_models"
+      },
+      {
+        "complexity": 15,
+        "name": "sd_paper_types"
+      },
+      {
+        "complexity": 11,
+        "name": "sd_paper_types_per_printer_models"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_printer_models"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_printing_methods"
+      },
+      {
+        "complexity": 12,
+        "name": "sd_states"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_static_dynamic_types"
+      },
+      {
+        "complexity": 11,
+        "name": "sd_temperature_zones"
+      },
+      {
+        "complexity": 5,
+        "name": "sd_tote_kinds"
+      },
+      {
+        "complexity": 7,
+        "name": "sd_tote_slot_definitions"
+      }
+    ],
+    "name": "service_catalog",
+    "totalComplexity": 694,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Sinfonietta",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": [
+      {
+        "complexity": 17,
+        "name": "activemq_acks"
+      },
+      {
+        "complexity": 7,
+        "name": "activemq_lock"
+      },
+      {
+        "complexity": 19,
+        "name": "activemq_msgs"
+      },
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 5,
+        "name": "kv"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_blob_triggers"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_calendars"
+      },
+      {
+        "complexity": 16,
+        "name": "qrtz_cron_triggers"
+      },
+      {
+        "complexity": 27,
+        "name": "qrtz_fired_triggers"
+      },
+      {
+        "complexity": 23,
+        "name": "qrtz_job_details"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_locks"
+      },
+      {
+        "complexity": 5,
+        "name": "qrtz_paused_trigger_grps"
+      },
+      {
+        "complexity": 9,
+        "name": "qrtz_scheduler_state"
+      },
+      {
+        "complexity": 18,
+        "name": "qrtz_simple_triggers"
+      },
+      {
+        "complexity": 34,
+        "name": "qrtz_simprop_triggers"
+      },
+      {
+        "complexity": 40,
+        "name": "qrtz_triggers"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      }
+    ],
+    "name": "sinfonietta",
+    "totalComplexity": 263,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Site Info",
+    "domain": "integration_and_configuration/configuration",
+    "entities": [
+      {
+        "complexity": 27,
+        "name": "site-info-retailers"
+      },
+      {
+        "complexity": 33,
+        "name": "site-info-status-transitions"
+      }
+    ],
+    "name": "site_info",
+    "totalComplexity": 60,
+    "type": "firestore"
+  },
+  {
+    "displayName": "Slipstick",
+    "domain": "inbound/inventory",
+    "entities": [
+      {
+        "complexity": 18,
+        "name": "alerts"
+      },
+      {
+        "complexity": 3,
+        "name": "event"
+      },
+      {
+        "complexity": 14,
+        "name": "osr_load"
+      },
+      {
+        "complexity": 22,
+        "name": "osr_zones_report"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      }
+    ],
+    "name": "slipstick",
+    "totalComplexity": 62,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "",
+    "domain": "production/sonarqube",
+    "entities": [
+      {
+        "complexity": 11,
+        "name": "active_rule_parameters"
+      },
+      {
+        "complexity": 15,
+        "name": "active_rules"
+      },
+      {
+        "complexity": 17,
+        "name": "alm_app_installs"
+      },
+      {
+        "complexity": 13,
+        "name": "alm_pats"
+      },
+      {
+        "complexity": 23,
+        "name": "alm_settings"
+      },
+      {
+        "complexity": 15,
+        "name": "analysis_properties"
+      },
+      {
+        "complexity": 45,
+        "name": "ce_activity"
+      },
+      {
+        "complexity": 23,
+        "name": "ce_queue"
+      },
+      {
+        "complexity": 11,
+        "name": "ce_scanner_context"
+      },
+      {
+        "complexity": 9,
+        "name": "ce_task_characteristics"
+      },
+      {
+        "complexity": 11,
+        "name": "ce_task_input"
+      },
+      {
+        "complexity": 11,
+        "name": "ce_task_message"
+      },
+      {
+        "complexity": 68,
+        "name": "components"
+      },
+      {
+        "complexity": 11,
+        "name": "default_qprofiles"
+      },
+      {
+        "complexity": 11,
+        "name": "deprecated_rule_keys"
+      },
+      {
+        "complexity": 15,
+        "name": "duplications_index"
+      },
+      {
+        "complexity": 13,
+        "name": "es_queue"
+      },
+      {
+        "complexity": 21,
+        "name": "event_component_changes"
+      },
+      {
+        "complexity": 19,
+        "name": "events"
+      },
+      {
+        "complexity": 27,
+        "name": "file_sources"
+      },
+      {
+        "complexity": 11,
+        "name": "group_roles"
+      },
+      {
+        "complexity": 15,
+        "name": "groups"
+      },
+      {
+        "complexity": 5,
+        "name": "groups_users"
+      },
+      {
+        "complexity": 13,
+        "name": "internal_component_props"
+      },
+      {
+        "complexity": 11,
+        "name": "internal_properties"
+      },
+      {
+        "complexity": 21,
+        "name": "issue_changes"
+      },
+      {
+        "complexity": 57,
+        "name": "issues"
+      },
+      {
+        "complexity": 25,
+        "name": "live_measures"
+      },
+      {
+        "complexity": 19,
+        "name": "manual_measures"
+      },
+      {
+        "complexity": 33,
+        "name": "metrics"
+      },
+      {
+        "complexity": 15,
+        "name": "new_code_periods"
+      },
+      {
+        "complexity": 9,
+        "name": "notifications"
+      },
+      {
+        "complexity": 17,
+        "name": "org_qprofiles"
+      },
+      {
+        "complexity": 7,
+        "name": "org_quality_gates"
+      },
+      {
+        "complexity": 17,
+        "name": "organization_alm_bindings"
+      },
+      {
+        "complexity": 5,
+        "name": "organization_members"
+      },
+      {
+        "complexity": 33,
+        "name": "organizations"
+      },
+      {
+        "complexity": 15,
+        "name": "perm_templates_groups"
+      },
+      {
+        "complexity": 15,
+        "name": "perm_templates_users"
+      },
+      {
+        "complexity": 13,
+        "name": "perm_tpl_characteristics"
+      },
+      {
+        "complexity": 17,
+        "name": "permission_templates"
+      },
+      {
+        "complexity": 15,
+        "name": "plugins"
+      },
+      {
+        "complexity": 17,
+        "name": "project_alm_settings"
+      },
+      {
+        "complexity": 25,
+        "name": "project_branches"
+      },
+      {
+        "complexity": 15,
+        "name": "project_links"
+      },
+      {
+        "complexity": 11,
+        "name": "project_mappings"
+      },
+      {
+        "complexity": 27,
+        "name": "project_measures"
+      },
+      {
+        "complexity": 5,
+        "name": "project_qgates"
+      },
+      {
+        "complexity": 7,
+        "name": "project_qprofiles"
+      },
+      {
+        "complexity": 21,
+        "name": "projects"
+      },
+      {
+        "complexity": 17,
+        "name": "properties"
+      },
+      {
+        "complexity": 13,
+        "name": "qprofile_changes"
+      },
+      {
+        "complexity": 9,
+        "name": "qprofile_edit_groups"
+      },
+      {
+        "complexity": 9,
+        "name": "qprofile_edit_users"
+      },
+      {
+        "complexity": 17,
+        "name": "quality_gate_conditions"
+      },
+      {
+        "complexity": 13,
+        "name": "quality_gates"
+      },
+      {
+        "complexity": 9,
+        "name": "rule_repositories"
+      },
+      {
+        "complexity": 51,
+        "name": "rules"
+      },
+      {
+        "complexity": 33,
+        "name": "rules_metadata"
+      },
+      {
+        "complexity": 13,
+        "name": "rules_parameters"
+      },
+      {
+        "complexity": 17,
+        "name": "rules_profiles"
+      },
+      {
+        "complexity": 9,
+        "name": "saml_message_ids"
+      },
+      {
+        "complexity": 3,
+        "name": "schema_migrations"
+      },
+      {
+        "complexity": 11,
+        "name": "session_tokens"
+      },
+      {
+        "complexity": 27,
+        "name": "snapshots"
+      },
+      {
+        "complexity": 11,
+        "name": "user_dismissed_messages"
+      },
+      {
+        "complexity": 13,
+        "name": "user_properties"
+      },
+      {
+        "complexity": 11,
+        "name": "user_roles"
+      },
+      {
+        "complexity": 13,
+        "name": "user_tokens"
+      },
+      {
+        "complexity": 43,
+        "name": "users"
+      },
+      {
+        "complexity": 27,
+        "name": "webhook_deliveries"
+      },
+      {
+        "complexity": 17,
+        "name": "webhooks"
+      }
+    ],
+    "name": "sonarqube",
+    "totalComplexity": 1291,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "Mobile Analytics",
+    "domain": "outbound/mobile_support",
+    "entities": null,
+    "name": "takeoff_mobile_analytics",
+    "totalComplexity": 0,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Mobile Crash Analytics",
+    "domain": "outbound/mobile_support",
+    "entities": [
+      {
+        "complexity": 761,
+        "name": "com_takeoff_mobileapp_ANDROID"
+      },
+      {
+        "complexity": 761,
+        "name": "com_takeoff_mobileapp_ANDROID_REALTIME"
+      }
+    ],
+    "name": "takeoff_mobile_crashlytics",
+    "totalComplexity": 1522,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "Mobile Performance",
+    "domain": "outbound/mobile_support",
+    "entities": [
+      {
+        "complexity": 138,
+        "name": "com_takeoff_mobileapp_ANDROID"
+      }
+    ],
+    "name": "takeoff_mobile_firebase_performance",
+    "totalComplexity": 138,
+    "type": "bigquery"
+  },
+  {
+    "displayName": "TGIM",
+    "domain": "inbound/replenishment",
+    "entities": [
+      {
+        "complexity": 17,
+        "name": "activemq_acks"
+      },
+      {
+        "complexity": 7,
+        "name": "activemq_lock"
+      },
+      {
+        "complexity": 19,
+        "name": "activemq_msgs"
+      },
+      {
+        "complexity": 8,
+        "name": "camel_messageprocessed"
+      },
+      {
+        "complexity": 5,
+        "name": "ragtime_migrations"
+      },
+      {
+        "complexity": 14,
+        "name": "tgi_item_error"
+      },
+      {
+        "complexity": 14,
+        "name": "tgi_item_status"
+      },
+      {
+        "complexity": 25,
+        "name": "tgi_kisoft_ftp_endpoint"
+      },
+      {
+        "complexity": 15,
+        "name": "tgi_kisoft_response"
+      },
+      {
+        "complexity": 8,
+        "name": "tgi_micro_fulfillment_center"
+      }
+    ],
+    "name": "tom-gold-integration",
+    "totalComplexity": 132,
+    "type": "cloudsql"
+  },
+  {
+    "displayName": "PoC Tote Dispatcher",
+    "domain": "outbound/fulfillment",
+    "entities": [
+      {
+        "complexity": 37,
+        "name": "configs"
+      },
+      {
+        "complexity": 17,
+        "name": "tote_assignments"
+      },
+      {
+        "complexity": 23,
+        "name": "tote_assignments_log"
+      }
+    ],
+    "name": "tote_dispatcher",
+    "totalComplexity": 77,
+    "type": "spanner"
+  },
+  {
+    "displayName": "User Profile",
+    "domain": "uxui/user_profile",
+    "entities": [
+      {
+        "complexity": 30,
+        "name": "DATABASECHANGELOG"
+      },
+      {
+        "complexity": 10,
+        "name": "DATABASECHANGELOGLOCK"
+      },
+      {
+        "complexity": 18,
+        "name": "default_settings"
+      },
+      {
+        "complexity": 13,
+        "name": "settings"
+      },
+      {
+        "complexity": 20,
+        "name": "user_settings"
+      }
+    ],
+    "name": "user_profile",
+    "totalComplexity": 91,
+    "type": "spanner"
+  },
+  {
+    "displayName": "Webhooks",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": [
+      {
+        "complexity": 43,
+        "name": "webhook"
+      },
+      {
+        "complexity": 43,
+        "name": "webhook-archive"
+      }
+    ],
+    "name": "webhooks_firestore",
+    "totalComplexity": 86,
+    "type": "firestore"
+  },
+  {
+    "displayName": "Webhooks",
+    "domain": "integration_and_configuration/retailer_integration",
+    "entities": [
+      {
+        "complexity": 30,
+        "name": "DATABASECHANGELOG"
+      },
+      {
+        "complexity": 10,
+        "name": "DATABASECHANGELOGLOCK"
+      },
+      {
+        "complexity": 29,
+        "name": "delivery_history"
+      },
+      {
+        "complexity": 11,
+        "name": "event_types"
+      },
+      {
+        "complexity": 11,
+        "name": "webhook_events"
+      },
+      {
+        "complexity": 37,
+        "name": "webhooks"
+      }
+    ],
+    "name": "webhooks_spanner",
+    "totalComplexity": 128,
+    "type": "spanner"
+  }
+]

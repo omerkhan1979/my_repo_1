@@ -1,0 +1,12 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**pulse_channel_recipient**" [[metabase_pulse_channel_recipient.puml]] {
+  + ""id"": //integer [PK]//
+  --
+  *""pulse_channel_id"": //integer [FK]//
+  *""user_id"": //integer [FK]//
+}
+
+@enduml

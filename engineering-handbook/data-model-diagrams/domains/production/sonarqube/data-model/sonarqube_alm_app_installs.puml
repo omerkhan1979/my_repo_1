@@ -1,0 +1,17 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**alm_app_installs**" [[sonarqube_alm_app_installs.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""alm_id"": //character varying(40)//
+  *""created_at"": //bigint//
+  *""install_id"": //character varying(4000)//
+  *""is_owner_user"": //boolean//
+  *""owner_id"": //character varying(4000)//
+  *""updated_at"": //bigint//
+  *""user_external_id"": //character varying(255)//
+}
+
+@enduml

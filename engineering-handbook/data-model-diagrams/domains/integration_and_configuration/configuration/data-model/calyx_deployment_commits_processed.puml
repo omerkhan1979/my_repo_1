@@ -1,0 +1,14 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**deployment_commits_processed**" [[calyx_deployment_commits_processed.puml]] {
+  + ""deployment_id"": //integer [PK][FK]//
+  + ""service_name"": //text [PK]//
+  --
+  *""attempts_count"": //integer//
+  *""last_processed"": //timestamp with time zone//
+  *""success"": //boolean//
+}
+
+@enduml

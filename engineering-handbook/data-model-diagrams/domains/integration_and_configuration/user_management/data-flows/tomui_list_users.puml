@@ -1,0 +1,21 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component Firebase
+component TomUI
+component Configuration
+
+usecase "List of Users" as ListUsers
+usecase "Get Users" as AuthServiceGetUsers
+usecase "Merge Roles and Locations" as MergeRolesAndLocations
+
+TomUI <-down- ListUsers : users
+ListUsers <-down- AuthServiceGetUsers
+AuthServiceGetUsers <-down- Firebase : users & roles
+
+ListUsers <-down- MergeRolesAndLocations
+MergeRolesAndLocations <-down- Configuration : locations
+
+@enduml

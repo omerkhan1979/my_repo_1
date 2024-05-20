@@ -1,0 +1,19 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+component TomUI
+usecase "Dispatch Ramp Handler" as RampStateHandler
+database "Dispatch Ramp Totes" as DBDispatchRampTotes  <<link>> [[../data-model/inventory-management_dispatch_ramp_totes.puml]]
+database "Groups" as DBGroups <<link>> [[../data-model/inventory-management_groups.puml]]
+database "Tote Assets" as DBToteAssets <<link>> [[../data-model/inventory-management_tote_assets.puml]]
+database "Body Assets" as DBBodyAssets <<link>> [[../data-model/inventory-management_body_assets.puml]]
+
+TomUI <-down- RampStateHandler : dispatch ramp
+RampStateHandler <-down- DBDispatchRampTotes : totes & orders
+RampStateHandler <-down- DBGroups : groups
+RampStateHandler <-down- DBToteAssets : totes
+RampStateHandler <-down- DBBodyAssets : ???
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Calyx
+component LaunchDarkly
+
+' participants
+usecase "Feature Flags Details" as FFDetails
+
+Calyx <-down- FFDetails
+FFDetails <-down- LaunchDarkly
+
+@enduml

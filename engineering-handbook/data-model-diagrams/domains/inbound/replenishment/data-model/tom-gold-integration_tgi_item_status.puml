@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**tgi_item_status**" [[tom-gold-integration_tgi_item_status.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""corellation_id"": //character varying(255)//
+  *""created"": //timestamp with time zone//
+  *""item_id"": //character varying(255)//
+  *""item_type"": //character varying(255)//
+  *""status"": //character varying(255)//
+}
+
+@enduml

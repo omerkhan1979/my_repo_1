@@ -1,0 +1,28 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+' participants
+
+''' REPLENISHMENT APPLICABLE ONLY
+''' FOR THE OUTBOUND PURCHASE ORDER FLOWS
+
+usecase Replenishment
+
+component Assortment
+component GOLD
+component Oracle
+component Outbound
+component Retailer
+
+Assortment -down-> Replenishment : itemmaster
+Outbound -up-> Replenishment : sales history
+Replenishment -right-> GOLD : sales history
+Replenishment -right-> GOLD : itemmaster
+Replenishment -right-> GOLD : supplier service contract
+Replenishment <-right- GOLD : purchase order
+Replenishment -right-> GOLD : replenishment params
+GOLD <-right-> Oracle
+Replenishment -left-> Retailer : purchase order
+
+@enduml

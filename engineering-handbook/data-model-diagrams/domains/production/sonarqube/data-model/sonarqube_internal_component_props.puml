@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**internal_component_props**" [[sonarqube_internal_component_props.puml]] {
+  + ""uuid"": //character varying(40) [PK]//
+  --
+  *""component_uuid"": //character varying(50)//
+  *""created_at"": //bigint//
+  *""kee"": //character varying(512)//
+  *""updated_at"": //bigint//
+  *""value"": //character varying(4000)//
+}
+
+@enduml

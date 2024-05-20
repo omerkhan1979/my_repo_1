@@ -1,0 +1,16 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**copy_ff_tasks**" [[calyx_copy_ff_tasks.puml]] {
+  + ""task_id"": //bigint [PK]//
+  --
+  *""comment"": //character varying(20000)//
+  *""created"": //timestamp with time zone//
+  *""created_by"": //character varying(50)//
+  *""last_updated"": //timestamp with time zone//
+  *""some_errors"": //boolean//
+  *""status"": //character varying(25)//
+}
+
+@enduml

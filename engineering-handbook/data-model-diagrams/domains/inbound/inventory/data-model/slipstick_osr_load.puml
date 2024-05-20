@@ -1,0 +1,15 @@
+@startuml
+hide circle
+!include ../../../../style/default.iuml
+
+entity "**osr_load**" [[slipstick_osr_load.puml]] {
+  + ""id"": //bigint [PK]//
+  --
+  *""ambient"": //numeric//
+  *""created"": //timestamp with time zone//
+  *""location_id"": //text//
+  *""raw"": //numeric//
+  *""refrigirated"": //numeric//
+}
+
+@enduml

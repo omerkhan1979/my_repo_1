@@ -1,0 +1,18 @@
+@startuml
+
+
+!include ../../../../style/default.iuml
+
+' participants
+component OSR
+
+database "Products" as Products <<link>> [[../data-model/distiller_products.puml]]
+
+usecase "Bifrost Subscriber" as Bifrost
+
+' data flow
+Bifrost <-up- Products : product updated via pubsub
+
+Bifrost -down-> OSR : add article
+
+@enduml

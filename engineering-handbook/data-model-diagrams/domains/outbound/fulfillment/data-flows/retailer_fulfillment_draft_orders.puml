@@ -1,0 +1,29 @@
+@startuml
+
+!include ../../../../style/default.iuml
+
+component Retailer
+component Planning
+
+usecase "Orders Storage" as OrdersStorage
+usecase "In-Store Picking" as InStorePickingScheduler
+usecase "Order Status Update" as OrderStatusUpdate
+
+database "Orders" as DBOMSOrders <<link>> [[../data-model/oms_orders.puml]]
+database "Lines" as DBOMSLines <<link>> [[../data-model/oms_lines.puml]]
+database "Pallet" as DBOMSPallet <<link>> [[../data-model/oms_pallet.puml]]
+database "Orders Status History" as DBOMSOrdersStatusesHistory <<link>> [[../data-model/oms_orders_statuses_history.puml]]
+
+' data flows
+Retailer -down-> OrdersStorage : order
+OrdersStorage -down-> DBOMSOrders : order
+OrdersStorage -down-> DBOMSLines : lines
+OrdersStorage -down-> DBOMSPallet : pallet id generation
+OrdersStorage -down-> DBOMSOrdersStatusesHistory : status draft
+OrdersStorage -down--> InStorePickingScheduler : job
+OrdersStorage -right-> OrderStatusUpdate : status draft
+OrderStatusUpdate -up-> Retailer : status
+
+Planning -down-> OrdersStorage : cutoff table
+
+@enduml

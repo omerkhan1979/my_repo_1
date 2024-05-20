@@ -1,0 +1,25 @@
+clients:
+  abs:
+    deployerName: Amar
+    deployerEmail: amar.paramashetti@takeoff.com
+  blueberry:
+    deployerName: Amar
+    deployerEmail: amar.paramashetti@takeoff.com
+  maf:
+    deployerName: Dan
+    deployerEmail: dan.finn@takeoff.com
+  wings:
+    deployerName: Satya
+    deployerEmail: satya.rout@takeoff.com
+  winter:
+    deployerName: Dan
+    deployerEmail: dan.finn@takeoff.com
+  smu:
+    deployerName: Ankita
+    deployerEmail: ankita.deshpande@takeoff.com
+  pinemelon:
+    deployerName: Satya
+    deployerEmail: satya.rout@takeoff.com
+  tienda:
+    deployerName: Amar
+    deployerEmail: amar.paramashetti@takeoff.com

@@ -1,0 +1,4 @@
+decanting-service:
+  helm_chart_version: 24-02-05.619-hotfix.627
+platform:
+  helm_chart_version: 24-02-07.754-hotfix.1

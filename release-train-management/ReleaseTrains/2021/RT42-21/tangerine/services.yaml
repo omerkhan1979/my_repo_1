@@ -1,0 +1,5 @@
+ims:
+  helm_chart_version: 21-10-18.192
+  image: 21-10-18.91
+platform:
+  helm_chart_version: 21-10-21.379-hotfix.1

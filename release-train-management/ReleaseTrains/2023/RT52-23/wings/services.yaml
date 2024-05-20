@@ -1,0 +1,2 @@
+integration:
+  helm_chart_version: 23-11-01.328-hotfix.466

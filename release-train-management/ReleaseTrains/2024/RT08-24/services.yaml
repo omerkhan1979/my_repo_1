@@ -1,0 +1,22 @@
+auth-service:
+  helm_chart_version: 24-02-21.243
+bifrost:
+  helm_chart_version: 24-02-18.180
+cartonization:
+  helm_chart_version: 24-02-05.119
+decanting-service:
+  helm_chart_version: 24-02-16.628
+distiller:
+  image: 24-01-23.302.1
+  helm_chart_version: 24-02-22.245.1
+ims:
+  image: 24-01-30.80
+  helm_chart_version: 24-02-20.292
+integration:
+  helm_chart_version: 24-02-11.483
+osr-emulator:
+  helm_chart_version: 24-02-20.327
+platform:
+  helm_chart_version: 24-02-18.758
+service-catalog:
+  helm_chart_version: 24-01-23.289

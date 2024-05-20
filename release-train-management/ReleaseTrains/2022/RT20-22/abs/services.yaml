@@ -1,0 +1,4 @@
+oms:
+  helm_chart_version: 22-05-04.429
+integration:
+  helm_chart_version: 22-05-18.1201-hotfix.1209

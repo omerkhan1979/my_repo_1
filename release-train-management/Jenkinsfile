@@ -1,0 +1,289 @@
+def USAGE_STRING = '''\
+How to use the Pipeline:
+This pipeline was created specifically for the cut and update of a Release Train every Wednesday. All components of this are themselves jobs that can be run independently for other use cases.
+The features include (in order)
+* Parallel deployment of Platform per client
+* Parallel deployments of all other Takeoff services per client and per service
+A failure in any of these stages will stop the pipeline for all clients. This will prevent further noise and errors downstream.
+
+Parameters:
+CLIENTs
+Each check box that starts with 'CLIENT_' is used to include the named client in the all the features of this pipeline. If run without any clients checked then the pipeline will exit early.
+Popular use case: To update the pipeline to pull the latest pipeline from the repo.
+platform
+If this text box is filled, the platform collection of services will be deployed. If empty than this will not be deployed.
+TAKEOFF services
+Each text box that starts with 'TAKEOFF_' will take the git tag or config tag of that service. This will be passed down to the multi deploy pipeline for each customer. If empty, then the service will not be deployed. These along with 'platform' follow the same order as the Master Release Train ticket.
+TESTRUN_NAME
+This is an optional parameter for cases where the pipeline must use a different Test Run name in Test Rail. This will also be appended to '[client]' in the test run name. By default this will be 'Production Deployment Train: ${year}-${week_number}'
+'''
+
+// Prealocate dict/map of Takeoff Service to be deployed
+def deployTakeoffServices = [:]
+def deployTakeoffClients = [:]
+def test_run_name
+
+@NonCPS
+def setDescription(description) {
+    def jobName = env.jobName
+    if (jobName?.trim()) {
+        println "Updating documentation for ${jobName}"
+        def item = Jenkins.instance.getItemByFullName(jobName)
+        item.setDescription(description)
+        item.save()
+    }
+}
+
+def executeSeries(Map seriesStages) {
+    seriesStages.each {
+        println "Running stage: ${it.getKey()}"
+        it.getValue().call()
+    }
+}
+
+def buildPlatformDeployStage(platform_version, client_name, client_env) {
+    def jobName = "Deploy_Platform_kubernetes_${client_name}_${client_env}"
+
+    return {
+        println "Starting ${jobName}"
+        println "Version to be deployed: ${platform_version}"
+        build job: jobName, parameters: [
+                [$class: 'StringParameterValue', name: 'GIT_TAG', value: platform_version],
+                string(name: 'CONFIRM', value: 'OKAY')
+        ]
+    }
+}
+
+def buildMultiDeployStage(multi_deploy_params, client_name, client_env) {
+    def jobName = "multi_deploy_pipeline"
+
+    // Configure the multi-deploy stages
+    return {
+        // Parallel stage work here
+        println "Starting ${jobName}"
+        println "Client to be deployed: ${client_name}"
+
+        def params = [
+                string(name: 'CLIENT', value: client_name),
+                string(name: 'ENV', value: client_env)
+        ]
+        params.addAll(multi_deploy_params)
+
+        build job: jobName, parameters: params
+    }
+}
+
+
+node("master-host") {
+    properties([
+            parameters([
+                    booleanParam(defaultValue: false, name: 'CLIENT_abs', description: 'Include abs-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_alpha', description: 'Include alpha-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_blueberry', description: 'Include blueberry-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_eightyone', description: 'Include eightyone-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_maf', description: 'Include maf-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_sunbird', description: 'Include sunbird-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_wings', description: 'Include wings-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_winter', description: 'Include winter-qai in deployment'),
+                    booleanParam(defaultValue: false, name: 'CLIENT_smu', description: 'Include smu-qai in deployment'),
+                    string(defaultValue: '', description: 'Service Catalog version. If empty, component will be not deployed', name: 'TAKEOFF_service_catalog', trim: true),
+                    string(defaultValue: '', description: 'Auth Service version. If empty, component will be not deployed', name: 'TAKEOFF_auth_service', trim: true),
+                    string(defaultValue: '', description: 'OMS version. If empty, component will be not deployed', name: 'TAKEOFF_oms', trim: true),
+                    string(defaultValue: '', description: 'Cartonization version. If empty, component will be not deployed', name: 'TAKEOFF_cartonization', trim: true),
+                    string(defaultValue: '', description: 'RINT version. If empty, component will be not deployed', name: 'TAKEOFF_integration', trim: true),
+                    string(defaultValue: '', description: 'ISPS version. If empty, component will be not deployed', name: 'TAKEOFF_isps', trim: true),
+                    string(defaultValue: '', description: 'Distiller helm chart version. If empty, component will be not deployed.', name: 'TAKEOFF_distiller', trim: true),
+                    string(defaultValue: '', description: 'Decanting Service version. If empty, component will be not deployed', name: 'TAKEOFF_decanting_service', trim: true),
+                    string(defaultValue: '', description: 'Cycle count helm chart version. If empty, component will be not deployed', name: 'TAKEOFF_cycle_count', trim: true),
+                    string(defaultValue: '', description: 'Bifrost version. If empty, component will be not deployed', name: 'TAKEOFF_bifrost', trim: true),
+                    string(defaultValue: '', description: 'Platform version. If empty, component will be not deployed', name: 'platform', trim: true),
+                    string(defaultValue: '', description: 'IMS helm chart version. If empty, component will be not deployed', name: 'TAKEOFF_ims', trim: true),
+                    string(defaultValue: '', description: 'OSR emulator version. If empty, component will be not deployed', name: 'TAKEOFF_osr_emulator', trim: true),
+                    string(defaultValue: '', description: 'Optional Test Run name override. If supplied, the name will be prepended with "[customer] "', name: 'TESTRUN_NAME', trim: true)
+            ]),
+    ])
+    ansiColor('xterm') {
+        timestamps {
+
+            // stage("Debug Jenkins Environment") {
+            // echo sh(script: 'env|sort', returnStdout: true)
+            // println env.getEnvironment()
+            // }
+
+            // this wrap is the hack for getting Build User
+            wrap([$class: 'BuildUser']) {
+                // Change Display Name of the Build
+                def userFullName = env.BUILD_USER
+                def userid = env.BUILD_USER_ID
+                def date = new Date()
+                def week_number = date.getAt(Calendar.WEEK_OF_YEAR)
+                def year = date.format('yyyy')
+                def SlackChannel = "release-train-deployment"
+                if (env.TESTRUN_NAME) {
+                    test_run_name = env.TESTRUN_NAME
+                } else {
+                    test_run_name = "Production Deployment Train: ${year}-${week_number} "
+                }
+
+                currentBuild.displayName = "Release Train ${year}-${week_number}"
+                currentBuild.description = "Release Train ${year}-${week_number} | started by: " + userFullName
+
+                stage("Update description") {
+                    // Update the job description (not build description) based on doc string.
+                    setDescription(USAGE_STRING)
+                }
+
+                stage("Check access to deploy on qai|uat") {
+                    def auths = jenkins.model.Jenkins.instance.securityRealm.loadUserByUsername(userid).authorities.collect { a -> a.authority }
+                    println "[DEBUG] Your Okta groups: " + auths
+
+                    if ("team-chamaeleon" in auths || "team-orion" in auths) {
+                        println "[INFO] Access granted to deploy on Staging Envs"
+                    } else {
+                        currentBuild.result = 'ABORTED'
+                        error("[ABORTED] Access denied to deploy on Staging Envs")
+                    }
+                }
+
+                stage("Define services/versions") {
+                    env.getEnvironment()
+                    // find all TAKEOFF_ values in env (injected from input params)
+                            .findAll { it.key.startsWith("TAKEOFF_") }
+                    // filter empty values
+                            .findAll { it.value != "" }
+                    // put every envVar element into deployTakeoffServices map
+                            .collect({ envVar ->
+                                deployTakeoffServices.put(
+                                        envVar.key,
+                                        envVar.value
+                                )
+                            })
+
+                    println "[DEBUG] userFullName:" + userFullName
+                    println "[DEBUG] Takeoff Services to be deployed: ${deployTakeoffServices}"
+                }
+
+                stage("Define Clients") {
+                    env.getEnvironment()
+                    // find all CLIENT_ values in env (injected from input params)
+                            .findAll { it.key.startsWith("CLIENT_") }
+                    // filter false values
+                            .findAll { it.value == "true" }
+                    // put every envVar element into deployTakeoffServices map
+                            .collect({ envVar ->
+                                deployTakeoffClients.put(
+                                        envVar.key.replaceAll("CLIENT_", ""),
+                                        envVar.value
+                                )
+                            })
+                    println "[DEBUG] Clients raw: ${deployTakeoffClients}"
+
+                    deployTakeoffClients.each { CLIENT ->
+                        def env = "qai"
+                        deployTakeoffClients.put(CLIENT.key, env)
+                    }
+
+                    println "[DEBUG] Clients: ${deployTakeoffClients}."
+                }
+
+                // Exit with Failure if deployTakeoffClients is empty
+                if (deployTakeoffClients.size() == 0) {
+                    currentBuild.result = 'ABORTED'
+                    error("[ABORTED] You didn't choose any clients to deploy")
+                    return
+                }
+
+                stage("Send Slack notification") {
+                    slackSend(
+                            channel: SlackChannel,
+                            message: "FYI: Release Train `${year}-${week_number}` deployment on `${deployTakeoffClients}` started by `${userFullName}`\n<${env.RUN_DISPLAY_URL}|(Open)>",
+                            color: '#008000'
+                    )
+                }
+                '''
+                stage("Feature Flag Alignments") {
+                    def alignQaiParallelDeploy = [:]
+                    def alignUatParallelDeploy = [:]
+                    def jobName = "Tools/FeatureFlagAlignment"
+
+                    if (env.OKTA_TOKEN?.trim()) {
+                        deployTakeoffClients.each { CLIENT ->
+                            def uat_env = "uat"
+                            alignQaiParallelDeploy["${CLIENT.key}-${CLIENT.value}"] = {
+                                stage("Aligning feature flags: ${CLIENT.key}") {
+                                    println "Starting ${jobName}. Aligning feature flags for ${CLIENT.key} between ${CLIENT.value} and prod"
+                                    build job: jobName, parameters: [
+                                            string(name: 'CLIENT', value: CLIENT.key),
+                                            string(name: 'ENV1', value: CLIENT.value),
+                                            string(name: 'ENV2', value: "prod"),
+                                            string(name: 'OKTA_TOKEN', value: env.OKTA_TOKEN)
+                                    ]
+                                }
+                            }
+                            alignUatParallelDeploy["${CLIENT.key}-${uat_env}"] = {
+                                stage("Aligning feature flags: ${CLIENT.key}") {
+                                    println "Starting ${jobName}. Aligning feature flags for ${CLIENT.key} between ${CLIENT.value} and ${uat_env}"
+                                    build job: jobName, parameters: [
+                                            string(name: 'CLIENT', value: CLIENT.key),
+                                            string(name: 'ENV1', value: CLIENT.value),
+                                            string(name: 'ENV2', value: uat_env),
+                                            string(name: 'OKTA_TOKEN', value: env.OKTA_TOKEN)
+                                    ]
+                                }
+                            }
+                        }
+                    }
+
+                    // Execute the stages in parallel
+                    try {
+                        parallel alignQaiParallelDeploy
+                    } catch (e) {
+                        println "Errors found aligning feature flags. Proceeding."
+                        println e.toString()
+                    }
+
+                    try {
+                        parallel alignUatParallelDeploy
+                    } catch (e) {
+                        println "Errors found aligning feature flags. Proceeding."
+                        println e.toString()
+                    }
+                }'''
+                stage("Build stage series") {
+                    // Build a top level container for all client jobs
+                    def parallelTopLevelSteps = [:]
+
+                    // Build multi-deploy params
+                    def multi_deploy_params = []
+                    deployTakeoffServices.each { takeoffService ->
+                        def TAKEOFF_SVC = takeoffService.key
+                        def VERSION = takeoffService.value
+                        // Define and add to stages dict/map of parallel deploy stages
+                        multi_deploy_params.add([$class: 'StringParameterValue', name: TAKEOFF_SVC, value: VERSION])
+                    }
+
+                    // Loop through all Takeoff Clients to be deployed
+                    deployTakeoffClients.each { CLIENT ->
+                        // Add a platform stage for the client to run in series
+                        def parallelNestedSteps = [:]
+                        if (env.platform?.trim()) {
+                            parallelNestedSteps["platform"] = buildPlatformDeployStage(env.platform, CLIENT.key, CLIENT.value)
+                        }
+
+                        // Add a multi-deploy stage for the client to run in series
+                        if (multi_deploy_params.size() != 0) {
+                            parallelNestedSteps["multi_deploy"] = buildMultiDeployStage(multi_deploy_params, CLIENT.key, CLIENT.value)
+                        }
+
+                        parallelTopLevelSteps["${CLIENT.key}"] = {
+                            stage("Execute ${CLIENT.key}") {
+                                executeSeries(parallelNestedSteps)
+                            }
+                        }
+                    }
+                    parallel(parallelTopLevelSteps)
+                }
+            }
+        }
+    }
+}

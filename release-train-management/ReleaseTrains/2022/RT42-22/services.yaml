@@ -1,0 +1,26 @@
+auth-service:
+  helm_chart_version: 22-09-22.202-hotfix.0
+bifrost:
+  helm_chart_version: 22-09-23.132-hotfix.0
+cartonization:
+  helm_chart_version: 22-09-22.94-hotfix.0
+decanting-service:
+  helm_chart_version: 22-10-05.304-hotfix.306
+distiller:
+  image: 22-10-17.420
+  helm_chart_version: 22-10-17.276
+ims:
+  image: 22-09-19.202
+  helm_chart_version: 22-09-23.248
+integration:
+  helm_chart_version: 22-10-13.1390
+isps:
+  helm_chart_version: 22-10-03.165-hotfix.0
+oms:
+  helm_chart_version: 22-10-19.500
+osr-emulator:
+  helm_chart_version: 22-10-17.234
+platform:
+  helm_chart_version: 22-10-19.601
+service-catalog:
+  helm_chart_version: 22-09-28.246

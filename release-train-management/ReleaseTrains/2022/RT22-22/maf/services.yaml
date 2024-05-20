@@ -1,0 +1,5 @@
+oms:
+  helm_chart_version: 22-05-04.429
+ims:
+  image: 22-05-24.109-hotfix.1
+  helm_chart_version: 22-06-20.221

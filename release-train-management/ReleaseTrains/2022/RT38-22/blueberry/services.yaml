@@ -1,0 +1,4 @@
+distiller:
+  image: 22-09-05.406
+  helm_chart_version: 22-09-05.247
+  

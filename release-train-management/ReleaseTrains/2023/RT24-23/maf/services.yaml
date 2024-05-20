@@ -1,0 +1,2 @@
+decanting-service:
+  helm_chart_version: 23-06-13.45

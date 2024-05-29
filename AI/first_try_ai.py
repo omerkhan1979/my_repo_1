@@ -1,11 +1,5 @@
 import google.generativeai as genai
 
-genai.configure(api_key="GOOGLE_API_KEY")
-GOOGLE_API_KEY = "AIzaSyDYTXLDIyDO0SQZ_YpXr3Spw7nOY2z9qgQ"  # Replace with your actual API key
-print(GOOGLE_API_KEY)
-
-import google.generativeai as genai
-
 # (Optional) List available models
 models = [m for m in genai.list_models() if "chat-bison" in m.model_name]
 print(models)
